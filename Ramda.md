@@ -29,13 +29,21 @@ const objList = {
 
 #### prop
 ```
+const arr = [1.1, 2.2, 3.3]
+
 R.prop(1, arr)
 
 //2.2
 ```
+```
+const obj = {name: 'elephant', type: 'mammal'}
+R.prop('name', obj)
+
+//elephant
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDc2NTQ0NjAsLTExMDE0NjQ4MDAsLT
-QyMjkwNTc2NSwtMTEzMjE5Mzc2XX0=
+eyJoaXN0b3J5IjpbMTE2NDM4MTAwNiwtMTEwMTQ2NDgwMCwtND
+IyOTA1NzY1LC0xMTMyMTkzNzZdfQ==
 -->
