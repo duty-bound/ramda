@@ -28,13 +28,14 @@ const objList = {
 ### Extracting Data from Single Dimension Containers
 
 #### prop
+```
+R.prop(1, arr)
 
-
-####
-
+//2.2
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDE0NjQ4MDAsLTQyMjkwNTc2NSwtMT
-EzMjE5Mzc2XX0=
+eyJoaXN0b3J5IjpbLTEwMDc2NTQ0NjAsLTExMDE0NjQ4MDAsLT
+QyMjkwNTc2NSwtMTEzMjE5Mzc2XX0=
 -->
