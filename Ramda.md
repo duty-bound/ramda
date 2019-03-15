@@ -37,6 +37,7 @@ R.prop(1, arr)
 ```
 ```
 const obj = {name: 'elephant', type: 'mammal'}
+
 R.prop('name', obj)
 
 //elephant
@@ -44,6 +45,6 @@ R.prop('name', obj)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDM4MTAwNiwtMTEwMTQ2NDgwMCwtND
-IyOTA1NzY1LC0xMTMyMTkzNzZdfQ==
+eyJoaXN0b3J5IjpbNTk4OTkxNDIwLC0xMTAxNDY0ODAwLC00Mj
+I5MDU3NjUsLTExMzIxOTM3Nl19
 -->
