@@ -2,13 +2,13 @@
 
 ## Sample Data
 
-Single Dimension Data
+**Single Dimension Data**
 ```
 const arr = [1.1, 2.2, 3.3]
 
 const obj = {name: 'elephant', type: 'mammal'}
 ```
-Multi-Dimension Data
+**Multi-Dimension Data**
 ```
 const arrList = [
   [1.1, 1.2, 1.3],
@@ -32,6 +32,6 @@ const objList = {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjUzMTg0MjUsLTQyMjkwNTc2NSwtMT
+eyJoaXN0b3J5IjpbLTEzMDIyNzIwMjUsLTQyMjkwNTc2NSwtMT
 EzMjE5Mzc2XX0=
 -->
