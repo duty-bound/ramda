@@ -1,8 +1,6 @@
 # Ramda
 
-## Extracting Data
-
-Sample Data
+## Sample Data
 ```
 const arr = [
   [1.1, 1.2, 1.3],
@@ -17,7 +15,10 @@ const obj = {
 }
 ```
 
+## Extracting Data
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzIxOTM3Nl19
+eyJoaXN0b3J5IjpbLTIwOTQ2NjkwNjAsLTExMzIxOTM3Nl19
 -->
