@@ -4,7 +4,7 @@
 ```
 const arr = [1.1, 2.2, 3.3]
 
-const obj = 
+const obj = {name: 'elephant', type: 'mammal'}
 
 const arrList = [
   [1.1, 1.2, 1.3],
@@ -20,10 +20,11 @@ const objList = {
 ```
 
 ## Extracting Data
+###Extracting Data from 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjU1MTA5OCwtMTEzMjE5Mzc2XX0=
+eyJoaXN0b3J5IjpbOTA2Njc4NTk3LC0xMTMyMTkzNzZdfQ==
 -->
