@@ -2,7 +2,7 @@
 
 ## Sample Data
 
-_Single Dimension Data_
+Single Dimension Data
 ```
 const arr = [1.1, 2.2, 3.3]
 
@@ -32,6 +32,6 @@ const objList = {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDYwMzAzNjcsLTQyMjkwNTc2NSwtMT
+eyJoaXN0b3J5IjpbLTEwNjUzMTg0MjUsLTQyMjkwNTc2NSwtMT
 EzMjE5Mzc2XX0=
 -->
