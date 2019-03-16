@@ -308,7 +308,23 @@ R.apply(R.toUpper, letters)
 //"A"
 ```
 
+#### assoc
+Inserts a key / value set in the provided object literal. Note that it 
 
+```
+const objList = {
+  el: { name: 'elephant', type: 'mammal' },
+  sh: {	name: 'shark', type: 'fish' },
+  ea: { name: 'eagle', type: 'bird' },
+}
+
+R.assoc('mm', {name: 'elephant', type: 'mammal'}, objList);
+
+//{"ea": {"name": "eagle", "type": "bird"},
+//"el": {"name": "elephant", "type": "mammal"},
+//"mm": {"name": "elephant", "type": "mammal"}, 
+//"sh": {"name": "shark", "type": "fish"}}
+```
 
 ## Mapping
 #### addIndex
@@ -349,11 +365,11 @@ pi(circumference(2))
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3Mjc1NzgwLC0zOTAzMDEwMDQsLTM3MD
-gyNzY1OCwtODg0Nzg5ODM1LC0xODQ5MzE4NywtNTY1OTUzOTg2
-LDE1MzgwMjg4NSwyMDUxOTM4NDUyLDE5OTczNjYyNTMsMTUyMz
-I0NzMzMywtMTcxMTg2OTE4LDExMjEzMjczMCwxMzA1ODE2MDUz
-LDEyODc2Mjk3ODYsMjEwODY3MjYyNywtNzQwNTQ1OTc1LC0yND
-kxNzU3MSwxOTY2ODAwNzU1LC01MzY0MDM4MzcsMjA1NzAzMTA4
-Nl19
+eyJoaXN0b3J5IjpbMTgyOTEyMjk5NSw2NzcyNzU3ODAsLTM5MD
+MwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4MzUsLTE4NDkzMTg3
+LC01NjU5NTM5ODYsMTUzODAyODg1LDIwNTE5Mzg0NTIsMTk5Nz
+M2NjI1MywxNTIzMjQ3MzMzLC0xNzExODY5MTgsMTEyMTMyNzMw
+LDEzMDU4MTYwNTMsMTI4NzYyOTc4NiwyMTA4NjcyNjI3LC03ND
+A1NDU5NzUsLTI0OTE3NTcxLDE5NjY4MDA3NTUsLTUzNjQwMzgz
+N119
 -->
