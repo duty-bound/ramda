@@ -124,7 +124,17 @@ inRange([11])
 
 //true
 ```
+```
+const isQueen = R.propEq('rank', 'Q')
+const isSpade = R.propEq('suit', '♠︎')
+const isQueenOfSpades = R.allPass([isQueen, isSpade])
 
+isQueenOfSpades({rank: 'Q', suit: '♣︎'})
+//false
+
+isQueenOfSpades({rank: 'Q', suit: '♠︎'})
+//true
+```
 
 
 ## Filtering 
@@ -177,11 +187,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Nzg3Njk1NjQsMjEwODY3MjYyNywtNz
-QwNTQ1OTc1LC0yNDkxNzU3MSwxOTY2ODAwNzU1LC01MzY0MDM4
-MzcsMjA1NzAzMTA4Niw0ODgxODg1MjEsLTg3MDU3NDcwNyw1MD
-g1NTc0NjUsMjc3NDU2MSw1NzE5ODk4NzUsMTc3ODIxMjM5OCwx
-NDcxMjM4ODMwLDE4OTE4MjAzNSwtNDQ5MjY4NDgzLDU5ODk5MT
-QyMCwtMTEwMTQ2NDgwMCwtNDIyOTA1NzY1LC0xMTMyMTkzNzZd
-fQ==
+eyJoaXN0b3J5IjpbMTQ4MDc1NDI3MiwyMTA4NjcyNjI3LC03ND
+A1NDU5NzUsLTI0OTE3NTcxLDE5NjY4MDA3NTUsLTUzNjQwMzgz
+NywyMDU3MDMxMDg2LDQ4ODE4ODUyMSwtODcwNTc0NzA3LDUwOD
+U1NzQ2NSwyNzc0NTYxLDU3MTk4OTg3NSwxNzc4MjEyMzk4LDE0
+NzEyMzg4MzAsMTg5MTgyMDM1LC00NDkyNjg0ODMsNTk4OTkxND
+IwLC0xMTAxNDY0ODAwLC00MjI5MDU3NjUsLTExMzIxOTM3Nl19
+
 -->
