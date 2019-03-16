@@ -24,9 +24,10 @@ const objList = {
 			origins: { continent: 'Africa', country: 'Gabon', } }
   animal: {	name: 'shark',
 		    type: 'fish',
-		    origins: { continent: 'Australia', country: 'Sy', } },
-  animal: {name: 'eagle', type: 'bird'},
-}
+		    origins: { continent: 'Australia', country: 'Sydney', } },
+  animal: { name: 'eagle',
+		    type: 'bird'}
+		    origins: { continent: 'USA', country: 'Arizona', }, }
 ```
 
 ## Extracting Data
@@ -78,7 +79,7 @@ R.path(['origins', 'country'], obj)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNzc2ODEyMywxODkxODIwMzUsLTQ0OT
-I2ODQ4Myw1OTg5OTE0MjAsLTExMDE0NjQ4MDAsLTQyMjkwNTc2
-NSwtMTEzMjE5Mzc2XX0=
+eyJoaXN0b3J5IjpbMjg5NDI0NzMxLDE4OTE4MjAzNSwtNDQ5Mj
+Y4NDgzLDU5ODk5MTQyMCwtMTEwMTQ2NDgwMCwtNDIyOTA1NzY1
+LC0xMTMyMTkzNzZdfQ==
 -->
