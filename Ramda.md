@@ -259,6 +259,17 @@ R.aperture(7, [1, 2, 3, 4, 5])
 //[]
 ```
 
+#### append
+Appends the provided element (not elements) to the end of the provided array.
+```
+R.append('C', ['A', 'B'])
+//["A", "B", "C"]
+
+R.append('C', [])
+//["C"]
+```
+
+
 ## Mapping
 #### addIndex
 Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
@@ -277,11 +288,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NzM2NjI1MywxNTIzMjQ3MzMzLC0xNz
-ExODY5MTgsMTEyMTMyNzMwLDEzMDU4MTYwNTMsMTI4NzYyOTc4
-NiwyMTA4NjcyNjI3LC03NDA1NDU5NzUsLTI0OTE3NTcxLDE5Nj
-Y4MDA3NTUsLTUzNjQwMzgzNywyMDU3MDMxMDg2LDQ4ODE4ODUy
-MSwtODcwNTc0NzA3LDUwODU1NzQ2NSwyNzc0NTYxLDU3MTk4OT
-g3NSwxNzc4MjEyMzk4LDE0NzEyMzg4MzAsMTg5MTgyMDM1XX0=
+eyJoaXN0b3J5IjpbMjA1MTkzODQ1MiwxOTk3MzY2MjUzLDE1Mj
+MyNDczMzMsLTE3MTE4NjkxOCwxMTIxMzI3MzAsMTMwNTgxNjA1
+MywxMjg3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3NSwtMj
+Q5MTc1NzEsMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNTcwMzEw
+ODYsNDg4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1LDI3Nz
+Q1NjEsNTcxOTg5ODc1LDE3NzgyMTIzOTgsMTQ3MTIzODgzMF19
 
 -->
