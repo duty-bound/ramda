@@ -21,7 +21,7 @@ const arrList = [
 const objList = {
   animal: { name: 'elephant', 
 			type: 'mammal', 
-			origin: { continent: 'Africa', country: 'Gabon', } }
+			origin: { continent: 'Africa', country: 'Gabon', } },
   animal: {	name: 'shark',
 		    type: 'fish',
 		    origin: { continent: 'Australia', country: 'Sydney', } },
@@ -328,11 +328,11 @@ pi(circumference(2))
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NDc4OTgzNSwtMTg0OTMxODcsLTU2NT
-k1Mzk4NiwxNTM4MDI4ODUsMjA1MTkzODQ1MiwxOTk3MzY2MjUz
-LDE1MjMyNDczMzMsLTE3MTE4NjkxOCwxMTIxMzI3MzAsMTMwNT
-gxNjA1MywxMjg3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3
-NSwtMjQ5MTc1NzEsMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNT
-cwMzEwODYsNDg4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1
-XX0=
+eyJoaXN0b3J5IjpbLTE2NjkwNTkzOTMsLTg4NDc4OTgzNSwtMT
+g0OTMxODcsLTU2NTk1Mzk4NiwxNTM4MDI4ODUsMjA1MTkzODQ1
+MiwxOTk3MzY2MjUzLDE1MjMyNDczMzMsLTE3MTE4NjkxOCwxMT
+IxMzI3MzAsMTMwNTgxNjA1MywxMjg3NjI5Nzg2LDIxMDg2NzI2
+MjcsLTc0MDU0NTk3NSwtMjQ5MTc1NzEsMTk2NjgwMDc1NSwtNT
+M2NDAzODM3LDIwNTcwMzEwODYsNDg4MTg4NTIxLC04NzA1NzQ3
+MDddfQ==
 -->
