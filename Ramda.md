@@ -55,12 +55,24 @@ R.path([2, 1], arrList)
 
 //3.2
 ```
+```
+const obj = {name: 'elephant', 
+             type: 'mammal',
+            origins: {
+              country: 'Africa',
+              date: 2002,
+            }
+         }
 
+R.path(['origins', 'country'], obj)
+
+//Africa
+```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MTgyMDM1LC00NDkyNjg0ODMsNTk4OT
-kxNDIwLC0xMTAxNDY0ODAwLC00MjI5MDU3NjUsLTExMzIxOTM3
-Nl19
+eyJoaXN0b3J5IjpbLTEwNzAyNzM4NDAsMTg5MTgyMDM1LC00ND
+kyNjg0ODMsNTk4OTkxNDIwLC0xMTAxNDY0ODAwLC00MjI5MDU3
+NjUsLTExMzIxOTM3Nl19
 -->
