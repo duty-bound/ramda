@@ -6,7 +6,9 @@
 ```
 const arr = [1.1, 2.2, 3.3]
 
-const obj = {name: 'elephant', type: 'mammal'}
+const obj = {name: 'elephant', 
+			type: 'mammal', 
+			origins: { continent: 'Africa', country: 'Gabon', } }
 ```
 **Multi-Dimension Data**
 ```
@@ -17,7 +19,9 @@ const arrList = [
 ]
 
 const objList = {
-  animal: {name: 'elephant', type: 'mammal'},
+  animal: const obj = {name: 'elephant', 
+			type: 'mammal', 
+			origins: { continent: 'Africa', country: 'Gabon', } }
   animal: {name: 'shark', type: 'fish'},
   animal: {name: 'eagle', type: 'bird'},
 }
@@ -72,7 +76,7 @@ R.path(['origins', 'country'], obj)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzAyNzM4NDAsMTg5MTgyMDM1LC00ND
-kyNjg0ODMsNTk4OTkxNDIwLC0xMTAxNDY0ODAwLC00MjI5MDU3
-NjUsLTExMzIxOTM3Nl19
+eyJoaXN0b3J5IjpbNTc2Mjc4MTg5LDE4OTE4MjAzNSwtNDQ5Mj
+Y4NDgzLDU5ODk5MTQyMCwtMTEwMTQ2NDgwMCwtNDIyOTA1NzY1
+LC0xMTMyMTkzNzZdfQ==
 -->
