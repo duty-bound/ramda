@@ -138,7 +138,14 @@ isQueenOfSpades({rank: 'Q', suit: '♠︎'})
 ```
 #### and
 
-Returns true 
+Returns true if both arguments are true.
+```
+const n = 15
+
+R.and(n > 10, n < 20)
+
+//true
+```
 
 ## Filtering 
 
@@ -208,7 +215,7 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMTU0NjY3NCwxMjg3NjI5Nzg2LDIxMD
+eyJoaXN0b3J5IjpbMTMwNTgxNjA1MywxMjg3NjI5Nzg2LDIxMD
 g2NzI2MjcsLTc0MDU0NTk3NSwtMjQ5MTc1NzEsMTk2NjgwMDc1
 NSwtNTM2NDAzODM3LDIwNTcwMzEwODYsNDg4MTg4NTIxLC04Nz
 A1NzQ3MDcsNTA4NTU3NDY1LDI3NzQ1NjEsNTcxOTg5ODc1LDE3
