@@ -86,11 +86,13 @@ R.path(['origin', 'country'], obj)
 
 //Africa
 ```
-## Conditional 
+## Relational Functions
+These functions are used to return  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3ODc1MTAxMiwxNzc4MjEyMzk4LDE0Nz
-EyMzg4MzAsMTg5MTgyMDM1LC00NDkyNjg0ODMsNTk4OTkxNDIw
-LC0xMTAxNDY0ODAwLC00MjI5MDU3NjUsLTExMzIxOTM3Nl19
+eyJoaXN0b3J5IjpbLTE0OTY1NzIwMjIsMTc3ODIxMjM5OCwxND
+cxMjM4ODMwLDE4OTE4MjAzNSwtNDQ5MjY4NDgzLDU5ODk5MTQy
+MCwtMTEwMTQ2NDgwMCwtNDIyOTA1NzY1LC0xMTMyMTkzNzZdfQ
+==
 -->
