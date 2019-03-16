@@ -307,6 +307,13 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 #### applyTo
 
 Takes a value and returns a function that passes this value to other functions.
+```
+const num = R.applyTo(3)
+
+num(R.inc())
+
+//4
+```
 
 ```
 const pi = R.applyTo(3.142)
@@ -321,11 +328,11 @@ pi(circumference(2))
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk0Mzg4NjAwLC0xODQ5MzE4NywtNTY1OT
-UzOTg2LDE1MzgwMjg4NSwyMDUxOTM4NDUyLDE5OTczNjYyNTMs
-MTUyMzI0NzMzMywtMTcxMTg2OTE4LDExMjEzMjczMCwxMzA1OD
-E2MDUzLDEyODc2Mjk3ODYsMjEwODY3MjYyNywtNzQwNTQ1OTc1
-LC0yNDkxNzU3MSwxOTY2ODAwNzU1LC01MzY0MDM4MzcsMjA1Nz
-AzMTA4Niw0ODgxODg1MjEsLTg3MDU3NDcwNyw1MDg1NTc0NjVd
-fQ==
+eyJoaXN0b3J5IjpbLTg4NDc4OTgzNSwtMTg0OTMxODcsLTU2NT
+k1Mzk4NiwxNTM4MDI4ODUsMjA1MTkzODQ1MiwxOTk3MzY2MjUz
+LDE1MjMyNDczMzMsLTE3MTE4NjkxOCwxMTIxMzI3MzAsMTMwNT
+gxNjA1MywxMjg3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3
+NSwtMjQ5MTc1NzEsMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNT
+cwMzEwODYsNDg4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1
+XX0=
 -->
