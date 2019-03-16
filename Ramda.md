@@ -308,7 +308,7 @@ R.apply(R.toUpper, letters)
 ```
 
 #### assoc
-Inserts a key / value set in the provided object literal. Note that the new object literal is sorted in ascending order.
+Inserts a key / value set in a clone of the provided object literal. Note that the new object literal is sorted in ascending order.
 
 ```
 const objList = {
@@ -388,11 +388,11 @@ pi(circumference(2))
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyOTkwMzg5NywtMjQ0NjkzODMsLTkwOD
-Y0MDM4MCw2NzcyNzU3ODAsLTM5MDMwMTAwNCwtMzcwODI3NjU4
-LC04ODQ3ODk4MzUsLTE4NDkzMTg3LC01NjU5NTM5ODYsMTUzOD
-AyODg1LDIwNTE5Mzg0NTIsMTk5NzM2NjI1MywxNTIzMjQ3MzMz
-LC0xNzExODY5MTgsMTEyMTMyNzMwLDEzMDU4MTYwNTMsMTI4Nz
-YyOTc4NiwyMTA4NjcyNjI3LC03NDA1NDU5NzUsLTI0OTE3NTcx
-XX0=
+eyJoaXN0b3J5IjpbLTYwMzI3NTkyNCwtNTI5OTAzODk3LC0yND
+Q2OTM4MywtOTA4NjQwMzgwLDY3NzI3NTc4MCwtMzkwMzAxMDA0
+LC0zNzA4Mjc2NTgsLTg4NDc4OTgzNSwtMTg0OTMxODcsLTU2NT
+k1Mzk4NiwxNTM4MDI4ODUsMjA1MTkzODQ1MiwxOTk3MzY2MjUz
+LDE1MjMyNDczMzMsLTE3MTE4NjkxOCwxMTIxMzI3MzAsMTMwNT
+gxNjA1MywxMjg3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3
+NV19
 -->
