@@ -89,6 +89,8 @@ R.path(['origin', 'country'], obj)
 ## Relational Functions
 These functions are used to determine whether a condition is true or not, such as the existence of a specified element in a given path, or whether a variable is greater or smaller than another variable, checking for equality, etc.
 
+####all
+
 ## Filtering 
 
 ## Sorting
@@ -103,7 +105,7 @@ R.add(2.1, 3.45)
 
 #### adjust
 
-Applies a function to a specific element 
+Applies a function to a specific index in an array 
 
 ```
 const arr = [1.1, 2.2, 3.3]
@@ -139,9 +141,10 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNT
-cwMzEwODYsNDg4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1
-LDI3NzQ1NjEsNTcxOTg5ODc1LDE3NzgyMTIzOTgsMTQ3MTIzOD
-gzMCwxODkxODIwMzUsLTQ0OTI2ODQ4Myw1OTg5OTE0MjAsLTEx
-MDE0NjQ4MDAsLTQyMjkwNTc2NSwtMTEzMjE5Mzc2XX0=
+eyJoaXN0b3J5IjpbNTc0Njg2NDcxLDE5NjY4MDA3NTUsLTUzNj
+QwMzgzNywyMDU3MDMxMDg2LDQ4ODE4ODUyMSwtODcwNTc0NzA3
+LDUwODU1NzQ2NSwyNzc0NTYxLDU3MTk4OTg3NSwxNzc4MjEyMz
+k4LDE0NzEyMzg4MzAsMTg5MTgyMDM1LC00NDkyNjg0ODMsNTk4
+OTkxNDIwLC0xMTAxNDY0ODAwLC00MjI5MDU3NjUsLTExMzIxOT
+M3Nl19
 -->
