@@ -379,7 +379,12 @@ func2('so', 'far')
 //"so far undefined undefined"
 ```
 
+#### call
+This is a very powerful function. It takes a function as a first parameter, and an arbitrary number of other arguments which the supplied function will 
+
+
 ## Mapping
+
 #### addIndex
 Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
 
@@ -419,11 +424,11 @@ pi(circumference(2))
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDcwMDgxOTYsLTY2NTc1NjgwMSwxNj
-MyMzY4MTEwLDM5ODA4MzQ2LC0xMjA2NzI5MDM2LC01Mjk5MDM4
-OTcsLTI0NDY5MzgzLC05MDg2NDAzODAsNjc3Mjc1NzgwLC0zOT
-AzMDEwMDQsLTM3MDgyNzY1OCwtODg0Nzg5ODM1LC0xODQ5MzE4
-NywtNTY1OTUzOTg2LDE1MzgwMjg4NSwyMDUxOTM4NDUyLDE5OT
-czNjYyNTMsMTUyMzI0NzMzMywtMTcxMTg2OTE4LDExMjEzMjcz
-MF19
+eyJoaXN0b3J5IjpbMjEwNDk2OTE5MSwtMTEwNzAwODE5NiwtNj
+Y1NzU2ODAxLDE2MzIzNjgxMTAsMzk4MDgzNDYsLTEyMDY3Mjkw
+MzYsLTUyOTkwMzg5NywtMjQ0NjkzODMsLTkwODY0MDM4MCw2Nz
+cyNzU3ODAsLTM5MDMwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4
+MzUsLTE4NDkzMTg3LC01NjU5NTM5ODYsMTUzODAyODg1LDIwNT
+E5Mzg0NTIsMTk5NzM2NjI1MywxNTIzMjQ3MzMzLC0xNzExODY5
+MThdfQ==
 -->
