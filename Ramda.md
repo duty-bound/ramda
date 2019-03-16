@@ -228,7 +228,9 @@ bike().brand
 
 #### ap
 
-Applies the provided list of functions to each element of a list and returns 
+Applies the provided list of functions to each element of a list and returns everything in a single array.
+
+
 ## Mapping
 #### addIndex
 Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
@@ -247,7 +249,7 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1Njg4NTQ3OCwxMTIxMzI3MzAsMTMwNT
+eyJoaXN0b3J5IjpbLTE3MTE4NjkxOCwxMTIxMzI3MzAsMTMwNT
 gxNjA1MywxMjg3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3
 NSwtMjQ5MTc1NzEsMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNT
 cwMzEwODYsNDg4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1
