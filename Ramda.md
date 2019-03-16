@@ -306,16 +306,18 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 #### applyTo
 
-Takes a value and returns a function
+Takes a value and returns a function that passes this value to other functions.
+
+
 
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTczNzg1ODYsLTU2NTk1Mzk4NiwxNT
-M4MDI4ODUsMjA1MTkzODQ1MiwxOTk3MzY2MjUzLDE1MjMyNDcz
-MzMsLTE3MTE4NjkxOCwxMTIxMzI3MzAsMTMwNTgxNjA1MywxMj
-g3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3NSwtMjQ5MTc1
-NzEsMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNTcwMzEwODYsND
-g4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1LDI3NzQ1NjFd
-fQ==
+eyJoaXN0b3J5IjpbLTE4NDkzMTg3LC01NjU5NTM5ODYsMTUzOD
+AyODg1LDIwNTE5Mzg0NTIsMTk5NzM2NjI1MywxNTIzMjQ3MzMz
+LC0xNzExODY5MTgsMTEyMTMyNzMwLDEzMDU4MTYwNTMsMTI4Nz
+YyOTc4NiwyMTA4NjcyNjI3LC03NDA1NDU5NzUsLTI0OTE3NTcx
+LDE5NjY4MDA3NTUsLTUzNjQwMzgzNywyMDU3MDMxMDg2LDQ4OD
+E4ODUyMSwtODcwNTc0NzA3LDUwODU1NzQ2NSwyNzc0NTYxXX0=
+
 -->
