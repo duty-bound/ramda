@@ -102,13 +102,13 @@ R.add(2.1, 3.45)
 
 ## Mapping
 #### addIndex
-Returns an iterati function 
+Returns an iterative function from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'
 
 This function mimics Array.prototype.map
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MjQ0NDE5NSw0ODgxODg1MjEsLTg3MD
+eyJoaXN0b3J5IjpbMTM1NTc3NzI0OSw0ODgxODg1MjEsLTg3MD
 U3NDcwNyw1MDg1NTc0NjUsMjc3NDU2MSw1NzE5ODk4NzUsMTc3
 ODIxMjM5OCwxNDcxMjM4ODMwLDE4OTE4MjAzNSwtNDQ5MjY4ND
 gzLDU5ODk5MTQyMCwtMTEwMTQ2NDgwMCwtNDIyOTA1NzY1LC0x
