@@ -229,7 +229,16 @@ bike().brand
 #### ap
 
 Applies the provided list of functions to each element of a list and returns everything in a single array.
+```
+const arr = [1.1, 2.2, 3.3]
 
+const x2 = n => n * 2
+const add3 = n => n+ 3
+
+R.ap([x2, add3], arr)
+
+//[2.2, 4.4, 6.6, 4.1, 5.2, 6.3]
+```
 
 ## Mapping
 #### addIndex
@@ -249,11 +258,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTE4NjkxOCwxMTIxMzI3MzAsMTMwNT
-gxNjA1MywxMjg3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3
-NSwtMjQ5MTc1NzEsMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNT
-cwMzEwODYsNDg4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1
-LDI3NzQ1NjEsNTcxOTg5ODc1LDE3NzgyMTIzOTgsMTQ3MTIzOD
-gzMCwxODkxODIwMzUsLTQ0OTI2ODQ4Myw1OTg5OTE0MjBdfQ==
+eyJoaXN0b3J5IjpbMjczMjQ4NTgxLC0xNzExODY5MTgsMTEyMT
+MyNzMwLDEzMDU4MTYwNTMsMTI4NzYyOTc4NiwyMTA4NjcyNjI3
+LC03NDA1NDU5NzUsLTI0OTE3NTcxLDE5NjY4MDA3NTUsLTUzNj
+QwMzgzNywyMDU3MDMxMDg2LDQ4ODE4ODUyMSwtODcwNTc0NzA3
+LDUwODU1NzQ2NSwyNzc0NTYxLDU3MTk4OTg3NSwxNzc4MjEyMz
+k4LDE0NzEyMzg4MzAsMTg5MTgyMDM1LC00NDkyNjg0ODNdfQ==
 
 -->
