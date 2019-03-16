@@ -94,11 +94,16 @@ These functions are used to determine whether a condition is true or not, such a
 ## Sorting
 
 ## Operational
+
 #### add
 ```
 R.add(2.1, 3.45)
 //5.550000000000001
 ```
+
+#### adjust
+
+
 
 ## Mapping
 #### addIndex
@@ -118,9 +123,9 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNjQwMzgzNywyMDU3MDMxMDg2LDQ4OD
-E4ODUyMSwtODcwNTc0NzA3LDUwODU1NzQ2NSwyNzc0NTYxLDU3
-MTk4OTg3NSwxNzc4MjEyMzk4LDE0NzEyMzg4MzAsMTg5MTgyMD
-M1LC00NDkyNjg0ODMsNTk4OTkxNDIwLC0xMTAxNDY0ODAwLC00
-MjI5MDU3NjUsLTExMzIxOTM3Nl19
+eyJoaXN0b3J5IjpbMTIzMDMxNzYxOCwtNTM2NDAzODM3LDIwNT
+cwMzEwODYsNDg4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1
+LDI3NzQ1NjEsNTcxOTg5ODc1LDE3NzgyMTIzOTgsMTQ3MTIzOD
+gzMCwxODkxODIwMzUsLTQ0OTI2ODQ4Myw1OTg5OTE0MjAsLTEx
+MDE0NjQ4MDAsLTQyMjkwNTc2NSwtMTEzMjE5Mzc2XX0=
 -->
