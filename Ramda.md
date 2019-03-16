@@ -152,7 +152,7 @@ Returns true if any of the elements in the list matches the predicate.
 
 #### anyPass
 
-
+Contrary to 'any', which executes a single test on a list of variables, 'anyPass' carries several tests on a single variable.
 
 ```
 const arr = [1.1, 2.2, 3.3]
@@ -231,11 +231,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODcwMDk3NDYsMTMwNTgxNjA1MywxMj
-g3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3NSwtMjQ5MTc1
-NzEsMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNTcwMzEwODYsND
-g4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1LDI3NzQ1NjEs
-NTcxOTg5ODc1LDE3NzgyMTIzOTgsMTQ3MTIzODgzMCwxODkxOD
-IwMzUsLTQ0OTI2ODQ4Myw1OTg5OTE0MjAsLTExMDE0NjQ4MDBd
-fQ==
+eyJoaXN0b3J5IjpbMTEyMTMyNzMwLDEzMDU4MTYwNTMsMTI4Nz
+YyOTc4NiwyMTA4NjcyNjI3LC03NDA1NDU5NzUsLTI0OTE3NTcx
+LDE5NjY4MDA3NTUsLTUzNjQwMzgzNywyMDU3MDMxMDg2LDQ4OD
+E4ODUyMSwtODcwNTc0NzA3LDUwODU1NzQ2NSwyNzc0NTYxLDU3
+MTk4OTg3NSwxNzc4MjEyMzk4LDE0NzEyMzg4MzAsMTg5MTgyMD
+M1LC00NDkyNjg0ODMsNTk4OTkxNDIwLC0xMTAxNDY0ODAwXX0=
+
 -->
