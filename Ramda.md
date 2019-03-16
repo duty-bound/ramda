@@ -244,6 +244,13 @@ R.ap([R.toUpper, R.toLower],['Crazy'])
 ["CRAZY", "crazy"]
 ```
 
+#### aperture
+
+Returns a new list of consecutive combinations of 'n' each.
+
+```
+
+
 ## Mapping
 #### addIndex
 Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
@@ -262,11 +269,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMzI0NzMzMywtMTcxMTg2OTE4LDExMj
-EzMjczMCwxMzA1ODE2MDUzLDEyODc2Mjk3ODYsMjEwODY3MjYy
-NywtNzQwNTQ1OTc1LC0yNDkxNzU3MSwxOTY2ODAwNzU1LC01Mz
-Y0MDM4MzcsMjA1NzAzMTA4Niw0ODgxODg1MjEsLTg3MDU3NDcw
-Nyw1MDg1NTc0NjUsMjc3NDU2MSw1NzE5ODk4NzUsMTc3ODIxMj
-M5OCwxNDcxMjM4ODMwLDE4OTE4MjAzNSwtNDQ5MjY4NDgzXX0=
+eyJoaXN0b3J5IjpbLTEzNDUyNTM2OTAsMTUyMzI0NzMzMywtMT
+cxMTg2OTE4LDExMjEzMjczMCwxMzA1ODE2MDUzLDEyODc2Mjk3
+ODYsMjEwODY3MjYyNywtNzQwNTQ1OTc1LC0yNDkxNzU3MSwxOT
+Y2ODAwNzU1LC01MzY0MDM4MzcsMjA1NzAzMTA4Niw0ODgxODg1
+MjEsLTg3MDU3NDcwNyw1MDg1NTc0NjUsMjc3NDU2MSw1NzE5OD
+k4NzUsMTc3ODIxMjM5OCwxNDcxMjM4ODMwLDE4OTE4MjAzNV19
 
 -->
