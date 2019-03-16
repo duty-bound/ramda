@@ -110,17 +110,17 @@ const animals = ['elephant', 'tiger', 'shark']
 
 const myMap = R.addIndex(R.map)
 
-myMap((animal, i) => i + '-' + animal, animals)
+myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
-//
+//["<li key=0>elephant</li>", "<li key=1>tiger</li>", "<li key=2>shark</li>"]
 ```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NzAzMTA4Niw0ODgxODg1MjEsLTg3MD
-U3NDcwNyw1MDg1NTc0NjUsMjc3NDU2MSw1NzE5ODk4NzUsMTc3
-ODIxMjM5OCwxNDcxMjM4ODMwLDE4OTE4MjAzNSwtNDQ5MjY4ND
-gzLDU5ODk5MTQyMCwtMTEwMTQ2NDgwMCwtNDIyOTA1NzY1LC0x
-MTMyMTkzNzZdfQ==
+eyJoaXN0b3J5IjpbLTUzNjQwMzgzNywyMDU3MDMxMDg2LDQ4OD
+E4ODUyMSwtODcwNTc0NzA3LDUwODU1NzQ2NSwyNzc0NTYxLDU3
+MTk4OTg3NSwxNzc4MjEyMzk4LDE0NzEyMzg4MzAsMTg5MTgyMD
+M1LC00NDkyNjg0ODMsNTk4OTkxNDIwLC0xMTAxNDY0ODAwLC00
+MjI5MDU3NjUsLTExMzIxOTM3Nl19
 -->
