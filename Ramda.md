@@ -59,7 +59,7 @@ Note that prop is not able to dig deep enough to extract the contents of 'origin
 ```
 R.prop('continent', R.prop('origin', obj))
 ```
-Or better, using a f like 'path'.
+Or better, using a function like 'path'.
 
 #### path
 ```
@@ -90,7 +90,7 @@ R.path(['origin', 'country'], obj)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ3NDMyOTgsMTQ3MTIzODgzMCwxODkxOD
-IwMzUsLTQ0OTI2ODQ4Myw1OTg5OTE0MjAsLTExMDE0NjQ4MDAs
-LTQyMjkwNTc2NSwtMTEzMjE5Mzc2XX0=
+eyJoaXN0b3J5IjpbMTc3ODIxMjM5OCwxNDcxMjM4ODMwLDE4OT
+E4MjAzNSwtNDQ5MjY4NDgzLDU5ODk5MTQyMCwtMTEwMTQ2NDgw
+MCwtNDIyOTA1NzY1LC0xMTMyMTkzNzZdfQ==
 -->
