@@ -181,6 +181,25 @@ isQueenOrSpades({ rank: '10', suit: '♣︎'})
 
 ## Sorting
 
+#### ascend 
+
+
+```
+const objList = {
+  el: { name: 'elephant', type: 'mammal' },
+  sh: {	name: 'shark', type: 'fish' },
+  ea: { name: 'eagle', type: 'bird' },
+}
+const animals = R.values(objList)
+
+const asc = R.ascend(R.prop('name'))
+R.sort(asc, animals)
+
+//[{"name": "eagle", "type": "bird"},
+//{"name": "elephant", "type": "mammal"},
+//{"name": "shark", "type": "fish"}]
+```
+
 ## Operational
 
 #### add
@@ -329,11 +348,11 @@ pi(circumference(2))
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDgyNzY1OCwtODg0Nzg5ODM1LC0xOD
-Q5MzE4NywtNTY1OTUzOTg2LDE1MzgwMjg4NSwyMDUxOTM4NDUy
-LDE5OTczNjYyNTMsMTUyMzI0NzMzMywtMTcxMTg2OTE4LDExMj
-EzMjczMCwxMzA1ODE2MDUzLDEyODc2Mjk3ODYsMjEwODY3MjYy
-NywtNzQwNTQ1OTc1LC0yNDkxNzU3MSwxOTY2ODAwNzU1LC01Mz
-Y0MDM4MzcsMjA1NzAzMTA4Niw0ODgxODg1MjEsLTg3MDU3NDcw
-N119
+eyJoaXN0b3J5IjpbMjI2NzEyMzE2LC0zNzA4Mjc2NTgsLTg4ND
+c4OTgzNSwtMTg0OTMxODcsLTU2NTk1Mzk4NiwxNTM4MDI4ODUs
+MjA1MTkzODQ1MiwxOTk3MzY2MjUzLDE1MjMyNDczMzMsLTE3MT
+E4NjkxOCwxMTIxMzI3MzAsMTMwNTgxNjA1MywxMjg3NjI5Nzg2
+LDIxMDg2NzI2MjcsLTc0MDU0NTk3NSwtMjQ5MTc1NzEsMTk2Nj
+gwMDc1NSwtNTM2NDAzODM3LDIwNTcwMzEwODYsNDg4MTg4NTIx
+XX0=
 -->
