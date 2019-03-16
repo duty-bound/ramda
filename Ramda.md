@@ -304,16 +304,18 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 //["<li key=0>elephant</li>", "<li key=1>tiger</li>", "<li key=2>shark</li>"]
 ```
 
+#### applyTo
 
+Takes a value and returns a function
 
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MjM1ODgxMCwtNTY1OTUzOTg2LDE1Mz
-gwMjg4NSwyMDUxOTM4NDUyLDE5OTczNjYyNTMsMTUyMzI0NzMz
-MywtMTcxMTg2OTE4LDExMjEzMjczMCwxMzA1ODE2MDUzLDEyOD
-c2Mjk3ODYsMjEwODY3MjYyNywtNzQwNTQ1OTc1LC0yNDkxNzU3
-MSwxOTY2ODAwNzU1LC01MzY0MDM4MzcsMjA1NzAzMTA4Niw0OD
-gxODg1MjEsLTg3MDU3NDcwNyw1MDg1NTc0NjUsMjc3NDU2MV19
-
+eyJoaXN0b3J5IjpbLTE0NTczNzg1ODYsLTU2NTk1Mzk4NiwxNT
+M4MDI4ODUsMjA1MTkzODQ1MiwxOTk3MzY2MjUzLDE1MjMyNDcz
+MzMsLTE3MTE4NjkxOCwxMTIxMzI3MzAsMTMwNTgxNjA1MywxMj
+g3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3NSwtMjQ5MTc1
+NzEsMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNTcwMzEwODYsND
+g4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1LDI3NzQ1NjFd
+fQ==
 -->
