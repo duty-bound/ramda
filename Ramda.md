@@ -166,6 +166,13 @@ const isSpade = R.propEq('suit', '♠︎')
 const isQueenOrSpades = R.anyPass([isQueen, isSpade])
 
 isQueenOrSpades({ rank: 'Q', suit: '♠︎'})
+//true
+
+isQueenOrSpades({ rank: '10', suit: '♠︎'})
+//true
+
+isQueenOrSpades({ rank: '10', suit: '♠︎'})
+//true
 ```
 
 
@@ -237,7 +244,7 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMDg4OTU2OSwxMTIxMzI3MzAsMTMwNT
+eyJoaXN0b3J5IjpbLTM3NDMyNTA3MSwxMTIxMzI3MzAsMTMwNT
 gxNjA1MywxMjg3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3
 NSwtMjQ5MTc1NzEsMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNT
 cwMzEwODYsNDg4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1
