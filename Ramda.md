@@ -97,11 +97,13 @@ These functions are used to determine whether a condition is true or not, such a
 #### add
 ```
 R.add(2.1, 3.45)
+//5.550000000000001
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE1MTc4ODY5LDUwODU1NzQ2NSwyNzc0NT
-YxLDU3MTk4OTg3NSwxNzc4MjEyMzk4LDE0NzEyMzg4MzAsMTg5
-MTgyMDM1LC00NDkyNjg0ODMsNTk4OTkxNDIwLC0xMTAxNDY0OD
-AwLC00MjI5MDU3NjUsLTExMzIxOTM3Nl19
+eyJoaXN0b3J5IjpbLTg3MDU3NDcwNyw1MDg1NTc0NjUsMjc3ND
+U2MSw1NzE5ODk4NzUsMTc3ODIxMjM5OCwxNDcxMjM4ODMwLDE4
+OTE4MjAzNSwtNDQ5MjY4NDgzLDU5ODk5MTQyMCwtMTEwMTQ2ND
+gwMCwtNDIyOTA1NzY1LC0xMTMyMTkzNzZdfQ==
 -->
