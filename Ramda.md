@@ -105,6 +105,14 @@ R.add(2.1, 3.45)
 
 Applies a function to a specific element 
 
+```
+const arr = [1.1, 2.2, 3.3]
+
+R.adjust(1, (n) => n * 2, arr)
+
+//[1.1, 4.4, 3.3]
+```
+
 ## Mapping
 #### addIndex
 Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
@@ -123,9 +131,9 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxODk5NzYwNSwtNTM2NDAzODM3LDIwNT
-cwMzEwODYsNDg4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1
-LDI3NzQ1NjEsNTcxOTg5ODc1LDE3NzgyMTIzOTgsMTQ3MTIzOD
-gzMCwxODkxODIwMzUsLTQ0OTI2ODQ4Myw1OTg5OTE0MjAsLTEx
-MDE0NjQ4MDAsLTQyMjkwNTc2NSwtMTEzMjE5Mzc2XX0=
+eyJoaXN0b3J5IjpbLTEyMDA2ODY3NjIsLTUzNjQwMzgzNywyMD
+U3MDMxMDg2LDQ4ODE4ODUyMSwtODcwNTc0NzA3LDUwODU1NzQ2
+NSwyNzc0NTYxLDU3MTk4OTg3NSwxNzc4MjEyMzk4LDE0NzEyMz
+g4MzAsMTg5MTgyMDM1LC00NDkyNjg0ODMsNTk4OTkxNDIwLC0x
+MTAxNDY0ODAwLC00MjI5MDU3NjUsLTExMzIxOTM3Nl19
 -->
