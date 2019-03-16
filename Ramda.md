@@ -87,11 +87,14 @@ R.path(['origin', 'country'], obj)
 //Africa
 ```
 ## Relational Functions
-These functions are used to determine whether a condition is true or not, such as the existence of a specified element in a given path, or whether a variable is greater or smaller than another variable, checking for equality, etc. 
+These functions are used to determine whether a condition is true or not, such as the existence of a specified element in a given path, or whether a variable is greater or smaller than another variable, checking for equality, etc.
+
+## Filtering 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxOTg5ODc1LDE3NzgyMTIzOTgsMTQ3MT
-IzODgzMCwxODkxODIwMzUsLTQ0OTI2ODQ4Myw1OTg5OTE0MjAs
-LTExMDE0NjQ4MDAsLTQyMjkwNTc2NSwtMTEzMjE5Mzc2XX0=
+eyJoaXN0b3J5IjpbMjc3NDU2MSw1NzE5ODk4NzUsMTc3ODIxMj
+M5OCwxNDcxMjM4ODMwLDE4OTE4MjAzNSwtNDQ5MjY4NDgzLDU5
+ODk5MTQyMCwtMTEwMTQ2NDgwMCwtNDIyOTA1NzY1LC0xMTMyMT
+kzNzZdfQ==
 -->
