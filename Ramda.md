@@ -91,10 +91,12 @@ These functions are used to determine whether a condition is true or not, such a
 
 ## Filtering 
 
+## Sorting
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc3NDU2MSw1NzE5ODk4NzUsMTc3ODIxMj
-M5OCwxNDcxMjM4ODMwLDE4OTE4MjAzNSwtNDQ5MjY4NDgzLDU5
-ODk5MTQyMCwtMTEwMTQ2NDgwMCwtNDIyOTA1NzY1LC0xMTMyMT
-kzNzZdfQ==
+eyJoaXN0b3J5IjpbNTA4NTU3NDY1LDI3NzQ1NjEsNTcxOTg5OD
+c1LDE3NzgyMTIzOTgsMTQ3MTIzODgzMCwxODkxODIwMzUsLTQ0
+OTI2ODQ4Myw1OTg5OTE0MjAsLTExMDE0NjQ4MDAsLTQyMjkwNT
+c2NSwtMTEzMjE5Mzc2XX0=
 -->
