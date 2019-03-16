@@ -325,6 +325,30 @@ R.assoc('mm', {name: 'elephant', type: 'mammal'}, objList);
 //"sh": {"name": "shark", "type": "fish"}}
 ```
 
+#### assocPath
+
+Makes a clone of the provided object while overriding any values in the path provided in the first parameter by the value provided in the second parameter. Note that the object literal created is sorted in ascending order.
+
+```
+const objList = {
+  el: { name: 'elephant', 
+			type: 'mammal', 
+			origin: { continent: 'Africa', country: 'Gabon', }, },
+  sk: {	name: 'shark',
+		    type: 'fish',
+		    origin: { continent: 'Australia', country: 'Sydney', }, },
+  ea: { name: 'eagle',
+		    type: 'bird',
+		    origin: { continent: 'USA', country: 'Arizona', }, }
+}
+R.assocPath(['sk', 'origin', 'country'], 'South Africa', objList);
+
+//{"ea": {"name": "eagle", "origin": {"continent": "USA", "country": "Arizona"}, "type": "bird"},
+//"el": {"name": "elephant", "origin": {"continent": "Africa", "country": "Gabon"}, "type": "mammal"},
+//"sk": {"name": "shark", "origin": {"continent": "Australia", "country": "South Africa"}, "type": "fish"}}
+```
+
+
 ## Mapping
 #### addIndex
 Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
@@ -364,7 +388,7 @@ pi(circumference(2))
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMzE5ODkzNCwtMjQ0NjkzODMsLTkwOD
+eyJoaXN0b3J5IjpbLTUyOTkwMzg5NywtMjQ0NjkzODMsLTkwOD
 Y0MDM4MCw2NzcyNzU3ODAsLTM5MDMwMTAwNCwtMzcwODI3NjU4
 LC04ODQ3ODk4MzUsLTE4NDkzMTg3LC01NjU5NTM5ODYsMTUzOD
 AyODg1LDIwNTE5Mzg0NTIsMTk5NzM2NjI1MywxNTIzMjQ3MzMz
