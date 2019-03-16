@@ -348,6 +348,9 @@ R.assocPath(['sk', 'origin', 'country'], 'South Africa', objList);
 //"sk": {"name": "shark", "origin": {"continent": "Australia", "country": "South Africa"}, "type": "fish"}}
 ```
 
+#### binary
+
+Takes a function of any arity as a parameter and returns a function of exactly two parameters.
 
 ## Mapping
 #### addIndex
@@ -388,11 +391,11 @@ pi(circumference(2))
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDY3MjkwMzYsLTUyOTkwMzg5NywtMj
-Q0NjkzODMsLTkwODY0MDM4MCw2NzcyNzU3ODAsLTM5MDMwMTAw
-NCwtMzcwODI3NjU4LC04ODQ3ODk4MzUsLTE4NDkzMTg3LC01Nj
-U5NTM5ODYsMTUzODAyODg1LDIwNTE5Mzg0NTIsMTk5NzM2NjI1
-MywxNTIzMjQ3MzMzLC0xNzExODY5MTgsMTEyMTMyNzMwLDEzMD
-U4MTYwNTMsMTI4NzYyOTc4NiwyMTA4NjcyNjI3LC03NDA1NDU5
-NzVdfQ==
+eyJoaXN0b3J5IjpbMzk4MDgzNDYsLTEyMDY3MjkwMzYsLTUyOT
+kwMzg5NywtMjQ0NjkzODMsLTkwODY0MDM4MCw2NzcyNzU3ODAs
+LTM5MDMwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4MzUsLTE4ND
+kzMTg3LC01NjU5NTM5ODYsMTUzODAyODg1LDIwNTE5Mzg0NTIs
+MTk5NzM2NjI1MywxNTIzMjQ3MzMzLC0xNzExODY5MTgsMTEyMT
+MyNzMwLDEzMDU4MTYwNTMsMTI4NzYyOTc4NiwyMTA4NjcyNjI3
+XX0=
 -->
