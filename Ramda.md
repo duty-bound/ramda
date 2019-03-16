@@ -170,6 +170,9 @@ R.adjust(0, R.toUpper, animals)
 //["ELEPHANT", "tiger", "shark"]
 ```
 
+#### always
+Always returns the same value.
+
 ## Mapping
 #### addIndex
 Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
@@ -188,7 +191,7 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTMwNTYxNDQsMjEwODY3MjYyNywtNz
+eyJoaXN0b3J5IjpbLTE0NDU0MDAwMzcsMjEwODY3MjYyNywtNz
 QwNTQ1OTc1LC0yNDkxNzU3MSwxOTY2ODAwNzU1LC01MzY0MDM4
 MzcsMjA1NzAzMTA4Niw0ODgxODg1MjEsLTg3MDU3NDcwNyw1MD
 g1NTc0NjUsMjc3NDU2MSw1NzE5ODk4NzUsMTc3ODIxMjM5OCwx
