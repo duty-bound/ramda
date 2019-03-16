@@ -44,10 +44,23 @@ R.prop('name', obj)
 ```
 
 #### path
+```
+const arrList = [
+  [1.1, 1.2, 1.3],
+  [2.1, 2.2, 2.3],
+  [3.1, 3.2, 3.3]
+]
+
+R.path([2, 1], arrList)
+
+//3.2
+```
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0OTI2ODQ4Myw1OTg5OTE0MjAsLTExMD
-E0NjQ4MDAsLTQyMjkwNTc2NSwtMTEzMjE5Mzc2XX0=
+eyJoaXN0b3J5IjpbMTg5MTgyMDM1LC00NDkyNjg0ODMsNTk4OT
+kxNDIwLC0xMTAxNDY0ODAwLC00MjI5MDU3NjUsLTExMzIxOTM3
+Nl19
 -->
