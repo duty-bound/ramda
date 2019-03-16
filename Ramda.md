@@ -8,7 +8,7 @@ const arr = [1.1, 2.2, 3.3]
 
 const obj = {name: 'elephant', 
 			type: 'mammal', 
-			origins: { continent: 'Africa', country: 'Gabon', } }
+			origin: { continent: 'Africa', country: 'Gabon', } }
 ```
 **Multi-Dimension Data**
 ```
@@ -21,13 +21,13 @@ const arrList = [
 const objList = {
   animal: { name: 'elephant', 
 			type: 'mammal', 
-			origins: { continent: 'Africa', country: 'Gabon', } }
+			origin: { continent: 'Africa', country: 'Gabon', } }
   animal: {	name: 'shark',
 		    type: 'fish',
-		    origins: { continent: 'Australia', country: 'Sydney', } },
+		    origin: { continent: 'Australia', country: 'Sydney', } },
   animal: { name: 'eagle',
 		    type: 'bird'}
-		    origins: { continent: 'USA', country: 'Arizona', }, }
+		    origin: { continent: 'USA', country: 'Arizona', }, }
 ```
 
 ## Extracting Data
@@ -45,7 +45,7 @@ R.prop(1, arr)
 ```
 const obj = {name: 'elephant', 
              type: 'mammal',
-            origins: {
+            origin: {
               continent: 'Africa',
               country: 'Gabon',
             }
@@ -71,13 +71,13 @@ R.path([2, 1], arrList)
 ```
 const obj = {name: 'elephant', 
              type: 'mammal',
-            origins: {
+            origin: {
               continent: 'Africa',
               country: 'Gabon',
             }
          }
 
-R.path(['origins', 'country'], obj)
+R.path(['origin', 'country'], obj)
 
 //Africa
 ```
@@ -85,7 +85,7 @@ R.path(['origins', 'country'], obj)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MTIzODgzMCwxODkxODIwMzUsLTQ0OT
-I2ODQ4Myw1OTg5OTE0MjAsLTExMDE0NjQ4MDAsLTQyMjkwNTc2
-NSwtMTEzMjE5Mzc2XX0=
+eyJoaXN0b3J5IjpbLTE1NzY2NTQyMzEsMTQ3MTIzODgzMCwxOD
+kxODIwMzUsLTQ0OTI2ODQ4Myw1OTg5OTE0MjAsLTExMDE0NjQ4
+MDAsLTQyMjkwNTc2NSwtMTEzMjE5Mzc2XX0=
 -->
