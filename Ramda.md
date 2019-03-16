@@ -309,7 +309,7 @@ R.apply(R.toUpper, letters)
 ```
 
 #### assoc
-Inserts a key / value set in the provided object literal. Note that it 
+Inserts a key / value set in the provided object literal. Note that the new object literal is sorted in ascending order.
 
 ```
 const objList = {
@@ -365,7 +365,7 @@ pi(circumference(2))
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyOTEyMjk5NSw2NzcyNzU3ODAsLTM5MD
+eyJoaXN0b3J5IjpbLTc4MjQzNTEwNyw2NzcyNzU3ODAsLTM5MD
 MwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4MzUsLTE4NDkzMTg3
 LC01NjU5NTM5ODYsMTUzODAyODg1LDIwNTE5Mzg0NTIsMTk5Nz
 M2NjI1MywxNTIzMjQ3MzMzLC0xNzExODY5MTgsMTEyMTMyNzMw
