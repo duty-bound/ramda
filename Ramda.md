@@ -352,6 +352,20 @@ R.assocPath(['sk', 'origin', 'country'], 'South Africa', objList);
 
 Takes a function of any arity as a parameter and returns a function of exactly two parameters.
 
+```
+const func3 = (m, n, o, p) => `${m} ${n} ${o} ${p}`
+func3('so', 'far', 'so', 'good')
+//"so far so good"
+
+const func2 = R.binary(func3)
+func2('so', 'far', 'so', 'good')
+//"so far undefined undefined"
+
+const func2 = R.binary(func3)
+func2('so', 'far')
+//"so far undefined undefined"
+```
+
 ## Mapping
 #### addIndex
 Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
@@ -391,11 +405,11 @@ pi(circumference(2))
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk4MDgzNDYsLTEyMDY3MjkwMzYsLTUyOT
-kwMzg5NywtMjQ0NjkzODMsLTkwODY0MDM4MCw2NzcyNzU3ODAs
-LTM5MDMwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4MzUsLTE4ND
-kzMTg3LC01NjU5NTM5ODYsMTUzODAyODg1LDIwNTE5Mzg0NTIs
-MTk5NzM2NjI1MywxNTIzMjQ3MzMzLC0xNzExODY5MTgsMTEyMT
-MyNzMwLDEzMDU4MTYwNTMsMTI4NzYyOTc4NiwyMTA4NjcyNjI3
+eyJoaXN0b3J5IjpbMTYzMjM2ODExMCwzOTgwODM0NiwtMTIwNj
+cyOTAzNiwtNTI5OTAzODk3LC0yNDQ2OTM4MywtOTA4NjQwMzgw
+LDY3NzI3NTc4MCwtMzkwMzAxMDA0LC0zNzA4Mjc2NTgsLTg4ND
+c4OTgzNSwtMTg0OTMxODcsLTU2NTk1Mzk4NiwxNTM4MDI4ODUs
+MjA1MTkzODQ1MiwxOTk3MzY2MjUzLDE1MjMyNDczMzMsLTE3MT
+E4NjkxOCwxMTIxMzI3MzAsMTMwNTgxNjA1MywxMjg3NjI5Nzg2
 XX0=
 -->
