@@ -91,7 +91,7 @@ These functions are used to determine whether a condition is true or not, such a
 
 #### all
 
-
+Returns `true` if all elements of the list match the predicate, `false` if there are any that don't.
 
 ## Filtering 
 
@@ -143,10 +143,10 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwOTQ5MTk2OSwxOTY2ODAwNzU1LC01Mz
-Y0MDM4MzcsMjA1NzAzMTA4Niw0ODgxODg1MjEsLTg3MDU3NDcw
-Nyw1MDg1NTc0NjUsMjc3NDU2MSw1NzE5ODk4NzUsMTc3ODIxMj
-M5OCwxNDcxMjM4ODMwLDE4OTE4MjAzNSwtNDQ5MjY4NDgzLDU5
-ODk5MTQyMCwtMTEwMTQ2NDgwMCwtNDIyOTA1NzY1LC0xMTMyMT
-kzNzZdfQ==
+eyJoaXN0b3J5IjpbMzYyNjM3NzY3LDE5NjY4MDA3NTUsLTUzNj
+QwMzgzNywyMDU3MDMxMDg2LDQ4ODE4ODUyMSwtODcwNTc0NzA3
+LDUwODU1NzQ2NSwyNzc0NTYxLDU3MTk4OTg3NSwxNzc4MjEyMz
+k4LDE0NzEyMzg4MzAsMTg5MTgyMDM1LC00NDkyNjg0ODMsNTk4
+OTkxNDIwLC0xMTAxNDY0ODAwLC00MjI5MDU3NjUsLTExMzIxOT
+M3Nl19
 -->
