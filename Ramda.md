@@ -112,7 +112,20 @@ R.all(n => n < 3, arr)
 ```
 #### allPass
 
-allPass is the equivalent of 'all', with the additional benefit that it takes a list of tests rather than just one.
+Whereas 'all' checks that all members in a list have a single trait, 'allPass' checks whether a single entity has multiple traits.
+
+```
+const greaterThan10 = n => n > 10
+const smallerThan20 = n => n < 20
+
+const inRange = R.allPass([greaterThan10, smallerThan20])
+
+inRange([11])
+
+//true
+```
+
+
 
 ## Filtering 
 
@@ -164,10 +177,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwODY3MjYyNywtNzQwNTQ1OTc1LC0yND
-kxNzU3MSwxOTY2ODAwNzU1LC01MzY0MDM4MzcsMjA1NzAzMTA4
-Niw0ODgxODg1MjEsLTg3MDU3NDcwNyw1MDg1NTc0NjUsMjc3ND
-U2MSw1NzE5ODk4NzUsMTc3ODIxMjM5OCwxNDcxMjM4ODMwLDE4
-OTE4MjAzNSwtNDQ5MjY4NDgzLDU5ODk5MTQyMCwtMTEwMTQ2ND
-gwMCwtNDIyOTA1NzY1LC0xMTMyMTkzNzZdfQ==
+eyJoaXN0b3J5IjpbLTE2Nzg3Njk1NjQsMjEwODY3MjYyNywtNz
+QwNTQ1OTc1LC0yNDkxNzU3MSwxOTY2ODAwNzU1LC01MzY0MDM4
+MzcsMjA1NzAzMTA4Niw0ODgxODg1MjEsLTg3MDU3NDcwNyw1MD
+g1NTc0NjUsMjc3NDU2MSw1NzE5ODk4NzUsMTc3ODIxMjM5OCwx
+NDcxMjM4ODMwLDE4OTE4MjAzNSwtNDQ5MjY4NDgzLDU5ODk5MT
+QyMCwtMTEwMTQ2NDgwMCwtNDIyOTA1NzY1LC0xMTMyMTkzNzZd
+fQ==
 -->
