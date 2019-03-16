@@ -380,7 +380,13 @@ func2('so', 'far')
 ```
 
 #### call
-This is a very powerful function. It takes a function as a first parameter, and an arbitrary number of other arguments which the supplied function will 
+This is a very powerful function. It takes a function as a first parameter, and an arbitrary number of other arguments which will be passed to the function provided.
+
+```
+R.call(R.prop(2), ['a', 'b', 'c'])
+
+//"c"
+```
 
 
 ## Mapping
@@ -424,7 +430,7 @@ pi(circumference(2))
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNDk2OTE5MSwtMTEwNzAwODE5NiwtNj
+eyJoaXN0b3J5IjpbMTYyMDY1MDk5OCwtMTEwNzAwODE5NiwtNj
 Y1NzU2ODAxLDE2MzIzNjgxMTAsMzk4MDgzNDYsLTEyMDY3Mjkw
 MzYsLTUyOTkwMzg5NywtMjQ0NjkzODMsLTkwODY0MDM4MCw2Nz
 cyNzU3ODAsLTM5MDMwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4
