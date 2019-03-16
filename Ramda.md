@@ -43,7 +43,13 @@ R.prop(1, arr)
 //2.2
 ```
 ```
-const obj = {name: 'elephant', type: 'mammal'}
+const obj = {name: 'elephant', 
+             type: 'mammal',
+            origins: {
+              continent: 'Africa',
+              country: 'Gabon',
+            }
+         }
 
 R.prop('name', obj)
 
@@ -66,8 +72,8 @@ R.path([2, 1], arrList)
 const obj = {name: 'elephant', 
              type: 'mammal',
             origins: {
-              country: 'Africa',
-              date: 2002,
+              continent: 'Africa',
+              country: 'Gabon',
             }
          }
 
@@ -79,7 +85,7 @@ R.path(['origins', 'country'], obj)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg5NDI0NzMxLDE4OTE4MjAzNSwtNDQ5Mj
-Y4NDgzLDU5ODk5MTQyMCwtMTEwMTQ2NDgwMCwtNDIyOTA1NzY1
-LC0xMTMyMTkzNzZdfQ==
+eyJoaXN0b3J5IjpbLTExMjE3MDcwODYsMTg5MTgyMDM1LC00ND
+kyNjg0ODMsNTk4OTkxNDIwLC0xMTAxNDY0ODAwLC00MjI5MDU3
+NjUsLTExMzIxOTM3Nl19
 -->
