@@ -308,16 +308,24 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 Takes a value and returns a function that passes this value to other functions.
 
+```
+const pi = R.applyTo(3.142)
 
+const circumference = (d) => R.multiply(d)
+
+pi(circumference(2))
+
+//6.284
+``
 
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDkzMTg3LC01NjU5NTM5ODYsMTUzOD
-AyODg1LDIwNTE5Mzg0NTIsMTk5NzM2NjI1MywxNTIzMjQ3MzMz
-LC0xNzExODY5MTgsMTEyMTMyNzMwLDEzMDU4MTYwNTMsMTI4Nz
-YyOTc4NiwyMTA4NjcyNjI3LC03NDA1NDU5NzUsLTI0OTE3NTcx
-LDE5NjY4MDA3NTUsLTUzNjQwMzgzNywyMDU3MDMxMDg2LDQ4OD
-E4ODUyMSwtODcwNTc0NzA3LDUwODU1NzQ2NSwyNzc0NTYxXX0=
-
+eyJoaXN0b3J5IjpbOTk0Mzg4NjAwLC0xODQ5MzE4NywtNTY1OT
+UzOTg2LDE1MzgwMjg4NSwyMDUxOTM4NDUyLDE5OTczNjYyNTMs
+MTUyMzI0NzMzMywtMTcxMTg2OTE4LDExMjEzMjczMCwxMzA1OD
+E2MDUzLDEyODc2Mjk3ODYsMjEwODY3MjYyNywtNzQwNTQ1OTc1
+LC0yNDkxNzU3MSwxOTY2ODAwNzU1LC01MzY0MDM4MzcsMjA1Nz
+AzMTA4Niw0ODgxODg1MjEsLTg3MDU3NDcwNyw1MDg1NTc0NjVd
+fQ==
 -->
