@@ -55,7 +55,7 @@ R.prop('name', obj)
 
 //elephant
 ```
-
+Note that prop is not able to dig deep enough to extract the contents of 'origin'
 #### path
 ```
 const arrList = [
@@ -85,7 +85,7 @@ R.path(['origins', 'country'], obj)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjE3MDcwODYsMTg5MTgyMDM1LC00ND
-kyNjg0ODMsNTk4OTkxNDIwLC0xMTAxNDY0ODAwLC00MjI5MDU3
-NjUsLTExMzIxOTM3Nl19
+eyJoaXN0b3J5IjpbMTQ3MTIzODgzMCwxODkxODIwMzUsLTQ0OT
+I2ODQ4Myw1OTg5OTE0MjAsLTExMDE0NjQ4MDAsLTQyMjkwNTc2
+NSwtMTEzMjE5Mzc2XX0=
 -->
