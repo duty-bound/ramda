@@ -181,9 +181,9 @@ isQueenOrSpades({ rank: '10', suit: '♣︎'})
 
 ## Sorting
 
-#### ascend 
+#### ascend / descend
 
-Returns a comparator function which returns a value that can be used with < and >
+Return a comparator function which returns a value that can be used with `<` and `>`.
 
 ```
 const objList = {
@@ -349,11 +349,11 @@ pi(circumference(2))
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MDMwMTAwNCwtMzcwODI3NjU4LC04OD
-Q3ODk4MzUsLTE4NDkzMTg3LC01NjU5NTM5ODYsMTUzODAyODg1
-LDIwNTE5Mzg0NTIsMTk5NzM2NjI1MywxNTIzMjQ3MzMzLC0xNz
-ExODY5MTgsMTEyMTMyNzMwLDEzMDU4MTYwNTMsMTI4NzYyOTc4
-NiwyMTA4NjcyNjI3LC03NDA1NDU5NzUsLTI0OTE3NTcxLDE5Nj
-Y4MDA3NTUsLTUzNjQwMzgzNywyMDU3MDMxMDg2LDQ4ODE4ODUy
-MV19
+eyJoaXN0b3J5IjpbNjc3Mjc1NzgwLC0zOTAzMDEwMDQsLTM3MD
+gyNzY1OCwtODg0Nzg5ODM1LC0xODQ5MzE4NywtNTY1OTUzOTg2
+LDE1MzgwMjg4NSwyMDUxOTM4NDUyLDE5OTczNjYyNTMsMTUyMz
+I0NzMzMywtMTcxMTg2OTE4LDExMjEzMjczMCwxMzA1ODE2MDUz
+LDEyODc2Mjk3ODYsMjEwODY3MjYyNywtNzQwNTQ1OTc1LC0yND
+kxNzU3MSwxOTY2ODAwNzU1LC01MzY0MDM4MzcsMjA1NzAzMTA4
+Nl19
 -->
