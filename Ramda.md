@@ -93,6 +93,20 @@ These functions are used to determine whether a condition is true or not, such a
 
 Returns `true` if all elements of the list match the predicate, `false` if there are any that don't.
 
+```
+const arr = [1.1, 2.2, 3.3]
+
+R.all(n => n < 4, arr)
+
+//true
+```
+```
+const arr = [1.1, 2.2, 3.3]
+
+R.all(n => n < 3, arr)
+
+//false
+```
 
 
 ## Filtering 
@@ -145,10 +159,10 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDU4ODk2MjksMTk2NjgwMDc1NSwtNT
-M2NDAzODM3LDIwNTcwMzEwODYsNDg4MTg4NTIxLC04NzA1NzQ3
-MDcsNTA4NTU3NDY1LDI3NzQ1NjEsNTcxOTg5ODc1LDE3NzgyMT
-IzOTgsMTQ3MTIzODgzMCwxODkxODIwMzUsLTQ0OTI2ODQ4Myw1
-OTg5OTE0MjAsLTExMDE0NjQ4MDAsLTQyMjkwNTc2NSwtMTEzMj
-E5Mzc2XX0=
+eyJoaXN0b3J5IjpbLTI0OTE3NTcxLDE5NjY4MDA3NTUsLTUzNj
+QwMzgzNywyMDU3MDMxMDg2LDQ4ODE4ODUyMSwtODcwNTc0NzA3
+LDUwODU1NzQ2NSwyNzc0NTYxLDU3MTk4OTg3NSwxNzc4MjEyMz
+k4LDE0NzEyMzg4MzAsMTg5MTgyMDM1LC00NDkyNjg0ODMsNTk4
+OTkxNDIwLC0xMTAxNDY0ODAwLC00MjI5MDU3NjUsLTExMzIxOT
+M3Nl19
 -->
