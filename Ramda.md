@@ -136,7 +136,9 @@ isQueenOfSpades({rank: 'Q', suit: '♣︎'})
 isQueenOfSpades({rank: 'Q', suit: '♠︎'})
 //true
 ```
+#### and
 
+Returns true 
 
 ## Filtering 
 
@@ -180,7 +182,13 @@ pi()
 
 //3.142
 ```
+```
+const bike = R.always({ brand: 'Ducati', model: 'Monster'})
 
+bike().brand
+
+//Ducati
+```
 
 ## Mapping
 #### addIndex
@@ -200,11 +208,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NzYyOTc4NiwyMTA4NjcyNjI3LC03ND
-A1NDU5NzUsLTI0OTE3NTcxLDE5NjY4MDA3NTUsLTUzNjQwMzgz
-NywyMDU3MDMxMDg2LDQ4ODE4ODUyMSwtODcwNTc0NzA3LDUwOD
-U1NzQ2NSwyNzc0NTYxLDU3MTk4OTg3NSwxNzc4MjEyMzk4LDE0
-NzEyMzg4MzAsMTg5MTgyMDM1LC00NDkyNjg0ODMsNTk4OTkxND
-IwLC0xMTAxNDY0ODAwLC00MjI5MDU3NjUsLTExMzIxOTM3Nl19
+eyJoaXN0b3J5IjpbLTgzMTU0NjY3NCwxMjg3NjI5Nzg2LDIxMD
+g2NzI2MjcsLTc0MDU0NTk3NSwtMjQ5MTc1NzEsMTk2NjgwMDc1
+NSwtNTM2NDAzODM3LDIwNTcwMzEwODYsNDg4MTg4NTIxLC04Nz
+A1NzQ3MDcsNTA4NTU3NDY1LDI3NzQ1NjEsNTcxOTg5ODc1LDE3
+NzgyMTIzOTgsMTQ3MTIzODgzMCwxODkxODIwMzUsLTQ0OTI2OD
+Q4Myw1OTg5OTE0MjAsLTExMDE0NjQ4MDAsLTQyMjkwNTc2NV19
 
 -->
