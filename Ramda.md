@@ -269,6 +269,10 @@ R.append('C', [])
 //["C"]
 ```
 
+#### apply
+
+Applies the provided function to the list provided. Note that it only makes sense to use this function in cases where the
+
 
 ## Mapping
 #### addIndex
@@ -288,11 +292,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzODAyODg1LDIwNTE5Mzg0NTIsMTk5Nz
-M2NjI1MywxNTIzMjQ3MzMzLC0xNzExODY5MTgsMTEyMTMyNzMw
-LDEzMDU4MTYwNTMsMTI4NzYyOTc4NiwyMTA4NjcyNjI3LC03ND
-A1NDU5NzUsLTI0OTE3NTcxLDE5NjY4MDA3NTUsLTUzNjQwMzgz
-NywyMDU3MDMxMDg2LDQ4ODE4ODUyMSwtODcwNTc0NzA3LDUwOD
-U1NzQ2NSwyNzc0NTYxLDU3MTk4OTg3NSwxNzc4MjEyMzk4XX0=
+eyJoaXN0b3J5IjpbOTUzNjU0MzYxLDE1MzgwMjg4NSwyMDUxOT
+M4NDUyLDE5OTczNjYyNTMsMTUyMzI0NzMzMywtMTcxMTg2OTE4
+LDExMjEzMjczMCwxMzA1ODE2MDUzLDEyODc2Mjk3ODYsMjEwOD
+Y3MjYyNywtNzQwNTQ1OTc1LC0yNDkxNzU3MSwxOTY2ODAwNzU1
+LC01MzY0MDM4MzcsMjA1NzAzMTA4Niw0ODgxODg1MjEsLTg3MD
+U3NDcwNyw1MDg1NTc0NjUsMjc3NDU2MSw1NzE5ODk4NzVdfQ==
 
 -->
