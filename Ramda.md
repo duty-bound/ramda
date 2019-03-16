@@ -271,7 +271,17 @@ R.append('C', [])
 
 #### apply
 
-Applies the provided function to the list provided. Note that it only makes sense to use this function in cases where the
+Applies the provided function to the list provided.
+```
+const arr = [1.1, 2.2, 3.3]
+
+R.apply(Math.max, arr)
+```
+Note that it does not make sense to pass a
+
+Note that it only makes sense to use this function in cases where the provided function returns a single variable, not a list.
+
+
 
 
 ## Mapping
@@ -292,11 +302,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUzNjU0MzYxLDE1MzgwMjg4NSwyMDUxOT
-M4NDUyLDE5OTczNjYyNTMsMTUyMzI0NzMzMywtMTcxMTg2OTE4
-LDExMjEzMjczMCwxMzA1ODE2MDUzLDEyODc2Mjk3ODYsMjEwOD
-Y3MjYyNywtNzQwNTQ1OTc1LC0yNDkxNzU3MSwxOTY2ODAwNzU1
-LC01MzY0MDM4MzcsMjA1NzAzMTA4Niw0ODgxODg1MjEsLTg3MD
-U3NDcwNyw1MDg1NTc0NjUsMjc3NDU2MSw1NzE5ODk4NzVdfQ==
+eyJoaXN0b3J5IjpbMjAzNDcwMDkxMiwxNTM4MDI4ODUsMjA1MT
+kzODQ1MiwxOTk3MzY2MjUzLDE1MjMyNDczMzMsLTE3MTE4Njkx
+OCwxMTIxMzI3MzAsMTMwNTgxNjA1MywxMjg3NjI5Nzg2LDIxMD
+g2NzI2MjcsLTc0MDU0NTk3NSwtMjQ5MTc1NzEsMTk2NjgwMDc1
+NSwtNTM2NDAzODM3LDIwNTcwMzEwODYsNDg4MTg4NTIxLC04Nz
+A1NzQ3MDcsNTA4NTU3NDY1LDI3NzQ1NjEsNTcxOTg5ODc1XX0=
 
 -->
