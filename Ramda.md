@@ -148,7 +148,11 @@ R.and(n > 10, n < 20)
 ```
 #### any
 
-Returns true if any of the elements in the list m
+Returns true if any of the elements in the list matches the predicate.
+
+#### anyPass
+
+
 
 ```
 const arr = [1.1, 2.2, 3.3]
@@ -227,11 +231,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MDU1NDg3MywxMzA1ODE2MDUzLDEyOD
-c2Mjk3ODYsMjEwODY3MjYyNywtNzQwNTQ1OTc1LC0yNDkxNzU3
-MSwxOTY2ODAwNzU1LC01MzY0MDM4MzcsMjA1NzAzMTA4Niw0OD
-gxODg1MjEsLTg3MDU3NDcwNyw1MDg1NTc0NjUsMjc3NDU2MSw1
-NzE5ODk4NzUsMTc3ODIxMjM5OCwxNDcxMjM4ODMwLDE4OTE4Mj
-AzNSwtNDQ5MjY4NDgzLDU5ODk5MTQyMCwtMTEwMTQ2NDgwMF19
-
+eyJoaXN0b3J5IjpbLTExODcwMDk3NDYsMTMwNTgxNjA1MywxMj
+g3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3NSwtMjQ5MTc1
+NzEsMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNTcwMzEwODYsND
+g4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1LDI3NzQ1NjEs
+NTcxOTg5ODc1LDE3NzgyMTIzOTgsMTQ3MTIzODgzMCwxODkxOD
+IwMzUsLTQ0OTI2ODQ4Myw1OTg5OTE0MjAsLTExMDE0NjQ4MDBd
+fQ==
 -->
