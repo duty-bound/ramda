@@ -110,7 +110,9 @@ R.all(n => n < 3, arr)
 
 //false
 ```
+#### allPass
 
+allPass is the equivalent of 'all', with the additional benefit that it takes a list of tests rather than just one.
 
 ## Filtering 
 
@@ -162,10 +164,10 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MDU0NTk3NSwtMjQ5MTc1NzEsMTk2Nj
-gwMDc1NSwtNTM2NDAzODM3LDIwNTcwMzEwODYsNDg4MTg4NTIx
-LC04NzA1NzQ3MDcsNTA4NTU3NDY1LDI3NzQ1NjEsNTcxOTg5OD
-c1LDE3NzgyMTIzOTgsMTQ3MTIzODgzMCwxODkxODIwMzUsLTQ0
-OTI2ODQ4Myw1OTg5OTE0MjAsLTExMDE0NjQ4MDAsLTQyMjkwNT
-c2NSwtMTEzMjE5Mzc2XX0=
+eyJoaXN0b3J5IjpbMjEwODY3MjYyNywtNzQwNTQ1OTc1LC0yND
+kxNzU3MSwxOTY2ODAwNzU1LC01MzY0MDM4MzcsMjA1NzAzMTA4
+Niw0ODgxODg1MjEsLTg3MDU3NDcwNyw1MDg1NTc0NjUsMjc3ND
+U2MSw1NzE5ODk4NzUsMTc3ODIxMjM5OCwxNDcxMjM4ODMwLDE4
+OTE4MjAzNSwtNDQ5MjY4NDgzLDU5ODk5MTQyMCwtMTEwMTQ2ND
+gwMCwtNDIyOTA1NzY1LC0xMTMyMTkzNzZdfQ==
 -->
