@@ -89,6 +89,9 @@ R.path(['origin', 'country'], obj)
 ## Relational Functions
 These functions are used to determine whether a condition is true or not, such as the existence of a specified element in a given path, or whether a variable is greater or smaller than another variable, checking for equality, etc.
 
+### Works on a Single Element
+### Works on a List
+
 #### all
 
 Returns `true` if all elements of the list match the predicate, `false` if there are any that don't.
@@ -159,10 +162,10 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0OTE3NTcxLDE5NjY4MDA3NTUsLTUzNj
-QwMzgzNywyMDU3MDMxMDg2LDQ4ODE4ODUyMSwtODcwNTc0NzA3
-LDUwODU1NzQ2NSwyNzc0NTYxLDU3MTk4OTg3NSwxNzc4MjEyMz
-k4LDE0NzEyMzg4MzAsMTg5MTgyMDM1LC00NDkyNjg0ODMsNTk4
-OTkxNDIwLC0xMTAxNDY0ODAwLC00MjI5MDU3NjUsLTExMzIxOT
-M3Nl19
+eyJoaXN0b3J5IjpbLTc0MDU0NTk3NSwtMjQ5MTc1NzEsMTk2Nj
+gwMDc1NSwtNTM2NDAzODM3LDIwNTcwMzEwODYsNDg4MTg4NTIx
+LC04NzA1NzQ3MDcsNTA4NTU3NDY1LDI3NzQ1NjEsNTcxOTg5OD
+c1LDE3NzgyMTIzOTgsMTQ3MTIzODgzMCwxODkxODIwMzUsLTQ0
+OTI2ODQ4Myw1OTg5OTE0MjAsLTExMDE0NjQ4MDAsLTQyMjkwNT
+c2NSwtMTEzMjE5Mzc2XX0=
 -->
