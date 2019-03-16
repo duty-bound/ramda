@@ -19,10 +19,12 @@ const arrList = [
 ]
 
 const objList = {
-  animal: const obj = {name: 'elephant', 
+  animal: { name: 'elephant', 
 			type: 'mammal', 
 			origins: { continent: 'Africa', country: 'Gabon', } }
-  animal: {name: 'shark', type: 'fish'},
+  animal: {	name: 'shark',
+		    type: 'fish',
+		    origins: { continent: 'Australia', country: 'Sy', } },
   animal: {name: 'eagle', type: 'bird'},
 }
 ```
@@ -76,7 +78,7 @@ R.path(['origins', 'country'], obj)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2Mjc4MTg5LDE4OTE4MjAzNSwtNDQ5Mj
-Y4NDgzLDU5ODk5MTQyMCwtMTEwMTQ2NDgwMCwtNDIyOTA1NzY1
-LC0xMTMyMTkzNzZdfQ==
+eyJoaXN0b3J5IjpbMTEwNzc2ODEyMywxODkxODIwMzUsLTQ0OT
+I2ODQ4Myw1OTg5OTE0MjAsLTExMDE0NjQ4MDAsLTQyMjkwNTc2
+NSwtMTEzMjE5Mzc2XX0=
 -->
