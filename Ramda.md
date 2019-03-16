@@ -249,7 +249,15 @@ R.ap([R.toUpper, R.toLower],['Crazy'])
 Returns a new list of consecutive combinations of 'n' each.
 
 ```
+R.aperture(2, [1, 2, 3, 4, 5])
+//[[1, 2], [2, 3], [3, 4], [4, 5]]
 
+R.aperture(3, [1, 2, 3, 4, 5])
+//[[1, 2, 3], [2, 3, 4], [3, 4, 5]]
+
+R.aperture(7, [1, 2, 3, 4, 5])
+//[]
+```
 
 ## Mapping
 #### addIndex
@@ -269,11 +277,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDUyNTM2OTAsMTUyMzI0NzMzMywtMT
-cxMTg2OTE4LDExMjEzMjczMCwxMzA1ODE2MDUzLDEyODc2Mjk3
-ODYsMjEwODY3MjYyNywtNzQwNTQ1OTc1LC0yNDkxNzU3MSwxOT
-Y2ODAwNzU1LC01MzY0MDM4MzcsMjA1NzAzMTA4Niw0ODgxODg1
-MjEsLTg3MDU3NDcwNyw1MDg1NTc0NjUsMjc3NDU2MSw1NzE5OD
-k4NzUsMTc3ODIxMjM5OCwxNDcxMjM4ODMwLDE4OTE4MjAzNV19
+eyJoaXN0b3J5IjpbMTk5NzM2NjI1MywxNTIzMjQ3MzMzLC0xNz
+ExODY5MTgsMTEyMTMyNzMwLDEzMDU4MTYwNTMsMTI4NzYyOTc4
+NiwyMTA4NjcyNjI3LC03NDA1NDU5NzUsLTI0OTE3NTcxLDE5Nj
+Y4MDA3NTUsLTUzNjQwMzgzNywyMDU3MDMxMDg2LDQ4ODE4ODUy
+MSwtODcwNTc0NzA3LDUwODU1NzQ2NSwyNzc0NTYxLDU3MTk4OT
+g3NSwxNzc4MjEyMzk4LDE0NzEyMzg4MzAsMTg5MTgyMDM1XX0=
 
 -->
