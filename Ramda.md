@@ -86,11 +86,11 @@ R.path(['origin', 'country'], obj)
 
 //Africa
 ```
-
+## Conditional 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODIxMjM5OCwxNDcxMjM4ODMwLDE4OT
-E4MjAzNSwtNDQ5MjY4NDgzLDU5ODk5MTQyMCwtMTEwMTQ2NDgw
-MCwtNDIyOTA1NzY1LC0xMTMyMTkzNzZdfQ==
+eyJoaXN0b3J5IjpbMTA3ODc1MTAxMiwxNzc4MjEyMzk4LDE0Nz
+EyMzg4MzAsMTg5MTgyMDM1LC00NDkyNjg0ODMsNTk4OTkxNDIw
+LC0xMTAxNDY0ODAwLC00MjI5MDU3NjUsLTExMzIxOTM3Nl19
 -->
