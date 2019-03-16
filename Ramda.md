@@ -271,15 +271,14 @@ R.append('C', [])
 
 #### apply
 
-Applies the provided function to the list provided.
+Applies the provided function to the list provided. The function to be provided should be one that operates on the list as an aggregate and returns one single variable: 'apply' will not return a list.
 ```
 const arr = [1.1, 2.2, 3.3]
 
 R.apply(Math.max, arr)
-```
-Note that it does not make sense to pass a
 
-Note that it only makes sense to use this function in cases where the provided function returns a single variable, not a list.
+//3.3
+```
 
 
 
@@ -302,11 +301,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNDcwMDkxMiwxNTM4MDI4ODUsMjA1MT
-kzODQ1MiwxOTk3MzY2MjUzLDE1MjMyNDczMzMsLTE3MTE4Njkx
-OCwxMTIxMzI3MzAsMTMwNTgxNjA1MywxMjg3NjI5Nzg2LDIxMD
-g2NzI2MjcsLTc0MDU0NTk3NSwtMjQ5MTc1NzEsMTk2NjgwMDc1
-NSwtNTM2NDAzODM3LDIwNTcwMzEwODYsNDg4MTg4NTIxLC04Nz
-A1NzQ3MDcsNTA4NTU3NDY1LDI3NzQ1NjEsNTcxOTg5ODc1XX0=
+eyJoaXN0b3J5IjpbLTE0MjQzOTg5MzUsMTUzODAyODg1LDIwNT
+E5Mzg0NTIsMTk5NzM2NjI1MywxNTIzMjQ3MzMzLC0xNzExODY5
+MTgsMTEyMTMyNzMwLDEzMDU4MTYwNTMsMTI4NzYyOTc4NiwyMT
+A4NjcyNjI3LC03NDA1NDU5NzUsLTI0OTE3NTcxLDE5NjY4MDA3
+NTUsLTUzNjQwMzgzNywyMDU3MDMxMDg2LDQ4ODE4ODUyMSwtOD
+cwNTc0NzA3LDUwODU1NzQ2NSwyNzc0NTYxLDU3MTk4OTg3NV19
 
 -->
