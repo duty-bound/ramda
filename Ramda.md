@@ -93,10 +93,15 @@ These functions are used to determine whether a condition is true or not, such a
 
 ## Sorting
 
+## Operational
+#### add
+```
+R.add(2.1, 3.45)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA4NTU3NDY1LDI3NzQ1NjEsNTcxOTg5OD
-c1LDE3NzgyMTIzOTgsMTQ3MTIzODgzMCwxODkxODIwMzUsLTQ0
-OTI2ODQ4Myw1OTg5OTE0MjAsLTExMDE0NjQ4MDAsLTQyMjkwNT
-c2NSwtMTEzMjE5Mzc2XX0=
+eyJoaXN0b3J5IjpbNTE1MTc4ODY5LDUwODU1NzQ2NSwyNzc0NT
+YxLDU3MTk4OTg3NSwxNzc4MjEyMzk4LDE0NzEyMzg4MzAsMTg5
+MTgyMDM1LC00NDkyNjg0ODMsNTk4OTkxNDIwLC0xMTAxNDY0OD
+AwLC00MjI5MDU3NjUsLTExMzIxOTM3Nl19
 -->
