@@ -43,10 +43,11 @@ R.prop('name', obj)
 //elephant
 ```
 
+#### path
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY3MzI5NTIsNTk4OTkxNDIwLC0xMTAxND
-Y0ODAwLC00MjI5MDU3NjUsLTExMzIxOTM3Nl19
+eyJoaXN0b3J5IjpbLTQ0OTI2ODQ4Myw1OTg5OTE0MjAsLTExMD
+E0NjQ4MDAsLTQyMjkwNTc2NSwtMTEzMjE5Mzc2XX0=
 -->
