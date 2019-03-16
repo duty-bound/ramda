@@ -31,6 +31,30 @@ const objList = {
 }
 ```
 
+#### assocPath
+
+Makes a clone of the provided object while overriding any values in the path provided in the first parameter by the value provided in the second parameter. Note that the object literal created is sorted in ascending order.
+
+```
+const objList = {
+  el: { name: 'elephant', 
+			type: 'mammal', 
+			origin: { continent: 'Africa', country: 'Gabon', }, },
+  sk: {	name: 'shark',
+		    type: 'fish',
+		    origin: { continent: 'Australia', country: 'Sydney', }, },
+  ea: { name: 'eagle',
+		    type: 'bird',
+		    origin: { continent: 'USA', country: 'Arizona', }, }
+}
+R.assocPath(['sk', 'origin', 'country'], 'South Africa', objList);
+
+//{"ea": {"name": "eagle", "origin": {"continent": "USA", "country": "Arizona"}, "type": "bird"},
+//"el": {"name": "elephant", "origin": {"continent": "Africa", "country": "Gabon"}, "type": "mammal"},
+//"sk": {"name": "shark", "origin": {"continent": "Australia", "country": "South Africa"}, "type": "fish"}}
+```
+
+
 ## Extracting Data
 
 ### Extracting Data from Single Dimension Containers
@@ -365,11 +389,11 @@ pi(circumference(2))
 ## Not Covered
 applySpec
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwODY0MDM4MCw2NzcyNzU3ODAsLTM5MD
-MwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4MzUsLTE4NDkzMTg3
-LC01NjU5NTM5ODYsMTUzODAyODg1LDIwNTE5Mzg0NTIsMTk5Nz
-M2NjI1MywxNTIzMjQ3MzMzLC0xNzExODY5MTgsMTEyMTMyNzMw
-LDEzMDU4MTYwNTMsMTI4NzYyOTc4NiwyMTA4NjcyNjI3LC03ND
-A1NDU5NzUsLTI0OTE3NTcxLDE5NjY4MDA3NTUsLTUzNjQwMzgz
-N119
+eyJoaXN0b3J5IjpbLTI0NDY5MzgzLC05MDg2NDAzODAsNjc3Mj
+c1NzgwLC0zOTAzMDEwMDQsLTM3MDgyNzY1OCwtODg0Nzg5ODM1
+LC0xODQ5MzE4NywtNTY1OTUzOTg2LDE1MzgwMjg4NSwyMDUxOT
+M4NDUyLDE5OTczNjYyNTMsMTUyMzI0NzMzMywtMTcxMTg2OTE4
+LDExMjEzMjczMCwxMzA1ODE2MDUzLDEyODc2Mjk3ODYsMjEwOD
+Y3MjYyNywtNzQwNTQ1OTc1LC0yNDkxNzU3MSwxOTY2ODAwNzU1
+XX0=
 -->
