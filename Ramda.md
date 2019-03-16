@@ -226,6 +226,9 @@ bike().brand
 //Ducati
 ```
 
+#### ap
+
+Applies the provided list of functions to each element of a list and returns 
 ## Mapping
 #### addIndex
 Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
@@ -244,11 +247,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTg1ODI4NTcsMTEyMTMyNzMwLDEzMD
-U4MTYwNTMsMTI4NzYyOTc4NiwyMTA4NjcyNjI3LC03NDA1NDU5
-NzUsLTI0OTE3NTcxLDE5NjY4MDA3NTUsLTUzNjQwMzgzNywyMD
-U3MDMxMDg2LDQ4ODE4ODUyMSwtODcwNTc0NzA3LDUwODU1NzQ2
-NSwyNzc0NTYxLDU3MTk4OTg3NSwxNzc4MjEyMzk4LDE0NzEyMz
-g4MzAsMTg5MTgyMDM1LC00NDkyNjg0ODMsNTk4OTkxNDIwXX0=
+eyJoaXN0b3J5IjpbLTM1Njg4NTQ3OCwxMTIxMzI3MzAsMTMwNT
+gxNjA1MywxMjg3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3
+NSwtMjQ5MTc1NzEsMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNT
+cwMzEwODYsNDg4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1
+LDI3NzQ1NjEsNTcxOTg5ODc1LDE3NzgyMTIzOTgsMTQ3MTIzOD
+gzMCwxODkxODIwMzUsLTQ0OTI2ODQ4Myw1OTg5OTE0MjBdfQ==
 
 -->
