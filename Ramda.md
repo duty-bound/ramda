@@ -175,6 +175,19 @@ isQueenOrSpades({ rank: '10', suit: '♣︎'})
 //false
 ```
 
+#### both
+
+Returns a function which return true if both of the functions supplied to `both` are true.
+
+```
+const greaterThan10 = n => n > 10
+const lessThan20 = n => n < 20
+
+const isInRange = R.both(greaterThan10, lessThan20)
+
+isInRange(15) //true
+isInRange(150) //false
+```
 
 ## Filtering 
 
@@ -406,11 +419,11 @@ pi(circumference(2))
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NTc1NjgwMSwxNjMyMzY4MTEwLDM5OD
-A4MzQ2LC0xMjA2NzI5MDM2LC01Mjk5MDM4OTcsLTI0NDY5Mzgz
-LC05MDg2NDAzODAsNjc3Mjc1NzgwLC0zOTAzMDEwMDQsLTM3MD
-gyNzY1OCwtODg0Nzg5ODM1LC0xODQ5MzE4NywtNTY1OTUzOTg2
-LDE1MzgwMjg4NSwyMDUxOTM4NDUyLDE5OTczNjYyNTMsMTUyMz
-I0NzMzMywtMTcxMTg2OTE4LDExMjEzMjczMCwxMzA1ODE2MDUz
-XX0=
+eyJoaXN0b3J5IjpbLTExMDcwMDgxOTYsLTY2NTc1NjgwMSwxNj
+MyMzY4MTEwLDM5ODA4MzQ2LC0xMjA2NzI5MDM2LC01Mjk5MDM4
+OTcsLTI0NDY5MzgzLC05MDg2NDAzODAsNjc3Mjc1NzgwLC0zOT
+AzMDEwMDQsLTM3MDgyNzY1OCwtODg0Nzg5ODM1LC0xODQ5MzE4
+NywtNTY1OTUzOTg2LDE1MzgwMjg4NSwyMDUxOTM4NDUyLDE5OT
+czNjYyNTMsMTUyMzI0NzMzMywtMTcxMTg2OTE4LDExMjEzMjcz
+MF19
 -->
