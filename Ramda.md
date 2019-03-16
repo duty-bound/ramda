@@ -239,6 +239,10 @@ R.ap([x2, add3], arr)
 
 //[2.2, 4.4, 6.6, 4.1, 5.2, 6.3]
 ```
+```
+R.ap([R.toUpper, R.toLower],['Crazy'])
+["CRAZY", "crazy"]
+```
 
 ## Mapping
 #### addIndex
@@ -258,11 +262,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjczMjQ4NTgxLC0xNzExODY5MTgsMTEyMT
-MyNzMwLDEzMDU4MTYwNTMsMTI4NzYyOTc4NiwyMTA4NjcyNjI3
-LC03NDA1NDU5NzUsLTI0OTE3NTcxLDE5NjY4MDA3NTUsLTUzNj
-QwMzgzNywyMDU3MDMxMDg2LDQ4ODE4ODUyMSwtODcwNTc0NzA3
-LDUwODU1NzQ2NSwyNzc0NTYxLDU3MTk4OTg3NSwxNzc4MjEyMz
-k4LDE0NzEyMzg4MzAsMTg5MTgyMDM1LC00NDkyNjg0ODNdfQ==
+eyJoaXN0b3J5IjpbMTUyMzI0NzMzMywtMTcxMTg2OTE4LDExMj
+EzMjczMCwxMzA1ODE2MDUzLDEyODc2Mjk3ODYsMjEwODY3MjYy
+NywtNzQwNTQ1OTc1LC0yNDkxNzU3MSwxOTY2ODAwNzU1LC01Mz
+Y0MDM4MzcsMjA1NzAzMTA4Niw0ODgxODg1MjEsLTg3MDU3NDcw
+Nyw1MDg1NTc0NjUsMjc3NDU2MSw1NzE5ODk4NzUsMTc3ODIxMj
+M5OCwxNDcxMjM4ODMwLDE4OTE4MjAzNSwtNDQ5MjY4NDgzXX0=
 
 -->
