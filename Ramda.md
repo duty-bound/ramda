@@ -103,7 +103,7 @@ R.add(2.1, 3.45)
 
 #### adjust
 
-
+Applies a function to a specific element 
 
 ## Mapping
 #### addIndex
@@ -123,7 +123,7 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMDMxNzYxOCwtNTM2NDAzODM3LDIwNT
+eyJoaXN0b3J5IjpbMTcxODk5NzYwNSwtNTM2NDAzODM3LDIwNT
 cwMzEwODYsNDg4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1
 LDI3NzQ1NjEsNTcxOTg5ODc1LDE3NzgyMTIzOTgsMTQ3MTIzOD
 gzMCwxODkxODIwMzUsLTQ0OTI2ODQ4Myw1OTg5OTE0MjAsLTEx
