@@ -26,7 +26,7 @@ const objList = {
 		    type: 'fish',
 		    origin: { continent: 'Australia', country: 'Sydney', } },
   animal: { name: 'eagle',
-		    type: 'bird'}
+		    type: 'bird',
 		    origin: { continent: 'USA', country: 'Arizona', }, }
 ```
 
@@ -288,11 +288,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MTkzODQ1MiwxOTk3MzY2MjUzLDE1Mj
-MyNDczMzMsLTE3MTE4NjkxOCwxMTIxMzI3MzAsMTMwNTgxNjA1
-MywxMjg3NjI5Nzg2LDIxMDg2NzI2MjcsLTc0MDU0NTk3NSwtMj
-Q5MTc1NzEsMTk2NjgwMDc1NSwtNTM2NDAzODM3LDIwNTcwMzEw
-ODYsNDg4MTg4NTIxLC04NzA1NzQ3MDcsNTA4NTU3NDY1LDI3Nz
-Q1NjEsNTcxOTg5ODc1LDE3NzgyMTIzOTgsMTQ3MTIzODgzMF19
+eyJoaXN0b3J5IjpbMTUzODAyODg1LDIwNTE5Mzg0NTIsMTk5Nz
+M2NjI1MywxNTIzMjQ3MzMzLC0xNzExODY5MTgsMTEyMTMyNzMw
+LDEzMDU4MTYwNTMsMTI4NzYyOTc4NiwyMTA4NjcyNjI3LC03ND
+A1NDU5NzUsLTI0OTE3NTcxLDE5NjY4MDA3NTUsLTUzNjQwMzgz
+NywyMDU3MDMxMDg2LDQ4ODE4ODUyMSwtODcwNTc0NzA3LDUwOD
+U1NzQ2NSwyNzc0NTYxLDU3MTk4OTg3NSwxNzc4MjEyMzk4XX0=
 
 -->
