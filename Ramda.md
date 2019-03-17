@@ -438,6 +438,12 @@ Takes three number parameters. The first two are the lower and higher values of 
 
 If the number is within the range, it is returned as is, if not, the closest of the range limits is returned.
 
+```
+R.clamp(30, 1, 0.83) //0.83
+R.clamp(0, 1, 1.12) //1
+R.clamp(0, 1, -3.62) //0
+
+
 ## Mapping
 
 #### addIndex
@@ -461,7 +467,7 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxODI1NzA3OSwxNjIwNjUwOTk4LC0xMT
+eyJoaXN0b3J5IjpbLTQ4ODEwNDcyNiwxNjIwNjUwOTk4LC0xMT
 A3MDA4MTk2LC02NjU3NTY4MDEsMTYzMjM2ODExMCwzOTgwODM0
 NiwtMTIwNjcyOTAzNiwtNTI5OTAzODk3LC0yNDQ2OTM4MywtOT
 A4NjQwMzgwLDY3NzI3NTc4MCwtMzkwMzAxMDA0LC0zNzA4Mjc2
