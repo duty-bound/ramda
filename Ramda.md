@@ -442,6 +442,21 @@ If the number is within the range, it is returned as is, if not, the closest of 
 R.clamp(30, 40, 33) //33
 R.clamp(30, 40, 25) //30
 R.clamp(30, 40, 47) //40
+```
+
+#### clone
+
+Creates a deep copy.
+
+```
+const arr = ['a', 'b', 'c']
+
+R.clone(arr)
+
+//["a", "b", "c"]
+```
+
+
 
 
 ## Mapping
@@ -467,11 +482,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjc5Mzg1NSwxNjIwNjUwOTk4LC0xMT
-A3MDA4MTk2LC02NjU3NTY4MDEsMTYzMjM2ODExMCwzOTgwODM0
-NiwtMTIwNjcyOTAzNiwtNTI5OTAzODk3LC0yNDQ2OTM4MywtOT
-A4NjQwMzgwLDY3NzI3NTc4MCwtMzkwMzAxMDA0LC0zNzA4Mjc2
-NTgsLTg4NDc4OTgzNSwtMTg0OTMxODcsLTU2NTk1Mzk4NiwxNT
-M4MDI4ODUsMjA1MTkzODQ1MiwxOTk3MzY2MjUzLDE1MjMyNDcz
-MzNdfQ==
+eyJoaXN0b3J5IjpbOTcwMDA5MzUxLDE2MjA2NTA5OTgsLTExMD
+cwMDgxOTYsLTY2NTc1NjgwMSwxNjMyMzY4MTEwLDM5ODA4MzQ2
+LC0xMjA2NzI5MDM2LC01Mjk5MDM4OTcsLTI0NDY5MzgzLC05MD
+g2NDAzODAsNjc3Mjc1NzgwLC0zOTAzMDEwMDQsLTM3MDgyNzY1
+OCwtODg0Nzg5ODM1LC0xODQ5MzE4NywtNTY1OTUzOTg2LDE1Mz
+gwMjg4NSwyMDUxOTM4NDUyLDE5OTczNjYyNTMsMTUyMzI0NzMz
+M119
 -->
