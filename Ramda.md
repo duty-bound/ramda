@@ -412,6 +412,26 @@ R.call(R.prop(2), ['a', 'b', 'c'])
 
 Takes a function, applies it to a list, and concatenates the result into an array.
 
+```
+const arr = ['a', 'b', 'c']
+
+const addUpper = c => [c, R.toUpper(c)]
+
+R.chain(addUpper, arr)
+
+//["a", "A", "b", "B", "c", "C"]
+```
+Check the belwo to see what `map` would return:
+```
+const arr = ['a', 'b', 'c']
+
+const addUpper = c => [c, R.toUpper(c)]
+
+R.map(addUpper, arr)
+
+//[["a", "A"], ["b", "B"], ["c", "C"]]
+```
+
 ## Mapping
 
 #### addIndex
@@ -435,7 +455,7 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTcwNjM2MiwxNjIwNjUwOTk4LC0xMT
+eyJoaXN0b3J5IjpbLTM5ODgxMDQ4MCwxNjIwNjUwOTk4LC0xMT
 A3MDA4MTk2LC02NjU3NTY4MDEsMTYzMjM2ODExMCwzOTgwODM0
 NiwtMTIwNjcyOTAzNiwtNTI5OTAzODk3LC0yNDQ2OTM4MywtOT
 A4NjQwMzgwLDY3NzI3NTc4MCwtMzkwMzAxMDA0LC0zNzA4Mjc2
