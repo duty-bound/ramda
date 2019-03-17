@@ -405,36 +405,18 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 //["<li key=0>elephant</li>", "<li key=1>tiger</li>", "<li key=2>shark</li>"]
 ```
 
-#### applyTo
 
-Takes a value and returns a function that passes this value to other functions.
-```
-const num = R.applyTo(3)
 
-num(R.inc())
-
-//4
-```
-
-```
-const pi = R.applyTo(3.142)
-
-const circumference = (d) => R.multiply(d)
-
-pi(circumference(2))
-
-//6.284
-```
 
 ## Not Covered
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDY1MDk5OCwtMTEwNzAwODE5NiwtNj
-Y1NzU2ODAxLDE2MzIzNjgxMTAsMzk4MDgzNDYsLTEyMDY3Mjkw
-MzYsLTUyOTkwMzg5NywtMjQ0NjkzODMsLTkwODY0MDM4MCw2Nz
-cyNzU3ODAsLTM5MDMwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4
-MzUsLTE4NDkzMTg3LC01NjU5NTM5ODYsMTUzODAyODg1LDIwNT
-E5Mzg0NTIsMTk5NzM2NjI1MywxNTIzMjQ3MzMzLC0xNzExODY5
-MThdfQ==
+eyJoaXN0b3J5IjpbLTMyNTY5NjE2OSwxNjIwNjUwOTk4LC0xMT
+A3MDA4MTk2LC02NjU3NTY4MDEsMTYzMjM2ODExMCwzOTgwODM0
+NiwtMTIwNjcyOTAzNiwtNTI5OTAzODk3LC0yNDQ2OTM4MywtOT
+A4NjQwMzgwLDY3NzI3NTc4MCwtMzkwMzAxMDA0LC0zNzA4Mjc2
+NTgsLTg4NDc4OTgzNSwtMTg0OTMxODcsLTU2NTk1Mzk4NiwxNT
+M4MDI4ODUsMjA1MTkzODQ1MiwxOTk3MzY2MjUzLDE1MjMyNDcz
+MzNdfQ==
 -->
