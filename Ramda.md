@@ -448,6 +448,8 @@ R.clamp(30, 40, 47) //40
 
 Creates a deep copy.
 
+Note that the result is sorted (vide second example).
+
 ```
 const arr = ['a', 'b', 'c']
 
@@ -482,11 +484,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcwMDA5MzUxLDE2MjA2NTA5OTgsLTExMD
-cwMDgxOTYsLTY2NTc1NjgwMSwxNjMyMzY4MTEwLDM5ODA4MzQ2
-LC0xMjA2NzI5MDM2LC01Mjk5MDM4OTcsLTI0NDY5MzgzLC05MD
-g2NDAzODAsNjc3Mjc1NzgwLC0zOTAzMDEwMDQsLTM3MDgyNzY1
-OCwtODg0Nzg5ODM1LC0xODQ5MzE4NywtNTY1OTUzOTg2LDE1Mz
-gwMjg4NSwyMDUxOTM4NDUyLDE5OTczNjYyNTMsMTUyMzI0NzMz
+eyJoaXN0b3J5IjpbMTU5ODUwNzg5NCw5NzAwMDkzNTEsMTYyMD
+Y1MDk5OCwtMTEwNzAwODE5NiwtNjY1NzU2ODAxLDE2MzIzNjgx
+MTAsMzk4MDgzNDYsLTEyMDY3MjkwMzYsLTUyOTkwMzg5NywtMj
+Q0NjkzODMsLTkwODY0MDM4MCw2NzcyNzU3ODAsLTM5MDMwMTAw
+NCwtMzcwODI3NjU4LC04ODQ3ODk4MzUsLTE4NDkzMTg3LC01Nj
+U5NTM5ODYsMTUzODAyODg1LDIwNTE5Mzg0NTIsMTk5NzM2NjI1
 M119
 -->
