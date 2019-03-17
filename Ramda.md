@@ -193,7 +193,15 @@ isInRange(150) //false
 
 Returns a comparator function that checks whether the first parameter is smaller than the second, and returns -1, 0, or 1 in case it is respectively smaller, equal, or greater.
 
+```
+const arr = [3, 6, 8, 4, 6, 10, 1]
 
+const asc = R.comparator((a, b) => a < b)
+
+R.sort(asc, arr)
+
+//[1, 3, 4, 6, 6, 8, 10]
+```
 
 ## Filtering 
 
@@ -508,11 +516,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTk0NTYzOTEsODk2MzY2NTIsLTcwNz
-Q2ODU4NCw5NzAwMDkzNTEsMTYyMDY1MDk5OCwtMTEwNzAwODE5
-NiwtNjY1NzU2ODAxLDE2MzIzNjgxMTAsMzk4MDgzNDYsLTEyMD
-Y3MjkwMzYsLTUyOTkwMzg5NywtMjQ0NjkzODMsLTkwODY0MDM4
-MCw2NzcyNzU3ODAsLTM5MDMwMTAwNCwtMzcwODI3NjU4LC04OD
-Q3ODk4MzUsLTE4NDkzMTg3LC01NjU5NTM5ODYsMTUzODAyODg1
-XX0=
+eyJoaXN0b3J5IjpbLTk3MTg4NjI1NSw4OTYzNjY1MiwtNzA3ND
+Y4NTg0LDk3MDAwOTM1MSwxNjIwNjUwOTk4LC0xMTA3MDA4MTk2
+LC02NjU3NTY4MDEsMTYzMjM2ODExMCwzOTgwODM0NiwtMTIwNj
+cyOTAzNiwtNTI5OTAzODk3LC0yNDQ2OTM4MywtOTA4NjQwMzgw
+LDY3NzI3NTc4MCwtMzkwMzAxMDA0LC0zNzA4Mjc2NTgsLTg4ND
+c4OTgzNSwtMTg0OTMxODcsLTU2NTk1Mzk4NiwxNTM4MDI4ODVd
+fQ==
 -->
