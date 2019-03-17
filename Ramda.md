@@ -191,7 +191,10 @@ isInRange(150) //false
 
 #### comparator
 
-Returns a comparator function that returns 
+Returns a comparator function that checks whether the first parameter is smaller than the second, and returns -1, 0, or 1 in case it is respectively smaller, equal, or greater.
+
+
+
 ## Filtering 
 
 ## Sorting
@@ -505,11 +508,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2MzY2NTIsLTcwNzQ2ODU4NCw5NzAwMD
-kzNTEsMTYyMDY1MDk5OCwtMTEwNzAwODE5NiwtNjY1NzU2ODAx
-LDE2MzIzNjgxMTAsMzk4MDgzNDYsLTEyMDY3MjkwMzYsLTUyOT
-kwMzg5NywtMjQ0NjkzODMsLTkwODY0MDM4MCw2NzcyNzU3ODAs
-LTM5MDMwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4MzUsLTE4ND
-kzMTg3LC01NjU5NTM5ODYsMTUzODAyODg1LDIwNTE5Mzg0NTJd
-fQ==
+eyJoaXN0b3J5IjpbLTE4MTk0NTYzOTEsODk2MzY2NTIsLTcwNz
+Q2ODU4NCw5NzAwMDkzNTEsMTYyMDY1MDk5OCwtMTEwNzAwODE5
+NiwtNjY1NzU2ODAxLDE2MzIzNjgxMTAsMzk4MDgzNDYsLTEyMD
+Y3MjkwMzYsLTUyOTkwMzg5NywtMjQ0NjkzODMsLTkwODY0MDM4
+MCw2NzcyNzU3ODAsLTM5MDMwMTAwNCwtMzcwODI3NjU4LC04OD
+Q3ODk4MzUsLTE4NDkzMTg3LC01NjU5NTM5ODYsMTUzODAyODg1
+XX0=
 -->
