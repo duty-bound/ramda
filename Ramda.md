@@ -436,7 +436,7 @@ R.map(addUpper, arr)
 
 Takes three number parameters. The first two are the lower and higher values of a range, and the third is the number which will be restricted to that range.
 
-If the number is within the range, it 
+If the number is within the range, it is returned as is, if not, the closest of the range limits is returned.
 
 ## Mapping
 
@@ -461,7 +461,7 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTk2MTU2MiwxNjIwNjUwOTk4LC0xMT
+eyJoaXN0b3J5IjpbMTMxODI1NzA3OSwxNjIwNjUwOTk4LC0xMT
 A3MDA4MTk2LC02NjU3NTY4MDEsMTYzMjM2ODExMCwzOTgwODM0
 NiwtMTIwNjcyOTAzNiwtNTI5OTAzODk3LC0yNDQ2OTM4MywtOT
 A4NjQwMzgwLDY3NzI3NTc4MCwtMzkwMzAxMDA0LC0zNzA4Mjc2
