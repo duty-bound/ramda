@@ -457,7 +457,25 @@ R.clone(arr)
 
 //["a", "b", "c"]
 ```
+```
+const objList = {
+  el: { name: 'elephant', 
+			type: 'mammal', 
+			origin: { continent: 'Africa', country: 'Gabon', }, },
+  sk: {	name: 'shark',
+		    type: 'fish',
+		    origin: { continent: 'Australia', country: 'Sydney', }, },
+  ea: { name: 'eagle',
+		    type: 'bird',
+		    origin: { continent: 'USA', country: 'Arizona', }, }
+}
 
+R.clone(objList)
+
+//{"ea": {"name": "eagle", "origin": {"continent": "USA", "country": "Arizona"}, "type": "bird"},
+//"el": {"name": "elephant", "origin": {"continent": "Africa", "country": "Gabon"}, "type": "mammal"},
+//"sk": {"name": "shark", "origin": {"continent": "Australia", "country": "Sydney"}, "type": "fish"}}
+```
 
 
 
@@ -484,7 +502,7 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5ODUwNzg5NCw5NzAwMDkzNTEsMTYyMD
+eyJoaXN0b3J5IjpbLTcwNzQ2ODU4NCw5NzAwMDkzNTEsMTYyMD
 Y1MDk5OCwtMTEwNzAwODE5NiwtNjY1NzU2ODAxLDE2MzIzNjgx
 MTAsMzk4MDgzNDYsLTEyMDY3MjkwMzYsLTUyOTkwMzg5NywtMj
 Q0NjkzODMsLTkwODY0MDM4MCw2NzcyNzU3ODAsLTM5MDMwMTAw
