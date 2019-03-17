@@ -191,7 +191,7 @@ isInRange(150) //false
 
 #### comparator
 
-Returns a cfunction that does a 
+Returns a comparator function that returns 
 ## Filtering 
 
 ## Sorting
@@ -505,11 +505,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzM2ODAzOCwtNzA3NDY4NTg0LDk3MD
-AwOTM1MSwxNjIwNjUwOTk4LC0xMTA3MDA4MTk2LC02NjU3NTY4
-MDEsMTYzMjM2ODExMCwzOTgwODM0NiwtMTIwNjcyOTAzNiwtNT
-I5OTAzODk3LC0yNDQ2OTM4MywtOTA4NjQwMzgwLDY3NzI3NTc4
-MCwtMzkwMzAxMDA0LC0zNzA4Mjc2NTgsLTg4NDc4OTgzNSwtMT
-g0OTMxODcsLTU2NTk1Mzk4NiwxNTM4MDI4ODUsMjA1MTkzODQ1
-Ml19
+eyJoaXN0b3J5IjpbODk2MzY2NTIsLTcwNzQ2ODU4NCw5NzAwMD
+kzNTEsMTYyMDY1MDk5OCwtMTEwNzAwODE5NiwtNjY1NzU2ODAx
+LDE2MzIzNjgxMTAsMzk4MDgzNDYsLTEyMDY3MjkwMzYsLTUyOT
+kwMzg5NywtMjQ0NjkzODMsLTkwODY0MDM4MCw2NzcyNzU3ODAs
+LTM5MDMwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4MzUsLTE4ND
+kzMTg3LC01NjU5NTM5ODYsMTUzODAyODg1LDIwNTE5Mzg0NTJd
+fQ==
 -->
