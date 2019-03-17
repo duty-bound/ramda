@@ -319,6 +319,26 @@ R.apply(R.toUpper, letters)
 
 //"A"
 ```
+#### applyTo
+
+Takes a value and returns a function that passes this value to other functions.
+```
+const num = R.applyTo(3)
+
+num(R.inc())
+
+//4
+```
+
+```
+const pi = R.applyTo(3.142)
+
+const circumference = (d) => R.multiply(d)
+
+pi(circumference(2))
+
+//6.284
+```
 
 #### assoc
 Inserts a key / value set in a clone of the provided object literal. Note that the new object literal is sorted in ascending order.
@@ -388,6 +408,9 @@ R.call(R.prop(2), ['a', 'b', 'c'])
 //"c"
 ```
 
+#### chain
+
+Takes a function, applies it to a list, and concatenates the result into an array.
 
 ## Mapping
 
@@ -412,7 +435,7 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNTY5NjE2OSwxNjIwNjUwOTk4LC0xMT
+eyJoaXN0b3J5IjpbLTcxMTcwNjM2MiwxNjIwNjUwOTk4LC0xMT
 A3MDA4MTk2LC02NjU3NTY4MDEsMTYzMjM2ODExMCwzOTgwODM0
 NiwtMTIwNjcyOTAzNiwtNTI5OTAzODk3LC0yNDQ2OTM4MywtOT
 A4NjQwMzgwLDY3NzI3NTc4MCwtMzkwMzAxMDA0LC0zNzA4Mjc2
