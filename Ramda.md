@@ -434,7 +434,9 @@ R.map(addUpper, arr)
 
 #### clamp
 
-Takes a number and checks wh
+Takes three number parameters. The first two are the lower and higher values of a range, and the third is the number which will be restricted to that range.
+
+If the number is within the range, it 
 
 ## Mapping
 
@@ -459,11 +461,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NDU5NDEyLDE2MjA2NTA5OTgsLTExMD
-cwMDgxOTYsLTY2NTc1NjgwMSwxNjMyMzY4MTEwLDM5ODA4MzQ2
-LC0xMjA2NzI5MDM2LC01Mjk5MDM4OTcsLTI0NDY5MzgzLC05MD
-g2NDAzODAsNjc3Mjc1NzgwLC0zOTAzMDEwMDQsLTM3MDgyNzY1
-OCwtODg0Nzg5ODM1LC0xODQ5MzE4NywtNTY1OTUzOTg2LDE1Mz
-gwMjg4NSwyMDUxOTM4NDUyLDE5OTczNjYyNTMsMTUyMzI0NzMz
-M119
+eyJoaXN0b3J5IjpbLTg1MTk2MTU2MiwxNjIwNjUwOTk4LC0xMT
+A3MDA4MTk2LC02NjU3NTY4MDEsMTYzMjM2ODExMCwzOTgwODM0
+NiwtMTIwNjcyOTAzNiwtNTI5OTAzODk3LC0yNDQ2OTM4MywtOT
+A4NjQwMzgwLDY3NzI3NTc4MCwtMzkwMzAxMDA0LC0zNzA4Mjc2
+NTgsLTg4NDc4OTgzNSwtMTg0OTMxODcsLTU2NTk1Mzk4NiwxNT
+M4MDI4ODUsMjA1MTkzODQ1MiwxOTk3MzY2MjUzLDE1MjMyNDcz
+MzNdfQ==
 -->
