@@ -214,6 +214,13 @@ R.isNil(null) //true
 notNil(null) //false
 ```
 
+```
+const isEven = n => n % 2 === 0
+const isOdd = R.complement(isEven)
+
+isEven(4) //true
+isOdd(5) //true
+```
 
 ## Filtering 
 
@@ -528,11 +535,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY4NTM4Mjc2LC0xMTY3ODk4NzEsLTk3MT
-g4NjI1NSw4OTYzNjY1MiwtNzA3NDY4NTg0LDk3MDAwOTM1MSwx
-NjIwNjUwOTk4LC0xMTA3MDA4MTk2LC02NjU3NTY4MDEsMTYzMj
-M2ODExMCwzOTgwODM0NiwtMTIwNjcyOTAzNiwtNTI5OTAzODk3
-LC0yNDQ2OTM4MywtOTA4NjQwMzgwLDY3NzI3NTc4MCwtMzkwMz
-AxMDA0LC0zNzA4Mjc2NTgsLTg4NDc4OTgzNSwtMTg0OTMxODdd
-fQ==
+eyJoaXN0b3J5IjpbLTE2ODU0NDQ5NjcsLTExNjc4OTg3MSwtOT
+cxODg2MjU1LDg5NjM2NjUyLC03MDc0Njg1ODQsOTcwMDA5MzUx
+LDE2MjA2NTA5OTgsLTExMDcwMDgxOTYsLTY2NTc1NjgwMSwxNj
+MyMzY4MTEwLDM5ODA4MzQ2LC0xMjA2NzI5MDM2LC01Mjk5MDM4
+OTcsLTI0NDY5MzgzLC05MDg2NDAzODAsNjc3Mjc1NzgwLC0zOT
+AzMDEwMDQsLTM3MDgyNzY1OCwtODg0Nzg5ODM1LC0xODQ5MzE4
+N119
 -->
