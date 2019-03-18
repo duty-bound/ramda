@@ -205,6 +205,8 @@ R.sort(asc, arr)
 
 #### complement
 
+Takes a function that returns either true or false and creates a function that returns the opposite of what the provided function would
+
 ## Filtering 
 
 ## Sorting
@@ -518,11 +520,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjc4OTg3MSwtOTcxODg2MjU1LDg5Nj
-M2NjUyLC03MDc0Njg1ODQsOTcwMDA5MzUxLDE2MjA2NTA5OTgs
-LTExMDcwMDgxOTYsLTY2NTc1NjgwMSwxNjMyMzY4MTEwLDM5OD
-A4MzQ2LC0xMjA2NzI5MDM2LC01Mjk5MDM4OTcsLTI0NDY5Mzgz
-LC05MDg2NDAzODAsNjc3Mjc1NzgwLC0zOTAzMDEwMDQsLTM3MD
-gyNzY1OCwtODg0Nzg5ODM1LC0xODQ5MzE4NywtNTY1OTUzOTg2
+eyJoaXN0b3J5IjpbMTYxNjc5NzIyNiwtMTE2Nzg5ODcxLC05Nz
+E4ODYyNTUsODk2MzY2NTIsLTcwNzQ2ODU4NCw5NzAwMDkzNTEs
+MTYyMDY1MDk5OCwtMTEwNzAwODE5NiwtNjY1NzU2ODAxLDE2Mz
+IzNjgxMTAsMzk4MDgzNDYsLTEyMDY3MjkwMzYsLTUyOTkwMzg5
+NywtMjQ0NjkzODMsLTkwODY0MDM4MCw2NzcyNzU3ODAsLTM5MD
+MwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4MzUsLTE4NDkzMTg3
 XX0=
 -->
