@@ -547,18 +547,22 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 //["<li key=0>elephant</li>", "<li key=1>tiger</li>", "<li key=2>shark</li>"]
 ```
 
+## String Manipulation
+
+#### concat
 
 
 
 ## Not Covered
 applySpec
 bind
+composeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI0Nzk4NDMsLTIxMDQxOTkwNTUsLTQzMz
-UwMzY4OCwtMTE2Nzg5ODcxLC05NzE4ODYyNTUsODk2MzY2NTIs
-LTcwNzQ2ODU4NCw5NzAwMDkzNTEsMTYyMDY1MDk5OCwtMTEwNz
-AwODE5NiwtNjY1NzU2ODAxLDE2MzIzNjgxMTAsMzk4MDgzNDYs
-LTEyMDY3MjkwMzYsLTUyOTkwMzg5NywtMjQ0NjkzODMsLTkwOD
-Y0MDM4MCw2NzcyNzU3ODAsLTM5MDMwMTAwNCwtMzcwODI3NjU4
-XX0=
+eyJoaXN0b3J5IjpbMzEwOTExMzgxLDkyNDc5ODQzLC0yMTA0MT
+k5MDU1LC00MzM1MDM2ODgsLTExNjc4OTg3MSwtOTcxODg2MjU1
+LDg5NjM2NjUyLC03MDc0Njg1ODQsOTcwMDA5MzUxLDE2MjA2NT
+A5OTgsLTExMDcwMDgxOTYsLTY2NTc1NjgwMSwxNjMyMzY4MTEw
+LDM5ODA4MzQ2LC0xMjA2NzI5MDM2LC01Mjk5MDM4OTcsLTI0ND
+Y5MzgzLC05MDg2NDAzODAsNjc3Mjc1NzgwLC0zOTAzMDEwMDRd
+fQ==
 -->
