@@ -224,7 +224,9 @@ isOdd(5) //true
 
 #### cond
 
-This is Ramda's equivalent of nested if/else statements. Conditions are passed to this functions in a 'condition', '
+This is Ramda's equivalent of nested if/else statements. Conditions are passed to this functions in a 'condition', 'transformer' fashion.
+
+(Note in the below example that a function such as `R.lt` returns true if the first argument is less than the second. However when using `cond` the second parameter is always the 
 
 ```
 const fn = R.cond([
@@ -601,11 +603,11 @@ applySpec
 bind
 composeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MjQ0NzY1OCwxNzA2MDgyMDQ5LC0xMT
-MyNTYwOTc0LDkyNDc5ODQzLC0yMTA0MTk5MDU1LC00MzM1MDM2
-ODgsLTExNjc4OTg3MSwtOTcxODg2MjU1LDg5NjM2NjUyLC03MD
-c0Njg1ODQsOTcwMDA5MzUxLDE2MjA2NTA5OTgsLTExMDcwMDgx
-OTYsLTY2NTc1NjgwMSwxNjMyMzY4MTEwLDM5ODA4MzQ2LC0xMj
-A2NzI5MDM2LC01Mjk5MDM4OTcsLTI0NDY5MzgzLC05MDg2NDAz
-ODBdfQ==
+eyJoaXN0b3J5IjpbLTcxNTA2OTU3LDE3MDYwODIwNDksLTExMz
+I1NjA5NzQsOTI0Nzk4NDMsLTIxMDQxOTkwNTUsLTQzMzUwMzY4
+OCwtMTE2Nzg5ODcxLC05NzE4ODYyNTUsODk2MzY2NTIsLTcwNz
+Q2ODU4NCw5NzAwMDkzNTEsMTYyMDY1MDk5OCwtMTEwNzAwODE5
+NiwtNjY1NzU2ODAxLDE2MzIzNjgxMTAsMzk4MDgzNDYsLTEyMD
+Y3MjkwMzYsLTUyOTkwMzg5NywtMjQ0NjkzODMsLTkwODY0MDM4
+MF19
 -->
