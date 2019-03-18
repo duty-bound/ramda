@@ -222,6 +222,20 @@ isEven(4) //true
 isOdd(5) //true
 ```
 
+#### cond
+
+This is Ramda's equivalent of nested if/else statements. Conditions are passed to this functions in a 'condition', '
+
+```
+const fn = R.cond([
+  [R.complement(R.lt(18)), R.always("too young")],
+  [R.complement(R.gte(18)), R.always("OK")]
+]);
+
+fn(17) //"too young"
+fn(18) //"OK"
+```
+
 ## Filtering 
 
 ## Sorting
@@ -587,11 +601,11 @@ applySpec
 bind
 composeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNjA4MjA0OSwtMTEzMjU2MDk3NCw5Mj
-Q3OTg0MywtMjEwNDE5OTA1NSwtNDMzNTAzNjg4LC0xMTY3ODk4
-NzEsLTk3MTg4NjI1NSw4OTYzNjY1MiwtNzA3NDY4NTg0LDk3MD
-AwOTM1MSwxNjIwNjUwOTk4LC0xMTA3MDA4MTk2LC02NjU3NTY4
-MDEsMTYzMjM2ODExMCwzOTgwODM0NiwtMTIwNjcyOTAzNiwtNT
-I5OTAzODk3LC0yNDQ2OTM4MywtOTA4NjQwMzgwLDY3NzI3NTc4
-MF19
+eyJoaXN0b3J5IjpbLTk0MjQ0NzY1OCwxNzA2MDgyMDQ5LC0xMT
+MyNTYwOTc0LDkyNDc5ODQzLC0yMTA0MTk5MDU1LC00MzM1MDM2
+ODgsLTExNjc4OTg3MSwtOTcxODg2MjU1LDg5NjM2NjUyLC03MD
+c0Njg1ODQsOTcwMDA5MzUxLDE2MjA2NTA5OTgsLTExMDcwMDgx
+OTYsLTY2NTc1NjgwMSwxNjMyMzY4MTEwLDM5ODA4MzQ2LC0xMj
+A2NzI5MDM2LC01Mjk5MDM4OTcsLTI0NDY5MzgzLC05MDg2NDAz
+ODBdfQ==
 -->
