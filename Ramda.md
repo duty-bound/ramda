@@ -510,6 +510,9 @@ R.clone(objList)
 //"sk": {"name": "shark", "origin": {"continent": "Australia", "country": "Sydney"}, "type": "fish"}}
 ```
 
+#### compose
+
+Performs right-to-left function composition. The rightmost function may have any arity; the remaining functions must be unary.
 
 
 ## Mapping
@@ -535,11 +538,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODU0NDQ5NjcsLTExNjc4OTg3MSwtOT
-cxODg2MjU1LDg5NjM2NjUyLC03MDc0Njg1ODQsOTcwMDA5MzUx
-LDE2MjA2NTA5OTgsLTExMDcwMDgxOTYsLTY2NTc1NjgwMSwxNj
-MyMzY4MTEwLDM5ODA4MzQ2LC0xMjA2NzI5MDM2LC01Mjk5MDM4
-OTcsLTI0NDY5MzgzLC05MDg2NDAzODAsNjc3Mjc1NzgwLC0zOT
-AzMDEwMDQsLTM3MDgyNzY1OCwtODg0Nzg5ODM1LC0xODQ5MzE4
-N119
+eyJoaXN0b3J5IjpbNDgwMjQ0NzksLTExNjc4OTg3MSwtOTcxOD
+g2MjU1LDg5NjM2NjUyLC03MDc0Njg1ODQsOTcwMDA5MzUxLDE2
+MjA2NTA5OTgsLTExMDcwMDgxOTYsLTY2NTc1NjgwMSwxNjMyMz
+Y4MTEwLDM5ODA4MzQ2LC0xMjA2NzI5MDM2LC01Mjk5MDM4OTcs
+LTI0NDY5MzgzLC05MDg2NDAzODAsNjc3Mjc1NzgwLC0zOTAzMD
+EwMDQsLTM3MDgyNzY1OCwtODg0Nzg5ODM1LC0xODQ5MzE4N119
+
 -->
