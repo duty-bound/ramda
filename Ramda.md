@@ -551,7 +551,13 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 
 #### concat
 
+Concatenates the provided strings or arrays. Takes a maximum of two parameters.
 
+```
+R.concat(['a', 'b', 'c'], ['d', 'e', 'f'])
+
+//["a", "b", "c", "d", "e", "f"]
+```
 
 ```
 R.concat('foo', 'bar') 
@@ -565,11 +571,11 @@ applySpec
 bind
 composeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0OTI4ODMyMiw5MjQ3OTg0MywtMjEwND
-E5OTA1NSwtNDMzNTAzNjg4LC0xMTY3ODk4NzEsLTk3MTg4NjI1
-NSw4OTYzNjY1MiwtNzA3NDY4NTg0LDk3MDAwOTM1MSwxNjIwNj
-UwOTk4LC0xMTA3MDA4MTk2LC02NjU3NTY4MDEsMTYzMjM2ODEx
-MCwzOTgwODM0NiwtMTIwNjcyOTAzNiwtNTI5OTAzODk3LC0yND
-Q2OTM4MywtOTA4NjQwMzgwLDY3NzI3NTc4MCwtMzkwMzAxMDA0
-XX0=
+eyJoaXN0b3J5IjpbLTExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMD
+QxOTkwNTUsLTQzMzUwMzY4OCwtMTE2Nzg5ODcxLC05NzE4ODYy
+NTUsODk2MzY2NTIsLTcwNzQ2ODU4NCw5NzAwMDkzNTEsMTYyMD
+Y1MDk5OCwtMTEwNzAwODE5NiwtNjY1NzU2ODAxLDE2MzIzNjgx
+MTAsMzk4MDgzNDYsLTEyMDY3MjkwMzYsLTUyOTkwMzg5NywtMj
+Q0NjkzODMsLTkwODY0MDM4MCw2NzcyNzU3ODAsLTM5MDMwMTAw
+NF19
 -->
