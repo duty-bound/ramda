@@ -523,6 +523,8 @@ R.compose(plus3, x2)(3) //9
 ```
 
 ```
+const joinToUpper = R.compose(R.toUpper, R.concat)
+joinToUpper('foo', 'bar')
 R.compose(R.toUpper, R.concat)('foo', 'bar') //"FOOBAR"
 ```
 
@@ -550,11 +552,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDQxOTkwNTUsLTQzMzUwMzY4OCwtMT
-E2Nzg5ODcxLC05NzE4ODYyNTUsODk2MzY2NTIsLTcwNzQ2ODU4
-NCw5NzAwMDkzNTEsMTYyMDY1MDk5OCwtMTEwNzAwODE5NiwtNj
-Y1NzU2ODAxLDE2MzIzNjgxMTAsMzk4MDgzNDYsLTEyMDY3Mjkw
-MzYsLTUyOTkwMzg5NywtMjQ0NjkzODMsLTkwODY0MDM4MCw2Nz
-cyNzU3ODAsLTM5MDMwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4
-MzVdfQ==
+eyJoaXN0b3J5IjpbLTIwODY2OTIwMTMsLTIxMDQxOTkwNTUsLT
+QzMzUwMzY4OCwtMTE2Nzg5ODcxLC05NzE4ODYyNTUsODk2MzY2
+NTIsLTcwNzQ2ODU4NCw5NzAwMDkzNTEsMTYyMDY1MDk5OCwtMT
+EwNzAwODE5NiwtNjY1NzU2ODAxLDE2MzIzNjgxMTAsMzk4MDgz
+NDYsLTEyMDY3MjkwMzYsLTUyOTkwMzg5NywtMjQ0NjkzODMsLT
+kwODY0MDM4MCw2NzcyNzU3ODAsLTM5MDMwMTAwNCwtMzcwODI3
+NjU4XX0=
 -->
