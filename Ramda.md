@@ -514,6 +514,14 @@ R.clone(objList)
 
 Performs right-to-left function composition. The rightmost function may have any arity; the remaining functions must be unary.
 
+```
+const x2 = n => n * 2
+const plus3 = n => n + 3
+
+R.compose(x2, plus3)(3) //12
+R.compose(plus3, x2)(3) //9
+```
+
 
 ## Mapping
 
@@ -538,11 +546,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgwMjQ0NzksLTExNjc4OTg3MSwtOTcxOD
-g2MjU1LDg5NjM2NjUyLC03MDc0Njg1ODQsOTcwMDA5MzUxLDE2
-MjA2NTA5OTgsLTExMDcwMDgxOTYsLTY2NTc1NjgwMSwxNjMyMz
-Y4MTEwLDM5ODA4MzQ2LC0xMjA2NzI5MDM2LC01Mjk5MDM4OTcs
-LTI0NDY5MzgzLC05MDg2NDAzODAsNjc3Mjc1NzgwLC0zOTAzMD
-EwMDQsLTM3MDgyNzY1OCwtODg0Nzg5ODM1LC0xODQ5MzE4N119
-
+eyJoaXN0b3J5IjpbLTQzMzUwMzY4OCwtMTE2Nzg5ODcxLC05Nz
+E4ODYyNTUsODk2MzY2NTIsLTcwNzQ2ODU4NCw5NzAwMDkzNTEs
+MTYyMDY1MDk5OCwtMTEwNzAwODE5NiwtNjY1NzU2ODAxLDE2Mz
+IzNjgxMTAsMzk4MDgzNDYsLTEyMDY3MjkwMzYsLTUyOTkwMzg5
+NywtMjQ0NjkzODMsLTkwODY0MDM4MCw2NzcyNzU3ODAsLTM5MD
+MwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4MzUsLTE4NDkzMTg3
+XX0=
 -->
