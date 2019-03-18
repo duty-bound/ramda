@@ -205,7 +205,15 @@ R.sort(asc, arr)
 
 #### complement
 
-Takes a function that returns either true or false and creates a function that returns the opposite of what the provided function would
+Takes a function that returns either true or false and creates a function that returns the opposite of what the provided function would return.
+
+```
+const notNil = R.complement(R.isNil)
+
+R.isNil(null) //true
+notNil(null) //false
+```
+
 
 ## Filtering 
 
@@ -520,11 +528,11 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 applySpec
 bind
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNjc5NzIyNiwtMTE2Nzg5ODcxLC05Nz
-E4ODYyNTUsODk2MzY2NTIsLTcwNzQ2ODU4NCw5NzAwMDkzNTEs
-MTYyMDY1MDk5OCwtMTEwNzAwODE5NiwtNjY1NzU2ODAxLDE2Mz
-IzNjgxMTAsMzk4MDgzNDYsLTEyMDY3MjkwMzYsLTUyOTkwMzg5
-NywtMjQ0NjkzODMsLTkwODY0MDM4MCw2NzcyNzU3ODAsLTM5MD
-MwMTAwNCwtMzcwODI3NjU4LC04ODQ3ODk4MzUsLTE4NDkzMTg3
-XX0=
+eyJoaXN0b3J5IjpbNDY4NTM4Mjc2LC0xMTY3ODk4NzEsLTk3MT
+g4NjI1NSw4OTYzNjY1MiwtNzA3NDY4NTg0LDk3MDAwOTM1MSwx
+NjIwNjUwOTk4LC0xMTA3MDA4MTk2LC02NjU3NTY4MDEsMTYzMj
+M2ODExMCwzOTgwODM0NiwtMTIwNjcyOTAzNiwtNTI5OTAzODk3
+LC0yNDQ2OTM4MywtOTA4NjQwMzgwLDY3NzI3NTc4MCwtMzkwMz
+AxMDA0LC0zNzA4Mjc2NTgsLTg4NDc4OTgzNSwtMTg0OTMxODdd
+fQ==
 -->
