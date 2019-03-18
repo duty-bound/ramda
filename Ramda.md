@@ -207,6 +207,8 @@ R.sort(asc, arr)
 
 Takes a function that returns either true or false and creates a function that returns the opposite of what the provided function would return.
 
+(Check the example in `cond` for a useful implementation of `complement`)
+
 ```
 const notNil = R.complement(R.isNil)
 
@@ -226,7 +228,7 @@ isOdd(5) //true
 
 This is Ramda's equivalent of nested if/else statements. Conditions are passed to this functions in a 'condition', 'transformer' fashion.
 
-(Note in the below example that a function such as `R.lt` returns true if the first argument is less than the second. However when using `cond` the second parameter is always the 
+(Note in the below example that a function such as `R.lt` returns true if the first argument is less than the second. However when using `cond` the second parameter is always the value passed by `cond` resulting in the opposite results to that desired being returned. Thus `complement` is used to rectify this.
 
 ```
 const fn = R.cond([
@@ -603,11 +605,11 @@ applySpec
 bind
 composeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNTA2OTU3LDE3MDYwODIwNDksLTExMz
-I1NjA5NzQsOTI0Nzk4NDMsLTIxMDQxOTkwNTUsLTQzMzUwMzY4
-OCwtMTE2Nzg5ODcxLC05NzE4ODYyNTUsODk2MzY2NTIsLTcwNz
-Q2ODU4NCw5NzAwMDkzNTEsMTYyMDY1MDk5OCwtMTEwNzAwODE5
-NiwtNjY1NzU2ODAxLDE2MzIzNjgxMTAsMzk4MDgzNDYsLTEyMD
-Y3MjkwMzYsLTUyOTkwMzg5NywtMjQ0NjkzODMsLTkwODY0MDM4
-MF19
+eyJoaXN0b3J5IjpbMTk5MzQwMjk0NSwxNzA2MDgyMDQ5LC0xMT
+MyNTYwOTc0LDkyNDc5ODQzLC0yMTA0MTk5MDU1LC00MzM1MDM2
+ODgsLTExNjc4OTg3MSwtOTcxODg2MjU1LDg5NjM2NjUyLC03MD
+c0Njg1ODQsOTcwMDA5MzUxLDE2MjA2NTA5OTgsLTExMDcwMDgx
+OTYsLTY2NTc1NjgwMSwxNjMyMzY4MTEwLDM5ODA4MzQ2LC0xMj
+A2NzI5MDM2LC01Mjk5MDM4OTcsLTI0NDY5MzgzLC05MDg2NDAz
+ODBdfQ==
 -->
