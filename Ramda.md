@@ -595,6 +595,8 @@ cars[2]
 
 Takes two parameters and returns a function. The first parameter is a converging function that takes as arguments the result of the each of the branching functions supplied in the second parameter.
 
+Each branching function takes the exact same argument supplied to the created function.
+
 The arity of the new function is the same as the arity of the longest branching function.
 
 
@@ -641,11 +643,11 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcxNDU0ODE4LDEyNDI2MDk1MDgsMTIzMj
-UwOTQ3MiwxNDQwNTY0NjYwLDE5OTM0MDI5NDUsMTcwNjA4MjA0
-OSwtMTEzMjU2MDk3NCw5MjQ3OTg0MywtMjEwNDE5OTA1NSwtND
-MzNTAzNjg4LC0xMTY3ODk4NzEsLTk3MTg4NjI1NSw4OTYzNjY1
-MiwtNzA3NDY4NTg0LDk3MDAwOTM1MSwxNjIwNjUwOTk4LC0xMT
-A3MDA4MTk2LC02NjU3NTY4MDEsMTYzMjM2ODExMCwzOTgwODM0
-Nl19
+eyJoaXN0b3J5IjpbMjEwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMz
+I1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYwODIw
+NDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMDQxOTkwNTUsLT
+QzMzUwMzY4OCwtMTE2Nzg5ODcxLC05NzE4ODYyNTUsODk2MzY2
+NTIsLTcwNzQ2ODU4NCw5NzAwMDkzNTEsMTYyMDY1MDk5OCwtMT
+EwNzAwODE5NiwtNjY1NzU2ODAxLDE2MzIzNjgxMTAsMzk4MDgz
+NDZdfQ==
 -->
