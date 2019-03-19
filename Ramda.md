@@ -589,6 +589,12 @@ const cars = R.map(CarConstructor, vehicles)
 cars[2]
 //{"engine": 10, "name": "tesla"}
 ```
+
+
+#### converge
+
+Takes two parameters and returns a function. The first parameter is a converging function
+
 ## Mapping
 
 #### addIndex
@@ -630,11 +636,11 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MjYwOTUwOCwxMjMyNTA5NDcyLDE0ND
-A1NjQ2NjAsMTk5MzQwMjk0NSwxNzA2MDgyMDQ5LC0xMTMyNTYw
-OTc0LDkyNDc5ODQzLC0yMTA0MTk5MDU1LC00MzM1MDM2ODgsLT
-ExNjc4OTg3MSwtOTcxODg2MjU1LDg5NjM2NjUyLC03MDc0Njg1
-ODQsOTcwMDA5MzUxLDE2MjA2NTA5OTgsLTExMDcwMDgxOTYsLT
-Y2NTc1NjgwMSwxNjMyMzY4MTEwLDM5ODA4MzQ2LC0xMjA2NzI5
-MDM2XX0=
+eyJoaXN0b3J5IjpbODc1NTAzNjUzLDEyNDI2MDk1MDgsMTIzMj
+UwOTQ3MiwxNDQwNTY0NjYwLDE5OTM0MDI5NDUsMTcwNjA4MjA0
+OSwtMTEzMjU2MDk3NCw5MjQ3OTg0MywtMjEwNDE5OTA1NSwtND
+MzNTAzNjg4LC0xMTY3ODk4NzEsLTk3MTg4NjI1NSw4OTYzNjY1
+MiwtNzA3NDY4NTg0LDk3MDAwOTM1MSwxNjIwNjUwOTk4LC0xMT
+A3MDA4MTk2LC02NjU3NTY4MDEsMTYzMjM2ODExMCwzOTgwODM0
+Nl19
 -->
