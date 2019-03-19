@@ -602,6 +602,7 @@ The arity of the new function is the same as the arity of the longest branching 
 ## Mapping
 
 #### addIndex
+
 Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
 
 It can in fact be used to mimic javascript's Array.prototype.map
@@ -640,11 +641,11 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjgzODIzODQsMTI0MjYwOTUwOCwxMj
-MyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NSwxNzA2MDgy
-MDQ5LC0xMTMyNTYwOTc0LDkyNDc5ODQzLC0yMTA0MTk5MDU1LC
-00MzM1MDM2ODgsLTExNjc4OTg3MSwtOTcxODg2MjU1LDg5NjM2
-NjUyLC03MDc0Njg1ODQsOTcwMDA5MzUxLDE2MjA2NTA5OTgsLT
-ExMDcwMDgxOTYsLTY2NTc1NjgwMSwxNjMyMzY4MTEwLDM5ODA4
-MzQ2XX0=
+eyJoaXN0b3J5IjpbNDcxNDU0ODE4LDEyNDI2MDk1MDgsMTIzMj
+UwOTQ3MiwxNDQwNTY0NjYwLDE5OTM0MDI5NDUsMTcwNjA4MjA0
+OSwtMTEzMjU2MDk3NCw5MjQ3OTg0MywtMjEwNDE5OTA1NSwtND
+MzNTAzNjg4LC0xMTY3ODk4NzEsLTk3MTg4NjI1NSw4OTYzNjY1
+MiwtNzA3NDY4NTg0LDk3MDAwOTM1MSwxNjIwNjUwOTk4LC0xMT
+A3MDA4MTk2LC02NjU3NTY4MDEsMTYzMjM2ODExMCwzOTgwODM0
+Nl19
 -->
