@@ -599,7 +599,10 @@ Each branching function takes the exact same argument supplied to the created fu
 
 The arity of the new function is the same as the arity of the longest branching function.
 
+const average = R.converge(R.divide, [R.sum, R.length])
 
+average([1, 2, 3, 4, 5])
+//3
 
 ## Mapping
 
@@ -643,11 +646,11 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MjEzODg1NSwyMTA3MTkyNjY4LDEyND
-I2MDk1MDgsMTIzMjUwOTQ3MiwxNDQwNTY0NjYwLDE5OTM0MDI5
-NDUsMTcwNjA4MjA0OSwtMTEzMjU2MDk3NCw5MjQ3OTg0MywtMj
-EwNDE5OTA1NSwtNDMzNTAzNjg4LC0xMTY3ODk4NzEsLTk3MTg4
-NjI1NSw4OTYzNjY1MiwtNzA3NDY4NTg0LDk3MDAwOTM1MSwxNj
-IwNjUwOTk4LC0xMTA3MDA4MTk2LC02NjU3NTY4MDEsMTYzMjM2
-ODExMF19
+eyJoaXN0b3J5IjpbLTUzNDk0MjExMCwxMzQyMTM4ODU1LDIxMD
+cxOTI2NjgsMTI0MjYwOTUwOCwxMjMyNTA5NDcyLDE0NDA1NjQ2
+NjAsMTk5MzQwMjk0NSwxNzA2MDgyMDQ5LC0xMTMyNTYwOTc0LD
+kyNDc5ODQzLC0yMTA0MTk5MDU1LC00MzM1MDM2ODgsLTExNjc4
+OTg3MSwtOTcxODg2MjU1LDg5NjM2NjUyLC03MDc0Njg1ODQsOT
+cwMDA5MzUxLDE2MjA2NTA5OTgsLTExMDcwMDgxOTYsLTY2NTc1
+NjgwMV19
 -->
