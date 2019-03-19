@@ -566,7 +566,7 @@ R.concat('foo', 'bar')
 
 #### construct
 
-This function returns a function equivalent to the `new`
+This function returns a function equivalent to the `new` keyword that creates an object from a constructor function.
 
 ```
 class Car {
@@ -629,7 +629,7 @@ R.concat('foo', 'bar')
 - bind
 - composeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMTg1MDk5NiwxNDQwNTY0NjYwLDE5OT
+eyJoaXN0b3J5IjpbMTIzMjUwOTQ3MiwxNDQwNTY0NjYwLDE5OT
 M0MDI5NDUsMTcwNjA4MjA0OSwtMTEzMjU2MDk3NCw5MjQ3OTg0
 MywtMjEwNDE5OTA1NSwtNDMzNTAzNjg4LC0xMTY3ODk4NzEsLT
 k3MTg4NjI1NSw4OTYzNjY1MiwtNzA3NDY4NTg0LDk3MDAwOTM1
