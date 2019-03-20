@@ -697,7 +697,11 @@ R.dec(4) //3
 R.dec(4.4) //3.4000000000000004
 ```
 
-#### defau
+#### defaultTo
+
+Returns a function that returns the specified value if passed wither `null`, `undefined`, or `NaN`
+
+
 
 ## Mapping
 
@@ -742,11 +746,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA1NDk0MDQsMTI5OTg0MDAzMSwxNjMyMz
-U0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQyMTEw
-LDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMz
-I1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYwODIw
-NDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMDQxOTkwNTUsLT
-QzMzUwMzY4OCwtMTE2Nzg5ODcxLC05NzE4ODYyNTUsODk2MzY2
-NTJdfQ==
+eyJoaXN0b3J5IjpbLTE2NjQzMTQ2NTgsMTI5OTg0MDAzMSwxNj
+MyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQy
+MTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LD
+EyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYw
+ODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMDQxOTkwNT
+UsLTQzMzUwMzY4OCwtMTE2Nzg5ODcxLC05NzE4ODYyNTUsODk2
+MzY2NTJdfQ==
 -->
