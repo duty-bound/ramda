@@ -699,9 +699,16 @@ R.dec(4.4) //3.4000000000000004
 
 #### defaultTo
 
-Returns a function that returns the specified value if passed wither `null`, `undefined`, or `NaN`
+Returns a function that returns the specified value if passed either `null`, `undefined`, or `NaN`. 
 
+Note: passing `false` does not trigger the default value.
 
+```
+const defaultToZero = R.defaultTo(0)
+
+defaultToZero(null)
+//0
+```
 
 ## Mapping
 
@@ -746,11 +753,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjQzMTQ2NTgsMTI5OTg0MDAzMSwxNj
-MyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQy
-MTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LD
-EyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYw
-ODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMDQxOTkwNT
-UsLTQzMzUwMzY4OCwtMTE2Nzg5ODcxLC05NzE4ODYyNTUsODk2
-MzY2NTJdfQ==
+eyJoaXN0b3J5IjpbMjg1NDkyNDk2LDEyOTk4NDAwMzEsMTYzMj
+M1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLTUzNDk0MjEx
+MCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYwOTUwOCwxMj
+MyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NSwxNzA2MDgy
+MDQ5LC0xMTMyNTYwOTc0LDkyNDc5ODQzLC0yMTA0MTk5MDU1LC
+00MzM1MDM2ODgsLTExNjc4OTg3MSwtOTcxODg2MjU1LDg5NjM2
+NjUyXX0=
 -->
