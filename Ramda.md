@@ -729,8 +729,9 @@ R.concat('foo', 'bar')
 - bind
 - composeWith
 - constructN
+- curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MjIxOTI0NSwxNjMyMzU0NzI2LC04Nz
+eyJoaXN0b3J5IjpbMTQyMjQ0Nzc2NSwxNjMyMzU0NzI2LC04Nz
 IxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQyMTEwLDEzNDIxMzg4
 NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMzI1MDk0NzIsMT
 Q0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYwODIwNDksLTExMzI1
