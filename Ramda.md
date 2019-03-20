@@ -639,7 +639,7 @@ R.countBy(Math.floor)(numbers)
 
 //{'1': 3, '2': 2, '3': 1}
 ```
-
+The below example is tricky. `R.lt` checks whether the first parameter is smaller than the second. But `R.countBy` would supply arguments to `R.lt`
 
 ## Mapping
 
@@ -683,11 +683,11 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMDg0NTU1NywtNTM0OTQyMTEwLDEzND
-IxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMzI1MDk0
-NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYwODIwNDksLT
-ExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMDQxOTkwNTUsLTQzMzUw
-MzY4OCwtMTE2Nzg5ODcxLC05NzE4ODYyNTUsODk2MzY2NTIsLT
-cwNzQ2ODU4NCw5NzAwMDkzNTEsMTYyMDY1MDk5OCwtMTEwNzAw
-ODE5Nl19
+eyJoaXN0b3J5IjpbLTE2OTU1NzIwMzEsMjEwMDg0NTU1NywtNT
+M0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5
+NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LD
+E3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMDQx
+OTkwNTUsLTQzMzUwMzY4OCwtMTE2Nzg5ODcxLC05NzE4ODYyNT
+UsODk2MzY2NTIsLTcwNzQ2ODU4NCw5NzAwMDkzNTEsMTYyMDY1
+MDk5OF19
 -->
