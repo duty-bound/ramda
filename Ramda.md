@@ -678,6 +678,15 @@ g(_, 2)(1)(3)
 g(_, 2)(1, 3)
 g(_, 2)(_, 3)(1)
 ```
+```
+const addFourNumbers = (a, b, c, d) => a + b + c + d;
+
+const curriedAddFourNumbers = R.curry(addFourNumbers);
+const f = curriedAddFourNumbers(1, 2);
+const g = f(3);
+g(4)
+//10
+```
 
 ## Mapping
 
@@ -721,11 +730,11 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMjM1NDcyNiwtODcyMTM0MjA1LDIxMD
-A4NDU1NTcsLTUzNDk0MjExMCwxMzQyMTM4ODU1LDIxMDcxOTI2
-NjgsMTI0MjYwOTUwOCwxMjMyNTA5NDcyLDE0NDA1NjQ2NjAsMT
-k5MzQwMjk0NSwxNzA2MDgyMDQ5LC0xMTMyNTYwOTc0LDkyNDc5
-ODQzLC0yMTA0MTk5MDU1LC00MzM1MDM2ODgsLTExNjc4OTg3MS
-wtOTcxODg2MjU1LDg5NjM2NjUyLC03MDc0Njg1ODQsOTcwMDA5
-MzUxXX0=
+eyJoaXN0b3J5IjpbMTE4MjIxOTI0NSwxNjMyMzU0NzI2LC04Nz
+IxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQyMTEwLDEzNDIxMzg4
+NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMzI1MDk0NzIsMT
+Q0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYwODIwNDksLTExMzI1
+NjA5NzQsOTI0Nzk4NDMsLTIxMDQxOTkwNTUsLTQzMzUwMzY4OC
+wtMTE2Nzg5ODcxLC05NzE4ODYyNTUsODk2MzY2NTIsLTcwNzQ2
+ODU4NF19
 -->
