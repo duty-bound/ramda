@@ -639,7 +639,7 @@ R.countBy(Math.floor)(numbers)
 
 //{'1': 3, '2': 2, '3': 1}
 ```
-The below example is tricky. `R.lt` checks whether the first parameter is smaller than the second. But `the argument supplied by R.countBy`  to `R.lt` would be `R.lt`'s second parameter. So, in order to do a 'less than' check, the result of `R.lt` would give exactly the opposite 
+The below example is tricky. `R.lt` checks whether the first parameter is smaller than the second. But `the argument supplied by R.countBy`  to `R.lt` would be `R.lt`'s second parameter. So, in order to do a 'less than' check, the result of `R.lt` would give exactly the opposite of what is required. So one shouldu
 
 ## Mapping
 
@@ -683,7 +683,7 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTY4MTgzODgsMjEwMDg0NTU1NywtNT
+eyJoaXN0b3J5IjpbLTEzNDE2OTg2NzgsMjEwMDg0NTU1NywtNT
 M0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5
 NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LD
 E3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMDQx
