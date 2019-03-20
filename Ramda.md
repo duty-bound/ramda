@@ -624,34 +624,22 @@ R.countBy(i => i)(nums)
 
 //{"1": 1, "2": 2, "3": 3, "4": 4}
 ```
-
+```
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-  
 
 R.countBy(R.lt(5), nums)
 
 //{"false": 5, "true": 4}
-
 ```
 
 ```
-
 const numbers = [1.0, 1.1, 1.2, 2.0, 3.0, 2.2]
-
-  
 
 R.countBy(Math.floor)(numbers)
 
-  
-
 //{'1': 3, '2': 2, '3': 1}
-
 ```
 
-![](https://ssl.gstatic.com/ui/v1/icons/mail/no_photo.png)
-
-ReplyForward
 
 ## Mapping
 
@@ -695,7 +683,7 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NjIyMzk5MSwtNTM0OTQyMTEwLDEzND
+eyJoaXN0b3J5IjpbMjEwMDg0NTU1NywtNTM0OTQyMTEwLDEzND
 IxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMzI1MDk0
 NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYwODIwNDksLT
 ExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMDQxOTkwNTUsLTQzMzUw
