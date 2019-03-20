@@ -651,6 +651,14 @@ R.countBy(R.gt(4), nums)
 //{"false": 4, "true": 6}
 ```
 
+#### curry
+
+Imagine a function such as the below:
+```
+const f = (x, y, z) => x + y + z
+
+f(1, 2, 3) //6
+f(1, 2)(3) //error
 
 
 ## Mapping
@@ -695,7 +703,7 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAwODg4NDc5LC04NzIxMzQyMDUsMjEwMD
+eyJoaXN0b3J5IjpbNTk3NjA1NjU3LC04NzIxMzQyMDUsMjEwMD
 g0NTU1NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2
 OCwxMjQyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOT
 kzNDAyOTQ1LDE3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4
