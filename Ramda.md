@@ -604,6 +604,55 @@ const average = R.converge(R.divide, [R.sum, R.length])
 average([1, 2, 3, 4, 5])
 //3
 
+
+#### countBy
+
+Counts the number of unique occurrences in a list that is constructed from the function supplied to the function.
+
+Thus, a list cannot be directly supplied to the `countBy`, the below does not work:
+```
+const nums = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+
+R.countBy(nums)
+```
+
+The below however does, because the supplied function is used to construct an index:
+```
+const nums = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+
+R.countBy(i => i)(nums)
+
+//{"1": 1, "2": 2, "3": 3, "4": 4}
+```
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  
+
+R.countBy(R.lt(5), nums)
+
+//{"false": 5, "true": 4}
+
+```
+
+```
+
+const numbers = [1.0, 1.1, 1.2, 2.0, 3.0, 2.2]
+
+  
+
+R.countBy(Math.floor)(numbers)
+
+  
+
+//{'1': 3, '2': 2, '3': 1}
+
+```
+
+![](https://ssl.gstatic.com/ui/v1/icons/mail/no_photo.png)
+
+ReplyForward
+
 ## Mapping
 
 #### addIndex
@@ -646,11 +695,11 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNDk0MjExMCwxMzQyMTM4ODU1LDIxMD
-cxOTI2NjgsMTI0MjYwOTUwOCwxMjMyNTA5NDcyLDE0NDA1NjQ2
-NjAsMTk5MzQwMjk0NSwxNzA2MDgyMDQ5LC0xMTMyNTYwOTc0LD
-kyNDc5ODQzLC0yMTA0MTk5MDU1LC00MzM1MDM2ODgsLTExNjc4
-OTg3MSwtOTcxODg2MjU1LDg5NjM2NjUyLC03MDc0Njg1ODQsOT
-cwMDA5MzUxLDE2MjA2NTA5OTgsLTExMDcwMDgxOTYsLTY2NTc1
-NjgwMV19
+eyJoaXN0b3J5IjpbMjE0NjIyMzk5MSwtNTM0OTQyMTEwLDEzND
+IxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMzI1MDk0
+NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYwODIwNDksLT
+ExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMDQxOTkwNTUsLTQzMzUw
+MzY4OCwtMTE2Nzg5ODcxLC05NzE4ODYyNTUsODk2MzY2NTIsLT
+cwNzQ2ODU4NCw5NzAwMDkzNTEsMTYyMDY1MDk5OCwtMTEwNzAw
+ODE5Nl19
 -->
