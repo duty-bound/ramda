@@ -668,7 +668,16 @@ g(1, 2)(3) //6
 g(1)(2, 3) //6
 g()(1, 2, 3) //6
 ```
-
+Secondly, the special placeholder value `R._` may be used to specify "gaps", allowing partial application of any combination of arguments, regardless of their positions:
+```
+g(1, 2, 3)
+g(_, 2, 3)(1)
+g(_, _, 3)(1)(2)
+g(_, _, 3)(1, 2)
+g(_, 2)(1)(3)
+g(_, 2)(1, 3)
+g(_, 2)(_, 3)(1)
+```
 
 ## Mapping
 
@@ -712,11 +721,11 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxNTAxOTg0LC04NzIxMzQyMDUsMjEwMD
-g0NTU1NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2
-OCwxMjQyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOT
-kzNDAyOTQ1LDE3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4
-NDMsLTIxMDQxOTkwNTUsLTQzMzUwMzY4OCwtMTE2Nzg5ODcxLC
-05NzE4ODYyNTUsODk2MzY2NTIsLTcwNzQ2ODU4NCw5NzAwMDkz
-NTFdfQ==
+eyJoaXN0b3J5IjpbMTYzMjM1NDcyNiwtODcyMTM0MjA1LDIxMD
+A4NDU1NTcsLTUzNDk0MjExMCwxMzQyMTM4ODU1LDIxMDcxOTI2
+NjgsMTI0MjYwOTUwOCwxMjMyNTA5NDcyLDE0NDA1NjQ2NjAsMT
+k5MzQwMjk0NSwxNzA2MDgyMDQ5LC0xMTMyNTYwOTc0LDkyNDc5
+ODQzLC0yMTA0MTk5MDU1LC00MzM1MDM2ODgsLTExNjc4OTg3MS
+wtOTcxODg2MjU1LDg5NjM2NjUyLC03MDc0Njg1ODQsOTcwMDA5
+MzUxXX0=
 -->
