@@ -639,7 +639,17 @@ R.countBy(Math.floor)(numbers)
 
 //{'1': 3, '2': 2, '3': 1}
 ```
-The below example is tricky. `R.lt` checks whether the first parameter is smaller than the second. But `the argument supplied by R.countBy`  to `R.lt` would be `R.lt`'s second parameter. So, in order to do a 'less than' check, the result of `R.lt` would give exactly the opposite of what is required. So one shouldu
+The below example is tricky. `R.lt` checks whether the first parameter is smaller than the second. But `the argument supplied by R.countBy`  to `R.lt` would be `R.lt`'s second parameter. So, in order to do a 'less than' check, the result of `R.lt` would give exactly the opposite of what is required. So one should in this case use either of the below:
+
+```
+const nums = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+
+R.countBy(R.complement(R.lte(4)), nums)
+//{"false": 4, "true": 6}
+
+R.countBy(R.gt(4), nums)
+//{"false": 4, "true": 6}
+```
 
 ## Mapping
 
@@ -683,11 +693,11 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDE2OTg2NzgsMjEwMDg0NTU1NywtNT
-M0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5
-NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LD
-E3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMDQx
-OTkwNTUsLTQzMzUwMzY4OCwtMTE2Nzg5ODcxLC05NzE4ODYyNT
-UsODk2MzY2NTIsLTcwNzQ2ODU4NCw5NzAwMDkzNTEsMTYyMDY1
-MDk5OF19
+eyJoaXN0b3J5IjpbLTg3MjEzNDIwNSwyMTAwODQ1NTU3LC01Mz
+Q5NDIxMTAsMTM0MjEzODg1NSwyMTA3MTkyNjY4LDEyNDI2MDk1
+MDgsMTIzMjUwOTQ3MiwxNDQwNTY0NjYwLDE5OTM0MDI5NDUsMT
+cwNjA4MjA0OSwtMTEzMjU2MDk3NCw5MjQ3OTg0MywtMjEwNDE5
+OTA1NSwtNDMzNTAzNjg4LC0xMTY3ODk4NzEsLTk3MTg4NjI1NS
+w4OTYzNjY1MiwtNzA3NDY4NTg0LDk3MDAwOTM1MSwxNjIwNjUw
+OTk4XX0=
 -->
