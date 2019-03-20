@@ -709,6 +709,16 @@ const defaultToZero = R.defaultTo(0)
 defaultToZero(null)
 //0
 ```
+```
+defaultToZero(56)
+//56
+
+defaultToZero(-3 < 0)
+//true
+
+defaultToZero(-3 >0)
+//false
+```
 
 ## Mapping
 
@@ -753,7 +763,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2NzE2MDMzLDEyOTk4NDAwMzEsMTYzMj
+eyJoaXN0b3J5IjpbNzU2OTUxNTk5LDEyOTk4NDAwMzEsMTYzMj
 M1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLTUzNDk0MjEx
 MCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYwOTUwOCwxMj
 MyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NSwxNzA2MDgy
