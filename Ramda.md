@@ -701,7 +701,7 @@ R.dec(4.4) //3.4000000000000004
 
 Returns a function that returns the specified value if passed either `null`, `undefined`, or `NaN`. 
 
-Note: passing `false` does not trigger the default value.
+Note: passing `true` or `false` does not trigger the default value.
 
 ```
 const defaultToZero = R.defaultTo(0)
@@ -753,7 +753,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg1NDkyNDk2LDEyOTk4NDAwMzEsMTYzMj
+eyJoaXN0b3J5IjpbOTU2NzE2MDMzLDEyOTk4NDAwMzEsMTYzMj
 M1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLTUzNDk0MjEx
 MCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYwOTUwOCwxMj
 MyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NSwxNzA2MDgy
