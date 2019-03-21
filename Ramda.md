@@ -720,6 +720,186 @@ defaultToZero(-3 >0)
 //false
 ```
 
+#### descend
+
+  
+
+Create a comparator function that returns a value that can be used with `<` and `>`.
+
+  
+
+```
+
+const objList = [
+
+{ name: 'shark'},
+
+{ name: 'eagle'},
+
+{ name: 'antelope'},
+
+]
+
+  
+
+const d = R.descend(R.prop('name'))
+
+  
+
+R.sort(d, objList)
+
+  
+
+//[{"name": "shark"}, {"name": "eagle"}, {"name": "antelope"}]
+
+```
+
+  
+
+Not to be used with more than one parameter, it would no return the expected results:
+
+```
+
+  
+
+const objList = [
+
+{ name: 'shark', type: 'elephant', weight: '20'},
+
+{ name: 'shark', type: 'white', weight: '8'},
+
+{ name: 'eagle', type: 'american', weight: '0.004'},
+
+{ name: 'antelope', type: 'african', weight: '0.3'},
+
+]
+
+  
+
+const d = R.descend(R.prop('weight'), R.prop('name'))
+
+  
+
+R.sort(d, objList)
+
+  
+
+//R.descend(R.prop('name'), R.prop('weight'))
+
+/*
+
+[{"name": "antelope", "type": "african", "weight": "0.3"},
+
+{"name": "eagle", "type": "american", "weight": "0.004"},
+
+"name": "shark", "type": "elephant", "weight": "20"},
+
+{"name": "shark", "type": "white", "weight": "8"}]
+
+*/
+
+  
+
+//R.descend(R.prop('weight'), R.prop('name'))
+
+/*
+
+[{"name": "shark", "type": "elephant", "weight": "20"},
+
+{"name": "shark", "type": "white", "weight": "8"},
+
+{"name": "eagle", "type": "american", "weight": "0.004"},
+
+{"name": "antelope", "type": "african", "weight": "0.3"}]
+
+*/
+
+```
+
+  
+
+#### difference
+
+  
+
+Returns the elements in the first array that are not present in the second list array:
+
+  
+
+```
+
+const objList1 = [
+
+{ name: 'shark', type: 'elephant', weight: '20'},
+
+{ name: 'shark', type: 'white', weight: '20'},
+
+{ name: 'eagle', type: 'american', weight: '0.004'},
+
+{ name: 'antelope', type: 'african', weight: '0.3'},
+
+]
+
+  
+
+const objList2 = [
+
+{ name: 'shark', type: 'elephant', weight: '20'},
+
+{ name: 'shark', type: 'cat', weight: '20'},
+
+{ name: 'eagle', type: 'american', weight: '0.004'},
+
+{ name: 'antelope', type: 'african', weight: '0.3'},
+
+]
+
+  
+
+R.difference(objList1, objList2)
+
+  
+
+//[{"name": "shark", "type": "white", "weight": "20"}]
+
+```
+
+  
+
+#### differenceWith
+
+  
+
+Checks which elements are present in the first array but not in the second. This function has more fine tuning than `difference` because it can take a comparative function that dictates what the comparison should actually be. This time round the same arrays used with the example in `difference` are being used, but the comparison function is checking only for the 'name' property; the other properties are not taken into account. In this case, no difference is found.
+
+```
+const objList1 = [
+	{ name: 'shark', type: 'elephant', weight: '20'},
+	{ name: 'shark', type: 'white', weight: '20'},
+	{ name: 'eagle', type: 'american', weight: '0.004'},
+	{ name: 'antelope', type: 'african', weight: '0.3'},
+]
+
+const objList2 = [
+	{ name: 'shark', type: 'elephant', weight: '20'},
+
+	{ name: 'shark', type: 'cat', weight: '20'},
+
+	{ name: 'eagle', type: 'american', weight: '0.004'},
+
+	{ name: 'antelope', type: 'african', weight: '0.3'},
+]
+
+const cmp = (x, y) =>  [x.name](http://x.name/)  ===  [y.name](http://y.name/)
+
+R.difference(objList1, objList2)
+
+R.differenceWith(cmp, objList1, objList2)
+
+//[]
+```
+
+
 ## Mapping
 
 #### addIndex
@@ -763,11 +943,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU2OTUxNTk5LDEyOTk4NDAwMzEsMTYzMj
-M1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLTUzNDk0MjEx
-MCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYwOTUwOCwxMj
-MyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NSwxNzA2MDgy
-MDQ5LC0xMTMyNTYwOTc0LDkyNDc5ODQzLC0yMTA0MTk5MDU1LC
-00MzM1MDM2ODgsLTExNjc4OTg3MSwtOTcxODg2MjU1LDg5NjM2
-NjUyXX0=
+eyJoaXN0b3J5IjpbLTI5NTYyODcwNSw3NTY5NTE1OTksMTI5OT
+g0MDAzMSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1
+NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMj
+QyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAy
+OTQ1LDE3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLT
+IxMDQxOTkwNTUsLTQzMzUwMzY4OCwtMTE2Nzg5ODcxLC05NzE4
+ODYyNTVdfQ==
 -->
