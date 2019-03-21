@@ -835,7 +835,12 @@ R.dissoc('b', obj)
 
 //{"a": 1, "c": 3}
 ```
-Note that it cannot be used to removed nested properties or on arrays.
+It does not work on arrays.
+
+Note that it cannot be used to remove nested properties, in that case use `dissocPath`.
+
+
+#### dissocPath
 
 ## Mapping
 
@@ -880,7 +885,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MjM4NTg2MSwtODMzMDI5NDQ1LDExMj
+eyJoaXN0b3J5IjpbMTQ0MjE1MzQ0OSwtODMzMDI5NDQ1LDExMj
 M3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMTYzMjM1NDcy
 NiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLTUzNDk0MjExMCwxMz
 QyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYwOTUwOCwxMjMyNTA5
