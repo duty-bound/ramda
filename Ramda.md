@@ -824,6 +824,18 @@ R.differenceWith(cmp, objList1, objList2)
 //[]
 ```
 
+#### dissoc 
+
+Returns a new object that does not contain the indicated property.
+
+```
+const obj = { a: 1, b: 2, c: 3}
+
+R.dissoc('b', obj)
+
+//{"a": 1, "c": 3}
+```
+
 
 ## Mapping
 
@@ -868,11 +880,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OT
-g0MDAzMSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1
-NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMj
-QyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAy
-OTQ1LDE3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLT
-IxMDQxOTkwNTUsLTQzMzUwMzY4OCwtMTE2Nzg5ODcxLC05NzE4
-ODYyNTVdfQ==
+eyJoaXN0b3J5IjpbLTgzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Nj
+k1MTU5OSwxMjk5ODQwMDMxLDE2MzIzNTQ3MjYsLTg3MjEzNDIw
+NSwyMTAwODQ1NTU3LC01MzQ5NDIxMTAsMTM0MjEzODg1NSwyMT
+A3MTkyNjY4LDEyNDI2MDk1MDgsMTIzMjUwOTQ3MiwxNDQwNTY0
+NjYwLDE5OTM0MDI5NDUsMTcwNjA4MjA0OSwtMTEzMjU2MDk3NC
+w5MjQ3OTg0MywtMjEwNDE5OTA1NSwtNDMzNTAzNjg4LC0xMTY3
+ODk4NzFdfQ==
 -->
