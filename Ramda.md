@@ -842,6 +842,8 @@ Note that it cannot be used to remove nested properties, in that case use `disso
 
 #### dissocPath
 
+
+
 ## Mapping
 
 #### addIndex
@@ -885,11 +887,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MjE1MzQ0OSwtODMzMDI5NDQ1LDExMj
-M3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMTYzMjM1NDcy
-NiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLTUzNDk0MjExMCwxMz
-QyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYwOTUwOCwxMjMyNTA5
-NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NSwxNzA2MDgyMDQ5LC
-0xMTMyNTYwOTc0LDkyNDc5ODQzLC0yMTA0MTk5MDU1LC00MzM1
-MDM2ODhdfQ==
+eyJoaXN0b3J5IjpbMTkzNjk3NjAxMywxNDQyMTUzNDQ5LC04Mz
+MwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAz
+MSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNT
+M0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5
+NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LD
+E3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMDQx
+OTkwNTVdfQ==
 -->
