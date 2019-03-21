@@ -726,87 +726,48 @@ defaultToZero(-3 >0)
 
 Create a comparator function that returns a value that can be used with `<` and `>`.
 
-  
-
 ```
-
 const objList = [
-
-{ name: 'shark'},
-
-{ name: 'eagle'},
-
-{ name: 'antelope'},
-
+	{ name: 'shark'},
+	{ name: 'eagle'},
+	{ name: 'antelope'},
 ]
-
-  
 
 const d = R.descend(R.prop('name'))
 
-  
-
 R.sort(d, objList)
 
-  
-
 //[{"name": "shark"}, {"name": "eagle"}, {"name": "antelope"}]
-
 ```
-
-  
-
 Not to be used with more than one parameter, it would no return the expected results:
 
 ```
-
-  
-
 const objList = [
-
 { name: 'shark', type: 'elephant', weight: '20'},
-
 { name: 'shark', type: 'white', weight: '8'},
-
 { name: 'eagle', type: 'american', weight: '0.004'},
-
 { name: 'antelope', type: 'african', weight: '0.3'},
-
 ]
-
-  
 
 const d = R.descend(R.prop('weight'), R.prop('name'))
 
-  
-
 R.sort(d, objList)
 
-  
-
 //R.descend(R.prop('name'), R.prop('weight'))
-
 /*
-
 [{"name": "antelope", "type": "african", "weight": "0.3"},
-
 {"name": "eagle", "type": "american", "weight": "0.004"},
-
 "name": "shark", "type": "elephant", "weight": "20"},
-
 {"name": "shark", "type": "white", "weight": "8"}]
-
 */
 
-  
-
 //R.descend(R.prop('weight'), R.prop('name'))
-
 /*
 [{"name": "shark", "type": "elephant", "weight": "20"},
 {"name": "shark", "type": "white", "weight": "8"},
 {"name": "eagle", "type": "american", "weight": "0.004"},
 {"name": "antelope", "type": "african", "weight": "0.3"}]
+*/
 ```
 
 #### difference
@@ -908,11 +869,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYwMjYyOTE2LDc1Njk1MTU5OSwxMjk5OD
-QwMDMxLDE2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMTAwODQ1NTU3
-LC01MzQ5NDIxMTAsMTM0MjEzODg1NSwyMTA3MTkyNjY4LDEyND
-I2MDk1MDgsMTIzMjUwOTQ3MiwxNDQwNTY0NjYwLDE5OTM0MDI5
-NDUsMTcwNjA4MjA0OSwtMTEzMjU2MDk3NCw5MjQ3OTg0MywtMj
-EwNDE5OTA1NSwtNDMzNTAzNjg4LC0xMTY3ODk4NzEsLTk3MTg4
-NjI1NV19
+eyJoaXN0b3J5IjpbLTkyNzMwNzE5Nyw3NTY5NTE1OTksMTI5OT
+g0MDAzMSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1
+NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMj
+QyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAy
+OTQ1LDE3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLT
+IxMDQxOTkwNTUsLTQzMzUwMzY4OCwtMTE2Nzg5ODcxLC05NzE4
+ODYyNTVdfQ==
 -->
