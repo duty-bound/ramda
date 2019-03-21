@@ -857,12 +857,18 @@ const objList = {
 		    origin: { continent: 'USA', country: 'Arizona', }, }
 }
 
-R.dissocPath(['ea', 'type'], objList)
+R.dissocPath(['el', 'type'], objList)
 
 //{"ea": {"name": "eagle", "origin": {"continent": "USA", "country": "Arizona"}, "type": "bird"},
 //"el": {"name": "elephant", "origin": {"continent": "Africa", "country": "Gabon"}}, 
 //"sk": {"name": "shark", "origin": {"continent": "Australia", "country": "Sydney"}, "type": "fish"}}
 ```
+
+#### divide
+
+Divides two numbers, equivalent to `a / b`.
+
+
 
 ## Mapping
 
@@ -907,11 +913,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM2NTM0NDc5LDE0NDIxNTM0NDksLTgzMz
-AyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5OSwxMjk5ODQwMDMx
-LDE2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMTAwODQ1NTU3LC01Mz
-Q5NDIxMTAsMTM0MjEzODg1NSwyMTA3MTkyNjY4LDEyNDI2MDk1
-MDgsMTIzMjUwOTQ3MiwxNDQwNTY0NjYwLDE5OTM0MDI5NDUsMT
-cwNjA4MjA0OSwtMTEzMjU2MDk3NCw5MjQ3OTg0MywtMjEwNDE5
-OTA1NV19
+eyJoaXN0b3J5IjpbLTE2NTEyNjkyNTYsMTQ0MjE1MzQ0OSwtOD
+MzMDI5NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAw
+MzEsMTYzMjM1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLT
+UzNDk0MjExMCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYw
+OTUwOCwxMjMyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NS
+wxNzA2MDgyMDQ5LC0xMTMyNTYwOTc0LDkyNDc5ODQzLC0yMTA0
+MTk5MDU1XX0=
 -->
