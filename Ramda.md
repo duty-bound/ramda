@@ -868,7 +868,13 @@ R.dissocPath(['el', 'type'], objList)
 
 Divides two numbers, equivalent to `a / b`.
 
+```
+R.divide(9, 3)
+//3
 
+R.divide(45, 14)
+//3.2142857142857144
+```
 
 ## Mapping
 
@@ -913,7 +919,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTEyNjkyNTYsMTQ0MjE1MzQ0OSwtOD
+eyJoaXN0b3J5IjpbLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtOD
 MzMDI5NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAw
 MzEsMTYzMjM1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLT
 UzNDk0MjExMCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYw
