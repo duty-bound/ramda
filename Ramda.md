@@ -264,6 +264,55 @@ R.sort(asc, animals)
 //{"name": "shark", "type": "fish"}]
 ```
 
+#### descend
+
+Create a comparator function that returns a value that can be used with `<` and `>`.
+
+```
+const objList = [
+	{ name: 'shark'},
+	{ name: 'eagle'},
+	{ name: 'antelope'},
+]
+
+const d = R.descend(R.prop('name'))
+
+R.sort(d, objList)
+
+//[{"name": "shark"}, {"name": "eagle"}, {"name": "antelope"}]
+```
+Not to be used with more than one parameter, it would no return the expected results:
+
+```
+const objList = [
+{ name: 'shark', type: 'elephant', weight: '20'},
+{ name: 'shark', type: 'white', weight: '8'},
+{ name: 'eagle', type: 'american', weight: '0.004'},
+{ name: 'antelope', type: 'african', weight: '0.3'},
+]
+
+const d = R.descend(R.prop('weight'), R.prop('name'))
+
+R.sort(d, objList)
+
+//R.descend(R.prop('name'), R.prop('weight'))
+/*
+[{"name": "antelope", "type": "african", "weight": "0.3"},
+{"name": "eagle", "type": "american", "weight": "0.004"},
+"name": "shark", "type": "elephant", "weight": "20"},
+{"name": "shark", "type": "white", "weight": "8"}]
+*/
+
+//R.descend(R.prop('weight'), R.prop('name'))
+/*
+[{"name": "shark", "type": "elephant", "weight": "20"},
+{"name": "shark", "type": "white", "weight": "8"},
+{"name": "eagle", "type": "american", "weight": "0.004"},
+{"name": "antelope", "type": "african", "weight": "0.3"}]
+*/
+```
+
+
 ## Operational
 
 #### add
@@ -720,56 +769,6 @@ defaultToZero(-3 >0)
 //false
 ```
 
-#### descend
-
-  
-
-Create a comparator function that returns a value that can be used with `<` and `>`.
-
-```
-const objList = [
-	{ name: 'shark'},
-	{ name: 'eagle'},
-	{ name: 'antelope'},
-]
-
-const d = R.descend(R.prop('name'))
-
-R.sort(d, objList)
-
-//[{"name": "shark"}, {"name": "eagle"}, {"name": "antelope"}]
-```
-Not to be used with more than one parameter, it would no return the expected results:
-
-```
-const objList = [
-{ name: 'shark', type: 'elephant', weight: '20'},
-{ name: 'shark', type: 'white', weight: '8'},
-{ name: 'eagle', type: 'american', weight: '0.004'},
-{ name: 'antelope', type: 'african', weight: '0.3'},
-]
-
-const d = R.descend(R.prop('weight'), R.prop('name'))
-
-R.sort(d, objList)
-
-//R.descend(R.prop('name'), R.prop('weight'))
-/*
-[{"name": "antelope", "type": "african", "weight": "0.3"},
-{"name": "eagle", "type": "american", "weight": "0.004"},
-"name": "shark", "type": "elephant", "weight": "20"},
-{"name": "shark", "type": "white", "weight": "8"}]
-*/
-
-//R.descend(R.prop('weight'), R.prop('name'))
-/*
-[{"name": "shark", "type": "elephant", "weight": "20"},
-{"name": "shark", "type": "white", "weight": "8"},
-{"name": "eagle", "type": "american", "weight": "0.004"},
-{"name": "antelope", "type": "african", "weight": "0.3"}]
-*/
-```
-
 #### difference
 
 Returns the elements in the first array that are not present in the second list array:
@@ -869,7 +868,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNzMwNzE5Nyw3NTY5NTE1OTksMTI5OT
+eyJoaXN0b3J5IjpbMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OT
 g0MDAzMSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1
 NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMj
 QyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAy
