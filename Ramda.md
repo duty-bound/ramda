@@ -803,72 +803,37 @@ R.sort(d, objList)
 //R.descend(R.prop('weight'), R.prop('name'))
 
 /*
-
 [{"name": "shark", "type": "elephant", "weight": "20"},
-
 {"name": "shark", "type": "white", "weight": "8"},
-
 {"name": "eagle", "type": "american", "weight": "0.004"},
-
 {"name": "antelope", "type": "african", "weight": "0.3"}]
-
-*/
-
 ```
-
-  
 
 #### difference
 
-  
-
 Returns the elements in the first array that are not present in the second list array:
 
-  
-
 ```
-
 const objList1 = [
-
-{ name: 'shark', type: 'elephant', weight: '20'},
-
-{ name: 'shark', type: 'white', weight: '20'},
-
-{ name: 'eagle', type: 'american', weight: '0.004'},
-
-{ name: 'antelope', type: 'african', weight: '0.3'},
-
+	{ name: 'shark', type: 'elephant', weight: '20'},
+	{ name: 'shark', type: 'white', weight: '20'},
+	{ name: 'eagle', type: 'american', weight: '0.004'},
+	{ name: 'antelope', type: 'african', weight: '0.3'},
 ]
-
-  
 
 const objList2 = [
-
-{ name: 'shark', type: 'elephant', weight: '20'},
-
-{ name: 'shark', type: 'cat', weight: '20'},
-
-{ name: 'eagle', type: 'american', weight: '0.004'},
-
-{ name: 'antelope', type: 'african', weight: '0.3'},
-
+	{ name: 'shark', type: 'elephant', weight: '20'},
+	{ name: 'shark', type: 'cat', weight: '20'},
+	{ name: 'eagle', type: 'american', weight: '0.004'},
+	{ name: 'antelope', type: 'african', weight: '0.3'},
 ]
-
-  
 
 R.difference(objList1, objList2)
 
-  
-
 //[{"name": "shark", "type": "white", "weight": "20"}]
-
 ```
 
-  
-
 #### differenceWith
-
-  
 
 Checks which elements are present in the first array but not in the second. This function has more fine tuning than `difference` because it can take a comparative function that dictates what the comparison should actually be. This time round the same arrays used with the example in `difference` are being used, but the comparison function is checking only for the 'name' property; the other properties are not taken into account. In this case, no difference is found.
 
@@ -943,11 +908,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NTYyODcwNSw3NTY5NTE1OTksMTI5OT
-g0MDAzMSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1
-NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMj
-QyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAy
-OTQ1LDE3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLT
-IxMDQxOTkwNTUsLTQzMzUwMzY4OCwtMTE2Nzg5ODcxLC05NzE4
-ODYyNTVdfQ==
+eyJoaXN0b3J5IjpbOTYwMjYyOTE2LDc1Njk1MTU5OSwxMjk5OD
+QwMDMxLDE2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMTAwODQ1NTU3
+LC01MzQ5NDIxMTAsMTM0MjEzODg1NSwyMTA3MTkyNjY4LDEyND
+I2MDk1MDgsMTIzMjUwOTQ3MiwxNDQwNTY0NjYwLDE5OTM0MDI5
+NDUsMTcwNjA4MjA0OSwtMTEzMjU2MDk3NCw5MjQ3OTg0MywtMj
+EwNDE5OTA1NSwtNDMzNTAzNjg4LC0xMTY3ODk4NzEsLTk3MTg4
+NjI1NV19
 -->
