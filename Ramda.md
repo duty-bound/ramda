@@ -866,7 +866,7 @@ R.dissocPath(['el', 'type'], objList)
 
 #### divide
 
-Divides two numbers, equivalent to `a / b`.
+Returns a function that divides two numbers, equivalent to `a / b`.
 
 ```
 R.divide(9, 3)
@@ -874,6 +874,11 @@ R.divide(9, 3)
 
 R.divide(45, 14)
 //3.2142857142857144
+
+const div = R.divide()
+div(8, 2)
+//4
+
 ```
 
 ## Mapping
@@ -919,11 +924,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtOD
-MzMDI5NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAw
-MzEsMTYzMjM1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLT
-UzNDk0MjExMCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYw
-OTUwOCwxMjMyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NS
-wxNzA2MDgyMDQ5LC0xMTMyNTYwOTc0LDkyNDc5ODQzLC0yMTA0
-MTk5MDU1XX0=
+eyJoaXN0b3J5IjpbMTk5Mjk3ODk3NSwtMTg5MjM3Njg0MywxND
+QyMTUzNDQ5LC04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1
+OTksMTI5OTg0MDAzMSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMj
+EwMDg0NTU1NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5
+MjY2OCwxMjQyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MC
+wxOTkzNDAyOTQ1LDE3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0
+Nzk4NDNdfQ==
 -->
