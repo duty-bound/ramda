@@ -842,7 +842,27 @@ Note that it cannot be used to remove nested properties, in that case use `disso
 
 #### dissocPath
 
+Returns a new object that does not contain the indicated property, even if it is nested.
 
+```
+const objList = {
+  el: { name: 'elephant', 
+			type: 'mammal', 
+			origin: { continent: 'Africa', country: 'Gabon', }, },
+  sk: {	name: 'shark',
+		    type: 'fish',
+		    origin: { continent: 'Australia', country: 'Sydney', }, },
+  ea: { name: 'eagle',
+		    type: 'bird',
+		    origin: { continent: 'USA', country: 'Arizona', }, }
+}
+
+R.dissocPath(['ea', 'type'], objList)
+
+//{"ea": {"name": "eagle", "origin": {"continent": "USA", "country": "Arizona"}, "type": "bird"},
+//"el": {"name": "elephant", "origin": {"continent": "Africa", "country": "Gabon"}}, 
+//"sk": {"name": "shark", "origin": {"continent": "Australia", "country": "Sydney"}, "type": "fish"}}
+```
 
 ## Mapping
 
@@ -887,11 +907,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNjk3NjAxMywxNDQyMTUzNDQ5LC04Mz
-MwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAz
-MSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNT
-M0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5
-NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LD
-E3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0Nzk4NDMsLTIxMDQx
-OTkwNTVdfQ==
+eyJoaXN0b3J5IjpbMzM2NTM0NDc5LDE0NDIxNTM0NDksLTgzMz
+AyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5OSwxMjk5ODQwMDMx
+LDE2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMTAwODQ1NTU3LC01Mz
+Q5NDIxMTAsMTM0MjEzODg1NSwyMTA3MTkyNjY4LDEyNDI2MDk1
+MDgsMTIzMjUwOTQ3MiwxNDQwNTY0NjYwLDE5OTM0MDI5NDUsMT
+cwNjA4MjA0OSwtMTEzMjU2MDk3NCw5MjQ3OTg0MywtMjEwNDE5
+OTA1NV19
 -->
