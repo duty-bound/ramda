@@ -886,7 +886,10 @@ Returns all but the first `n` elements of the given list.
 
 ```
 R.drop(1, ['foo', 'bar', 'baz']) //['bar', 'baz']
-R.drop(2, ['foo', 'bar', 'baz']) //=> ['baz'] R.drop(3, ['foo', 'bar', 'baz']); //=> [] R.drop(4, ['foo', 'bar', 'baz']); //=> [] R.drop(3, 'ramda'); //=> 'da'
+R.drop(2, ['foo', 'bar', 'baz']) //['baz']
+R.drop(3, ['foo', 'bar', 'baz']) //[]
+R.drop(4, ['foo', 'bar', 'baz']) //[]
+R.drop(3, 'ramda') //'da'
 ```
 
 ## Mapping
@@ -932,11 +935,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODA3Mzk2NDMsLTE4OTIzNzY4NDMsMT
-Q0MjE1MzQ0OSwtODMzMDI5NDQ1LDExMjM3MzkxMjksNzU2OTUx
-NTk5LDEyOTk4NDAwMzEsMTYzMjM1NDcyNiwtODcyMTM0MjA1LD
-IxMDA4NDU1NTcsLTUzNDk0MjExMCwxMzQyMTM4ODU1LDIxMDcx
-OTI2NjgsMTI0MjYwOTUwOCwxMjMyNTA5NDcyLDE0NDA1NjQ2Nj
-AsMTk5MzQwMjk0NSwxNzA2MDgyMDQ5LC0xMTMyNTYwOTc0LDky
-NDc5ODQzXX0=
+eyJoaXN0b3J5IjpbMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxND
+QyMTUzNDQ5LC04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1
+OTksMTI5OTg0MDAzMSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMj
+EwMDg0NTU1NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5
+MjY2OCwxMjQyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MC
+wxOTkzNDAyOTQ1LDE3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0
+Nzk4NDNdfQ==
 -->
