@@ -892,6 +892,98 @@ R.drop(4, ['foo', 'bar', 'baz']) //[]
 R.drop(3, 'ramda') //'da'
 ```
 
+#### dropLast
+
+Returns a list containing all but the last `n` elements of the given `list`.  
+
+```
+R.dropLast(1, ['foo', 'bar', 'baz']) //['foo', 'bar']
+R.dropLast(2, ['foo', 'bar', 'baz']) //['foo']
+R.dropLast(3, ['foo', 'bar', 'baz']) //[]
+R.dropLast(4, ['foo', 'bar', 'baz']) //[]
+R.dropLast(3, 'ramda') //'ra'
+```
+
+
+#### dropLastWhile
+
+Returns a new list trimmed from the original with the supplied predicate function. The function is applied from the last element in the list and moves left, until it returns false.
+
+```
+const equals3 = n => n === 3
+
+R.dropLastWhile(equals3, [1, 2, 3, 3, 4, 3, 3, 5])
+//[1, 2, 3, 3, 4, 3, 3, 5]
+
+R.dropLastWhile(equals3, [1, 2, 3, 3, 4, 3, 3])
+//[1, 2, 3, 3, 4]
+
+R.dropLastWhile(equals3, [1, 2, 3, 3, 4, 3])
+//[1, 2, 3, 3, 4]
+
+R.dropLastWhile(equals3, [1, 2, 3, 3, 4])
+//[1, 2, 3, 3, 4]
+
+R.dropLastWhile(equals3, [1, 2, 3, 3])
+//[1, 2]
+```
+
+ 
+#### dropRepeats
+
+Returns a list without any consecutively repeating elements.
+
+```
+
+const arr = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 3, 3]
+
+R.dropRepeats(arr)
+
+//[1, 2, 3, 4, 3]
+
+```
+
+  
+
+#### dropRepeatsWith
+
+Returns a trimmed version of the supplied list by applying the supplied predicate function from left to right through the list, to return a list without consecutively repeating elements. It is the first element that satisfies uniqueness that is preserved, so the position of elements in the list is very important.
+
+```
+
+const arr = [1, -1, 1, 3, 4, -4, -4, -5, 5, 3, 3]
+
+R.dropRepeatsWith(R.eqBy(Math.abs), arr)
+
+//[1, 3, 4, -5, 3]
+
+```
+
+const letters = ['a', 'A', 'B', 'b', 'C', 'c', 'a', 'A']
+
+R.dropRepeatsWith(R.eqBy(R.toUpper), letters)
+
+R.dropRepeatsWith(f, letters)
+
+//["a", "B", "C", "a"]
+
+```
+
+  
+
+#### dropWhile
+
+Parses a list from left to right and stops as soon as the predicate function returns false. It drops all the elements that return true.
+
+```
+
+const lteTwo = x => x <= 2
+
+R.dropWhile(lteTwo, [1, 2, 3, 4, 3, 2, 1])
+
+//[3, 4, 3, 2, 1]
+```
+
 ## Mapping
 
 #### addIndex
@@ -935,11 +1027,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxND
-QyMTUzNDQ5LC04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1
-OTksMTI5OTg0MDAzMSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMj
-EwMDg0NTU1NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5
-MjY2OCwxMjQyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MC
-wxOTkzNDAyOTQ1LDE3MDYwODIwNDksLTExMzI1NjA5NzQsOTI0
-Nzk4NDNdfQ==
+eyJoaXN0b3J5IjpbLTE3NjgyNDA2OTMsMTg1NDQ2Nzc0MCwtMT
+g5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMTEyMzcz
+OTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNjMyMzU0NzI2LC
+04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQyMTEwLDEzNDIx
+Mzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMzI1MDk0Nz
+IsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYwODIwNDksLTEx
+MzI1NjA5NzRdfQ==
 -->
