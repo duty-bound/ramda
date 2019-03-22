@@ -934,53 +934,40 @@ R.dropLastWhile(equals3, [1, 2, 3, 3])
 Returns a list without any consecutively repeating elements.
 
 ```
-
 const arr = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 3, 3]
 
 R.dropRepeats(arr)
-
 //[1, 2, 3, 4, 3]
-
 ```
 
-  
 
 #### dropRepeatsWith
 
 Returns a trimmed version of the supplied list by applying the supplied predicate function from left to right through the list, to return a list without consecutively repeating elements. It is the first element that satisfies uniqueness that is preserved, so the position of elements in the list is very important.
 
 ```
-
 const arr = [1, -1, 1, 3, 4, -4, -4, -5, 5, 3, 3]
 
 R.dropRepeatsWith(R.eqBy(Math.abs), arr)
-
 //[1, 3, 4, -5, 3]
-
 ```
-
+```
 const letters = ['a', 'A', 'B', 'b', 'C', 'c', 'a', 'A']
 
 R.dropRepeatsWith(R.eqBy(R.toUpper), letters)
 
-R.dropRepeatsWith(f, letters)
-
 //["a", "B", "C", "a"]
-
 ```
 
   
-
 #### dropWhile
 
 Parses a list from left to right and stops as soon as the predicate function returns false. It drops all the elements that return true.
 
 ```
-
 const lteTwo = x => x <= 2
 
 R.dropWhile(lteTwo, [1, 2, 3, 4, 3, 2, 1])
-
 //[3, 4, 3, 2, 1]
 ```
 
@@ -1027,11 +1014,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjgyNDA2OTMsMTg1NDQ2Nzc0MCwtMT
-g5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMTEyMzcz
-OTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNjMyMzU0NzI2LC
-04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQyMTEwLDEzNDIx
-Mzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMzI1MDk0Nz
-IsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYwODIwNDksLTEx
-MzI1NjA5NzRdfQ==
+eyJoaXN0b3J5IjpbMTkyMDYxNDQ0MCwxODU0NDY3NzQwLC0xOD
+kyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAyOTQ0NSwxMTIzNzM5
+MTI5LDc1Njk1MTU5OSwxMjk5ODQwMDMxLDE2MzIzNTQ3MjYsLT
+g3MjEzNDIwNSwyMTAwODQ1NTU3LC01MzQ5NDIxMTAsMTM0MjEz
+ODg1NSwyMTA3MTkyNjY4LDEyNDI2MDk1MDgsMTIzMjUwOTQ3Mi
+wxNDQwNTY0NjYwLDE5OTM0MDI5NDUsMTcwNjA4MjA0OSwtMTEz
+MjU2MDk3NF19
 -->
