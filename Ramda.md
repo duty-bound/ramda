@@ -1038,7 +1038,7 @@ R.eqBy(isEven, 2, 4) //true
 R.eqBy(isEven, 2, 5) //false
 ```
 
-eqProps
+#### eqProps
 
 Returns true if two objects have the same value for the specified property.
 ```
@@ -1046,55 +1046,32 @@ const o1 = { a: 1, b: 2, c: 3, d: 4 }
 const o2 = { a: 10, b: 20, c: 3, d: 40 }
 
 R.eqProps('a', o1, o2); //=> false
-
 R.eqProps('c', o1, o2); //=> true
-
 ```
-
 ```
-
 const arr1 = [1, 2, 3, 4, 5]
-
 const arr2 = [1, 2, 3, 4, 4]
 
-  
-
 R.eqProps(4, arr1, arr2) //false
-
 ```
-
-  
 
 #### equals
 
-  
-
 Returns true if the two supplied parameters are equal (equivalent of `===` not `==`)
-
 ```
-
 const arr1 = [1, 2, 3, 4, 5]
-
 const arr2 = [1, 2, 3, 4, 4]
-
 R.equals(arr1, arr2) //false
-
-  
-
+```
+```
 const o1 = { a: 1, b: 2, c: 3, d: 4 }
-
 const o2 = { a: 10, b: 20, c: 3, d: 40 }
-
 R.equals(o1, o2) //false
-
-  
-
+```
+```
 const n = 3
-
 const number = '3'
-
 R.equals(n, number) //false
-
 ```
 ## Mapping
 
@@ -1139,11 +1116,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3ODg3Nzg3MSwxOTIwNjE0NDQwLDE4NT
-Q0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMzMDI5
-NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMT
-YzMjM1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLTUzNDk0
-MjExMCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYwOTUwOC
-wxMjMyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NSwxNzA2
-MDgyMDQ5XX0=
+eyJoaXN0b3J5IjpbMjQzOTk1NTY3LDE5MjA2MTQ0NDAsMTg1ND
+Q2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0
+NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNj
+MyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQy
+MTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LD
+EyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYw
+ODIwNDldfQ==
 -->
