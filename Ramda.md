@@ -89,7 +89,7 @@ R.path(['origin', 'country'], obj)
 ## Relational Functions
 These functions are used to determine whether a condition is true or not, such as the existence of a specified element in a given path, or whether a variable is greater or smaller than another variable, checking for equality, etc.
 
-### Works on a Single Element
+### Iterative
 
 #### either
 
@@ -194,7 +194,7 @@ const number = '3'
 R.equals(n, number) //false
 ```
 
-### Works on a List
+### Non-Iterative
 
 #### all
 
@@ -1119,11 +1119,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NzAwMjA3NywxOTIwNjE0NDQwLDE4NT
-Q0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMzMDI5
-NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMT
-YzMjM1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLTUzNDk0
-MjExMCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYwOTUwOC
-wxMjMyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NSwxNzA2
-MDgyMDQ5XX0=
+eyJoaXN0b3J5IjpbNzE0NzM3MjI1LDE5MjA2MTQ0NDAsMTg1ND
+Q2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0
+NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNj
+MyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQy
+MTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LD
+EyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYw
+ODIwNDldfQ==
 -->
