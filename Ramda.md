@@ -1000,100 +1000,49 @@ R.either([isEven(1), isEven(2), isEven(3)], [11])
 
 R.either([11], [isEven(1), isEven(2), isEven(3)])
 //[11, 11, 11]
+
 R.either([isEven(1), isEven(2), isEven(3)], ['hey1', 'hey2', 'hey3'])
-
 //["hey1", "hey2", "hey3", true, true, true, "hey1", "hey2", "hey3"]
-
-  
-
 ```
-
-  
 
 #### empty
 
-  
-
 Returns an empty type of the supplied parameter:
-
 ```
-
 const isEven = n => n % 2 === 0
 
-  
-
 R.empty(isEven(42)) //undefined
-
 R.empty([1, 2, 3]) //[]
-
 R.empty({name: 'Charles', surname: 'Dickens'}) //{}
-
 R.empty('This is a string') //""
-
 ```
-
-  
 
 #### endsWith
 
-  
-
 Checks if:
-
 - a string ends with the provided sub-string
-
 -a list ends with the provided sub-list
-
-  
-
 ```
-
 R.endsWith('c', 'abc') //true
-
 R.endsWith('bc', 'abc') //true
-
 R.endsWith(['c'], ['a', 'b', 'c']) //true
-
 R.endsWith(['b', 'c'], ['a', 'b', 'c']) //true
-
 ```
-
-  
 
 #### eqBy
 
-  
-
 Takes a function and two other parameters. The function is applied to the last two parameters, if the result is the same, `eqBy` returns true.
-
-  
-
 ```
-
 const isEven = n => n % 2 === 0
-
-  
-
 R.eqBy(isEven, 2, 4) //true
-
 R.eqBy(isEven, 2, 5) //false
-
 ```
-
-  
-
-  
 
 eqProps
 
-  
-
 Returns true if two objects have the same value for the specified property.
-
 ```
-
 const o1 = { a: 1, b: 2, c: 3, d: 4 }
-
 const o2 = { a: 10, b: 20, c: 3, d: 40 }
 
 R.eqProps('a', o1, o2); //=> false
@@ -1190,7 +1139,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4Mzc0OTE2OSwxOTIwNjE0NDQwLDE4NT
+eyJoaXN0b3J5IjpbLTQ3ODg3Nzg3MSwxOTIwNjE0NDQwLDE4NT
 Q0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMzMDI5
 NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMT
 YzMjM1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLTUzNDk0
