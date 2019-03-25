@@ -89,7 +89,7 @@ R.path(['origin', 'country'], obj)
 ## Relational Functions
 These functions are used to determine whether a condition is true or not, such as the existence of a specified element in a given path, or whether a variable is greater or smaller than another variable, checking for equality, etc.
 
-### Iterative
+### Non-Iterative
 
 #### either
 
@@ -196,7 +196,7 @@ const number = '3'
 R.equals(n, number) //false
 ```
 
-### Non-Iterative
+### Iterative
 
 #### all
 
@@ -344,6 +344,41 @@ const fn = R.cond([
 
 fn(17) //"too young"
 fn(18) //"OK"
+```
+#### either
+
+This function is both non-iterative and iterative.
+
+This function is a wrapper to the two supplied function; it calls the first and return its result if it is true. The second function is only called if the first returns false. `either` will return true if either of the function returns true.
+
+`either` can be used to iterate through an array and trigger functions conditionally to create a new array with the desired results.
+```
+const lt30 = n => n < 30  
+const gt40 = n => n > 40
+const f = R.either(lt30, gt40)
+
+f(24)
+//true
+```
+```
+const f = R.either(n => R.lt(n, 30), n => R.gt(n, 40))
+f(24)
+//true
+```
+
+Look at the below:
+```
+R.either([false, false, 'a'], [11])  
+//[11, 11, "a"]
+
+R.either([isEven(1), isEven(2), isEven(3)], [11])
+//[11, true, 11]
+
+R.either([11], [isEven(1), isEven(2), isEven(3)])
+//[11, 11, 11]
+
+R.either([isEven(1), isEven(2), isEven(3)], ['hey1', 'hey2', 'hey3'])
+//["hey1", "hey2", "hey3", true, true, true, "hey1", "hey2", "hey3"]
 ```
 
 ## Filtering 
@@ -1121,11 +1156,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NTM3ODc0NSwxOTIwNjE0NDQwLDE4NT
-Q0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMzMDI5
-NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMT
-YzMjM1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLTUzNDk0
-MjExMCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYwOTUwOC
-wxMjMyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NSwxNzA2
-MDgyMDQ5XX0=
+eyJoaXN0b3J5IjpbOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMTg1ND
+Q2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0
+NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNj
+MyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQy
+MTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LD
+EyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYw
+ODIwNDldfQ==
 -->
