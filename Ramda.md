@@ -93,6 +93,8 @@ These functions are used to determine whether a condition is true or not, such a
 
 #### either
 
+This function is both non-iterative and iterative.
+
 This function is a wrapper to the two supplied function; it calls the first and return its result if it is true. The second function is only called if the first returns false. `either` will return true if either of the function returns true.
 
 `either` can be used to iterate through an array and trigger functions conditionally to create a new array with the desired results.
@@ -1119,11 +1121,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE0NzM3MjI1LDE5MjA2MTQ0NDAsMTg1ND
-Q2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0
-NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNj
-MyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQy
-MTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LD
-EyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYw
-ODIwNDldfQ==
+eyJoaXN0b3J5IjpbMTU3NTM3ODc0NSwxOTIwNjE0NDQwLDE4NT
+Q0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMzMDI5
+NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMT
+YzMjM1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLTUzNDk0
+MjExMCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYwOTUwOC
+wxMjMyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NSwxNzA2
+MDgyMDQ5XX0=
 -->
