@@ -90,6 +90,110 @@ R.path(['origin', 'country'], obj)
 These functions are used to determine whether a condition is true or not, such as the existence of a specified element in a given path, or whether a variable is greater or smaller than another variable, checking for equality, etc.
 
 ### Works on a Single Element
+
+#### either
+
+This function is a wrapper to the two supplied function; it calls the first and return its result if it is true. The second function is only called if the first returns false. `either` will return true if either of the function returns true.
+
+`either` can be used to iterate through an array and trigger functions conditionally to create a new array with the desired results.
+```
+const lt30 = n => n < 30  
+const gt40 = n => n > 40
+const f = R.either(lt30, gt40)
+
+f(24)
+//true
+```
+```
+const f = R.either(n => R.lt(n, 30), n => R.gt(n, 40))
+f(24)
+//true
+```
+
+Look at the below:
+```
+R.either([false, false, 'a'], [11])  
+//[11, 11, "a"]
+
+R.either([isEven(1), isEven(2), isEven(3)], [11])
+//[11, true, 11]
+
+R.either([11], [isEven(1), isEven(2), isEven(3)])
+//[11, 11, 11]
+
+R.either([isEven(1), isEven(2), isEven(3)], ['hey1', 'hey2', 'hey3'])
+//["hey1", "hey2", "hey3", true, true, true, "hey1", "hey2", "hey3"]
+```
+
+#### empty
+
+Returns an empty type of the supplied parameter:
+```
+const isEven = n => n % 2 === 0
+
+R.empty(isEven(42)) //undefined
+R.empty([1, 2, 3]) //[]
+R.empty({name: 'Charles', surname: 'Dickens'}) //{}
+R.empty('This is a string') //""
+```
+
+#### endsWith
+
+Checks if:
+- a string ends with the provided sub-string
+-a list ends with the provided sub-list
+```
+R.endsWith('c', 'abc') //true
+R.endsWith('bc', 'abc') //true
+R.endsWith(['c'], ['a', 'b', 'c']) //true
+R.endsWith(['b', 'c'], ['a', 'b', 'c']) //true
+```
+
+#### eqBy
+
+Takes a function and two other parameters. The function is applied to the last two parameters, if the result is the same, `eqBy` returns true.
+```
+const isEven = n => n % 2 === 0
+R.eqBy(isEven, 2, 4) //true
+R.eqBy(isEven, 2, 5) //false
+```
+
+#### eqProps
+
+Returns true if two objects have the same value for the specified property.
+```
+const o1 = { a: 1, b: 2, c: 3, d: 4 }
+const o2 = { a: 10, b: 20, c: 3, d: 40 }
+
+R.eqProps('a', o1, o2); //=> false
+R.eqProps('c', o1, o2); //=> true
+```
+```
+const arr1 = [1, 2, 3, 4, 5]
+const arr2 = [1, 2, 3, 4, 4]
+
+R.eqProps(4, arr1, arr2) //false
+```
+
+#### equals
+
+Returns true if the two supplied parameters are equal (equivalent of `===` not `==`)
+```
+const arr1 = [1, 2, 3, 4, 5]
+const arr2 = [1, 2, 3, 4, 4]
+R.equals(arr1, arr2) //false
+```
+```
+const o1 = { a: 1, b: 2, c: 3, d: 4 }
+const o2 = { a: 10, b: 20, c: 3, d: 40 }
+R.equals(o1, o2) //false
+```
+```
+const n = 3
+const number = '3'
+R.equals(n, number) //false
+```
+
 ### Works on a List
 
 #### all
@@ -971,108 +1075,7 @@ R.dropWhile(lteTwo, [1, 2, 3, 4, 3, 2, 1])
 //[3, 4, 3, 2, 1]
 ```
 
-#### either
 
-This function is a wrapper to the two supplied function; it calls the first and return its result if it is true. The second function is only called if the first returns false. `either` will return true if either of the function returns true.
-
-`either` can be used to iterate through an array and trigger functions conditionally to create a new array with the desired results.
-```
-const lt30 = n => n < 30  
-const gt40 = n => n > 40
-const f = R.either(lt30, gt40)
-
-f(24)
-//true
-```
-```
-const f = R.either(n => R.lt(n, 30), n => R.gt(n, 40))
-f(24)
-//true
-```
-
-Look at the below:
-```
-R.either([false, false, 'a'], [11])  
-//[11, 11, "a"]
-
-R.either([isEven(1), isEven(2), isEven(3)], [11])
-//[11, true, 11]
-
-R.either([11], [isEven(1), isEven(2), isEven(3)])
-//[11, 11, 11]
-
-R.either([isEven(1), isEven(2), isEven(3)], ['hey1', 'hey2', 'hey3'])
-//["hey1", "hey2", "hey3", true, true, true, "hey1", "hey2", "hey3"]
-```
-
-#### empty
-
-Returns an empty type of the supplied parameter:
-```
-const isEven = n => n % 2 === 0
-
-R.empty(isEven(42)) //undefined
-R.empty([1, 2, 3]) //[]
-R.empty({name: 'Charles', surname: 'Dickens'}) //{}
-R.empty('This is a string') //""
-```
-
-#### endsWith
-
-Checks if:
-- a string ends with the provided sub-string
--a list ends with the provided sub-list
-```
-R.endsWith('c', 'abc') //true
-R.endsWith('bc', 'abc') //true
-R.endsWith(['c'], ['a', 'b', 'c']) //true
-R.endsWith(['b', 'c'], ['a', 'b', 'c']) //true
-```
-
-#### eqBy
-
-Takes a function and two other parameters. The function is applied to the last two parameters, if the result is the same, `eqBy` returns true.
-```
-const isEven = n => n % 2 === 0
-R.eqBy(isEven, 2, 4) //true
-R.eqBy(isEven, 2, 5) //false
-```
-
-#### eqProps
-
-Returns true if two objects have the same value for the specified property.
-```
-const o1 = { a: 1, b: 2, c: 3, d: 4 }
-const o2 = { a: 10, b: 20, c: 3, d: 40 }
-
-R.eqProps('a', o1, o2); //=> false
-R.eqProps('c', o1, o2); //=> true
-```
-```
-const arr1 = [1, 2, 3, 4, 5]
-const arr2 = [1, 2, 3, 4, 4]
-
-R.eqProps(4, arr1, arr2) //false
-```
-
-#### equals
-
-Returns true if the two supplied parameters are equal (equivalent of `===` not `==`)
-```
-const arr1 = [1, 2, 3, 4, 5]
-const arr2 = [1, 2, 3, 4, 4]
-R.equals(arr1, arr2) //false
-```
-```
-const o1 = { a: 1, b: 2, c: 3, d: 4 }
-const o2 = { a: 10, b: 20, c: 3, d: 40 }
-R.equals(o1, o2) //false
-```
-```
-const n = 3
-const number = '3'
-R.equals(n, number) //false
-```
 ## Mapping
 
 #### addIndex
@@ -1116,11 +1119,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQzOTk1NTY3LDE5MjA2MTQ0NDAsMTg1ND
-Q2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0
-NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNj
-MyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQy
-MTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LD
-EyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYw
-ODIwNDldfQ==
+eyJoaXN0b3J5IjpbMjA4NzAwMjA3NywxOTIwNjE0NDQwLDE4NT
+Q0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMzMDI5
+NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMT
+YzMjM1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1NTcsLTUzNDk0
+MjExMCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMTI0MjYwOTUwOC
+wxMjMyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQwMjk0NSwxNzA2
+MDgyMDQ5XX0=
 -->
