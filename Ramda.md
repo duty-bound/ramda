@@ -1214,7 +1214,7 @@ R.flatten([1, 2, [3, 4], 5, [6, [7, 8, [9, [10, 11], 12]]]])
 ```
 
 
-#### R.flip
+#### flip
 
 Swaps the first two parameters of the supplied function.
 ```
@@ -1225,62 +1225,32 @@ R.flip(concatNums)(1, 2, 3)
 
 #### forEach
 
-  
-
 Applies the supplied function to each element in the provided list. The original array is returned.
-
-  
-
 ```
-
 const arr = [1, 2, 3]
-
 R.forEach(R.inc, arr) //[1, 2, 3] //the original array is returned
-
 ```
-
 ```
-
 R.forEach(n => console.log(R.inc(n)), arr)
-
 //2
-
 //3
-
 //4
-
 //[1, 2, 3]
-
 ```
-
 ```
-
 const arr = [1, 2, 3]
-
 const x2 = n => console.log(n * 2)
-
 R.forEach(x2, arr)
-
 //2
-
 //4
-
 //6
-
 //[1, 2, 3]
-
 ```
-
-  
 
 #### forEachObjIndexed
 
-  
-
 Iterates over an object, calling the provided function over each key and value.
-
 ```
-
 const obj = {brand: 'metabo', COO: 'Germany'}
 const print = (key, value) => console.log(key + ': ' + value )
 
@@ -1343,7 +1313,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzOTIwNDAxNyw5NzU0NDM2NjIsMTkyMD
+eyJoaXN0b3J5IjpbLTgzNDQzMTExNyw5NzU0NDM2NjIsMTkyMD
 YxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIxNTM0
 NDksLTgzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5OSwxMj
 k5ODQwMDMxLDE2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMTAwODQ1
