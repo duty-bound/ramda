@@ -196,6 +196,14 @@ const number = '3'
 R.equals(n, number) //false
 ```
 
+#### F
+
+A function that always returns false.
+```
+R.F() //false
+R.F(true) //false
+```
+
 ### Iterative
 
 #### all
@@ -1129,14 +1137,7 @@ const transformations = {
 R.evolve(transformations, data)  
 //{"balance": {"closing": 4000, "starting": -200}, "bank": "APS", "name": "STEPHEN"}
 ```
-  
-#### F
-
-A function that always returns false.
-```
-R.F() //false
-R.F(true) //false
-```
+ 
 
 #### filter
 
@@ -1172,8 +1173,8 @@ R.find(R.propEq('index', 2))(list)
 Returns the last element in the list that satisfies the predicate condition.
 ```
 const list = [{name: 'Albert', grade: 'A', marks: 100},
-{name: 'Nikola', grade: 'A', marks: 99},
-{name: 'Edison', grade: 'B', marks: 80},]
+	{name: 'Nikola', grade: 'A', marks: 99},
+	{name: 'Edison', grade: 'B', marks: 80}]
 R.findLast(R.propEq('grade', 'A'))(list)
 //{"grade": "A", "marks": 99, "name": "Nikola"}
 ```
@@ -1221,11 +1222,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI4MDAxNzQxLDk3NTQ0MzY2MiwxOTIwNj
-E0NDQwLDE4NTQ0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0
-OSwtODMzMDI5NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOT
-k4NDAwMzEsMTYzMjM1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1
-NTcsLTUzNDk0MjExMCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMT
-I0MjYwOTUwOCwxMjMyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQw
-Mjk0NV19
+eyJoaXN0b3J5IjpbLTY2NTEwMjIxMSw5NzU0NDM2NjIsMTkyMD
+YxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIxNTM0
+NDksLTgzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5OSwxMj
+k5ODQwMDMxLDE2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMTAwODQ1
+NTU3LC01MzQ5NDIxMTAsMTM0MjEzODg1NSwyMTA3MTkyNjY4LD
+EyNDI2MDk1MDgsMTIzMjUwOTQ3MiwxNDQwNTY0NjYwLDE5OTM0
+MDI5NDVdfQ==
 -->
