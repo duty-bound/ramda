@@ -1111,7 +1111,125 @@ const lteTwo = x => x <= 2
 R.dropWhile(lteTwo, [1, 2, 3, 4, 3, 2, 1])
 //[3, 4, 3, 2, 1]
 ```
+  
 
+### Stephen Saliba  <stephen.saliba@gmail.com>
+
+Tue, 26 Mar, 08:25 (4 days ago)
+
+![](https://mail.google.com/mail/u/0/images/cleardot.gif)
+
+![](https://mail.google.com/mail/u/0/images/cleardot.gif)
+
+to  me
+
+![](https://mail.google.com/mail/u/0/images/cleardot.gif)
+
+#### evolve
+
+  
+
+What a powerful function. It applies a set of functions to specific properties of an object.
+
+  
+
+```
+
+const data = {name: "stephen", balance: {starting: 1000, closing: 2000}, bank: "APS"}
+
+const transformations = {  
+
+name: R.toUpper,
+
+surname: R.toUpper, //will not be invoked
+
+balance: { starting: n => R.subtract(800, n),
+
+closing: R.add(2000)
+
+},
+
+}
+
+R.evolve(transformations, data)  
+
+//{"balance": {"closing": 4000, "starting": -200}, "bank": "APS", "name": "STEPHEN"}
+
+  
+
+#### F
+
+A function that always returns false.
+
+```
+
+R.F() //false
+
+R.F(true) //false
+
+```
+
+  
+
+#### filter
+
+  
+
+Filters a list with the provided predicate function.
+
+```
+
+const arr = [1, 2, 3, 4]
+
+const gt2 = n => R.gt(n, 2)
+
+R.filter(gt2, arr)
+
+//[3, 4]
+
+```
+
+```
+
+const list = {a: 1, b: 2, c: 3, d: 4}
+
+const gt2 = n => R.gt(n, 2)
+
+R.filter(gt2, list)
+
+//{"c": 3, "d": 4}
+
+```
+
+  
+
+#### find
+
+Returns the first element in the list that satisfies the predicate condition.  
+
+```
+
+const list = [{index: 1}, {index: 2}, {store: 3}, {store: 4}]
+
+R.find(R.propEq('index', 2))(list)
+
+//{"index": 2}
+
+```
+
+  
+
+#### findLast
+
+Returns the last element in the list that satisfies the predicate condition.
+
+```
+const list = [{name: 'Albert', grade: 'A', marks: 100},
+{name: 'Nikola', grade: 'A', marks: 99},
+{name: 'Edison', grade: 'B', marks: 80},]
+R.findLast(R.propEq('grade', 'A'))(list)
+//{"grade": "A", "marks": 99, "name": "Nikola"}
+```
 
 ## Mapping
 
@@ -1156,11 +1274,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMTg1ND
-Q2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0
-NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNj
-MyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQy
-MTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LD
-EyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkzNDAyOTQ1LDE3MDYw
-ODIwNDldfQ==
+eyJoaXN0b3J5IjpbLTE0MzAwODM0MzksOTc1NDQzNjYyLDE5Mj
+A2MTQ0NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUz
+NDQ5LC04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMT
+I5OTg0MDAzMSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0
+NTU1NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OC
+wxMjQyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkz
+NDAyOTQ1XX0=
 -->
