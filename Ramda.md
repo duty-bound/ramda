@@ -1119,85 +1119,53 @@ What a powerful function. It applies a set of functions to specific properties o
 ```
 const data = {name: "stephen", balance: {starting: 1000, closing: 2000}, bank: "APS"}
 const transformations = {  
-	name: R.toUpper,
-
-surname: R.toUpper, //will not be invoked
-
-balance: { starting: n => R.subtract(800, n),
-
-closing: R.add(2000)
-
-},
-
+		name: R.toUpper,
+		surname: R.toUpper, //will not be invoked
+		balance: { starting: n => R.subtract(800, n),
+		closing: R.add(2000)
+	},
 }
 
 R.evolve(transformations, data)  
-
 //{"balance": {"closing": 4000, "starting": -200}, "bank": "APS", "name": "STEPHEN"}
-
+```
   
-
 #### F
 
 A function that always returns false.
-
 ```
-
 R.F() //false
-
 R.F(true) //false
-
 ```
-
-  
 
 #### filter
 
-  
-
 Filters a list with the provided predicate function.
-
 ```
-
 const arr = [1, 2, 3, 4]
-
 const gt2 = n => R.gt(n, 2)
 
 R.filter(gt2, arr)
-
 //[3, 4]
-
 ```
 
 ```
-
 const list = {a: 1, b: 2, c: 3, d: 4}
-
 const gt2 = n => R.gt(n, 2)
-
 R.filter(gt2, list)
-
 //{"c": 3, "d": 4}
-
 ```
-
-  
 
 #### find
 
 Returns the first element in the list that satisfies the predicate condition.  
 
 ```
-
 const list = [{index: 1}, {index: 2}, {store: 3}, {store: 4}]
 
 R.find(R.propEq('index', 2))(list)
-
 //{"index": 2}
 ```
-```
-
-  
 
 #### findLast
 
@@ -1253,7 +1221,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNTUzNDExLDk3NTQ0MzY2MiwxOTIwNj
+eyJoaXN0b3J5IjpbNDI4MDAxNzQxLDk3NTQ0MzY2MiwxOTIwNj
 E0NDQwLDE4NTQ0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0
 OSwtODMzMDI5NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOT
 k4NDAwMzEsMTYzMjM1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1
