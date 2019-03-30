@@ -1112,34 +1112,14 @@ R.dropWhile(lteTwo, [1, 2, 3, 4, 3, 2, 1])
 //[3, 4, 3, 2, 1]
 ```
   
-
-### Stephen Saliba  <stephen.saliba@gmail.com>
-
-Tue, 26 Mar, 08:25 (4 days ago)
-
-![](https://mail.google.com/mail/u/0/images/cleardot.gif)
-
-![](https://mail.google.com/mail/u/0/images/cleardot.gif)
-
-to  me
-
-![](https://mail.google.com/mail/u/0/images/cleardot.gif)
-
 #### evolve
-
-  
 
 What a powerful function. It applies a set of functions to specific properties of an object.
 
-  
-
 ```
-
 const data = {name: "stephen", balance: {starting: 1000, closing: 2000}, bank: "APS"}
-
 const transformations = {  
-
-name: R.toUpper,
+	name: R.toUpper,
 
 surname: R.toUpper, //will not be invoked
 
@@ -1214,7 +1194,7 @@ const list = [{index: 1}, {index: 2}, {store: 3}, {store: 4}]
 R.find(R.propEq('index', 2))(list)
 
 //{"index": 2}
-
+```
 ```
 
   
@@ -1222,7 +1202,6 @@ R.find(R.propEq('index', 2))(list)
 #### findLast
 
 Returns the last element in the list that satisfies the predicate condition.
-
 ```
 const list = [{name: 'Albert', grade: 'A', marks: 100},
 {name: 'Nikola', grade: 'A', marks: 99},
@@ -1274,11 +1253,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzAwODM0MzksOTc1NDQzNjYyLDE5Mj
-A2MTQ0NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUz
-NDQ5LC04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMT
-I5OTg0MDAzMSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0
-NTU1NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OC
-wxMjQyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2NDY2MCwxOTkz
-NDAyOTQ1XX0=
+eyJoaXN0b3J5IjpbLTgzNTUzNDExLDk3NTQ0MzY2MiwxOTIwNj
+E0NDQwLDE4NTQ0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0
+OSwtODMzMDI5NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOT
+k4NDAwMzEsMTYzMjM1NDcyNiwtODcyMTM0MjA1LDIxMDA4NDU1
+NTcsLTUzNDk0MjExMCwxMzQyMTM4ODU1LDIxMDcxOTI2NjgsMT
+I0MjYwOTUwOCwxMjMyNTA5NDcyLDE0NDA1NjQ2NjAsMTk5MzQw
+Mjk0NV19
 -->
