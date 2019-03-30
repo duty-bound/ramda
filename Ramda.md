@@ -1179,6 +1179,55 @@ R.findLast(R.propEq('grade', 'A'))(list)
 //{"grade": "A", "marks": 99, "name": "Nikola"}
 ```
 
+#### R.findIndex
+
+Returns the index of the first element in the list that matches the predicate. If no element matches, `-1` is returned.
+```
+const arr = [{a: 1}, {b: 2}, {b: 3}]
+R.findIndex(R.prop('b'), arr) //1
+R.findIndex(R.prop('c'), arr) //-1
+R.findIndex(R.propEq('b', 3), arr) //1
+```
+
+```
+const arr = [1, 2, 3]
+R.findIndex(R.equals(3), arr) //2
+```
+
+#### findLastIndex
+
+Returns the index of the last element in the list that matches the predicate. If no element matches, '-1' is returned.
+
+```
+const arr = [{a: 1}, {b: 2}, {b: 3}]
+R.findLastIndex(R.prop('b'), arr) //2
+R.findIndex(R.prop('c'), arr) //-1
+R.findIndex(R.propEq('b', 3), arr) //2
+```
+
+#### R.flatten
+
+Flattens an array with nested arrays, just like the spread operator.
+```
+R.flatten([1, 2, [3, 4], 5, [6, [7, 8, [9, [10, 11], 12]]]])
+//[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+```
+
+ 
+#### R.flip
+
+Swaps the first two parameters of the supplied function
+
+```
+
+const concatNums = (x, y, z) => [x, y, z]
+
+R.flip(concatNums)(1, 2, 3)
+
+//[2, 1, 3]
+
+```
+
 ## Mapping
 
 #### addIndex
@@ -1222,7 +1271,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NTEwMjIxMSw5NzU0NDM2NjIsMTkyMD
+eyJoaXN0b3J5IjpbLTUyODc1MTUxNyw5NzU0NDM2NjIsMTkyMD
 YxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIxNTM0
 NDksLTgzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5OSwxMj
 k5ODQwMDMxLDE2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMTAwODQ1
