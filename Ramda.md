@@ -211,6 +211,15 @@ Returns true if the first argument is greater than the second, false of otherwis
 R.gt(2, 1) //true
 R.gt('Slayer','Sepultura') //true
 ```
+
+#### gte
+
+Returns true if the first argument is greater or equal to the second, false if otherwise.
+```
+R.gte(2, 1) //true
+R.gte(2, 2) //true
+```
+
 ### Iterative
 
 #### all
@@ -1358,11 +1367,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MzkzMzk0MiwtOTM5MzQ2MjIzLC04Mz
-Q0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0
-MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMT
-EyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNjMyMzU0
-NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQyMTEwLD
-EzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMzI1
-MDk0NzJdfQ==
+eyJoaXN0b3J5IjpbMzIwMjg2Mzg0LC05MzkzNDYyMjMsLTgzND
+QzMTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxODU0NDY3NzQw
+LC0xODkyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAyOTQ0NSwxMT
+IzNzM5MTI5LDc1Njk1MTU5OSwxMjk5ODQwMDMxLDE2MzIzNTQ3
+MjYsLTg3MjEzNDIwNSwyMTAwODQ1NTU3LC01MzQ5NDIxMTAsMT
+M0MjEzODg1NSwyMTA3MTkyNjY4LDEyNDI2MDk1MDgsMTIzMjUw
+OTQ3Ml19
 -->
