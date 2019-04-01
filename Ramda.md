@@ -262,6 +262,10 @@ R.hasPath(['origin', 'country'], obj)
 //true
 ```
 
+#### identical
+
+Returns tr
+
 ### Iterative
 
 #### all
@@ -1435,11 +1439,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzUwODkwNTEsMjA1NDIzNTQ2NiwyNz
-k3ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYyMjMsLTgzNDQzMTEx
-Nyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxODU0NDY3NzQwLC0xOD
-kyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAyOTQ0NSwxMTIzNzM5
-MTI5LDc1Njk1MTU5OSwxMjk5ODQwMDMxLDE2MzIzNTQ3MjYsLT
-g3MjEzNDIwNSwyMTAwODQ1NTU3LC01MzQ5NDIxMTAsMTM0MjEz
-ODg1NV19
+eyJoaXN0b3J5IjpbLTE2MjU5ODI3MzksLTEyMzUwODkwNTEsMj
+A1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYy
+MjMsLTgzNDQzMTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxOD
+U0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAy
+OTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5OSwxMjk5ODQwMDMxLD
+E2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMTAwODQ1NTU3LC01MzQ5
+NDIxMTBdfQ==
 -->
