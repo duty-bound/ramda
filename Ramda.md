@@ -1363,7 +1363,9 @@ R.groupWith(R.gt, arr)
 //[[1], [2, 1], [3, 2], [4, 3], [5]]
 ```
 
+#### head
 
+Returns the first element from an array.
 
 
 ## Mapping
@@ -1409,11 +1411,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMj
-g2Mzg0LC05MzkzNDYyMjMsLTgzNDQzMTExNyw5NzU0NDM2NjIs
-MTkyMDYxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0ND
-IxNTM0NDksLTgzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5
-OSwxMjk5ODQwMDMxLDE2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMT
-AwODQ1NTU3LC01MzQ5NDIxMTAsMTM0MjEzODg1NSwyMTA3MTky
-NjY4XX0=
+eyJoaXN0b3J5IjpbMTQwNDU5NTI2LDIwNTQyMzU0NjYsMjc5Nz
+gzMTk4LDMyMDI4NjM4NCwtOTM5MzQ2MjIzLC04MzQ0MzExMTcs
+OTc1NDQzNjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0MCwtMTg5Mj
+M3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMTEyMzczOTEy
+OSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNjMyMzU0NzI2LC04Nz
+IxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQyMTEwLDEzNDIxMzg4
+NTVdfQ==
 -->
