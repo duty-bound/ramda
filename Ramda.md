@@ -264,7 +264,19 @@ R.hasPath(['origin', 'country'], obj)
 
 #### identical
 
-Returns tr
+Returns true if two objects are equal.
+```
+const x = 7
+const y = '7'
+const z = x
+
+x == y //true
+x === y //false
+R.identical(x, y) //false
+R.identical(x, z) //true
+R.equals(x, y) //false
+R.equals(x, z) //true
+```
 
 ### Iterative
 
@@ -1439,11 +1451,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjU5ODI3MzksLTEyMzUwODkwNTEsMj
-A1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYy
-MjMsLTgzNDQzMTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxOD
-U0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAy
-OTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5OSwxMjk5ODQwMDMxLD
-E2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMTAwODQ1NTU3LC01MzQ5
-NDIxMTBdfQ==
+eyJoaXN0b3J5IjpbMTc0NzE0MTg5LC0xMjM1MDg5MDUxLDIwNT
+QyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOTM5MzQ2MjIz
+LC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMTg1ND
+Q2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0
+NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNj
+MyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQy
+MTEwXX0=
 -->
