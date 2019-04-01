@@ -1274,28 +1274,19 @@ R.fromPairs(arr)
 Categorises a list into arrays based on the supplied condition.
 
 ```
+const students = [{name: 'Abby', score: 84},
+	{name: 'Eddy', score: 84},
+	{name: 'Jack', score: 69}]
 
 const byGrade = R.groupBy(function(student) {
-
-const score = student.score
-
-return score < 65 ? 'F' :
-
-score < 70 ? 'D' :
-
-score < 80 ? 'C' :
-
-score < 90 ? 'B' : 'A'
-
+	const score = student.score
+		return score < 65 ? 'F' :
+		score < 70 ? 'D' :
+		score < 80 ? 'C' :
+		score < 90 ? 'B' : 'A'
 })
 
-const students = [{name: 'Abby', score: 84},
-
-{name: 'Eddy', score: 84},
-
-{name: 'Jack', score: 69}]
 R.byGrade(students)
-
 // {"B": [{"name": "Abby", "score": 84}, {"name": "Eddy", "score": 84}],
 //"D": [{"name": "Jack", "score": 69}]}
 ```
@@ -1358,11 +1349,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYxNzE4MTQ1LC04MzQ0MzExMTcsOTc1ND
-QzNjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0
-MywxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMTEyMzczOTEyOSw3NT
-Y5NTE1OTksMTI5OTg0MDAzMSwxNjMyMzU0NzI2LC04NzIxMzQy
-MDUsMjEwMDg0NTU1NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMj
-EwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2
-NDY2MF19
+eyJoaXN0b3J5IjpbLTkzOTM0NjIyMywtODM0NDMxMTE3LDk3NT
+Q0MzY2MiwxOTIwNjE0NDQwLDE4NTQ0Njc3NDAsLTE4OTIzNzY4
+NDMsMTQ0MjE1MzQ0OSwtODMzMDI5NDQ1LDExMjM3MzkxMjksNz
+U2OTUxNTk5LDEyOTk4NDAwMzEsMTYzMjM1NDcyNiwtODcyMTM0
+MjA1LDIxMDA4NDU1NTcsLTUzNDk0MjExMCwxMzQyMTM4ODU1LD
+IxMDcxOTI2NjgsMTI0MjYwOTUwOCwxMjMyNTA5NDcyLDE0NDA1
+NjQ2NjBdfQ==
 -->
