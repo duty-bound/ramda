@@ -1269,6 +1269,51 @@ R.fromPairs(arr)
 //{"a": 1, "b": 2, "c": 3}
 ```
 
+#### groupBy
+
+Categorises a list into arrays based on the supplied condition.
+
+```
+
+const byGrade = R.groupBy(function(student) {
+
+const score = student.score
+
+return score < 65 ? 'F' :
+
+score < 70 ? 'D' :
+
+score < 80 ? 'C' :
+
+score < 90 ? 'B' : 'A'
+
+})
+
+const students = [{name: 'Abby', score: 84},
+
+{name: 'Eddy', score: 84},
+
+{name: 'Jack', score: 69}]
+R.byGrade(students)
+
+// {"B": [{"name": "Abby", "score": 84}, {"name": "Eddy", "score": 84}],
+//"D": [{"name": "Jack", "score": 69}]}
+```
+
+#### groupWith
+
+Caution, this function does not run the supplied function on every element in the list, it runs the function on consecutive pairs in the list. The function takes two of the elements each time.
+```
+const arr = [2, 2, 2, 2, 2, 1, 0]
+R.groupWith(R.equals, arr)
+//[[2, 2, 2, 2, 2], [1], [0]]
+```
+```
+const arr = [1, 2, 1, 3, 2, 4, 3, 5]
+R.groupWith(R.gt, arr)
+//[[1], [2, 1], [3, 2], [4, 3], [5]]
+```
+
 
 ## Mapping
 
@@ -1313,11 +1358,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNDQzMTExNyw5NzU0NDM2NjIsMTkyMD
-YxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIxNTM0
-NDksLTgzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5OSwxMj
-k5ODQwMDMxLDE2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMTAwODQ1
-NTU3LC01MzQ5NDIxMTAsMTM0MjEzODg1NSwyMTA3MTkyNjY4LD
-EyNDI2MDk1MDgsMTIzMjUwOTQ3MiwxNDQwNTY0NjYwLDE5OTM0
-MDI5NDVdfQ==
+eyJoaXN0b3J5IjpbNzYxNzE4MTQ1LC04MzQ0MzExMTcsOTc1ND
+QzNjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0
+MywxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMTEyMzczOTEyOSw3NT
+Y5NTE1OTksMTI5OTg0MDAzMSwxNjMyMzU0NzI2LC04NzIxMzQy
+MDUsMjEwMDg0NTU1NywtNTM0OTQyMTEwLDEzNDIxMzg4NTUsMj
+EwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMzI1MDk0NzIsMTQ0MDU2
+NDY2MF19
 -->
