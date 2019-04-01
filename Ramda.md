@@ -252,7 +252,15 @@ R.hasIn('area', square) // true
 
 #### hasPath
 
-Returns whether a 
+Checks whether an object has the specified path.
+```
+const obj = {name: 'elephant', 
+			type: 'mammal', 
+			origin: { continent: 'Africa', country: 'Gabon', } }
+
+R.hasPath(['origin', 'country'], obj)
+//true
+```
 
 ### Iterative
 
@@ -1401,7 +1409,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNTg1NDk2MSwyNzk3ODMxOTgsMzIwMj
+eyJoaXN0b3J5IjpbMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMj
 g2Mzg0LC05MzkzNDYyMjMsLTgzNDQzMTExNyw5NzU0NDM2NjIs
 MTkyMDYxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0ND
 IxNTM0NDksLTgzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5
