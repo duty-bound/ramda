@@ -220,6 +220,20 @@ R.gte(2, 1) //true
 R.gte(2, 2) //true
 ```
 
+#### has
+
+Returns true if an object has the provided property, false if otherwise. Note: this function does not parse nested objects, vide the last two examples:
+```
+const obj = {name: 'elephant', 
+			type: 'mammal', 
+			origin: { continent: 'Africa', country: 'Gabon', } }
+
+R.has('name', obj) //true
+R.has('origin', obj) //true
+R.has('country', obj) //false
+R.has('country', obj.origin) //true
+```
+
 ### Iterative
 
 #### all
@@ -1367,11 +1381,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIwMjg2Mzg0LC05MzkzNDYyMjMsLTgzND
-QzMTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxODU0NDY3NzQw
-LC0xODkyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAyOTQ0NSwxMT
-IzNzM5MTI5LDc1Njk1MTU5OSwxMjk5ODQwMDMxLDE2MzIzNTQ3
-MjYsLTg3MjEzNDIwNSwyMTAwODQ1NTU3LC01MzQ5NDIxMTAsMT
-M0MjEzODg1NSwyMTA3MTkyNjY4LDEyNDI2MDk1MDgsMTIzMjUw
-OTQ3Ml19
+eyJoaXN0b3J5IjpbMjc5NzgzMTk4LDMyMDI4NjM4NCwtOTM5Mz
+Q2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAs
+MTg1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04Mz
+MwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAz
+MSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNT
+M0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5
+NTA4XX0=
 -->
