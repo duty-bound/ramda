@@ -1366,7 +1366,31 @@ R.groupWith(R.gt, arr)
 #### head
 
 Returns the first element from an array or string. Note that it does not work on an object.
+```
+const objList = {
+  el: { name: 'elephant', 
+			type: 'mammal', 
+			origin: { continent: 'Africa', country: 'Gabon', }, },
+  sk: {	name: 'shark',
+		    type: 'fish',
+		    origin: { continent: 'Australia', country: 'Sydney', }, },
+  ea: { name: 'eagle',
+		    type: 'bird',
+		    origin: { continent: 'USA', country: 'Arizona', }, }
+}
 
+R.head(objList) 
+//undefined
+
+R.head(R.values(objList))
+//{"name": "elephant", "origin": {"continent": "Africa", "country": "Gabon"}, "type": "mammal"}
+```
+```
+const str = 'Motorhead'
+
+R.head(str)
+//"M"
+```
 
 ## Mapping
 
@@ -1411,7 +1435,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjQxNTgzNDIsMjA1NDIzNTQ2NiwyNz
+eyJoaXN0b3J5IjpbLTEyMzUwODkwNTEsMjA1NDIzNTQ2NiwyNz
 k3ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYyMjMsLTgzNDQzMTEx
 Nyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxODU0NDY3NzQwLC0xOD
 kyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAyOTQ0NSwxMTIzNzM5
