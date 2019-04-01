@@ -238,8 +238,21 @@ R.has('country', obj.origin) //true
 
 Returns true if an object or its prototype chain has the specified property.
 ```
-function Rectangle(width, height) {this.width = width; this.height = height; } Rectangle.prototype.area = function() { return  this.width * this.height; }; const square = new Rectangle(2, 2); R.hasIn('width', square); //=> true R.hasIn('area', square); //=> true
+function Rectangle(width, height) {
+	this.width = width
+	this.height = height
+}
+Rectangle.prototype.area = function() {
+ return this.width * this.height
+}
+const square = new Rectangle(2, 2)
+R.hasIn('width', square) //true
+R.hasIn('area', square) // true
 ```
+
+#### hasPath
+
+Returns whether a 
 
 ### Iterative
 
@@ -1388,7 +1401,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMjYzMjg2MCwyNzk3ODMxOTgsMzIwMj
+eyJoaXN0b3J5IjpbMTEwNTg1NDk2MSwyNzk3ODMxOTgsMzIwMj
 g2Mzg0LC05MzkzNDYyMjMsLTgzNDQzMTExNyw5NzU0NDM2NjIs
 MTkyMDYxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0ND
 IxNTM0NDksLTgzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5
