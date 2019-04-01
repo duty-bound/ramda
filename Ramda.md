@@ -204,6 +204,9 @@ R.F() //false
 R.F(true) //false
 ```
 
+#### gt
+
+
 ### Iterative
 
 #### all
@@ -1306,6 +1309,8 @@ R.groupWith(R.gt, arr)
 ```
 
 
+
+
 ## Mapping
 
 #### addIndex
@@ -1349,11 +1354,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzOTM0NjIyMywtODM0NDMxMTE3LDk3NT
-Q0MzY2MiwxOTIwNjE0NDQwLDE4NTQ0Njc3NDAsLTE4OTIzNzY4
-NDMsMTQ0MjE1MzQ0OSwtODMzMDI5NDQ1LDExMjM3MzkxMjksNz
-U2OTUxNTk5LDEyOTk4NDAwMzEsMTYzMjM1NDcyNiwtODcyMTM0
-MjA1LDIxMDA4NDU1NTcsLTUzNDk0MjExMCwxMzQyMTM4ODU1LD
-IxMDcxOTI2NjgsMTI0MjYwOTUwOCwxMjMyNTA5NDcyLDE0NDA1
-NjQ2NjBdfQ==
+eyJoaXN0b3J5IjpbLTczNjM1MjYyMCwtOTM5MzQ2MjIzLC04Mz
+Q0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0
+MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMT
+EyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNjMyMzU0
+NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQyMTEwLD
+EzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5NTA4LDEyMzI1
+MDk0NzJdfQ==
 -->
