@@ -234,6 +234,13 @@ R.has('country', obj) //false
 R.has('country', obj.origin) //true
 ```
 
+#### hasIn
+
+Returns true if an object or its prototype chain has the specified property.
+```
+function Rectangle(width, height) {this.width = width; this.height = height; } Rectangle.prototype.area = function() { return  this.width * this.height; }; const square = new Rectangle(2, 2); R.hasIn('width', square); //=> true R.hasIn('area', square); //=> true
+```
+
 ### Iterative
 
 #### all
@@ -1381,11 +1388,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc5NzgzMTk4LDMyMDI4NjM4NCwtOTM5Mz
-Q2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAs
-MTg1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04Mz
-MwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAz
-MSwxNjMyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNT
-M0OTQyMTEwLDEzNDIxMzg4NTUsMjEwNzE5MjY2OCwxMjQyNjA5
-NTA4XX0=
+eyJoaXN0b3J5IjpbLTUyMjYzMjg2MCwyNzk3ODMxOTgsMzIwMj
+g2Mzg0LC05MzkzNDYyMjMsLTgzNDQzMTExNyw5NzU0NDM2NjIs
+MTkyMDYxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0ND
+IxNTM0NDksLTgzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5
+OSwxMjk5ODQwMDMxLDE2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMT
+AwODQ1NTU3LC01MzQ5NDIxMTAsMTM0MjEzODg1NSwyMTA3MTky
+NjY4XX0=
 -->
