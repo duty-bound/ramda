@@ -287,6 +287,15 @@ R.includes(3, [1, 2, 3]) //true
 R.includes('ap', 'apple') //true
 ```
 
+#### ifElse
+
+Checks whether the supplied parameter satisfies the first parameter, if so the second parameter function is executed, else the third parameter function is executed.
+```
+const f = R.ifElse(R.equals(0), R.inc, R.dec)
+
+f(4) //3
+f(0) //1
+```
 
 ### Iterative
 
@@ -1413,50 +1422,27 @@ R.head(R.values(objList))
 ```
 ```
 const str = 'Motorhead'
-
 R.head(str)
 //"M"
 ```
+
+
 #### identity
 
 Simply returns the parameter supplied to it, does nothing else. Good as placeholder.
 
 ```
-
-const arr = [1, 2, 3]
-
-  
-
+const arr = [1, 2, 3] 
 R.identity(arr)
-
 //[1, 2, 3]
-
 ```
-
 ```
-
 const f = n => n * 2
-
 const g = R.identity(f)
-
 g(2)
-
 //4
-
 ```
 
-  
-
-#### ifElse
-
-Checks whether the supplied parameter satisfies the first parameter, if so the second parameter function is executed, else the third parameter function is executed.
-
-```
-const f = R.ifElse(R.equals(0), R.inc, R.dec)
-
-f(4) //3
-f(0) //1
-```
 
 #### inc
 
@@ -1522,11 +1508,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjYxNzI4OCwxNzQ3MTQxODksLTEyMz
-UwODkwNTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2Mzg0
-LC05MzkzNDYyMjMsLTgzNDQzMTExNyw5NzU0NDM2NjIsMTkyMD
-YxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIxNTM0
-NDksLTgzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5OSwxMj
-k5ODQwMDMxLDE2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMTAwODQ1
-NTU3XX0=
+eyJoaXN0b3J5IjpbMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3ND
+cxNDE4OSwtMTIzNTA4OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5
+OCwzMjAyODYzODQsLTkzOTM0NjIyMywtODM0NDMxMTE3LDk3NT
+Q0MzY2MiwxOTIwNjE0NDQwLDE4NTQ0Njc3NDAsLTE4OTIzNzY4
+NDMsMTQ0MjE1MzQ0OSwtODMzMDI5NDQ1LDExMjM3MzkxMjksNz
+U2OTUxNTk5LDEyOTk4NDAwMzEsMTYzMjM1NDcyNiwtODcyMTM0
+MjA1XX0=
 -->
