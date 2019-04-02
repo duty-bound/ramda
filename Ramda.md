@@ -1417,24 +1417,6 @@ const str = 'Motorhead'
 R.head(str)
 //"M"
 ```
-
-## Mapping
-
-#### addIndex
-
-Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
-
-It can in fact be used to mimic javascript's Array.prototype.map
-```
-const animals = ['elephant', 'tiger', 'shark']
-
-const myMap = R.addIndex(R.map)
-
-myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
-
-//["<li key=0>elephant</li>", "<li key=1>tiger</li>", "<li key=2>shark</li>"]
-```
-
 #### identity
 
 Simply returns the parameter supplied to it, does nothing else. Good as placeholder.
@@ -1470,32 +1452,20 @@ g(2)
 Checks whether the supplied parameter satisfies the first parameter, if so the second parameter function is executed, else the third parameter function is executed.
 
 ```
-
 const f = R.ifElse(R.equals(0), R.inc, R.dec)
 
 f(4) //3
-
 f(0) //1
-
 ```
-
-  
 
 #### inc
 
 Increments the supplied parameter.
 
 ```
-
 R.inc(4) //5  
-
 ```
-
-  
-
-
-
-  
+   
 #### indexBy
 
 Turns a list of objects into an object indexing the objects with the given key.
@@ -1506,6 +1476,25 @@ const arr = [{id: 1, name: 'apple'}, {id: 2, name: 'peach'}]
 R.indexBy(R.prop('id'), arr)
 //{"1": {"id": 1, "name": "apple"}, "2": {"id": 2, "name": "peach"}}
 ```
+
+## Mapping
+
+#### addIndex
+
+Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
+
+It can in fact be used to mimic javascript's Array.prototype.map
+```
+const animals = ['elephant', 'tiger', 'shark']
+
+const myMap = R.addIndex(R.map)
+
+myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
+
+//["<li key=0>elephant</li>", "<li key=1>tiger</li>", "<li key=2>shark</li>"]
+```
+
+
 
 ## String Manipulation
 
@@ -1533,7 +1522,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTIyNTAxNCwxNzQ3MTQxODksLTEyMz
+eyJoaXN0b3J5IjpbLTE0MjYxNzI4OCwxNzQ3MTQxODksLTEyMz
 UwODkwNTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2Mzg0
 LC05MzkzNDYyMjMsLTgzNDQzMTExNyw5NzU0NDM2NjIsMTkyMD
 YxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIxNTM0
