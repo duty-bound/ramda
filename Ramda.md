@@ -278,6 +278,16 @@ R.equals(x, y) //false
 R.equals(x, z) //true
 ```
 
+#### includes
+
+Returns true of the first parameter is present in the list in the second parameter.
+
+```
+R.includes(3, [1, 2, 3]) //true
+R.includes('ap', 'apple') //true
+```
+
+
 ### Iterative
 
 #### all
@@ -1425,6 +1435,78 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 //["<li key=0>elephant</li>", "<li key=1>tiger</li>", "<li key=2>shark</li>"]
 ```
 
+#### identity
+
+Simply returns the parameter supplied to it, does nothing else. Good as placeholder.
+
+```
+
+const arr = [1, 2, 3]
+
+  
+
+R.identity(arr)
+
+//[1, 2, 3]
+
+```
+
+```
+
+const f = n => n * 2
+
+const g = R.identity(f)
+
+g(2)
+
+//4
+
+```
+
+  
+
+#### ifElse
+
+Checks whether the supplied parameter satisfies the first parameter, if so the second parameter function is executed, else the third parameter function is executed.
+
+```
+
+const f = R.ifElse(R.equals(0), R.inc, R.dec)
+
+f(4) //3
+
+f(0) //1
+
+```
+
+  
+
+#### inc
+
+Increments the supplied parameter.
+
+```
+
+R.inc(4) //5  
+
+```
+
+  
+
+
+
+  
+#### indexBy
+
+Turns a list of objects into an object indexing the objects with the given key.
+
+```
+const arr = [{id: 1, name: 'apple'}, {id: 2, name: 'peach'}]
+
+R.indexBy(R.prop('id'), arr)
+//{"1": {"id": 1, "name": "apple"}, "2": {"id": 2, "name": "peach"}}
+```
+
 ## String Manipulation
 
 #### concat
@@ -1451,11 +1533,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NzE0MTg5LC0xMjM1MDg5MDUxLDIwNT
-QyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOTM5MzQ2MjIz
-LC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMTg1ND
-Q2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0
-NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNj
-MyMzU0NzI2LC04NzIxMzQyMDUsMjEwMDg0NTU1NywtNTM0OTQy
-MTEwXX0=
+eyJoaXN0b3J5IjpbMTUwOTIyNTAxNCwxNzQ3MTQxODksLTEyMz
+UwODkwNTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2Mzg0
+LC05MzkzNDYyMjMsLTgzNDQzMTExNyw5NzU0NDM2NjIsMTkyMD
+YxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIxNTM0
+NDksLTgzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5OSwxMj
+k5ODQwMDMxLDE2MzIzNTQ3MjYsLTg3MjEzNDIwNSwyMTAwODQ1
+NTU3XX0=
 -->
