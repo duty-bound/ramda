@@ -1463,41 +1463,25 @@ R.indexBy(R.prop('id'), arr)
 //{"1": {"id": 1, "name": "apple"}, "2": {"id": 2, "name": "peach"}}
 ```
 
-
 #### indexOf
-
 Returns the location of the element being searched. Does not work on object literals.
 
 ```
-
 const arr = [1, 2, 3]
-
 R.indexOf('3', arr)
-
 //2
 
-  
-
 const arr = [1, 2, 3]
-
 R.indexOf('3', arr)
-
 //-1
-
 ```
-
-  
 
 #### init
-
 Returns all but the last element of a list. Does not work on object literals.
-
 ```
-
 const arr = [1, 2, 3]
 
 R.init(arr)
-
 //[1, 2]
 ```
 
@@ -1623,11 +1607,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMjkwNjQ3MSwxOTAxMDM0MzQ4LC0xND
-I2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0
-NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOTM5MzQ2MjIzLC04Mz
-Q0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0
-MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMT
-EyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNjMyMzU0
-NzI2XX0=
+eyJoaXN0b3J5IjpbMzk3OTA4MDcxLDE5MDEwMzQzNDgsLTE0Mj
+YxNzI4OCwxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2
+NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYyMjMsLTgzND
+QzMTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxODU0NDY3NzQw
+LC0xODkyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAyOTQ0NSwxMT
+IzNzM5MTI5LDc1Njk1MTU5OSwxMjk5ODQwMDMxLDE2MzIzNTQ3
+MjZdfQ==
 -->
