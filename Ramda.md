@@ -296,6 +296,66 @@ const f = R.ifElse(R.equals(0), R.inc, R.dec)
 f(4) //3
 f(0) //1
 ```
+#### is
+
+Kind of javascript's `typeof`.
+
+```
+
+const str = 'abcdef'
+
+const n = 8
+
+const arr = [1, 2, 3, 4, 5]
+
+  
+
+R.is(String, str) //true
+
+R.is(Number, 8) //true
+
+R.is(Array, arr) //true
+
+```
+
+#### isEmpty
+
+Returns `true` if the given value is its type's empty value; `false` otherwise.  
+
+```
+
+R.isEmpty([1, 2, 3]) //false
+
+R.isEmpty([]) //true
+
+R.isEmpty('') //true
+
+R.isEmpty(null) //false
+
+R.isEmpty({}) //true
+
+R.isEmpty({length: 0}) //false
+
+```
+
+#### isNil
+
+Checks if the supplied value is `null` or `defined`.
+
+```
+
+R.isNil(null) //true
+
+R.isNil(undefined) //true
+
+R.isNil(0) //false
+
+R.isNil([]) //false
+
+```
+
+
+
 
 ### Iterative
 
@@ -1608,6 +1668,15 @@ R.invertObj(obj)
 //{"Nikola": "name", "Tesla": "surname"}
 ```
 
+#### join
+Returns a string interspersed with the provided separator.
+```
+const arr = [1, 2, 3, 4]
+
+R.join('|', arr)
+//"1|2|3|4"
+```
+
 
 ## Mapping
 
@@ -1649,12 +1718,13 @@ R.concat('foo', 'bar')
 - composeWith
 - constructN
 - curryN (how is it different from `curry`?
+- invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyODA0MDMyNCwxOTAxMDM0MzQ4LC0xND
-I2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0
-NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOTM5MzQ2MjIzLC04Mz
-Q0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0
-MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMT
-EyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNjMyMzU0
-NzI2XX0=
+eyJoaXN0b3J5IjpbLTQzNDQzODAyLDE5MDEwMzQzNDgsLTE0Mj
+YxNzI4OCwxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2
+NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYyMjMsLTgzND
+QzMTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxODU0NDY3NzQw
+LC0xODkyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAyOTQ0NSwxMT
+IzNzM5MTI5LDc1Njk1MTU5OSwxMjk5ODQwMDMxLDE2MzIzNTQ3
+MjZdfQ==
 -->
