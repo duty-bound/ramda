@@ -1503,48 +1503,29 @@ R.init(arr)
 ```
 
 #### innerJoin
-
 Takes a predicate function and two lists. The predicate function is used as a check to compare records.
 
 ```
-
 R.innerJoin(
-
 (record, id) =>  [record.id](http://record.id/)  === id,
-
 [{id: 824, name: 'Richie Furay'},
-
 {id: 956, name: 'Dewey Martin'},
-
 {id: 313, name: 'Bruce Palmer'},
-
 {id: 456, name: 'Stephen Stills'},
-
 {id: 177, name: 'Neil Young'}],
-
 [177, 456, 999]
-
 )
-
 //[{id: 456, name: 'Stephen Stills'}, {id: 177, name: 'Neil Young'}]
-
 ```
-
 ```
-
 R.innerJoin(
-
-(record, id) =>  [record.id](http://record.id/)  < id,
-
-[{id: 824, name: 'Richie Furay'},
-
-{id: 956, name: 'Dewey Martin'},
-
-{id: 313, name: 'Bruce Palmer'},
-
-{id: 456, name: 'Stephen Stills'},
-{id: 177, name: 'Neil Young'}],
-[200]
+	(record, id) =>  [record.id](http://record.id/)  < id,
+	[{id: 824, name: 'Richie Furay'},
+	{id: 956, name: 'Dewey Martin'},
+	{id: 313, name: 'Bruce Palmer'},
+	{id: 456, name: 'Stephen Stills'},
+	{id: 177, name: 'Neil Young'}],
+	[200]
 )
 //[{"id": 177, "name": "Neil Young"}]
 ```
@@ -1643,7 +1624,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NzAzNzkyNSwxOTAxMDM0MzQ4LC0xND
+eyJoaXN0b3J5IjpbMTM0MDM3NTM1NSwxOTAxMDM0MzQ4LC0xND
 I2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0
 NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOTM5MzQ2MjIzLC04Mz
 Q0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0
