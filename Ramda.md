@@ -1565,38 +1565,28 @@ R.intersperse('a', ['b', 'n', 'n', 's'])
 ## Mapping
 
 #### addIndex
-
 Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
 
 It can in fact be used to mimic javascript's Array.prototype.map
 ```
 const animals = ['elephant', 'tiger', 'shark']
-
 const myMap = R.addIndex(R.map)
 
 myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
-
 //["<li key=0>elephant</li>", "<li key=1>tiger</li>", "<li key=2>shark</li>"]
 ```
 
 #### into
-
 Takes three parameters:
-
 - a destination list
-
 - a transducer function
-
 - a list on which the transducer will be applied
 
 It will append the transformed list to the destination list.
 
 ```
-
 const arr1 = [1, 2, 3, 4]
-
 const arr2 = [4, 5, 6, 7]
-
 const transducer = R.map(R.inc())
 
 R.into(arr1, transducer, arr2)
@@ -1658,7 +1648,7 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjg2NDI0NTQsMTkwMTAzNDM0OCwtMT
+eyJoaXN0b3J5IjpbLTE5MzQwNDYyNjYsMTkwMTAzNDM0OCwtMT
 QyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MSwyMDU0MjM1
 NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0NjIyMywtOD
 M0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0NDQwLDE4NTQ0Njc3
