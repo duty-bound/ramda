@@ -1579,7 +1579,58 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 //["<li key=0>elephant</li>", "<li key=1>tiger</li>", "<li key=2>shark</li>"]
 ```
 
+#### into
 
+Takes three parameters:
+
+- a destination list
+
+- a transducer function
+
+- a list on which the transducer will be applied
+
+It will append the transformed list to the destination list.
+
+```
+
+const arr1 = [1, 2, 3, 4]
+
+const arr2 = [4, 5, 6, 7]
+
+const transducer = R.map(R.inc())
+
+R.into(arr1, transducer, arr2)
+//[1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+#### invert
+Same as `invertObj` however it puts duplicates into an array.
+
+```
+const raceResults = {
+	first: 'alice',
+	second: 'jake'
+}
+
+R.invertObj(raceResults);
+// { 'alice': 'first', 'jake':'second' }
+
+// Alternatively:
+const raceResults = ['alice', 'jake']
+
+R.invertObj(raceResults)
+// { 'alice': '0', 'jake':'1' }
+```
+
+#### invertObj
+Swaps keys with values in an object.
+
+```
+const obj = { name: 'Nikola', surname: 'Tesla' }
+
+R.invertObj(obj)
+//{"Nikola": "name", "Tesla": "surname"}
+```
 
 ## String Manipulation
 
@@ -1607,11 +1658,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk3OTA4MDcxLDE5MDEwMzQzNDgsLTE0Mj
-YxNzI4OCwxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2
-NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYyMjMsLTgzND
-QzMTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxODU0NDY3NzQw
-LC0xODkyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAyOTQ0NSwxMT
-IzNzM5MTI5LDc1Njk1MTU5OSwxMjk5ODQwMDMxLDE2MzIzNTQ3
-MjZdfQ==
+eyJoaXN0b3J5IjpbLTE5Mjg2NDI0NTQsMTkwMTAzNDM0OCwtMT
+QyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MSwyMDU0MjM1
+NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0NjIyMywtOD
+M0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0NDQwLDE4NTQ0Njc3
+NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMzMDI5NDQ1LD
+ExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMTYzMjM1
+NDcyNl19
 -->
