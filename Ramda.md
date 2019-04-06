@@ -1562,20 +1562,6 @@ R.intersperse('a', ['b', 'n', 'n', 's'])
 //['b', 'a', 'n', 'a', 'n', 'a', 's']
 ```
 
-## Mapping
-
-#### addIndex
-Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
-
-It can in fact be used to mimic javascript's Array.prototype.map
-```
-const animals = ['elephant', 'tiger', 'shark']
-const myMap = R.addIndex(R.map)
-
-myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
-//["<li key=0>elephant</li>", "<li key=1>tiger</li>", "<li key=2>shark</li>"]
-```
-
 #### into
 Takes three parameters:
 - a destination list
@@ -1622,6 +1608,22 @@ R.invertObj(obj)
 //{"Nikola": "name", "Tesla": "surname"}
 ```
 
+
+## Mapping
+
+#### addIndex
+Returns an iterative function capable of making use of an index, from an existing one. Therefore it needs to be supplied with an iterative function such as 'map'.
+
+It can in fact be used to mimic javascript's Array.prototype.map
+```
+const animals = ['elephant', 'tiger', 'shark']
+const myMap = R.addIndex(R.map)
+
+myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
+//["<li key=0>elephant</li>", "<li key=1>tiger</li>", "<li key=2>shark</li>"]
+```
+
+
 ## String Manipulation
 
 #### concat
@@ -1648,11 +1650,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzQwNDYyNjYsMTkwMTAzNDM0OCwtMT
-QyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MSwyMDU0MjM1
-NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0NjIyMywtOD
-M0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0NDQwLDE4NTQ0Njc3
-NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMzMDI5NDQ1LD
-ExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMTYzMjM1
-NDcyNl19
+eyJoaXN0b3J5IjpbMTMyODA0MDMyNCwxOTAxMDM0MzQ4LC0xND
+I2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0
+NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOTM5MzQ2MjIzLC04Mz
+Q0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0
+MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMT
+EyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNjMyMzU0
+NzI2XX0=
 -->
