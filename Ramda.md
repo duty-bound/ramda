@@ -1543,15 +1543,10 @@ R.innerJoin(
 {id: 313, name: 'Bruce Palmer'},
 
 {id: 456, name: 'Stephen Stills'},
-
 {id: 177, name: 'Neil Young'}],
-
 [200]
-
 )
-
 //[{"id": 177, "name": "Neil Young"}]
-
 ```
 
 #### insert
@@ -1569,27 +1564,24 @@ R.insert(2, 'c', arr)
 ```
 
 #### insertAll
-
 Inserts the provided list in the specified position of the supplied list.  
 
 ```
-
 const arr = ['a', 'b', 'c']
 
 R.insertAll(2, ['d', 'e', 'f'], arr)
-
 //["a", "b", "d", "e", "f", "c"]
-
 ```
 
 #### intersection
-
 Combines the common elements from two lists into a new list.
 
 ```
 const arr1 = ['a', 'b', 'c']
 const arr2 = ['d', 'e', 'f']
+
 R.intersection(arr1, arr2)
+//[]
 ```
 ```
 const arr1 = ['a', 'b', 'c', 'd', 'e']
@@ -1651,11 +1643,11 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTExNTk5MjUsMTkwMTAzNDM0OCwtMT
-QyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MSwyMDU0MjM1
-NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0NjIyMywtOD
-M0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0NDQwLDE4NTQ0Njc3
-NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMzMDI5NDQ1LD
-ExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMTYzMjM1
-NDcyNl19
+eyJoaXN0b3J5IjpbMTk4NzAzNzkyNSwxOTAxMDM0MzQ4LC0xND
+I2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0
+NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOTM5MzQ2MjIzLC04Mz
+Q0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0
+MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMT
+EyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0MDAzMSwxNjMyMzU0
+NzI2XX0=
 -->
