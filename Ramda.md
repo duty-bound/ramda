@@ -288,7 +288,6 @@ R.includes('ap', 'apple') //true
 ```
 
 #### ifElse
-
 Checks whether the supplied parameter satisfies the first parameter, if so the second parameter function is executed, else the third parameter function is executed.
 ```
 const f = R.ifElse(R.equals(0), R.inc, R.dec)
@@ -296,65 +295,41 @@ const f = R.ifElse(R.equals(0), R.inc, R.dec)
 f(4) //3
 f(0) //1
 ```
+
+
 #### is
-
 Kind of javascript's `typeof`.
-
 ```
-
 const str = 'abcdef'
-
 const n = 8
-
 const arr = [1, 2, 3, 4, 5]
-
   
-
 R.is(String, str) //true
-
 R.is(Number, 8) //true
-
 R.is(Array, arr) //true
-
 ```
 
 #### isEmpty
-
 Returns `true` if the given value is its type's empty value; `false` otherwise.  
 
 ```
-
 R.isEmpty([1, 2, 3]) //false
-
 R.isEmpty([]) //true
-
 R.isEmpty('') //true
-
 R.isEmpty(null) //false
-
 R.isEmpty({}) //true
-
 R.isEmpty({length: 0}) //false
-
 ```
 
 #### isNil
-
 Checks if the supplied value is `null` or `defined`.
 
 ```
-
 R.isNil(null) //true
-
 R.isNil(undefined) //true
-
 R.isNil(0) //false
-
 R.isNil([]) //false
-
 ```
-
-
 
 
 ### Iterative
@@ -1720,11 +1695,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNDQzODAyLDE5MDEwMzQzNDgsLTE0Mj
-YxNzI4OCwxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2
-NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYyMjMsLTgzND
-QzMTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxODU0NDY3NzQw
-LC0xODkyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAyOTQ0NSwxMT
-IzNzM5MTI5LDc1Njk1MTU5OSwxMjk5ODQwMDMxLDE2MzIzNTQ3
-MjZdfQ==
+eyJoaXN0b3J5IjpbLTE5MDQ2MTEwODgsMTkwMTAzNDM0OCwtMT
+QyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MSwyMDU0MjM1
+NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0NjIyMywtOD
+M0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0NDQwLDE4NTQ0Njc3
+NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMzMDI5NDQ1LD
+ExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMTYzMjM1
+NDcyNl19
 -->
