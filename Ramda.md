@@ -1674,73 +1674,42 @@ const F = function() { this.x = 'X' }
 F.prototype.y = 'Y'
 
 const f = new F()
-
 R.keysIn(f)
-
 // ['x', 'y']
-
 ```
 
 #### last
-
 Returns the last element of a given list.
-
 ```
-
 const arr = [1, 2, 3]
-
 R.last(arr)
-
 //3
 
-  
-
 const str = 'The Greate Seige'
-
 R.last(str)
-
 //"e"
-
 ```
 
 #### lastIndexOf
-
 Returns the index of the last position of an occurrence of a given element in a list.
-
 ```
-
 const arr = [1, 2, 3, 1, 2, 3]
-
 R.lastIndexOf(2, arr)
-
 //4
 
-  
-
 const str = 'The Greate Seige'
-
 R.lastIndexOf('e', str)
-
 //15
-
 ```
 
 #### length
-
 Return the length of a list.
-
 ```
-
 const arr = [1, 2, 3, 1, 2, 3]
-
 R.length(arr)
-
 //6
 
-  
-
 const str = 'The Greate Seige'
-
 R.length(str)
 //16
 ```
@@ -1787,11 +1756,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkxNjM5ODg1LC0xOTA0NjExMDg4LDE5MD
-EwMzQzNDgsLTE0MjYxNzI4OCwxNzQ3MTQxODksLTEyMzUwODkw
-NTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05Mz
-kzNDYyMjMsLTgzNDQzMTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0
-MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIxNTM0NDksLT
-gzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5OSwxMjk5ODQw
-MDMxXX0=
+eyJoaXN0b3J5IjpbMTM1NDc2OTkyMywtMTkwNDYxMTA4OCwxOT
+AxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5
+MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOT
+M5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0
+NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC
+04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0
+MDAzMV19
 -->
