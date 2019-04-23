@@ -2062,6 +2062,94 @@ isOdd(42) //0
 isOdd(21) //1
 ```
 
+#### move
+
+Move an element from one index to another.
+
+```
+
+const arr = [1, 2, 3]
+
+R.move(0, 2, arr)
+
+//[2, 3, 1]
+
+```
+
+```
+
+const arr = [1, 2, 3]
+
+R.move(-1, 0, arr)
+
+//[3, 1, 2]
+
+```
+
+#### multiply
+
+Multipliestwo numbers, this is a curried function.
+
+```
+R.multiply(3, 4)
+//12
+```
+```
+const triple = R.multiply(3)
+triple(4)
+//12
+```
+
+#### nAry
+Wraps a function of any arity (including nullary) in a function that accepts exactly n parameters.  
+```
+const takesTwoArgs = (a, b) => [a, b]
+takesTwoArgs.length //2
+takesTwoArgs(1, 2)
+//[1, 2]
+
+const takesOneArg = R.nAry(1, takesTwoArgs)
+takesOneArg.length //1
+takesOneArg(1, 2)
+//[1, undefined]
+```
+
+#### negate
+Negates the provided argument.
+```
+R.negate(83)//-83
+R.negate(true)//-1
+R.negate(false) //-0
+```
+
+#### none
+Returns true of no elements in a list match the supplied function.
+```
+const isEven = n => n % 2 === 0
+R.none(isEven, [2, 4, 6, 8]) //false
+R.none(isEven, [1, 3, 5, 7]) //true
+R.none(isEven, [1, 3, 5, 2]) //fale
+```
+
+#### not
+Returns the `!` of its argument.
+```
+R.not(true) //false
+R.not(false) //true
+R.not(0) //true
+R.not(3) //false
+```
+
+#### nth
+Returns the nth element of a given list.
+```
+const arr = [1, 2, 3, 4, 5, 6, 7]
+
+R.nth(0, arr) //1
+R.nth(-1, arr) //7
+R.nth(-2, arr) //6
+```
+
 ## Mapping
 
 #### addIndex
@@ -2104,7 +2192,7 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NjY1NDIwOSwtMzU4NjQ3OTQ0LC0xNj
+eyJoaXN0b3J5IjpbMTA3ODk4OTY5MSwtMzU4NjQ3OTQ0LC0xNj
 U0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAz
 NDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MS
 wyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0
