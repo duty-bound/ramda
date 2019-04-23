@@ -1788,6 +1788,112 @@ combine(arr, arr)
 // ["aa", "ab", "ac", "ba", "bb", "bc", "ca", "cb", "cc"]
 ```
 
+#### liftN
+
+Lifts a function to the specified arity.
+
+```
+
+const madd3 = R.liftN(3, (...args) => R.sum(args))
+
+madd3([1,2,3], [1,2,3], [1])
+
+//[3, 4, 5, 4, 5, 6, 5, 6, 7]
+
+```
+
+#### lt
+
+Returns true if the first argument is less than the second.
+
+```
+
+R.lt(1, 2) //true
+
+R.lt('a', 'z') //true
+
+```
+
+#### lte
+
+Returns true if the first argument is less than or equal to the second.
+
+```
+
+R.lte(1, 2) //true
+
+R.lte(2, 2) //true
+
+R.lte('ae', 'ad') //false
+
+R.lte('ae', 'ae') //true
+
+```
+
+#### map
+
+Applies the function to each element of the provided array or object.
+
+```
+const double = n => n * 2
+const arr = [1, 2, 3]
+
+R.map(double, arr)
+//[2, 4, 6]
+
+const obj = { a: 1, b: 2, c : 3}
+R.map(double, obj)
+//{"a": 2, "b": 4, "c": 6}
+
+const obj2 = { a: [1, 2], b: [3, 4]}
+
+R.map(double, obj2)
+//{"a": NaN, "b": NaN}
+```
+
+#### mapAccum
+Applies a function from left to right, passing an accumulating parameter from left to right. It returns the final value of this accumulation, together with the resulting list.
+```
+const arr = ['1', '2', '3', '4']
+const appender = (a, b) => [a + b, a + b]
+
+R.mapAccum(appender, 0, arr)  
+//["01234", ["01", "012", "0123", "01234"]]
+
+R.mapAccum(appender, 0, arr)[1]  
+//["01", "012", "0123", "01234"]
+```
+
+#### mapAccumRight
+Similar to `mapAccum`, except it traverses from right to left.
+```
+const arr = ['1', '2', '3', '4']
+const appender = (a, b) => [a + b, a + b]
+
+R.mapAccumRight(appender, 0, arr)
+//["04321", "0432", "043", "04"]
+```
+
+#### mapObjectIndex
+Similar to `map`, however the function is applied to three parameters: `value`, `key`, and `object`.
+
+Note that in the below example, the object parameter is not being consumed; the function will still work if this parameter was not passed.
+
+```
+const xyz = { x: 1, y: 2, z: 3 }
+const prependKeyAndDouble = (num, key, obj) => key + (num * 2)
+
+R.mapObjIndexed(prependKeyAndDouble, xyz)
+// {"x": "x2", "y": "y4", "z": "z6"}
+```
+
+#### match
+Tests a regular expression against a string. Returns an empty array when there is no match.
+```
+R.match(/([a-z]a)/g, 'bananas')
+//['ba', 'na', 'na']
+```
+
 ## Mapping
 
 #### addIndex
@@ -1830,7 +1936,7 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjAxNjY4MTQsLTMzOTMzMDQwMiwtMT
+eyJoaXN0b3J5IjpbLTE4MzgxMzkzNDksLTMzOTMzMDQwMiwtMT
 kwNDYxMTA4OCwxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0
 MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LD
 MyMDI4NjM4NCwtOTM5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQz
