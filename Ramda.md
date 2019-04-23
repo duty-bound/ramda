@@ -1874,44 +1874,28 @@ Tests a regular expression against a string. Returns an empty array when there i
 R.match(/([a-z]a)/g, 'bananas')
 //['ba', 'na', 'na']
 ```
+
 #### mathMod
-
 Behaves like the `%` should behave mathematically, so, where `-17 % 5 = -2`, `R.mathMod(-17, 5) = 3.
-
 ```
-
 R.mathMod(-17, 5) // 3
-
 R.mathMod(17, 5) // 2
-
 ```
-
-  
 
 #### max
-
 Returns the maximum of the two provided parameters.
-
 ```
-
 R.max(342, 532)
-
 //532
 
 R.max('a', 'b')
-
 //"b"
-
 ```
 
 #### maxBy
-
 Takes a function and two parameters, applies the function to both parameters, and returns the maximum value of the results.
-
 ```
-
 const square = n => n * n
-
 R.maxBy(square, 3, -4)
 //-4
 ```
@@ -2004,7 +1988,7 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NzEyMTA1MiwtMTY1NDA2MTY5MCwtMz
+eyJoaXN0b3J5IjpbLTM1ODY0Nzk0NCwtMTY1NDA2MTY5MCwtMz
 M5MzMwNDAyLC0xOTA0NjExMDg4LDE5MDEwMzQzNDgsLTE0MjYx
 NzI4OCwxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2Ni
 wyNzk3ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYyMjMsLTgzNDQz
