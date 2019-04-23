@@ -2063,33 +2063,20 @@ isOdd(21) //1
 ```
 
 #### move
-
 Move an element from one index to another.
-
 ```
-
 const arr = [1, 2, 3]
-
 R.move(0, 2, arr)
-
 //[2, 3, 1]
-
 ```
-
 ```
-
 const arr = [1, 2, 3]
-
 R.move(-1, 0, arr)
-
 //[3, 1, 2]
-
 ```
 
 #### multiply
-
-Multipliestwo numbers, this is a curried function.
-
+Multiplies two numbers, this is a curried function.
 ```
 R.multiply(3, 4)
 //12
@@ -2192,11 +2179,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3ODk4OTY5MSwtMzU4NjQ3OTQ0LC0xNj
-U0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAz
-NDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MS
-wyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0
-NjIyMywtODM0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0NDQwLD
-E4NTQ0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMz
-MDI5NDQ1XX0=
+eyJoaXN0b3J5IjpbODIyOTkyMjc3LC0zNTg2NDc5NDQsLTE2NT
+QwNjE2OTAsLTMzOTMzMDQwMiwtMTkwNDYxMTA4OCwxOTAxMDM0
+MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5MDUxLD
+IwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOTM5MzQ2
+MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMT
+g1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMw
+Mjk0NDVdfQ==
 -->
