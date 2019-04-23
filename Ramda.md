@@ -1723,37 +1723,24 @@ R.over(xLens, R.negate, {x: 1, y: 2}) // {x: -1, y: 2}
 ```
 
 ```
-
 const arr = [1, 2, 3]
-
 const xLens = R.lens(R.prop(0), R.assoc(0))
 
-  
-
 R.view(xLens, arr)
-
+//1
 ```
 
 #### lensIndex
-
 Returns a lens whose focus is the specified index. Does not work on object literals.
-
 ```
-
 const headLens = R.lensIndex(0)
 
-  
-
 R.view(headLens, ['a', 'b', 'c']) // 'a'
-
 R.set(headLens, 'x', ['a', 'b', 'c']) // ['x', 'b', 'c']
-
 R.over(headLens, R.toUpper, ['a', 'b', 'c']); // ['A', 'b', 'c']
-
 ```
 
 #### lensPath
-
 Returns a lens whose focus is the specified path.
 
 ```
@@ -1850,7 +1837,7 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NzU2MTI4NSwtMTkwNDYxMTA4OCwxOT
+eyJoaXN0b3J5IjpbLTMzOTMzMDQwMiwtMTkwNDYxMTA4OCwxOT
 AxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5
 MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOT
 M5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0
