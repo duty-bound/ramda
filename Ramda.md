@@ -1874,6 +1874,93 @@ Tests a regular expression against a string. Returns an empty array when there i
 R.match(/([a-z]a)/g, 'bananas')
 //['ba', 'na', 'na']
 ```
+#### mathMod
+
+Behaves like the `%` should behave mathematically, so, where `-17 % 5 = -2`, `R.mathMod(-17, 5) = 3.
+
+```
+
+R.mathMod(-17, 5) // 3
+
+R.mathMod(17, 5) // 2
+
+```
+
+  
+
+#### max
+
+Returns the maximum of the two provided parameters.
+
+```
+
+R.max(342, 532)
+
+//532
+
+R.max('a', 'b')
+
+//"b"
+
+```
+
+#### maxBy
+
+Takes a function and two parameters, applies the function to both parameters, and returns the maximum value of the results.
+
+```
+
+const square = n => n * n
+
+R.maxBy(square, 3, -4)
+//-4
+```
+
+#### mean
+Returns the mean of the numbers in the provided array.
+```
+R.mean([1, 2, 3, 4])
+//2.5
+```
+
+#### median
+Returns the median of the given list of numbers.
+```
+R.median([1, 2, 3, 4, 5, 6, 19, 104])
+//4.5
+```
+
+#### memoizeWith
+Caches the result of a function with a specific set of parameter values. When the function has the exact same parameters, it is not run again, but rather the result is stored in cache.
+```
+let count = 0
+const factorial = R.memoizeWith(R.identity, n => {
+	count += 1
+	return R.product(R.range(1, n + 1))
+})
+
+factorial(5) // 120
+factorial(5) // 120
+factorial(5) // 120
+count //=> 1
+```
+
+#### mergeAll
+Merges a list of objects into one object. If a property exists in multiple objects, the parameters to the right take precedence. The objects must be supplied in an array.
+```
+const obj1 = {a: 1, b: 1}
+const obj2 = {a: 1, b: 2}
+const obj3 = {c: 3, d: 4}
+
+R.mergeAll([obj1, obj2])
+//{"a": 1, "b": 2}
+
+R.mergeAll([obj1, obj3])
+//{"a": 1, "b": 1, "c": 3, "d": 4}
+
+R.mergeAll([obj1, obj2, obj3])
+//{"a": 1, "b": 2, "c": 3, "d": 4}
+```
 
 ## Mapping
 
@@ -1917,11 +2004,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwtMT
-kwNDYxMTA4OCwxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0
-MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LD
-MyMDI4NjM4NCwtOTM5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQz
-NjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0My
-wxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5
-NTE1OTldfQ==
+eyJoaXN0b3J5IjpbMjA1NzEyMTA1MiwtMTY1NDA2MTY5MCwtMz
+M5MzMwNDAyLC0xOTA0NjExMDg4LDE5MDEwMzQzNDgsLTE0MjYx
+NzI4OCwxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2Ni
+wyNzk3ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYyMjMsLTgzNDQz
+MTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxODU0NDY3NzQwLC
+0xODkyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAyOTQ0NSwxMTIz
+NzM5MTI5XX0=
 -->
