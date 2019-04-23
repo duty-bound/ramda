@@ -1946,85 +1946,54 @@ R.mergeAll([obj1, obj2, obj3])
 //{"a": 1, "b": 2, "c": 3, "d": 4}
 ```
 #### mergeDeepLeft
-
 Recursive merging of objects with nested objects. The first object takes precedence.
 
 ```
-
 R.mergeDeepLeft({ name: 'fred', age: 10, contact: { email: '[moo@example.com](mailto:moo@example.com)' }},
-
 { age: 40, contact: { email: '[baa@example.com](mailto:baa@example.com)' }})
-
 // { name: 'fred', age: 10, contact: { email: '[moo@example.com](mailto:moo@example.com)' }}
-
 ```
 
 #### mergeDeepRight
-
 Recursive merging of objects with nested objects. The second object takes precedence.  
 
 ```
-
 R.mergeDeepRight({ name: 'fred', age: 10, contact: { email: '[moo@example.com](mailto:moo@example.com)' }},
-
 { age: 40, contact: { email: '[baa@example.com](mailto:baa@example.com)' }})
-
 // { name: 'fred', age: 40, contact: { email: '[baa@example.com](mailto:baa@example.com)' }}
-
 ```
 
 #### mergeDeepWith
-
 Creates a new object with the properties of both objects. If a property exists in both objects, the provided function is applied to the respective values.
 
 ```
-
 R.mergeDeepWith(R.concat,
-
 { a: true, c: { values: [10, 20] }},
-
 { b: true, c: { values: [15, 35] }})
-
 //{ a: true, b: true, c: { values: [10, 20, 15, 35] }}
-
 ```
 
 #### mergeDeepWithKey
-
 Creates a new object with the properties of both objects. If a property exists in both objects, the provided function is applied to the respective values. Has the option to target a specific key.  
-
 ```
-
 let concatValues = (k, l, r) => k == 'values' ? R.concat(l, r) : r
 
 R.mergeDeepWithKey(concatValues,
-
 { a: true, c: { thing: 'foo', values: [10, 20] }},
-
 { b: true, c: { thing: 'bar', values: [15, 35] }})
-
 //{ a: true, b: true, c: { thing: 'bar', values: [10, 20, 15, 35] }}
-
 ```
 
 #### mergeLeft
-
 If properties are common in both object, the object on the left takes precedence.
 
 ```
-
 R.mergeLeft({ 'age': 40 }, { 'name': 'fred', 'age': 10 })
-
 //{ 'name': 'fred', 'age': 40 }
 
-  
-
 const resetToDefault = R.mergeLeft({x: 0})
-
 resetToDefault({x: 5, y: 2})
-
 //{x: 0, y: 2}
-
 ```
 
 #### R.mergeRight
@@ -2032,9 +2001,7 @@ resetToDefault({x: 5, y: 2})
 If properties are common in both object, the object on the right takes precedence.  
 
 ```
-
 R.mergeRight({ 'age': 40 }, { 'name': 'fred', 'age': 10 })
-
 //{ 'name': 'fred', 'age': 10 }
 
 const resetToDefault = R.mergeRight({x: 0})
@@ -2136,7 +2103,7 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NjUyMTI2NSwtMzU4NjQ3OTQ0LC0xNj
+eyJoaXN0b3J5IjpbLTY0OTcxNzAwOSwtMzU4NjQ3OTQ0LC0xNj
 U0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAz
 NDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MS
 wyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0
