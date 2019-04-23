@@ -1651,8 +1651,8 @@ const arr = [1, 2, 3, 4]
 R.join('|', arr)
 //"1|2|3|4"
 ```
-#### keys
 
+#### keys
 Returns an array with the keys of an object.
 ```
 R.keys({a: 1, b: 2, c: 3})
@@ -1706,6 +1706,132 @@ R.length(str)
 //16
 ```
 
+#### lens
+
+Create a lens to be used to focus on a particular location in an object literal/array.  
+
+const xLens = R.lens(R.prop('x'), R.assoc('x'))
+
+```
+
+R.view(xLens, {x: 1, y: 2}) // 1
+
+R.set(xLens, 4, {x: 1, y: 2}) // {x: 4, y: 2}
+
+R.over(xLens, R.negate, {x: 1, y: 2}) // {x: -1, y: 2}
+
+```
+
+```
+
+const arr = [1, 2, 3]
+
+const xLens = R.lens(R.prop(0), R.assoc(0))
+
+  
+
+R.view(xLens, arr)
+
+```
+
+#### lensIndex
+
+Returns a lens whose focus is the specified index. Does not work on object literals.
+
+```
+
+const headLens = R.lensIndex(0)
+
+  
+
+R.view(headLens, ['a', 'b', 'c']) // 'a'
+
+R.set(headLens, 'x', ['a', 'b', 'c']) // ['x', 'b', 'c']
+
+R.over(headLens, R.toUpper, ['a', 'b', 'c']); // ['A', 'b', 'c']
+
+```
+
+#### lensPath
+
+Returns a lens whose focus is the specified path.
+
+```
+
+const xHeadYLens = R.lensPath(['x', 0, 'y'])
+
+  
+
+R.view(xHeadYLens, {x: [{y: 2, z: 3}, {y: 4, z: 5}]})
+
+// 2
+
+R.set(xHeadYLens, 1, {x: [{y: 2, z: 3}, {y: 4, z: 5}]})
+
+// {x: [{y: 1, z: 3}, {y: 4, z: 5}]}
+
+R.over(xHeadYLens, R.negate, {x: [{y: 2, z: 3}, {y: 4, z: 5}]})
+
+// {x: [{y: -2, z: 3}, {y: 4, z: 5}]}
+
+```
+
+```
+
+const arr = [ [1, 2], [3, 4], [5, 6] ]
+
+const myLens = R.lensPath([1, 1])
+
+  
+
+R.view(myLens, arr)
+
+// 4
+
+```
+
+#### lensProp
+
+Returns a lens to the specified prop.
+
+```
+
+const xLens = R.lensProp('x')
+
+  
+
+R.view(xLens, {x: 1, y: 2}) // 1
+
+R.set(xLens, 4, {x: 1, y: 2}) // {x: 4, y: 2}
+
+R.over(xLens, R.negate, {x: 1, y: 2}) // {x: -1, y: 2}
+
+```
+
+#### lift
+
+Takes the first parameter and maps it against all possible combinations of the other parameters.
+
+So in the example below, the first element of the first parameter, is mapped against all combinations of the second parameter (1 + 1, 1 + 2, 1 + 3, and then, 2 + 1, 2 + 2, etc)
+
+```
+const madd2 = R.lift((a, b) => a + b)
+madd2([1,2,3], [1,2,3])
+// [2, 3, 4, 3, 4, 5, 4, 5, 6]  
+```
+```
+const madd3 = R.lift((a, b, c) => a + b + c)
+madd3([1,2,3], [1,2,3], [1])
+// [3, 4, 5, 4, 5, 6, 5, 6, 7]
+```
+```
+const arr = ['a', 'b', 'c']
+const combine = R.lift((a, b) => a + b)
+
+combine(arr, arr)
+// ["aa", "ab", "ac", "ba", "bb", "bc", "ca", "cb", "cc"]
+```
+
 ## Mapping
 
 #### addIndex
@@ -1748,11 +1874,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1ODc1NDM5OSwtMTkwNDYxMTA4OCwxOT
-AxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5
-MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOT
-M5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0
-NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC
-04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0
-MDAzMV19
+eyJoaXN0b3J5IjpbLTEyNzkzNDEwOTUsLTE5MDQ2MTEwODgsMT
+kwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4
+OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLT
+kzOTM0NjIyMywtODM0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0
+NDQwLDE4NTQ0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OS
+wtODMzMDI5NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4
+NDAwMzFdfQ==
 -->
