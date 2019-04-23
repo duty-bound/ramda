@@ -1791,29 +1791,19 @@ R.view(myLens, arr)
 ```
 
 #### lensProp
-
 Returns a lens to the specified prop.
-
 ```
-
 const xLens = R.lensProp('x')
 
-  
-
 R.view(xLens, {x: 1, y: 2}) // 1
-
 R.set(xLens, 4, {x: 1, y: 2}) // {x: 4, y: 2}
-
 R.over(xLens, R.negate, {x: 1, y: 2}) // {x: -1, y: 2}
-
 ```
 
 #### lift
-
 Takes the first parameter and maps it against all possible combinations of the other parameters.
 
 So in the example below, the first element of the first parameter, is mapped against all combinations of the second parameter (1 + 1, 1 + 2, 1 + 3, and then, 2 + 1, 2 + 2, etc)
-
 ```
 const madd2 = R.lift((a, b) => a + b)
 madd2([1,2,3], [1,2,3])
@@ -1874,7 +1864,7 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzkzNDEwOTUsLTE5MDQ2MTEwODgsMT
+eyJoaXN0b3J5IjpbLTE3MDg4Njk5NTUsLTE5MDQ2MTEwODgsMT
 kwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4
 OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLT
 kzOTM0NjIyMywtODM0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0
