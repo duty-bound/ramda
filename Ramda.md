@@ -331,6 +331,22 @@ R.isNil(0) //false
 R.isNil([]) //false
 ```
 
+#### lt
+Returns true if the first argument is less than the second.
+```
+R.lt(1, 2) //true
+R.lt('a', 'z') //true
+```
+
+#### lte
+Returns true if the first argument is less than or equal to the second.
+```
+R.lte(1, 2) //true
+R.lte(2, 2) //true
+R.lte('ae', 'ad') //false
+R.lte('ae', 'ae') //true
+```
+
 
 ### Iterative
 
@@ -1659,7 +1675,7 @@ R.keys({a: 1, b: 2, c: 3})
 //['a', 'b', 'c']
 ```
 
-### keysIn
+#### keysIn
 Returns a list containing the names of all the properties of the supplied object, including prototype properties.  
 ```
 const F = function() { this.x = 'X' }
@@ -1789,45 +1805,12 @@ combine(arr, arr)
 ```
 
 #### liftN
-
 Lifts a function to the specified arity.
-
 ```
-
 const madd3 = R.liftN(3, (...args) => R.sum(args))
 
 madd3([1,2,3], [1,2,3], [1])
-
 //[3, 4, 5, 4, 5, 6, 5, 6, 7]
-
-```
-
-#### lt
-
-Returns true if the first argument is less than the second.
-
-```
-
-R.lt(1, 2) //true
-
-R.lt('a', 'z') //true
-
-```
-
-#### lte
-
-Returns true if the first argument is less than or equal to the second.
-
-```
-
-R.lte(1, 2) //true
-
-R.lte(2, 2) //true
-
-R.lte('ae', 'ad') //false
-
-R.lte('ae', 'ae') //true
-
 ```
 
 #### map
@@ -1934,11 +1917,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAzNzkyNDI3LC0zMzkzMzA0MDIsLTE5MD
-Q2MTEwODgsMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4
-OSwtMTIzNTA4OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMj
-AyODYzODQsLTkzOTM0NjIyMywtODM0NDMxMTE3LDk3NTQ0MzY2
-MiwxOTIwNjE0NDQwLDE4NTQ0Njc3NDAsLTE4OTIzNzY4NDMsMT
-Q0MjE1MzQ0OSwtODMzMDI5NDQ1LDExMjM3MzkxMjksNzU2OTUx
-NTk5XX0=
+eyJoaXN0b3J5IjpbLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwtMT
+kwNDYxMTA4OCwxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0
+MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LD
+MyMDI4NjM4NCwtOTM5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQz
+NjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0My
+wxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5
+NTE1OTldfQ==
 -->
