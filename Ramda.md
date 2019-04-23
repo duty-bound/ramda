@@ -1945,6 +1945,7 @@ R.mergeAll([obj1, obj3])
 R.mergeAll([obj1, obj2, obj3])
 //{"a": 1, "b": 2, "c": 3, "d": 4}
 ```
+
 #### mergeDeepLeft
 Recursive merging of objects with nested objects. The first object takes precedence.
 
@@ -2103,7 +2104,7 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0OTcxNzAwOSwtMzU4NjQ3OTQ0LC0xNj
+eyJoaXN0b3J5IjpbMTA2NjY1NDIwOSwtMzU4NjQ3OTQ0LC0xNj
 U0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAz
 NDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MS
 wyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0
