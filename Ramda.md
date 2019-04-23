@@ -1654,26 +1654,18 @@ R.join('|', arr)
 #### keys
 
 Returns an array with the keys of an object.
-
 ```
-
 R.keys({a: 1, b: 2, c: 3})
-
 //['a', 'b', 'c']
-
 ```
 
 ### keysIn
-
 Returns a list containing the names of all the properties of the supplied object, including prototype properties.  
-
 ```
-
 const F = function() { this.x = 'X' }
-
 F.prototype.y = 'Y'
-
 const f = new F()
+
 R.keysIn(f)
 // ['x', 'y']
 ```
@@ -1756,7 +1748,7 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NDc2OTkyMywtMTkwNDYxMTA4OCwxOT
+eyJoaXN0b3J5IjpbMTk1ODc1NDM5OSwtMTkwNDYxMTA4OCwxOT
 AxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5
 MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOT
 M5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0
