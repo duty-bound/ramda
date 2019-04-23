@@ -1757,37 +1757,23 @@ R.over(headLens, R.toUpper, ['a', 'b', 'c']); // ['A', 'b', 'c']
 Returns a lens whose focus is the specified path.
 
 ```
-
 const xHeadYLens = R.lensPath(['x', 0, 'y'])
 
-  
-
 R.view(xHeadYLens, {x: [{y: 2, z: 3}, {y: 4, z: 5}]})
-
 // 2
 
 R.set(xHeadYLens, 1, {x: [{y: 2, z: 3}, {y: 4, z: 5}]})
-
 // {x: [{y: 1, z: 3}, {y: 4, z: 5}]}
 
 R.over(xHeadYLens, R.negate, {x: [{y: 2, z: 3}, {y: 4, z: 5}]})
-
 // {x: [{y: -2, z: 3}, {y: 4, z: 5}]}
-
 ```
-
 ```
-
 const arr = [ [1, 2], [3, 4], [5, 6] ]
-
 const myLens = R.lensPath([1, 1])
 
-  
-
 R.view(myLens, arr)
-
 // 4
-
 ```
 
 #### lensProp
@@ -1864,11 +1850,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDg4Njk5NTUsLTE5MDQ2MTEwODgsMT
-kwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4
-OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLT
-kzOTM0NjIyMywtODM0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0
-NDQwLDE4NTQ0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OS
-wtODMzMDI5NDQ1LDExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4
-NDAwMzFdfQ==
+eyJoaXN0b3J5IjpbMTM0NzU2MTI4NSwtMTkwNDYxMTA4OCwxOT
+AxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5
+MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOT
+M5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0
+NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC
+04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0
+MDAzMV19
 -->
