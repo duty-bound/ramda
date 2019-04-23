@@ -2037,38 +2037,25 @@ R.mergeRight({ 'age': 40 }, { 'name': 'fred', 'age': 10 })
 
 //{ 'name': 'fred', 'age': 10 }
 
-  
-
 const resetToDefault = R.mergeRight({x: 0})
-
 resetToDefault({x: 5, y: 2})
-
 //{x: 5, y: 2}
-
 ```
 
 #### mergeWith
-
 If a property is common in both objects, the provided function will be used to merge the values.
-
 ```
-
 R.mergeWith(R.concat,
-
 { a: true, values: [10, 20] },
-
 { b: true, values: [15, 35] })
-
 //{ a: true, b: true, values: [10, 20, 15, 35] }
-
 ```
 
 #### mergeWithKey
-
 A fine-tuned version of `mergeWith`, it allows to target a specific property.
-
 ```
 let concatValues = (k, l, r) => k == 'values' ? R.concat(l, r) : r
+
 R.mergeWithKey(concatValues,
 { a: true, thing: 'foo', values: [10, 20] },
 { b: true, thing: 'bar', values: [15, 35] })
@@ -2149,7 +2136,7 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMzMxNTQxNywtMzU4NjQ3OTQ0LC0xNj
+eyJoaXN0b3J5IjpbMTc2NjUyMTI2NSwtMzU4NjQ3OTQ0LC0xNj
 U0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAz
 NDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MS
 wyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0
