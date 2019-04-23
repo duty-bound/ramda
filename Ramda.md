@@ -1945,6 +1945,167 @@ R.mergeAll([obj1, obj3])
 R.mergeAll([obj1, obj2, obj3])
 //{"a": 1, "b": 2, "c": 3, "d": 4}
 ```
+#### mergeDeepLeft
+
+Recursive merging of objects with nested objects. The first object takes precedence.
+
+```
+
+R.mergeDeepLeft({ name: 'fred', age: 10, contact: { email: '[moo@example.com](mailto:moo@example.com)' }},
+
+{ age: 40, contact: { email: '[baa@example.com](mailto:baa@example.com)' }})
+
+// { name: 'fred', age: 10, contact: { email: '[moo@example.com](mailto:moo@example.com)' }}
+
+```
+
+#### mergeDeepRight
+
+Recursive merging of objects with nested objects. The second object takes precedence.  
+
+```
+
+R.mergeDeepRight({ name: 'fred', age: 10, contact: { email: '[moo@example.com](mailto:moo@example.com)' }},
+
+{ age: 40, contact: { email: '[baa@example.com](mailto:baa@example.com)' }})
+
+// { name: 'fred', age: 40, contact: { email: '[baa@example.com](mailto:baa@example.com)' }}
+
+```
+
+#### mergeDeepWith
+
+Creates a new object with the properties of both objects. If a property exists in both objects, the provided function is applied to the respective values.
+
+```
+
+R.mergeDeepWith(R.concat,
+
+{ a: true, c: { values: [10, 20] }},
+
+{ b: true, c: { values: [15, 35] }})
+
+//{ a: true, b: true, c: { values: [10, 20, 15, 35] }}
+
+```
+
+#### mergeDeepWithKey
+
+Creates a new object with the properties of both objects. If a property exists in both objects, the provided function is applied to the respective values. Has the option to target a specific key.  
+
+```
+
+let concatValues = (k, l, r) => k == 'values' ? R.concat(l, r) : r
+
+R.mergeDeepWithKey(concatValues,
+
+{ a: true, c: { thing: 'foo', values: [10, 20] }},
+
+{ b: true, c: { thing: 'bar', values: [15, 35] }})
+
+//{ a: true, b: true, c: { thing: 'bar', values: [10, 20, 15, 35] }}
+
+```
+
+#### mergeLeft
+
+If properties are common in both object, the object on the left takes precedence.
+
+```
+
+R.mergeLeft({ 'age': 40 }, { 'name': 'fred', 'age': 10 })
+
+//{ 'name': 'fred', 'age': 40 }
+
+  
+
+const resetToDefault = R.mergeLeft({x: 0})
+
+resetToDefault({x: 5, y: 2})
+
+//{x: 0, y: 2}
+
+```
+
+#### R.mergeRight
+
+If properties are common in both object, the object on the right takes precedence.  
+
+```
+
+R.mergeRight({ 'age': 40 }, { 'name': 'fred', 'age': 10 })
+
+//{ 'name': 'fred', 'age': 10 }
+
+  
+
+const resetToDefault = R.mergeRight({x: 0})
+
+resetToDefault({x: 5, y: 2})
+
+//{x: 5, y: 2}
+
+```
+
+#### mergeWith
+
+If a property is common in both objects, the provided function will be used to merge the values.
+
+```
+
+R.mergeWith(R.concat,
+
+{ a: true, values: [10, 20] },
+
+{ b: true, values: [15, 35] })
+
+//{ a: true, b: true, values: [10, 20, 15, 35] }
+
+```
+
+#### mergeWithKey
+
+A fine-tuned version of `mergeWith`, it allows to target a specific property.
+
+```
+let concatValues = (k, l, r) => k == 'values' ? R.concat(l, r) : r
+R.mergeWithKey(concatValues,
+{ a: true, thing: 'foo', values: [10, 20] },
+{ b: true, thing: 'bar', values: [15, 35] })
+//{ a: true, b: true, thing: 'bar', values: [10, 20, 15, 35] }
+```
+
+#### min
+Returns the minimum of two values.
+```
+R.min(1, 2)
+//1
+```
+
+#### minBy
+Returns the parameter which results in the minimum value when the provided function is applied.
+```
+const square = n => n * n
+R.minBy(square, -4, 3)
+//3
+```
+```
+R.reduce(R.minBy(square), -3, [-2, 3, -4, 5, -6])
+//-2
+```
+
+#### modulo
+The same functionality as Javascript's `%`
+```
+R.modulo(17, 3) //2
+R.modulo(-17, 3) //-2
+R.modulo(17, -3) //2
+```
+```
+const isOdd = R.modulo(R.__, 2)
+isOdd(42) //0
+isOdd(21) //1
+```
 
 ## Mapping
 
@@ -1988,11 +2149,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1ODY0Nzk0NCwtMTY1NDA2MTY5MCwtMz
-M5MzMwNDAyLC0xOTA0NjExMDg4LDE5MDEwMzQzNDgsLTE0MjYx
-NzI4OCwxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2Ni
-wyNzk3ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYyMjMsLTgzNDQz
-MTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxODU0NDY3NzQwLC
-0xODkyMzc2ODQzLDE0NDIxNTM0NDksLTgzMzAyOTQ0NSwxMTIz
-NzM5MTI5XX0=
+eyJoaXN0b3J5IjpbLTIyMzMxNTQxNywtMzU4NjQ3OTQ0LC0xNj
+U0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAz
+NDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MS
+wyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0
+NjIyMywtODM0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0NDQwLD
+E4NTQ0Njc3NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMz
+MDI5NDQ1XX0=
 -->
