@@ -1651,7 +1651,99 @@ const arr = [1, 2, 3, 4]
 R.join('|', arr)
 //"1|2|3|4"
 ```
+#### keys
 
+Returns an array with the keys of an object.
+
+```
+
+R.keys({a: 1, b: 2, c: 3})
+
+//['a', 'b', 'c']
+
+```
+
+### keysIn
+
+Returns a list containing the names of all the properties of the supplied object, including prototype properties.  
+
+```
+
+const F = function() { this.x = 'X' }
+
+F.prototype.y = 'Y'
+
+const f = new F()
+
+R.keysIn(f)
+
+// ['x', 'y']
+
+```
+
+#### last
+
+Returns the last element of a given list.
+
+```
+
+const arr = [1, 2, 3]
+
+R.last(arr)
+
+//3
+
+  
+
+const str = 'The Greate Seige'
+
+R.last(str)
+
+//"e"
+
+```
+
+#### lastIndexOf
+
+Returns the index of the last position of an occurrence of a given element in a list.
+
+```
+
+const arr = [1, 2, 3, 1, 2, 3]
+
+R.lastIndexOf(2, arr)
+
+//4
+
+  
+
+const str = 'The Greate Seige'
+
+R.lastIndexOf('e', str)
+
+//15
+
+```
+
+#### length
+
+Return the length of a list.
+
+```
+
+const arr = [1, 2, 3, 1, 2, 3]
+
+R.length(arr)
+
+//6
+
+  
+
+const str = 'The Greate Seige'
+
+R.length(str)
+//16
+```
 
 ## Mapping
 
@@ -1695,11 +1787,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDQ2MTEwODgsMTkwMTAzNDM0OCwtMT
-QyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MSwyMDU0MjM1
-NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0NjIyMywtOD
-M0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0NDQwLDE4NTQ0Njc3
-NDAsLTE4OTIzNzY4NDMsMTQ0MjE1MzQ0OSwtODMzMDI5NDQ1LD
-ExMjM3MzkxMjksNzU2OTUxNTk5LDEyOTk4NDAwMzEsMTYzMjM1
-NDcyNl19
+eyJoaXN0b3J5IjpbNzkxNjM5ODg1LC0xOTA0NjExMDg4LDE5MD
+EwMzQzNDgsLTE0MjYxNzI4OCwxNzQ3MTQxODksLTEyMzUwODkw
+NTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05Mz
+kzNDYyMjMsLTgzNDQzMTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0
+MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIxNTM0NDksLT
+gzMzAyOTQ0NSwxMTIzNzM5MTI5LDc1Njk1MTU5OSwxMjk5ODQw
+MDMxXX0=
 -->
