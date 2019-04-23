@@ -1707,21 +1707,14 @@ R.length(str)
 ```
 
 #### lens
-
 Create a lens to be used to focus on a particular location in an object literal/array.  
-
+```
 const xLens = R.lens(R.prop('x'), R.assoc('x'))
 
-```
-
 R.view(xLens, {x: 1, y: 2}) // 1
-
 R.set(xLens, 4, {x: 1, y: 2}) // {x: 4, y: 2}
-
 R.over(xLens, R.negate, {x: 1, y: 2}) // {x: -1, y: 2}
-
 ```
-
 ```
 const arr = [1, 2, 3]
 const xLens = R.lens(R.prop(0), R.assoc(0))
@@ -1837,11 +1830,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTMzMDQwMiwtMTkwNDYxMTA4OCwxOT
-AxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5
-MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOT
-M5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0
-NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC
-04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5NTE1OTksMTI5OTg0
-MDAzMV19
+eyJoaXN0b3J5IjpbLTE3MjAxNjY4MTQsLTMzOTMzMDQwMiwtMT
+kwNDYxMTA4OCwxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0
+MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LD
+MyMDI4NjM4NCwtOTM5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQz
+NjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0My
+wxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5
+NTE1OTldfQ==
 -->
