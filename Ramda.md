@@ -1831,9 +1831,7 @@ R.lte('ae', 'ae') //true
 ```
 
 #### map
-
 Applies the function to each element of the provided array or object.
-
 ```
 const double = n => n * 2
 const arr = [1, 2, 3]
@@ -1936,11 +1934,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzgxMzkzNDksLTMzOTMzMDQwMiwtMT
-kwNDYxMTA4OCwxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0
-MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LD
-MyMDI4NjM4NCwtOTM5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQz
-NjYyLDE5MjA2MTQ0NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0My
-wxNDQyMTUzNDQ5LC04MzMwMjk0NDUsMTEyMzczOTEyOSw3NTY5
-NTE1OTldfQ==
+eyJoaXN0b3J5IjpbMzAzNzkyNDI3LC0zMzkzMzA0MDIsLTE5MD
+Q2MTEwODgsMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4
+OSwtMTIzNTA4OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMj
+AyODYzODQsLTkzOTM0NjIyMywtODM0NDMxMTE3LDk3NTQ0MzY2
+MiwxOTIwNjE0NDQwLDE4NTQ0Njc3NDAsLTE4OTIzNzY4NDMsMT
+Q0MjE1MzQ0OSwtODMzMDI5NDQ1LDExMjM3MzkxMjksNzU2OTUx
+NTk5XX0=
 -->
