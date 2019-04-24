@@ -2137,6 +2137,82 @@ R.nth(-1, arr) //7
 R.nth(-2, arr) //6
 ```
 
+#### nthArg
+
+Returns the nth of its arguments.
+
+```
+
+R.nthArg(2)(1, 2, 3)
+
+//3
+
+  
+
+const f = R.nthArg(2)
+
+f(1, 2, 3)
+
+//3
+
+```
+
+  
+
+#### o
+
+`o` is a curried composition function that returns a unary function. Like compose, `o` performs right-to-left function composition. Unlike compose, the rightmost function passed to `o` will be invoked with only one argument. Also, unlike compose, `o` is limited to accepting only 2 unary functions.  
+
+```
+const classyGreeting = name => "The name's " + name.last + ", " + name.first + " " + name.last
+const yellGreeting = R.o(R.toUpper, classyGreeting)
+yellGreeting({first: 'James', last: 'Bond'})
+//"THE NAME'S BOND, JAMES BOND"
+```
+```
+R.o(R.multiply(10), R.add(10))(-4)
+//60
+```
+
+#### objOf
+Takes two parameters to use as key and value to create an object.
+```
+R.objOf("name", "Marcus")
+//{"name": "Marcus"}
+```
+```
+const names = ["Paul", "John", "George", "Ringo"]
+R.map(R.objOf("name"), names)
+//[{"name": "Paul"}, {"name": "John"}, {"name": "George"}, {"name": "Ringo"}]
+```
+```
+const names = ["Paul", "John", "George", "Ringo"]
+R.compose(R.objOf("Beatles"), R.map(R.objOf("name")))(names)
+//{"Beatles": [{"name": "Paul"}, {"name": "John"}, {"name": "George"}, {"name": "Ringo"}]}
+```
+```
+const names = ["Paul", "John", "George", "Ringo"]
+const formBand = R.compose(R.objOf("Beatles"), R.map(R.objOf("name")))
+formBand(names)
+
+//{"Beatles": [{"name": "Paul"}, {"name": "John"}, {"name": "George"}, {"name": "Ringo"}]}
+```
+
+#### of
+Takes only one parameter and returns a singleton array.
+```
+R.of(23) //[23]
+R.of(23, 24) //[23]
+R.of("React") //["React"]
+```
+
+#### omit
+Returns a partial copy of an object less the specified properties.
+```
+R.omit(['a', 'd'], {a: 1, b: 2, c: 3, d: 4})
+//{"b": 2, "c": 3}
+```
+
 ## Mapping
 
 #### addIndex
@@ -2179,11 +2255,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIyOTkyMjc3LC0zNTg2NDc5NDQsLTE2NT
-QwNjE2OTAsLTMzOTMzMDQwMiwtMTkwNDYxMTA4OCwxOTAxMDM0
-MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5MDUxLD
-IwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwtOTM5MzQ2
-MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2MTQ0NDAsMT
-g1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxNDQyMTUzNDQ5LC04MzMw
-Mjk0NDVdfQ==
+eyJoaXN0b3J5IjpbLTg2MjYzNjU0MSw4MjI5OTIyNzcsLTM1OD
+Y0Nzk0NCwtMTY1NDA2MTY5MCwtMzM5MzMwNDAyLC0xOTA0NjEx
+MDg4LDE5MDEwMzQzNDgsLTE0MjYxNzI4OCwxNzQ3MTQxODksLT
+EyMzUwODkwNTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2
+Mzg0LC05MzkzNDYyMjMsLTgzNDQzMTExNyw5NzU0NDM2NjIsMT
+kyMDYxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIx
+NTM0NDldfQ==
 -->
