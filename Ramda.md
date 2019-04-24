@@ -2138,34 +2138,22 @@ R.nth(-2, arr) //6
 ```
 
 #### nthArg
-
 Returns the nth of its arguments.
-
 ```
-
 R.nthArg(2)(1, 2, 3)
-
 //3
-
-  
 
 const f = R.nthArg(2)
-
 f(1, 2, 3)
-
 //3
-
 ```
 
-  
-
 #### o
-
 `o` is a curried composition function that returns a unary function. Like compose, `o` performs right-to-left function composition. Unlike compose, the rightmost function passed to `o` will be invoked with only one argument. Also, unlike compose, `o` is limited to accepting only 2 unary functions.  
-
 ```
 const classyGreeting = name => "The name's " + name.last + ", " + name.first + " " + name.last
 const yellGreeting = R.o(R.toUpper, classyGreeting)
+
 yellGreeting({first: 'James', last: 'Bond'})
 //"THE NAME'S BOND, JAMES BOND"
 ```
@@ -2255,11 +2243,11 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjYzNjU0MSw4MjI5OTIyNzcsLTM1OD
-Y0Nzk0NCwtMTY1NDA2MTY5MCwtMzM5MzMwNDAyLC0xOTA0NjEx
-MDg4LDE5MDEwMzQzNDgsLTE0MjYxNzI4OCwxNzQ3MTQxODksLT
-EyMzUwODkwNTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2
-Mzg0LC05MzkzNDYyMjMsLTgzNDQzMTExNyw5NzU0NDM2NjIsMT
-kyMDYxNDQ0MCwxODU0NDY3NzQwLC0xODkyMzc2ODQzLDE0NDIx
-NTM0NDldfQ==
+eyJoaXN0b3J5IjpbLTE4NzgzODY3NDEsODIyOTkyMjc3LC0zNT
+g2NDc5NDQsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwtMTkwNDYx
+MTA4OCwxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC
+0xMjM1MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4
+NjM4NCwtOTM5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLD
+E5MjA2MTQ0NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxNDQy
+MTUzNDQ5XX0=
 -->
