@@ -2226,35 +2226,23 @@ const midLens = R.lensIndex(1)
 R.over(midLens, R.toUpper, arr)
 //["a", "B", "c"]
 ```
+
 #### pair
-
 Takes two arguments and puts them in an array.
-
 ```
-
 const obj = { brand: "oneplus", model: "one" }
-
 R.pair(obj.brand, obj.model)
-
 //["oneplus", "one"]
-
 ```
 
 #### partial
-
 Takes a function `f` and a list of parameters, and returns a function `g`. The returned function `g` will first make use of the parameters supplied to it in its definition, if these are not as much as the arity of `f`, it will take as much as parameters as required from those supplied to `g`.
-
 ```
-
 const f = (x, y, z) => x + y + z
-
 const g = R.partial(f, [1, 2])
-
 g(4)
-
 //7
 
- 
 const h = R.partial(f, [1, 2, 3])
 h(4)
 //6 (the parameter supplied to 'h' is ignored)
@@ -2365,7 +2353,7 @@ R.concat('foo', 'bar')
 - invoker
 - otherwise
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4OTU5OTkyOCwtMTg3ODM4Njc0MSw4Mj
+eyJoaXN0b3J5IjpbMTA4MDM0MDA1NiwtMTg3ODM4Njc0MSw4Mj
 I5OTIyNzcsLTM1ODY0Nzk0NCwtMTY1NDA2MTY5MCwtMzM5MzMw
 NDAyLC0xOTA0NjExMDg4LDE5MDEwMzQzNDgsLTE0MjYxNzI4OC
 wxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2NiwyNzk3
