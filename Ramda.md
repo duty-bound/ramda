@@ -347,6 +347,14 @@ R.lte('ae', 'ad') //false
 R.lte('ae', 'ae') //true
 ```
 
+#### or
+Similar to `||`.
+```
+R.or(true, true) //true
+R.or(true, false) //true
+R.or(false, true) //true
+R.or(false, false) //false
+```
 
 ### Iterative
 
@@ -2200,57 +2208,25 @@ Returns a partial copy of an object less the specified properties.
 R.omit(['a', 'd'], {a: 1, b: 2, c: 3, d: 4})
 //{"b": 2, "c": 3}
 ```
+
 #### once
-
 Executes a function just once, no matter how many times it is called. The first returned value is returned for any subsequent calls.
-
 ```
-
 const double = R.once(n => n * 2)
-
 double(2) //4
-
 double(2) //4
-
-```
-
-#### or
-
-Similar to `||`.
-
-```
-
-R.or(true, true) //true
-
-R.or(true, false) //true
-
-R.or(false, true) //true
-
-R.or(false, false) //false
-
 ```
 
 #### over
-
 Used with a lens operation to set values.
-
 ```
-
 const arr = ['a', 'b', 'c']
-
 const midLens = R.lensIndex(1)
 
 R.over(midLens, R.toUpper, arr)
-
 //["a", "B", "c"]
-
 ```
 
-#### paid
-
-Takes two arguments and
-
-  
 ## Mapping
 
 #### addIndex
@@ -2292,11 +2268,9 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 - invoker
-- otherwise 
-#### otherwise
-
+- otherwise
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MDI4MTI3NiwtMTg3ODM4Njc0MSw4Mj
+eyJoaXN0b3J5IjpbMTE5NjUxMzg3OSwtMTg3ODM4Njc0MSw4Mj
 I5OTIyNzcsLTM1ODY0Nzk0NCwtMTY1NDA2MTY5MCwtMzM5MzMw
 NDAyLC0xOTA0NjExMDg4LDE5MDEwMzQzNDgsLTE0MjYxNzI4OC
 wxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2NiwyNzk3
