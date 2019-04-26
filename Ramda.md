@@ -2200,7 +2200,57 @@ Returns a partial copy of an object less the specified properties.
 R.omit(['a', 'd'], {a: 1, b: 2, c: 3, d: 4})
 //{"b": 2, "c": 3}
 ```
+#### once
 
+Executes a function just once, no matter how many times it is called. The first returned value is returned for any subsequent calls.
+
+```
+
+const double = R.once(n => n * 2)
+
+double(2) //4
+
+double(2) //4
+
+```
+
+#### or
+
+Similar to `||`.
+
+```
+
+R.or(true, true) //true
+
+R.or(true, false) //true
+
+R.or(false, true) //true
+
+R.or(false, false) //false
+
+```
+
+#### over
+
+Used with a lens operation to set values.
+
+```
+
+const arr = ['a', 'b', 'c']
+
+const midLens = R.lensIndex(1)
+
+R.over(midLens, R.toUpper, arr)
+
+//["a", "B", "c"]
+
+```
+
+#### paid
+
+Takes two arguments and
+
+  
 ## Mapping
 
 #### addIndex
@@ -2242,12 +2292,15 @@ R.concat('foo', 'bar')
 - constructN
 - curryN (how is it different from `curry`?
 - invoker
+- otherwise 
+#### otherwise
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzgzODY3NDEsODIyOTkyMjc3LC0zNT
-g2NDc5NDQsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwtMTkwNDYx
-MTA4OCwxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC
-0xMjM1MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4
-NjM4NCwtOTM5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLD
-E5MjA2MTQ0NDAsMTg1NDQ2Nzc0MCwtMTg5MjM3Njg0MywxNDQy
-MTUzNDQ5XX0=
+eyJoaXN0b3J5IjpbLTY2MDI4MTI3NiwtMTg3ODM4Njc0MSw4Mj
+I5OTIyNzcsLTM1ODY0Nzk0NCwtMTY1NDA2MTY5MCwtMzM5MzMw
+NDAyLC0xOTA0NjExMDg4LDE5MDEwMzQzNDgsLTE0MjYxNzI4OC
+wxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2NiwyNzk3
+ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYyMjMsLTgzNDQzMTExNy
+w5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxODU0NDY3NzQwLC0xODky
+Mzc2ODQzXX0=
 -->
