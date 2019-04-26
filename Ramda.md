@@ -2226,6 +2226,155 @@ const midLens = R.lensIndex(1)
 R.over(midLens, R.toUpper, arr)
 //["a", "B", "c"]
 ```
+#### pair
+
+Takes two arguments and puts them in an array.
+
+```
+
+const obj = { brand: "oneplus", model: "one" }
+
+R.pair(obj.brand, obj.model)
+
+//["oneplus", "one"]
+
+```
+
+#### partial
+
+Takes a function `f` and a list of parameters, and returns a function `g`. The returned function `g` will first make use of the parameters supplied to it in its definition, if these are not as much as the arity of `f`, it will take as much as parameters as required from those supplied to `g`.
+
+```
+
+const f = (x, y, z) => x + y + z
+
+const g = R.partial(f, [1, 2])
+
+g(4)
+
+//7
+
+  
+
+const h = R.partial(f, [1, 2, 3])
+
+h(4)
+
+//6 (the parameter supplied to 'h' is ignored)
+
+  
+
+const i = R.partial(f, [1])
+
+i(4, 5)
+
+//10
+
+  
+
+const j = R.partial(f, [])
+
+j(4, 5, 6)
+
+//15
+
+```
+
+#### partialRight
+
+Same as `partial`, however the parameters supplied to the function returned from `partialRight` are consumed first.
+
+```
+
+const f = (x, y, z) => x + y + z
+
+const g = R.partialRight(f, [1, 2])
+
+g(4)
+
+//7
+
+  
+
+const h = R.partialRight(f, [1, 2, 3])
+
+h(4)
+
+//7 ('3' is ignored)
+
+  
+
+const i = R.partialRight(f, [1])
+
+i(4, 5)
+
+//10
+
+  
+
+const j = R.partialRight(f, [1, 2, 3])
+
+j(4, 5, 6)
+
+//15
+
+```
+
+#### partition
+
+Applies the provided function to the provided list and returns two lists: one with a list that satisfies the function, the other with a list that does not satisfy the function. The list supplied can be wither an array or an object.
+
+```
+
+const isEven = n => n % 2 === 0
+
+R.partition(isEven, [1, 2, 3, 4, 5, 6])
+
+//[[2, 4, 6], [1, 3, 5]]
+
+```
+
+```
+
+const isEven = n => n % 2 === 0
+
+R.partition(isEven, { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6})
+
+//[{"four": 4, "six": 6, "two": 2}, {"five": 5, "one": 1, "three": 3}]
+
+```
+
+#### path
+
+Takes a path and an array or object, and returns the element/property and the path's location.
+
+```
+
+R.path(['nest1', 'nest2'], { nest1: {nest2: 'hello'}}) //"hello"
+
+R.path([3, 1], [ [1, 2], [3, 4], [5, 6], [7, 8] ]) //8
+
+```
+
+#### pathEq
+
+Takes a path and a value, and returns a function that will determine if the element/property at the supplied path is equal to the value provided.
+
+```
+
+const user1 = { address: { zipCode: 90210 } }
+
+const user2 = { address: { zipCode: 55555 } }
+
+const user3 = { name: 'Bob' }
+
+const users = [ user1, user2, user3 ]
+
+const isFamous = R.pathEq(['address', 'zipCode'], 90210)
+
+R.filter(isFamous, users)
+//[{"address": {"zipCode": 90210}}]
+```
 
 ## Mapping
 
@@ -2270,7 +2419,7 @@ R.concat('foo', 'bar')
 - invoker
 - otherwise
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NjUxMzg3OSwtMTg3ODM4Njc0MSw4Mj
+eyJoaXN0b3J5IjpbLTcwODY3MzYwMCwtMTg3ODM4Njc0MSw4Mj
 I5OTIyNzcsLTM1ODY0Nzk0NCwtMTY1NDA2MTY5MCwtMzM5MzMw
 NDAyLC0xOTA0NjExMDg4LDE5MDEwMzQzNDgsLTE0MjYxNzI4OC
 wxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2NiwyNzk3
