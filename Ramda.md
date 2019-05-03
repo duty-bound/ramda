@@ -2311,105 +2311,66 @@ R.filter(isFamous, users)
 ```
 
 #### pathOr
-
 If the given, non-null object has a value at the given path, returns the value at that path. Otherwise returns the provided default value.  
-
 ```
-
 R.pathOr('N/A', ['a', 'b'], {a: {b: 2}}) //2
-
 R.pathOr('N/A', ['a', 'b'], {c: {b: 2}}) //"N/A"
-
 ```
 
 #### pathSatsifies
-
 Returns true if the value at the specified path satisfies the given predicate.
-
 ```
-
 const isAdult = n => n >= 18
 
 R.pathSatisfies(isAdult, ['player', 'age'], { player: {age: 23 }})
-
 //true
-
 ```
 
 #### pick
-
 Returns the specified properties/elements from an object/array into a new object.
-
 ```
-
 const obj = { name: 'James', surname: 'Hetfield', band: 'Metallica', age: 58}
 
 R.pick(['name', 'surname'], obj)
-
 //{"name": "James", "surname": "Hetfield"}
-
 ```
-
 ```
-
 const arr = [1, 2, 3, 4, 5, 6]
 
 R.pick([0, 3], arr)
-
 //{"0": 1, "3": 4}
-
 ```
 
 #### pickAll
-
 Similar to `pick` but this one returns `undefined` for properties that do not exist.
-
 ```
-
 const obj = { name: 'James', surname: 'Hetfield', band: 'Metallica', age: 58}
 
 R.pickAll(['name', 'surname', 'previousBand'], obj)
-
 //{"name": "James", "previousBand": undefined, "surname": "Hetfield"}
-
 ```
-
 ```
-
 const arr = [1, 2, 3, 4, 5, 6]
 
 R.pickAll([0, 7], arr)
-
 //{"0": 1, "3": 4}
-
 ```  
 
 #### pickBy
-
 Returns an object with the properties/elements that satisfy the predicate.
-
 ```
-
 const isAdult = player => player.age >= 18
-
 const players = [ {name: 'John', age: 17}, {name: 'Paul', age: 21} ]
 
 R.pickBy(isAdult, players)
-
 //{"1": {"age": 21, "name": "Paul"}}
-
 ```
-
 ```
-
 const isEven = n => n % 2 === 0
-
 const arr = [1, 2, 3, 4, 5, 6]
 
 R.pickBy(isEven, arr)
-
 //{"1": 2, "3": 4, "5": 6}
-
 ```
 
 #### pipe
@@ -2458,11 +2419,11 @@ R.concat('foo', 'bar')
 - invoker
 - otherwise
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjI0NTQ5ODIsMTA4MDM0MDA1NiwtMT
-g3ODM4Njc0MSw4MjI5OTIyNzcsLTM1ODY0Nzk0NCwtMTY1NDA2
-MTY5MCwtMzM5MzMwNDAyLC0xOTA0NjExMDg4LDE5MDEwMzQzND
-gsLTE0MjYxNzI4OCwxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1
-NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05MzkzNDYyMj
-MsLTgzNDQzMTExNyw5NzU0NDM2NjIsMTkyMDYxNDQ0MCwxODU0
-NDY3NzQwXX0=
+eyJoaXN0b3J5IjpbMTc0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xOD
+c4Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0xNjU0MDYx
+NjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAzNDM0OC
+wtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MSwyMDU0
+MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0NjIyMy
+wtODM0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0NDQwLDE4NTQ0
+Njc3NDBdfQ==
 -->
