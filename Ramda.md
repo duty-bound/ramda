@@ -2376,6 +2376,163 @@ R.pickBy(isEven, arr)
 #### pipe
 Performs left-to-right function composition. The leftmost function may have any arity; the remaining functions must be unary.
 
+#### pipe
+
+```
+
+const f = R.pipe(Math.pow, R.negate, R.inc);
+
+  
+
+f(3, 4)
+
+// -80
+
+```
+
+#### pluck
+
+Returns a new array/object by extracting the specified element/property from the supplied list.
+
+```
+
+var getAges = R.pluck('age');
+
+getAges([{name: 'fred', age: 29}, {name: 'wilma', age: 27}])
+
+//[29, 27]
+
+```  
+
+```  
+
+R.pluck(0, [[1, 2], [3, 4]])
+
+//[1, 3]
+
+```  
+
+```  
+
+R.pluck('val', {a: {val: 3}, b: {val: 5}})
+
+//{"a": 3, "b": 5}
+
+```
+
+#### prepend
+
+Prepends the given list with the element provided.
+
+```
+
+R.prepend(0, [1, 2, 3])
+
+//[0, 1, 2, 3]
+
+```
+
+#### product
+
+Multiplies all the elements in the provided array.
+
+```
+
+R.product([5, 4, 3, 2, 1])
+
+//120
+
+```
+
+#### prop
+
+Returns a functions that gets the indicated property.
+
+```
+
+R.prop(1, [0, 1, 2])
+
+//1
+
+```
+
+```
+
+R.prop('name', {name: 'Max', surname: 'Cavalera'})
+
+//Max
+
+```
+
+```
+
+const obj = {name: 'Max', surname: 'Cavalera'}
+
+const getName = R.prop('name')
+
+getName(obj)
+
+//"Max"
+
+```
+
+R.propEq
+
+Returns `true` if the property/element at the indicated location is equal to the second parameter.
+
+```
+
+R.propEq(1, 1, [0, 1, 2])
+
+//true
+
+```
+
+```
+
+const obj = {name: 'Max', surname: 'Cavalera'}
+
+const checkName = R.propEq('name', 'Max')
+
+checkName(obj)
+
+//true
+
+```
+
+```
+
+const abby = {name: 'Abby', age: 7, hair: 'blond'}
+
+const fred = {name: 'Fred', age: 12, hair: 'brown'}
+
+const rusty = {name: 'Rusty', age: 10, hair: 'brown'}
+
+const alois = {name: 'Alois', age: 15, disposition: 'surly'}
+
+const kids = [abby, fred, rusty, alois]
+
+const hasBrownHair = R.propEq('hair', 'brown')
+
+R.pluck('name', R.filter(hasBrownHair, kids))
+
+//["Fred", "Rusty"]
+
+```
+
+#### propIs
+
+Returns `true` if the specified object property is of the given type.  
+
+```
+
+R.propIs(Number, 'age', {name: 'Max', age: 18}) //true
+
+R.propIs(Number, 'age', {name: 'Max', age: 'eihgteen'}) //false
+
+```
+
+
 ## Mapping
 
 #### addIndex
@@ -2418,12 +2575,16 @@ R.concat('foo', 'bar')
 - curryN (how is it different from `curry`?
 - invoker
 - otherwise
+- pipeK
+- pipeP
+
+pipeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xOD
-c4Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0xNjU0MDYx
-NjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAzNDM0OC
-wtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MSwyMDU0
-MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0NjIyMy
-wtODM0NDMxMTE3LDk3NTQ0MzY2MiwxOTIwNjE0NDQwLDE4NTQ0
-Njc3NDBdfQ==
+eyJoaXN0b3J5IjpbLTg2MDk5NDY0MywxNzQ3NzEzNDU2LDEwOD
+AzNDAwNTYsLTE4NzgzODY3NDEsODIyOTkyMjc3LC0zNTg2NDc5
+NDQsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwtMTkwNDYxMTA4OC
+wxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1
+MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NC
+wtOTM5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2
+MTQ0NDBdfQ==
 -->
