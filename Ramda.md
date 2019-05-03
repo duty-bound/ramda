@@ -2383,32 +2383,20 @@ R.pickBy(isEven, arr)
 #### pipe
 Performs left-to-right function composition. The leftmost function may have any arity; the remaining functions must be unary.
 
-#### pipe
-
 ```
-
 const f = R.pipe(Math.pow, R.negate, R.inc);
 
-  
-
 f(3, 4)
-
 // -80
-
 ```
 
 #### pluck
-
 Returns a new array/object by extracting the specified element/property from the supplied list.
-
 ```
-
-var getAges = R.pluck('age');
+const getAges = R.pluck('age')
 
 getAges([{name: 'fred', age: 29}, {name: 'wilma', age: 27}])
-
 //[29, 27]
-
 ```  
 ```  
 R.pluck(0, [[1, 2], [3, 4]])
@@ -2521,11 +2509,11 @@ R.concat('foo', 'bar')
 - pipeP
 - pipeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NDI5NDY4NCwxNzQ3NzEzNDU2LDEwOD
-AzNDAwNTYsLTE4NzgzODY3NDEsODIyOTkyMjc3LC0zNTg2NDc5
-NDQsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwtMTkwNDYxMTA4OC
-wxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1
-MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NC
-wtOTM5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2
-MTQ0NDBdfQ==
+eyJoaXN0b3J5IjpbLTIwODMyNDkxOTMsMTc0NzcxMzQ1NiwxMD
+gwMzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3
+OTQ0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwOD
+gsMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIz
+NTA4OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzOD
+QsLTkzOTM0NjIyMywtODM0NDMxMTE3LDk3NTQ0MzY2MiwxOTIw
+NjE0NDQwXX0=
 -->
