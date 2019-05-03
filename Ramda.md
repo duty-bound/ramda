@@ -356,6 +356,13 @@ R.or(false, true) //true
 R.or(false, false) //false
 ```
 
+#### propIs
+Returns `true` if the specified object property is of the given type.  
+```
+R.propIs(Number, 'age', {name: 'Max', age: 18}) //true
+R.propIs(Number, 'age', {name: 'Max', age: 'eihgteen'}) //false
+```
+
 ### Iterative
 
 #### all
@@ -2489,48 +2496,24 @@ R.propEq(1, 1, [0, 1, 2])
 ```
 
 ```
-
 const obj = {name: 'Max', surname: 'Cavalera'}
-
 const checkName = R.propEq('name', 'Max')
-
 checkName(obj)
-
 //true
-
 ```
-
 ```
-
 const abby = {name: 'Abby', age: 7, hair: 'blond'}
-
 const fred = {name: 'Fred', age: 12, hair: 'brown'}
-
 const rusty = {name: 'Rusty', age: 10, hair: 'brown'}
-
 const alois = {name: 'Alois', age: 15, disposition: 'surly'}
-
 const kids = [abby, fred, rusty, alois]
-
 const hasBrownHair = R.propEq('hair', 'brown')
 
 R.pluck('name', R.filter(hasBrownHair, kids))
-
 //["Fred", "Rusty"]
-
 ```
 
-#### propIs
 
-Returns `true` if the specified object property is of the given type.  
-
-```
-
-R.propIs(Number, 'age', {name: 'Max', age: 18}) //true
-
-R.propIs(Number, 'age', {name: 'Max', age: 'eihgteen'}) //false
-
-```
 
 
 ## Mapping
@@ -2577,14 +2560,13 @@ R.concat('foo', 'bar')
 - otherwise
 - pipeK
 - pipeP
-
-pipeWith
+- pipeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MDk5NDY0MywxNzQ3NzEzNDU2LDEwOD
-AzNDAwNTYsLTE4NzgzODY3NDEsODIyOTkyMjc3LC0zNTg2NDc5
-NDQsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwtMTkwNDYxMTA4OC
-wxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1
-MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NC
-wtOTM5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2
-MTQ0NDBdfQ==
+eyJoaXN0b3J5IjpbLTE3NTExMjEwNDYsMTc0NzcxMzQ1NiwxMD
+gwMzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3
+OTQ0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwOD
+gsMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIz
+NTA4OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzOD
+QsLTkzOTM0NjIyMywtODM0NDMxMTE3LDk3NTQ0MzY2MiwxOTIw
+NjE0NDQwXX0=
 -->
