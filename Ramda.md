@@ -2463,6 +2463,62 @@ R.pluck('name', R.filter(hasBrownHair, kids))
 //["Fred", "Rusty"]
 ```
 
+#### propOr
+Returns the first parameter if the property indicated by the second parameter is not found in the third parameter.
+```
+const obj = { name: 'Max', surname: undefined }
+
+R.propOr('Cavalera', 'surname', obj)
+//"Cavalera"
+```
+
+#### props
+Returns multiple properties.
+```
+const obj = {name: 'Max', surname: 'Cavalera', age: '52', country: 'Brazil'}
+const getFullName = R.props(['name', 'surname'])
+
+R.pipe(getFullName, R.join(' '))(obj)
+//"Max Cavalera"
+```
+```
+const arr = [1, 2, 3, 4]
+
+R.pipe(R.props([0, 3]), R.sum)(arr)
+//5
+```
+
+#### propSatisfies
+Returns `true` if the indicated property satisfies the predicate.
+```
+const student = { name: 'Simon', age: 23 }
+const isAdult = n => n >= 18
+
+R.propSatisfies(isAdult, 'age', student)
+//true
+```
+```
+const student = { name: 'Simon', age: 23 }
+const isAdult = R.propSatisfies(n => n >= 18, 'age')
+
+isAdult(student)
+//true
+```
+
+#### range
+Returns a list of numbers from (included) to (excluded).
+```
+R.range(0, 7)
+//[0, 1, 2, 3, 4, 5, 6]
+```
+
+#### reduce
+Takes a function, a starting value (2nd parameter), and a list, and applies the function to the starting parameter and the first element in the list, and applies function to the result and the second parameter in the list, and iterates likewise through all the list.
+```
+R.reduce(R.multiply, 2, [1, 2, 3, 4])
+//48
+```
+
 ## Mapping
 
 #### addIndex
@@ -2509,11 +2565,11 @@ R.concat('foo', 'bar')
 - pipeP
 - pipeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODMyNDkxOTMsMTc0NzcxMzQ1NiwxMD
-gwMzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3
-OTQ0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwOD
-gsMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIz
-NTA4OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzOD
-QsLTkzOTM0NjIyMywtODM0NDMxMTE3LDk3NTQ0MzY2MiwxOTIw
-NjE0NDQwXX0=
+eyJoaXN0b3J5IjpbLTE1Nzg5ODY3OTYsLTIwODMyNDkxOTMsMT
+c0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5
+MjI3NywtMzU4NjQ3OTQ0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MD
+IsLTE5MDQ2MTEwODgsMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3
+NDcxNDE4OSwtMTIzNTA4OTA1MSwyMDU0MjM1NDY2LDI3OTc4Mz
+E5OCwzMjAyODYzODQsLTkzOTM0NjIyMywtODM0NDMxMTE3LDk3
+NTQ0MzY2Ml19
 -->
