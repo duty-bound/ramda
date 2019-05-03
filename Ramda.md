@@ -2410,91 +2410,53 @@ getAges([{name: 'fred', age: 29}, {name: 'wilma', age: 27}])
 //[29, 27]
 
 ```  
-
 ```  
-
 R.pluck(0, [[1, 2], [3, 4]])
-
 //[1, 3]
-
 ```  
-
 ```  
-
 R.pluck('val', {a: {val: 3}, b: {val: 5}})
-
 //{"a": 3, "b": 5}
-
 ```
 
 #### prepend
-
 Prepends the given list with the element provided.
-
 ```
-
 R.prepend(0, [1, 2, 3])
-
 //[0, 1, 2, 3]
-
 ```
 
 #### product
-
 Multiplies all the elements in the provided array.
-
 ```
-
 R.product([5, 4, 3, 2, 1])
-
 //120
-
 ```
 
 #### prop
-
 Returns a functions that gets the indicated property.
-
 ```
-
 R.prop(1, [0, 1, 2])
-
 //1
-
 ```
-
 ```
-
 R.prop('name', {name: 'Max', surname: 'Cavalera'})
-
 //Max
-
 ```
-
 ```
-
 const obj = {name: 'Max', surname: 'Cavalera'}
-
 const getName = R.prop('name')
 
 getName(obj)
-
 //"Max"
-
 ```
 
-R.propEq
-
+#### R.propEq
 Returns `true` if the property/element at the indicated location is equal to the second parameter.
-
 ```
-
 R.propEq(1, 1, [0, 1, 2])
-
 //true
-
 ```
-
 ```
 const obj = {name: 'Max', surname: 'Cavalera'}
 const checkName = R.propEq('name', 'Max')
@@ -2512,9 +2474,6 @@ const hasBrownHair = R.propEq('hair', 'brown')
 R.pluck('name', R.filter(hasBrownHair, kids))
 //["Fred", "Rusty"]
 ```
-
-
-
 
 ## Mapping
 
@@ -2562,11 +2521,11 @@ R.concat('foo', 'bar')
 - pipeP
 - pipeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTExMjEwNDYsMTc0NzcxMzQ1NiwxMD
-gwMzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3
-OTQ0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwOD
-gsMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIz
-NTA4OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzOD
-QsLTkzOTM0NjIyMywtODM0NDMxMTE3LDk3NTQ0MzY2MiwxOTIw
-NjE0NDQwXX0=
+eyJoaXN0b3J5IjpbMTk5NDI5NDY4NCwxNzQ3NzEzNDU2LDEwOD
+AzNDAwNTYsLTE4NzgzODY3NDEsODIyOTkyMjc3LC0zNTg2NDc5
+NDQsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwtMTkwNDYxMTA4OC
+wxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1
+MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NC
+wtOTM5MzQ2MjIzLC04MzQ0MzExMTcsOTc1NDQzNjYyLDE5MjA2
+MTQ0NDBdfQ==
 -->
