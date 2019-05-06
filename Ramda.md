@@ -2520,54 +2520,35 @@ R.reduce(R.multiply, 2, [1, 2, 3, 4])
 ```
 
 #### reduceBy
-
 This is a more refined `groupBy` function. It groups the elements of a list according to the variable specified in the third parameter.
-
 ```
-
 const groupNames = (acc, {name}) => acc.concat(name)
 
 const toGrade = ({score}) =>
-
 score < 65 ? 'F' :
-
 score < 70 ? 'D' :
-
 score < 80 ? 'C' :
-
 score < 90 ? 'B' : 'A'
 
-  
-
 var students = [
-
-{name: 'Abby', score: 83},
-
-{name: 'Bart', score: 62},
-
-{name: 'Curt', score: 88},
-
-{name: 'Dora', score: 92},
-
+	{name: 'Abby', score: 83},
+	{name: 'Bart', score: 62},
+	{name: 'Curt', score: 88},
+	{name: 'Dora', score: 92},
 ]
 
-  
-
 reduceBy(groupNames, [], toGrade, students)
-
 //{"A": ["Dora"], "B": ["Abby", "Curt"], "F": ["Bart"]}
-
 ```
 
 #### reduced
-
 Stops the reducing operation once a condition is satisfied. In the below example, the iteration continues (appending the result of the function to the supplied empty array, 'acc' being the empty array, 'item' being the supplied list) until the item is greater than 3 and the iteration stops.
-
 ```
 R.reduce(
 (acc, item) => item > 3 ? R.reduced(acc) : acc.concat(item),
 [],
 [1, 2, 3, 4, 5, 6])
+//[1, 2, 3]
 ```
 
 #### reduceRight
@@ -2643,7 +2624,7 @@ R.concat('foo', 'bar')
 - pipeP
 - pipeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjk4OTc1NzksLTE1Nzg5ODY3OTYsLT
+eyJoaXN0b3J5IjpbLTEyNDI3NTIzMTUsLTE1Nzg5ODY3OTYsLT
 IwODMyNDkxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xODc4
 Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0xNjU0MDYxNj
 kwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAzNDM0OCwt
