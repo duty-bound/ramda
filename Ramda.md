@@ -2519,6 +2519,84 @@ R.reduce(R.multiply, 2, [1, 2, 3, 4])
 //48
 ```
 
+#### reduceBy
+
+This is a more refined `groupBy` function. It groups the elements of a list according to the variable specified in the third parameter.
+
+```
+
+const groupNames = (acc, {name}) => acc.concat(name)
+
+const toGrade = ({score}) =>
+
+score < 65 ? 'F' :
+
+score < 70 ? 'D' :
+
+score < 80 ? 'C' :
+
+score < 90 ? 'B' : 'A'
+
+  
+
+var students = [
+
+{name: 'Abby', score: 83},
+
+{name: 'Bart', score: 62},
+
+{name: 'Curt', score: 88},
+
+{name: 'Dora', score: 92},
+
+]
+
+  
+
+reduceBy(groupNames, [], toGrade, students)
+
+//{"A": ["Dora"], "B": ["Abby", "Curt"], "F": ["Bart"]}
+
+```
+
+#### reduced
+
+Stops the reducing operation once a condition is satisfied. In the below example, the iteration continues (appending the result of the function to the supplied empty array, 'acc' being the empty array, 'item' being the supplied list) until the item is greater than 3 and the iteration stops.
+
+```
+R.reduce(
+(acc, item) => item > 3 ? R.reduced(acc) : acc.concat(item),
+[],
+[1, 2, 3, 4, 5, 6])
+```
+
+#### reduceRight
+Similar to `reduce` except it moves from right to left.
+```
+R.reduceRight(R.subtract, 0, [1, 2, 3, 4])
+//-2
+```
+
+#### reduceWhile
+Performs a reduce operation while a condition is `true`. In the below example, the elements of the list are added together and the resulting sum added to the next element in the list, until this sum is less than 6.
+```
+const arr = [1, 2, 3, 4, 5, 6, 7]
+const isSmallerThanSix = n => n < 6
+
+R.reduceWhile(isSmallerThanSix, R.add, 0, arr)
+//6
+```
+
+#### reject
+`reject` is the compliment of `filter`. It returns the elements that fail the check.
+```
+const arr = [1, 2, 3, 4, 5, 6, 7]
+const isEven = n => n % 2 === 0
+
+R.reject(isEven, arr)
+//[1, 3, 5, 7]
+```
+
 ## Mapping
 
 #### addIndex
@@ -2565,11 +2643,11 @@ R.concat('foo', 'bar')
 - pipeP
 - pipeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzg5ODY3OTYsLTIwODMyNDkxOTMsMT
-c0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5
-MjI3NywtMzU4NjQ3OTQ0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MD
-IsLTE5MDQ2MTEwODgsMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3
-NDcxNDE4OSwtMTIzNTA4OTA1MSwyMDU0MjM1NDY2LDI3OTc4Mz
-E5OCwzMjAyODYzODQsLTkzOTM0NjIyMywtODM0NDMxMTE3LDk3
-NTQ0MzY2Ml19
+eyJoaXN0b3J5IjpbLTEwMjk4OTc1NzksLTE1Nzg5ODY3OTYsLT
+IwODMyNDkxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xODc4
+Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0xNjU0MDYxNj
+kwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAzNDM0OCwt
+MTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MSwyMDU0Mj
+M1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0NjIyMywt
+ODM0NDMxMTE3XX0=
 -->
