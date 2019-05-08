@@ -2649,64 +2649,31 @@ R.set(bLens, 2, {a: 1, b: 2})
 
 ```
 
-#### slice
 
-Returns part of an array starting from the index denoted by the first parameter, up to, but excluding, the element denoted by the second parameter.
-
-```
-
-const arr = [1, 2, 3, 4, 5, 6, 7]
-
-R.slice(3, 5, arr)
-
-//[4, 5]
-
-```
 
 #### sort
-
 Returns a copy of a provided list sorted by the provided function. The comparison function should compare two parameters at a time, and return a negative number if the first value is smaller, zero if they are equal, and a positive number if the second value is larger.
-
 ```
-
 const arr = [3, 5, 4, 7, 8, 4, 2, 1, 8, 6, 9]
-
 const compare = (a, b) => a - b
 
-  
-
 R.sort(compare, arr)
-
 //[1, 2, 3, 4, 4, 5, 6, 7, 8, 8, 9]
-
 ```
 
 #### sortBy
-
 Sorts the list according to the supplied function.
-
 ```
-
 const sortByFirstItem = R.sortBy(R.prop(1))
-
 const pairs = [[-1, -8], [-2, -7], [-3, -6]]
 
-  
-
 sortByFirstItem(pairs)
-
 //[[-1, -8], [-2, -7], [-3, -6]]
-
 ```
-
 ```
-
 const sortByNameCaseInsensitive = R.sortBy(R.compose(R.toLower, R.prop('name')));
-
 const alice = {
-
-name: 'ALICE',
-
+	name: 'ALICE',
 	age: 101
 }
 const bob = {
@@ -2766,19 +2733,21 @@ myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 ## String Manipulation
 
 #### concat
-
 Concatenates the provided strings or arrays. Takes a maximum of two parameters.
-
 ```
 R.concat(['a', 'b', 'c'], ['d', 'e', 'f'])
-
 //["a", "b", "c", "d", "e", "f"]
 ```
-
 ```
 R.concat('foo', 'bar') 
-
 //"foobar"
+```
+#### slice
+Returns part of an array starting from the index denoted by the first parameter, up to, but excluding, the element denoted by the second parameter.
+```
+const arr = [1, 2, 3, 4, 5, 6, 7]
+R.slice(3, 5, arr)
+//[4, 5]
 ```
 
 
@@ -2795,7 +2764,7 @@ R.concat('foo', 'bar')
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY3MDgzOTQzLC0xMjQyNzUyMzE1LC0xNT
+eyJoaXN0b3J5IjpbNjYwMjk3ODEzLC0xMjQyNzUyMzE1LC0xNT
 c4OTg2Nzk2LC0yMDgzMjQ5MTkzLDE3NDc3MTM0NTYsMTA4MDM0
 MDA1NiwtMTg3ODM4Njc0MSw4MjI5OTIyNzcsLTM1ODY0Nzk0NC
 wtMTY1NDA2MTY5MCwtMzM5MzMwNDAyLC0xOTA0NjExMDg4LDE5
