@@ -2579,11 +2579,8 @@ R.reject(isEven, arr)
 ```
 
 #### remove
-
 Removes elements from an array, starting from the position indicated by the first parameter and removing the number of characters specified in the second parameter.
-
 ```
-
 const arr = [1, 2, 3, 4, 5, 6, 7, 8]
 
 R.remove(1, 3, arr)
@@ -2638,6 +2635,149 @@ R.scan(R.multiply, 1, [1, 2, 3, 4, 5])
 //[1, 1, 2, 6, 24, 120]
 ```
 
+#### set
+
+Used with lenses to set values.
+
+```
+
+//const bLens = R.lensProp('b')
+
+R.set(bLens, 2, {a: 1, b: 2})
+
+//{"a": 1, "b": 2}
+
+```
+
+#### slice
+
+Returns part of an array starting from the index denoted by the first parameter, up to, but excluding, the element denoted by the second parameter.
+
+```
+
+const arr = [1, 2, 3, 4, 5, 6, 7]
+
+R.slice(3, 5, arr)
+
+//[4, 5]
+
+```
+
+#### sort
+
+Returns a copy of a provided list sorted by the provided function. The comparison function should compare two parameters at a time, and return a negative number if the first value is smaller, zero if they are equal, and a positive number if the second value is larger.
+
+```
+
+const arr = [3, 5, 4, 7, 8, 4, 2, 1, 8, 6, 9]
+
+const compare = (a, b) => a - b
+
+  
+
+R.sort(compare, arr)
+
+//[1, 2, 3, 4, 4, 5, 6, 7, 8, 8, 9]
+
+```
+
+#### sortBy
+
+Sorts the list according to the supplied function.
+
+```
+
+const sortByFirstItem = R.sortBy(R.prop(1))
+
+const pairs = [[-1, -8], [-2, -7], [-3, -6]]
+
+  
+
+sortByFirstItem(pairs)
+
+//[[-1, -8], [-2, -7], [-3, -6]]
+
+```
+
+```
+
+const sortByNameCaseInsensitive = R.sortBy(R.compose(R.toLower, R.prop('name')));
+
+const alice = {
+
+name: 'ALICE',
+
+age: 101
+
+}
+
+const bob = {
+
+name: 'Bob',
+
+age: -10
+
+}
+
+const clara = {
+
+name: 'clara',
+
+age: 314.159
+
+}
+
+const people = [clara, bob, alice]
+
+  
+
+sortByNameCaseInsensitive(people)
+
+//[alice, bob, clara]
+
+```
+
+#### sortWith
+
+Sorts a list according to a list of comparators.
+
+```
+
+const alice = {
+
+name: 'alice',
+
+age: 40
+
+}
+
+const bob = {
+
+name: 'bob',
+
+age: 30
+
+}
+
+const clara = {
+
+name: 'clara',
+
+age: 40
+
+}
+
+const people = [clara, bob, alice];
+
+const ageNameSort = R.sortWith([
+	R.descend(R.prop('age')),
+R.ascend(R.prop('name'))
+])
+
+ageNameSort(people)
+//[alice, clara, bob]
+```
+
 ## Mapping
 
 #### addIndex
@@ -2683,12 +2823,13 @@ R.concat('foo', 'bar')
 - pipeK
 - pipeP
 - pipeWith
+- sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMTEzOTA5LC0xMjQyNzUyMzE1LC0xNT
-c4OTg2Nzk2LC0yMDgzMjQ5MTkzLDE3NDc3MTM0NTYsMTA4MDM0
-MDA1NiwtMTg3ODM4Njc0MSw4MjI5OTIyNzcsLTM1ODY0Nzk0NC
-wtMTY1NDA2MTY5MCwtMzM5MzMwNDAyLC0xOTA0NjExMDg4LDE5
-MDEwMzQzNDgsLTE0MjYxNzI4OCwxNzQ3MTQxODksLTEyMzUwOD
-kwNTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05
-MzkzNDYyMjNdfQ==
+eyJoaXN0b3J5IjpbLTE5OTU5OTcxNDgsLTEyNDI3NTIzMTUsLT
+E1Nzg5ODY3OTYsLTIwODMyNDkxOTMsMTc0NzcxMzQ1NiwxMDgw
+MzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3OT
+Q0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgs
+MTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNT
+A4OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQs
+LTkzOTM0NjIyM119
 -->
