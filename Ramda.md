@@ -2578,6 +2578,66 @@ R.reject(isEven, arr)
 //[1, 3, 5, 7]
 ```
 
+#### remove
+
+Removes elements from an array, starting from the position indicated by the first parameter and removing the number of characters specified in the second parameter.
+
+```
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8]
+
+R.remove(1, 3, arr)
+//[1, 5, 6, 7, 8]
+```
+
+#### repeat
+Repeats the first parameter for the number of times specified in the second parameter.
+```
+R.repeat(32, 4)
+//[32, 32, 32, 32]
+```
+```
+R.repeat([32, 33], 4)
+//[[32, 33], [32, 33], [32, 33], [32, 33]]
+```
+```
+R.repeat({a: 1, b: 2}, 2)
+//[{"a": 1, "b": 2}, {"a": 1, "b": 2}]
+```
+
+#### replace
+Replaces part of a string. Regex can be provided.
+```
+R.replace('e', '', 'Stephen')
+//"Stphen"
+```
+```
+R.replace(/e/g, '', 'Stephen')
+//"Stphn"
+```
+
+#### reverse
+Reverses the order of an array.
+```
+R.reverse([1, 2, 3])
+//[3, 2, 1]
+```
+```
+R.reverse('reverse')
+//"esrever"
+```
+
+#### scan
+Similar to reduce, however includes the result of each iteration. Takes the 2nd argument and uses it as a parameter to the predicate function along with the first element of the supplied array. It includes the result in the output array and inputs it again in the function together with the next element of the array, and so on, until all the elements of the list are used.
+```
+R.scan(R.add, 0, [1, 2, 3, 4, 5])
+//[0, 1, 3, 6, 10, 15]
+```
+```
+R.scan(R.multiply, 1, [1, 2, 3, 4, 5])
+//[1, 1, 2, 6, 24, 120]
+```
+
 ## Mapping
 
 #### addIndex
@@ -2624,11 +2684,11 @@ R.concat('foo', 'bar')
 - pipeP
 - pipeWith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDI3NTIzMTUsLTE1Nzg5ODY3OTYsLT
-IwODMyNDkxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xODc4
-Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0xNjU0MDYxNj
-kwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAzNDM0OCwt
-MTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1MSwyMDU0Mj
-M1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQsLTkzOTM0NjIyMywt
-ODM0NDMxMTE3XX0=
+eyJoaXN0b3J5IjpbMTQxMTEzOTA5LC0xMjQyNzUyMzE1LC0xNT
+c4OTg2Nzk2LC0yMDgzMjQ5MTkzLDE3NDc3MTM0NTYsMTA4MDM0
+MDA1NiwtMTg3ODM4Njc0MSw4MjI5OTIyNzcsLTM1ODY0Nzk0NC
+wtMTY1NDA2MTY5MCwtMzM5MzMwNDAyLC0xOTA0NjExMDg4LDE5
+MDEwMzQzNDgsLTE0MjYxNzI4OCwxNzQ3MTQxODksLTEyMzUwOD
+kwNTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05
+MzkzNDYyMjNdfQ==
 -->
