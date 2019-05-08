@@ -2707,71 +2707,41 @@ const alice = {
 
 name: 'ALICE',
 
-age: 101
-
+	age: 101
 }
-
 const bob = {
-
-name: 'Bob',
-
-age: -10
-
+	name: 'Bob',
+	age: -10
 }
-
 const clara = {
-
-name: 'clara',
-
-age: 314.159
-
+	name: 'clara',
+	age: 314.159
 }
-
 const people = [clara, bob, alice]
 
-  
-
 sortByNameCaseInsensitive(people)
-
 //[alice, bob, clara]
-
 ```
 
 #### sortWith
-
 Sorts a list according to a list of comparators.
-
 ```
-
 const alice = {
-
-name: 'alice',
-
-age: 40
-
+	name: 'alice',
+	age: 40
 }
-
 const bob = {
-
-name: 'bob',
-
-age: 30
-
+	name: 'bob',
+	age: 30
 }
-
 const clara = {
-
-name: 'clara',
-
-age: 40
-
+	name: 'clara',
+	age: 40
 }
-
-const people = [clara, bob, alice];
-
+const people = [clara, bob, alice]
 const ageNameSort = R.sortWith([
 	R.descend(R.prop('age')),
-R.ascend(R.prop('name'))
+	R.ascend(R.prop('name'))
 ])
 
 ageNameSort(people)
@@ -2825,11 +2795,11 @@ R.concat('foo', 'bar')
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTU5OTcxNDgsLTEyNDI3NTIzMTUsLT
-E1Nzg5ODY3OTYsLTIwODMyNDkxOTMsMTc0NzcxMzQ1NiwxMDgw
-MzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3OT
-Q0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgs
-MTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNT
-A4OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwzMjAyODYzODQs
-LTkzOTM0NjIyM119
+eyJoaXN0b3J5IjpbODY3MDgzOTQzLC0xMjQyNzUyMzE1LC0xNT
+c4OTg2Nzk2LC0yMDgzMjQ5MTkzLDE3NDc3MTM0NTYsMTA4MDM0
+MDA1NiwtMTg3ODM4Njc0MSw4MjI5OTIyNzcsLTM1ODY0Nzk0NC
+wtMTY1NDA2MTY5MCwtMzM5MzMwNDAyLC0xOTA0NjExMDg4LDE5
+MDEwMzQzNDgsLTE0MjYxNzI4OCwxNzQ3MTQxODksLTEyMzUwOD
+kwNTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05
+MzkzNDYyMjNdfQ==
 -->
