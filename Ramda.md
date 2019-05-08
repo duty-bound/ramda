@@ -2636,20 +2636,12 @@ R.scan(R.multiply, 1, [1, 2, 3, 4, 5])
 ```
 
 #### set
-
 Used with lenses to set values.
-
 ```
-
-//const bLens = R.lensProp('b')
-
+const bLens = R.lensProp('b')
 R.set(bLens, 2, {a: 1, b: 2})
-
 //{"a": 1, "b": 2}
-
 ```
-
-
 
 #### sort
 Returns a copy of a provided list sorted by the provided function. The comparison function should compare two parameters at a time, and return a negative number if the first value is smaller, zero if they are equal, and a positive number if the second value is larger.
@@ -2742,6 +2734,7 @@ R.concat(['a', 'b', 'c'], ['d', 'e', 'f'])
 R.concat('foo', 'bar') 
 //"foobar"
 ```
+
 #### slice
 Returns part of an array starting from the index denoted by the first parameter, up to, but excluding, the element denoted by the second parameter.
 ```
@@ -2764,11 +2757,11 @@ R.slice(3, 5, arr)
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYwMjk3ODEzLC0xMjQyNzUyMzE1LC0xNT
-c4OTg2Nzk2LC0yMDgzMjQ5MTkzLDE3NDc3MTM0NTYsMTA4MDM0
-MDA1NiwtMTg3ODM4Njc0MSw4MjI5OTIyNzcsLTM1ODY0Nzk0NC
-wtMTY1NDA2MTY5MCwtMzM5MzMwNDAyLC0xOTA0NjExMDg4LDE5
-MDEwMzQzNDgsLTE0MjYxNzI4OCwxNzQ3MTQxODksLTEyMzUwOD
-kwNTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgsMzIwMjg2Mzg0LC05
-MzkzNDYyMjNdfQ==
+eyJoaXN0b3J5IjpbLTU2MDE2MTQ2NSwtMTI0Mjc1MjMxNSwtMT
+U3ODk4Njc5NiwtMjA4MzI0OTE5MywxNzQ3NzEzNDU2LDEwODAz
+NDAwNTYsLTE4NzgzODY3NDEsODIyOTkyMjc3LC0zNTg2NDc5ND
+QsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwtMTkwNDYxMTA4OCwx
+OTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1MD
+g5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwt
+OTM5MzQ2MjIzXX0=
 -->
