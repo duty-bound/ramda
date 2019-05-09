@@ -2742,7 +2742,136 @@ const arr = [1, 2, 3, 4, 5, 6, 7]
 R.slice(3, 5, arr)
 //[4, 5]
 ```
+#### split
 
+Splits a string into an array of substrings based on the provided seprator.
+
+```
+
+const myPath = 'product/categories/mobiles'
+
+R.split('/', myPath)
+
+//["product", "categories", "mobiles"]
+
+```
+
+```
+
+const pathComponents = R.split('/')
+
+R.tail(pathComponents('/usr/local/bin/node'))
+
+//["usr", "local", "bin", "node"]
+
+//'tail' gets rid of a resulting empty element since the string starts with the separator '/'
+
+```
+
+#### splitAt
+
+Splits an array at the indicated index.
+
+```
+
+R.splitAt(1, [1, 2, 3]) //[[1], [2, 3]]
+
+R.splitAt(5, 'hello world') //['hello', ' world']
+
+R.splitAt(-1, 'foobar') //["fooba", "r"]
+
+```
+
+#### splitEvery
+
+Splits an array into substrings of the indicated length.
+
+```
+
+R.splitEvery(3, [1, 2, 3, 4, 5, 6])
+
+//[[1, 2, 3], [4, 5, 6]]
+
+R.splitEvery(3, 'foobarbaz')
+
+//["foo", "bar", "baz"]
+
+```
+
+### R.splitWhen
+
+Splits a string into substrings when an element satisfies the predicate function.
+
+```
+
+R.splitWhen(R.equals(' '), 'Hello World')
+
+//[["H", "e", "l", "l", "o"], [" ", "W", "o", "r", "l", "d"]]
+
+```
+
+```
+
+const isGreaterThan3 = n => n > 3
+
+R.splitWhen(isGreaterThan3, [1, 2, 3, 4, 5, 6])
+
+//[[1, 2, 3], [4, 5, 6]]
+
+```
+
+#### startsWith
+
+Checks if a string starts with the provided substring, or if an array starts with the provided sub-array.
+
+```
+
+R.startsWith('/product', '/product/categories')
+
+//true
+
+```
+
+```
+
+R.startsWith('a', ['a', 'b', 'c']) //false
+
+R.startsWith(['a'], ['a', 'b', 'c']) //true
+
+```
+
+#### subtract
+
+Subtracts the second parameter from the first parameter.
+
+```
+
+R.subtract(7, 3) //4  
+
+```
+
+```
+const minus5 = R.subtract(5, R.__)
+minus5(17)
+//12
+
+const minus5 = R.subtract(5, R.__)
+minus5(17)
+//-12
+```
+```
+const complementaryAngle = R.subtract(90)
+
+complementaryAngle(30) //60
+complementaryAngle(72) //18
+```
+
+#### sum
+Sums together all the elements of an array.
+```
+R.sum([1, 2, 3, 4, 5])
+//15
+```
 
 ## Not Covered
 - applySpec
@@ -2757,11 +2886,11 @@ R.slice(3, 5, arr)
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MDE2MTQ2NSwtMTI0Mjc1MjMxNSwtMT
-U3ODk4Njc5NiwtMjA4MzI0OTE5MywxNzQ3NzEzNDU2LDEwODAz
-NDAwNTYsLTE4NzgzODY3NDEsODIyOTkyMjc3LC0zNTg2NDc5ND
-QsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwtMTkwNDYxMTA4OCwx
-OTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0NzE0MTg5LC0xMjM1MD
-g5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4LDMyMDI4NjM4NCwt
-OTM5MzQ2MjIzXX0=
+eyJoaXN0b3J5IjpbLTE1MzM0MjMwMjgsLTU2MDE2MTQ2NSwtMT
+I0Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4MzI0OTE5MywxNzQ3
+NzEzNDU2LDEwODAzNDAwNTYsLTE4NzgzODY3NDEsODIyOTkyMj
+c3LC0zNTg2NDc5NDQsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwt
+MTkwNDYxMTA4OCwxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0Nz
+E0MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4
+LDMyMDI4NjM4NF19
 -->
