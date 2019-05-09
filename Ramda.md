@@ -2763,6 +2763,34 @@ const myMap = R.addIndex(R.map)
 myMap((animal, i) => `<li key=${i}>${animal}</li>`, animals)
 //["<li key=0>elephant</li>", "<li key=1>tiger</li>", "<li key=2>shark</li>"]
 ```
+#### subtract
+Subtracts the second parameter from the first parameter.
+```
+R.subtract(7, 3) //4  
+```
+```
+const minus5 = R.subtract(5, R.__)
+minus5(17)
+//12
+```
+```
+const minus5 = R.subtract(R.__, 5)
+minus5(17)
+//-12
+```
+```
+const complementaryAngle = R.subtract(90)
+
+complementaryAngle(30) //60
+complementaryAngle(72) //18
+```
+
+#### sum
+Sums together all the elements of an array.
+```
+R.sum([1, 2, 3, 4, 5])
+//15
+```
 
 
 ## String Manipulation
@@ -2802,34 +2830,7 @@ R.tail(pathComponents('/usr/local/bin/node'))
 //'tail' gets rid of a resulting empty element since the string starts with the separator '/'
 ```
 
-#### subtract
-Subtracts the second parameter from the first parameter.
-```
-R.subtract(7, 3) //4  
-```
-```
-const minus5 = R.subtract(5, R.__)
-minus5(17)
-//12
-```
-```
-const minus5 = R.subtract(R.__, 5)
-minus5(17)
-//-12
-```
-```
-const complementaryAngle = R.subtract(90)
 
-complementaryAngle(30) //60
-complementaryAngle(72) //18
-```
-
-#### sum
-Sums together all the elements of an array.
-```
-R.sum([1, 2, 3, 4, 5])
-//15
-```
 
 ## Not Covered
 - applySpec
@@ -2844,7 +2845,7 @@ R.sum([1, 2, 3, 4, 5])
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjA2Mzg1OTksLTU2MDE2MTQ2NSwtMT
+eyJoaXN0b3J5IjpbLTEwOTE2NDUxNzMsLTU2MDE2MTQ2NSwtMT
 I0Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4MzI0OTE5MywxNzQ3
 NzEzNDU2LDEwODAzNDAwNTYsLTE4NzgzODY3NDEsODIyOTkyMj
 c3LC0zNTg2NDc5NDQsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwt
