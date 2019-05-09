@@ -363,6 +363,17 @@ R.propIs(Number, 'age', {name: 'Max', age: 18}) //true
 R.propIs(Number, 'age', {name: 'Max', age: 'eihgteen'}) //false
 ```
 
+#### startsWith
+Checks if a string starts with the provided substring, or if an array starts with the provided sub-array.
+```
+R.startsWith('/product', '/product/categories')
+//true
+```
+```
+R.startsWith('a', ['a', 'b', 'c']) //false
+R.startsWith(['a'], ['a', 'b', 'c']) //true
+```
+
 ### Iterative
 
 #### all
@@ -2707,6 +2718,38 @@ ageNameSort(people)
 //[alice, clara, bob]
 ```
 
+#### splitAt
+Splits an array at the indicated index.
+```
+R.splitAt(1, [1, 2, 3]) //[[1], [2, 3]]
+R.splitAt(5, 'hello world') //['hello', ' world']
+R.splitAt(-1, 'foobar') //["fooba", "r"]
+```
+
+#### splitEvery
+Splits an array into substrings of the indicated length.
+```
+R.splitEvery(3, [1, 2, 3, 4, 5, 6])
+//[[1, 2, 3], [4, 5, 6]]
+```
+```
+R.splitEvery(3, 'foobarbaz')
+//["foo", "bar", "baz"]
+```
+
+### splitWhen
+Splits a string into substrings when an element satisfies the predicate function.
+```
+R.splitWhen(R.equals(' '), 'Hello World')
+//[["H", "e", "l", "l", "o"], [" ", "W", "o", "r", "l", "d"]]
+```
+```
+const isGreaterThan3 = n => n > 3
+
+R.splitWhen(isGreaterThan3, [1, 2, 3, 4, 5, 6])
+//[[1, 2, 3], [4, 5, 6]]
+```
+
 ## Mapping
 
 #### addIndex
@@ -2759,49 +2802,6 @@ R.tail(pathComponents('/usr/local/bin/node'))
 //'tail' gets rid of a resulting empty element since the string starts with the separator '/'
 ```
 
-#### splitAt
-Splits an array at the indicated index.
-```
-R.splitAt(1, [1, 2, 3]) //[[1], [2, 3]]
-R.splitAt(5, 'hello world') //['hello', ' world']
-R.splitAt(-1, 'foobar') //["fooba", "r"]
-```
-
-#### splitEvery
-Splits an array into substrings of the indicated length.
-```
-R.splitEvery(3, [1, 2, 3, 4, 5, 6])
-//[[1, 2, 3], [4, 5, 6]]
-```
-```
-R.splitEvery(3, 'foobarbaz')
-//["foo", "bar", "baz"]
-```
-
-### R.splitWhen
-Splits a string into substrings when an element satisfies the predicate function.
-```
-R.splitWhen(R.equals(' '), 'Hello World')
-//[["H", "e", "l", "l", "o"], [" ", "W", "o", "r", "l", "d"]]
-```
-```
-const isGreaterThan3 = n => n > 3
-
-R.splitWhen(isGreaterThan3, [1, 2, 3, 4, 5, 6])
-//[[1, 2, 3], [4, 5, 6]]
-```
-
-#### startsWith
-Checks if a string starts with the provided substring, or if an array starts with the provided sub-array.
-```
-R.startsWith('/product', '/product/categories')
-//true
-```
-```
-R.startsWith('a', ['a', 'b', 'c']) //false
-R.startsWith(['a'], ['a', 'b', 'c']) //true
-```
-
 #### subtract
 Subtracts the second parameter from the first parameter.
 ```
@@ -2844,11 +2844,11 @@ R.sum([1, 2, 3, 4, 5])
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDM3NzAzMSwtNTYwMTYxNDY1LC0xMj
-QyNzUyMzE1LC0xNTc4OTg2Nzk2LC0yMDgzMjQ5MTkzLDE3NDc3
-MTM0NTYsMTA4MDM0MDA1NiwtMTg3ODM4Njc0MSw4MjI5OTIyNz
-csLTM1ODY0Nzk0NCwtMTY1NDA2MTY5MCwtMzM5MzMwNDAyLC0x
-OTA0NjExMDg4LDE5MDEwMzQzNDgsLTE0MjYxNzI4OCwxNzQ3MT
-QxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgs
-MzIwMjg2Mzg0XX0=
+eyJoaXN0b3J5IjpbLTE4MjA2Mzg1OTksLTU2MDE2MTQ2NSwtMT
+I0Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4MzI0OTE5MywxNzQ3
+NzEzNDU2LDEwODAzNDAwNTYsLTE4NzgzODY3NDEsODIyOTkyMj
+c3LC0zNTg2NDc5NDQsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwt
+MTkwNDYxMTA4OCwxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0Nz
+E0MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4
+LDMyMDI4NjM4NF19
 -->
