@@ -2742,40 +2742,27 @@ const arr = [1, 2, 3, 4, 5, 6, 7]
 R.slice(3, 5, arr)
 //[4, 5]
 ```
+
 #### split
-
-Splits a string into an array of substrings based on the provided seprator.
-
+Splits a string into an array of substrings based on the provided separator.
 ```
-
 const myPath = 'product/categories/mobiles'
 
 R.split('/', myPath)
-
 //["product", "categories", "mobiles"]
-
 ```
-
 ```
-
 const pathComponents = R.split('/')
 
 R.tail(pathComponents('/usr/local/bin/node'))
-
 //["usr", "local", "bin", "node"]
-
 //'tail' gets rid of a resulting empty element since the string starts with the separator '/'
-
 ```
 
 #### splitAt
-
 Splits an array at the indicated index.
-
 ```
-
 R.splitAt(1, [1, 2, 3]) //[[1], [2, 3]]
-
 R.splitAt(5, 'hello world') //['hello', ' world']
 R.splitAt(-1, 'foobar') //["fooba", "r"]
 ```
@@ -2857,11 +2844,11 @@ R.sum([1, 2, 3, 4, 5])
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY5Mzg2OTM0LC01NjAxNjE0NjUsLTEyND
-I3NTIzMTUsLTE1Nzg5ODY3OTYsLTIwODMyNDkxOTMsMTc0Nzcx
-MzQ1NiwxMDgwMzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5MjI3Ny
-wtMzU4NjQ3OTQ0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5
-MDQ2MTEwODgsMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxND
-E4OSwtMTIzNTA4OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwz
-MjAyODYzODRdfQ==
+eyJoaXN0b3J5IjpbLTEzNDM3NzAzMSwtNTYwMTYxNDY1LC0xMj
+QyNzUyMzE1LC0xNTc4OTg2Nzk2LC0yMDgzMjQ5MTkzLDE3NDc3
+MTM0NTYsMTA4MDM0MDA1NiwtMTg3ODM4Njc0MSw4MjI5OTIyNz
+csLTM1ODY0Nzk0NCwtMTY1NDA2MTY5MCwtMzM5MzMwNDAyLC0x
+OTA0NjExMDg4LDE5MDEwMzQzNDgsLTE0MjYxNzI4OCwxNzQ3MT
+QxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2NiwyNzk3ODMxOTgs
+MzIwMjg2Mzg0XX0=
 -->
