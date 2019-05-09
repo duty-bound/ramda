@@ -2777,85 +2777,56 @@ Splits an array at the indicated index.
 R.splitAt(1, [1, 2, 3]) //[[1], [2, 3]]
 
 R.splitAt(5, 'hello world') //['hello', ' world']
-
 R.splitAt(-1, 'foobar') //["fooba", "r"]
-
 ```
 
 #### splitEvery
-
 Splits an array into substrings of the indicated length.
-
 ```
-
 R.splitEvery(3, [1, 2, 3, 4, 5, 6])
-
 //[[1, 2, 3], [4, 5, 6]]
-
+```
+```
 R.splitEvery(3, 'foobarbaz')
-
 //["foo", "bar", "baz"]
-
 ```
 
 ### R.splitWhen
-
 Splits a string into substrings when an element satisfies the predicate function.
-
 ```
-
 R.splitWhen(R.equals(' '), 'Hello World')
-
 //[["H", "e", "l", "l", "o"], [" ", "W", "o", "r", "l", "d"]]
-
 ```
-
 ```
-
 const isGreaterThan3 = n => n > 3
 
 R.splitWhen(isGreaterThan3, [1, 2, 3, 4, 5, 6])
-
 //[[1, 2, 3], [4, 5, 6]]
-
 ```
 
 #### startsWith
-
 Checks if a string starts with the provided substring, or if an array starts with the provided sub-array.
-
 ```
-
 R.startsWith('/product', '/product/categories')
-
 //true
-
 ```
-
 ```
-
 R.startsWith('a', ['a', 'b', 'c']) //false
-
 R.startsWith(['a'], ['a', 'b', 'c']) //true
-
 ```
 
 #### subtract
-
 Subtracts the second parameter from the first parameter.
-
 ```
-
 R.subtract(7, 3) //4  
-
 ```
-
 ```
 const minus5 = R.subtract(5, R.__)
 minus5(17)
 //12
-
-const minus5 = R.subtract(5, R.__)
+```
+```
+const minus5 = R.subtract(R.__, 5)
 minus5(17)
 //-12
 ```
@@ -2886,11 +2857,11 @@ R.sum([1, 2, 3, 4, 5])
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzM0MjMwMjgsLTU2MDE2MTQ2NSwtMT
-I0Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4MzI0OTE5MywxNzQ3
-NzEzNDU2LDEwODAzNDAwNTYsLTE4NzgzODY3NDEsODIyOTkyMj
-c3LC0zNTg2NDc5NDQsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwt
-MTkwNDYxMTA4OCwxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0Nz
-E0MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4
-LDMyMDI4NjM4NF19
+eyJoaXN0b3J5IjpbODY5Mzg2OTM0LC01NjAxNjE0NjUsLTEyND
+I3NTIzMTUsLTE1Nzg5ODY3OTYsLTIwODMyNDkxOTMsMTc0Nzcx
+MzQ1NiwxMDgwMzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5MjI3Ny
+wtMzU4NjQ3OTQ0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5
+MDQ2MTEwODgsMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxND
+E4OSwtMTIzNTA4OTA1MSwyMDU0MjM1NDY2LDI3OTc4MzE5OCwz
+MjAyODYzODRdfQ==
 -->
