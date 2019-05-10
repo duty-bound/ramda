@@ -2855,6 +2855,18 @@ const doubleUp = n => n * 2
 R.tap(doubleUp, 3)
 //3
 ```
+#### then
+```
+var makeQuery = (email) => ({ query: { email }})
+
+//getMemberName :: String -> Promise ({firstName, lastName})
+var getMemberName = R.pipe(
+  makeQuery,
+  fetchMember,
+  R.then(R.pick(['firstName', 'lastName']))
+)
+```
+
 
 ## Mapping
 
@@ -2956,11 +2968,11 @@ R.test(/^y/, 'xyz') //false
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTUxOTI3MjksMTY2MjE5OTEyOCwxMD
-A4ODg5NjE0LC0xMDkxNjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3
-NTIzMTUsLTE1Nzg5ODY3OTYsLTIwODMyNDkxOTMsMTc0NzcxMz
-Q1NiwxMDgwMzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5MjI3Nywt
-MzU4NjQ3OTQ0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MD
-Q2MTEwODgsMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4
-OSwtMTIzNTA4OTA1MV19
+eyJoaXN0b3J5IjpbLTE5NDgyNjA3NjQsLTE1MTUxOTI3MjksMT
+Y2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkxNjQ1MTczLC01NjAx
+NjE0NjUsLTEyNDI3NTIzMTUsLTE1Nzg5ODY3OTYsLTIwODMyND
+kxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xODc4Mzg2NzQx
+LDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0xNjU0MDYxNjkwLC0zMz
+kzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAzNDM0OCwtMTQyNjE3
+Mjg4LDE3NDcxNDE4OV19
 -->
