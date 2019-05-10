@@ -2750,6 +2750,109 @@ R.splitWhen(isGreaterThan3, [1, 2, 3, 4, 5, 6])
 //[[1, 2, 3], [4, 5, 6]]
 ```
 
+#### symmetricDifference
+
+Takes two arrays and return the elements that are not present in both of the arrays provided.
+
+```
+
+const arr1 = [1, 2, 3, 4]
+
+const arr2 = [2, 3, 4, 5]
+
+R.symmetricDifference(arr1, arr2)
+
+//[1, 5]
+
+```
+
+```
+
+const arr1 = [{a: 1}, {b: 2}]
+
+const arr2 = [{a: 2}, {b: 2}, {c: 3}]
+
+R.symmetricDifference(arr1, arr2)
+
+//[{"a": 1}, {"a": 2}, {"c": 3}]
+
+```
+
+#### symmetricDifferenceWith
+
+Takes two arrays and return the elements that are not present in both of the arrays provided, based on the predicate function.  
+
+(I still did not manage to find a situation that requires this function rather than symmetricDifference)
+
+```
+
+const eqA = R.eqBy(R.prop('a'))
+
+const l1 = [{a: 1}, {a: 2}, {a: 3}, {a: 4}]
+
+const l2 = [{a: 3}, {a: 4}, {a: 5}, {a: 6}]
+
+R.symmetricDifference(l1, l2) //[{a: 1}, {a: 2}, {a: 5}, {a: 6}]
+R.symmetricDifferenceWith(eqA, l1, l2) //[{a: 1}, {a: 2}, {a: 5}, {a: 6}]
+```
+
+#### true
+A function that always returns `true`.
+```
+R.T() //true  
+```
+
+#### tail
+Returns all but the first element of a list.
+```
+const arr = [1, 2, 3, 4]
+
+R.tail(arr)
+//[2, 3, 4]
+```
+```
+R.tail('/path')
+//"path"
+```
+
+#### take
+Returns the first `n` elements of a given list.
+```
+const arr = [1, 2, 3, 4]
+
+R.take(2, arr)
+//[1, 2]
+```
+
+#### takeLast
+Returns the last `n` elements of a given list.
+```
+const arr = [1, 2, 3, 4]
+
+R.takeLast(2, arr)
+//[3, 4]
+```
+
+#### takeLastWhile
+Returns the last consecutive elements in a list that satisfy the predicate function, starting from the end of the list.
+```
+const arr = [1, 2, 3, 4, 6, 8, 10]
+const isEven = n => n % 2 === 0
+
+R.takeLastWhile(isEven, arr)
+//[4, 6, 8, 10]
+```
+
+####takeWhile
+Returns the last consecutive elements in a list that satisfy the predicate function.
+```
+const arr = [2, 3, 4, 6, 8, 10]
+const isEven = n => n % 2 === 0
+
+R.takeWhile(isEven, arr)
+//[2]
+```
+
 ## Mapping
 
 #### addIndex
@@ -2845,11 +2948,11 @@ R.tail(pathComponents('/usr/local/bin/node'))
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTE2NDUxNzMsLTU2MDE2MTQ2NSwtMT
-I0Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4MzI0OTE5MywxNzQ3
-NzEzNDU2LDEwODAzNDAwNTYsLTE4NzgzODY3NDEsODIyOTkyMj
-c3LC0zNTg2NDc5NDQsLTE2NTQwNjE2OTAsLTMzOTMzMDQwMiwt
-MTkwNDYxMTA4OCwxOTAxMDM0MzQ4LC0xNDI2MTcyODgsMTc0Nz
-E0MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0NjYsMjc5NzgzMTk4
-LDMyMDI4NjM4NF19
+eyJoaXN0b3J5IjpbLTEyNDQ4NjY3ODQsLTEwOTE2NDUxNzMsLT
+U2MDE2MTQ2NSwtMTI0Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4
+MzI0OTE5MywxNzQ3NzEzNDU2LDEwODAzNDAwNTYsLTE4NzgzOD
+Y3NDEsODIyOTkyMjc3LC0zNTg2NDc5NDQsLTE2NTQwNjE2OTAs
+LTMzOTMzMDQwMiwtMTkwNDYxMTA4OCwxOTAxMDM0MzQ4LC0xND
+I2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0
+NjYsMjc5NzgzMTk4XX0=
 -->
