@@ -2873,7 +2873,8 @@ Creates a thunk out of a function. It delays execution until the result is requi
 ```
 R.thunkify(R.sum)([1, 2])()
 ```
-
+#### times
+Takes a function which it applies to `0`  
 
 ## Mapping
 
@@ -2975,11 +2976,11 @@ R.test(/^y/, 'xyz') //false
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjgzMzY1OTAsLTE1MTUxOTI3MjksMT
-Y2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkxNjQ1MTczLC01NjAx
-NjE0NjUsLTEyNDI3NTIzMTUsLTE1Nzg5ODY3OTYsLTIwODMyND
-kxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xODc4Mzg2NzQx
-LDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0xNjU0MDYxNjkwLC0zMz
-kzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAzNDM0OCwtMTQyNjE3
-Mjg4LDE3NDcxNDE4OV19
+eyJoaXN0b3J5IjpbLTEzNTc1ODA0NTAsLTE0NjgzMzY1OTAsLT
+E1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkx
+NjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3NTIzMTUsLTE1Nzg5OD
+Y3OTYsLTIwODMyNDkxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2
+LC0xODc4Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0xNj
+U0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAz
+NDM0OCwtMTQyNjE3Mjg4XX0=
 -->
