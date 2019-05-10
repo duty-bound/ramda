@@ -2826,7 +2826,7 @@ R.takeLastWhile(isEven, arr)
 //[4, 6, 8, 10]
 ```
 
-####takeWhile
+#### takeWhile
 Returns the last consecutive elements in a list that satisfy the predicate function.
 ```
 const arr = [2, 3, 4, 6, 8, 10]
@@ -2834,6 +2834,13 @@ const isEven = n => n % 2 === 0
 
 R.takeWhile(isEven, arr)
 //[2]
+```
+```
+const lt4 = R.lt(R.__, 4)
+const arr = [1, 2, 3, 4, 5, 6, 7, 8]
+
+R.takeWhile(lt4, arr)
+//[1, 2, 3]
 ```
 
 ## Mapping
@@ -2931,11 +2938,11 @@ R.tail(pathComponents('/usr/local/bin/node'))
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwODg4OTYxNCwtMTA5MTY0NTE3MywtNT
-YwMTYxNDY1LC0xMjQyNzUyMzE1LC0xNTc4OTg2Nzk2LC0yMDgz
-MjQ5MTkzLDE3NDc3MTM0NTYsMTA4MDM0MDA1NiwtMTg3ODM4Nj
-c0MSw4MjI5OTIyNzcsLTM1ODY0Nzk0NCwtMTY1NDA2MTY5MCwt
-MzM5MzMwNDAyLC0xOTA0NjExMDg4LDE5MDEwMzQzNDgsLTE0Mj
-YxNzI4OCwxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2
-NiwyNzk3ODMxOThdfQ==
+eyJoaXN0b3J5IjpbMTY2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMD
+kxNjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3NTIzMTUsLTE1Nzg5
+ODY3OTYsLTIwODMyNDkxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMD
+U2LC0xODc4Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0x
+NjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMT
+AzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4OSwtMTIzNTA4OTA1
+MSwyMDU0MjM1NDY2XX0=
 -->
