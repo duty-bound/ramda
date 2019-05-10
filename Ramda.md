@@ -2843,7 +2843,19 @@ R.takeWhile(lt4, arr)
 //[1, 2, 3]
 ```
 
-###
+#### tap
+Runs the given function on the given object, and then return the object. Note the second example below, it is the object hat is returned not the result of the function.
+```
+const outputName = name => console.log(name)
+R.tap(outputName, 'Daniela')
+//"Daniela"
+```
+```
+const doubleUp = n => n * 2
+R.tap(doubleUp, 3)
+//3
+
+```
 ## Mapping
 
 #### addIndex
@@ -2939,7 +2951,7 @@ R.tail(pathComponents('/usr/local/bin/node'))
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ1OTA4NTc5LDE2NjIxOTkxMjgsMTAwOD
+eyJoaXN0b3J5IjpbNjQyNjE2NjE3LDE2NjIxOTkxMjgsMTAwOD
 g4OTYxNCwtMTA5MTY0NTE3MywtNTYwMTYxNDY1LC0xMjQyNzUy
 MzE1LC0xNTc4OTg2Nzk2LC0yMDgzMjQ5MTkzLDE3NDc3MTM0NT
 YsMTA4MDM0MDA1NiwtMTg3ODM4Njc0MSw4MjI5OTIyNzcsLTM1
