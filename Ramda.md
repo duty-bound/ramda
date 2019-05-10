@@ -2854,8 +2854,8 @@ R.tap(outputName, 'Daniela')
 const doubleUp = n => n * 2
 R.tap(doubleUp, 3)
 //3
-
 ```
+
 ## Mapping
 
 #### addIndex
@@ -2936,7 +2936,8 @@ R.tail(pathComponents('/usr/local/bin/node'))
 //'tail' gets rid of a resulting empty element since the string starts with the separator '/'
 ```
 
-
+#### test
+Determines whether the provide
 
 ## Not Covered
 - applySpec
@@ -2951,7 +2952,7 @@ R.tail(pathComponents('/usr/local/bin/node'))
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQyNjE2NjE3LDE2NjIxOTkxMjgsMTAwOD
+eyJoaXN0b3J5IjpbNDk3ODA5NTc0LDE2NjIxOTkxMjgsMTAwOD
 g4OTYxNCwtMTA5MTY0NTE3MywtNTYwMTYxNDY1LC0xMjQyNzUy
 MzE1LC0xNTc4OTg2Nzk2LC0yMDgzMjQ5MTkzLDE3NDc3MTM0NT
 YsMTA4MDM0MDA1NiwtMTg3ODM4Njc0MSw4MjI5OTIyNzcsLTM1
