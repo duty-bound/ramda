@@ -2869,7 +2869,11 @@ var getMemberName = R.pipe(
 )
 ```
 #### thunkify
-Creates a thunk out of a function. It delays execution until the result is required, this providing lazy evaluation of arguments.
+Creates a thunk out of a function. It delays execution until the result is required, this providing lazy evaluation of arguments. (I did not fully understand this, nor why an empty parameter `()` is needed.)
+```
+R.thunkify(R.sum)([1, 2])()
+```
+
 
 ## Mapping
 
@@ -2971,11 +2975,11 @@ R.test(/^y/, 'xyz') //false
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ5MDAxMTQ1LC0xNTE1MTkyNzI5LDE2Nj
-IxOTkxMjgsMTAwODg4OTYxNCwtMTA5MTY0NTE3MywtNTYwMTYx
-NDY1LC0xMjQyNzUyMzE1LC0xNTc4OTg2Nzk2LC0yMDgzMjQ5MT
-kzLDE3NDc3MTM0NTYsMTA4MDM0MDA1NiwtMTg3ODM4Njc0MSw4
-MjI5OTIyNzcsLTM1ODY0Nzk0NCwtMTY1NDA2MTY5MCwtMzM5Mz
-MwNDAyLC0xOTA0NjExMDg4LDE5MDEwMzQzNDgsLTE0MjYxNzI4
-OCwxNzQ3MTQxODldfQ==
+eyJoaXN0b3J5IjpbLTE0NjgzMzY1OTAsLTE1MTUxOTI3MjksMT
+Y2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkxNjQ1MTczLC01NjAx
+NjE0NjUsLTEyNDI3NTIzMTUsLTE1Nzg5ODY3OTYsLTIwODMyND
+kxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xODc4Mzg2NzQx
+LDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0xNjU0MDYxNjkwLC0zMz
+kzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAzNDM0OCwtMTQyNjE3
+Mjg4LDE3NDcxNDE4OV19
 -->
