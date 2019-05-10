@@ -2751,45 +2751,28 @@ R.splitWhen(isGreaterThan3, [1, 2, 3, 4, 5, 6])
 ```
 
 #### symmetricDifference
-
 Takes two arrays and return the elements that are not present in both of the arrays provided.
-
 ```
-
 const arr1 = [1, 2, 3, 4]
-
 const arr2 = [2, 3, 4, 5]
 
 R.symmetricDifference(arr1, arr2)
-
 //[1, 5]
-
 ```
-
 ```
-
 const arr1 = [{a: 1}, {b: 2}]
-
 const arr2 = [{a: 2}, {b: 2}, {c: 3}]
 
 R.symmetricDifference(arr1, arr2)
-
 //[{"a": 1}, {"a": 2}, {"c": 3}]
-
 ```
-
 #### symmetricDifferenceWith
-
 Takes two arrays and return the elements that are not present in both of the arrays provided, based on the predicate function.  
 
 (I still did not manage to find a situation that requires this function rather than symmetricDifference)
-
 ```
-
 const eqA = R.eqBy(R.prop('a'))
-
 const l1 = [{a: 1}, {a: 2}, {a: 3}, {a: 4}]
-
 const l2 = [{a: 3}, {a: 4}, {a: 5}, {a: 6}]
 
 R.symmetricDifference(l1, l2) //[{a: 1}, {a: 2}, {a: 5}, {a: 6}]
@@ -2948,11 +2931,11 @@ R.tail(pathComponents('/usr/local/bin/node'))
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDQ4NjY3ODQsLTEwOTE2NDUxNzMsLT
-U2MDE2MTQ2NSwtMTI0Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4
-MzI0OTE5MywxNzQ3NzEzNDU2LDEwODAzNDAwNTYsLTE4NzgzOD
-Y3NDEsODIyOTkyMjc3LC0zNTg2NDc5NDQsLTE2NTQwNjE2OTAs
-LTMzOTMzMDQwMiwtMTkwNDYxMTA4OCwxOTAxMDM0MzQ4LC0xND
-I2MTcyODgsMTc0NzE0MTg5LC0xMjM1MDg5MDUxLDIwNTQyMzU0
-NjYsMjc5NzgzMTk4XX0=
+eyJoaXN0b3J5IjpbMTAwODg4OTYxNCwtMTA5MTY0NTE3MywtNT
+YwMTYxNDY1LC0xMjQyNzUyMzE1LC0xNTc4OTg2Nzk2LC0yMDgz
+MjQ5MTkzLDE3NDc3MTM0NTYsMTA4MDM0MDA1NiwtMTg3ODM4Nj
+c0MSw4MjI5OTIyNzcsLTM1ODY0Nzk0NCwtMTY1NDA2MTY5MCwt
+MzM5MzMwNDAyLC0xOTA0NjExMDg4LDE5MDEwMzQzNDgsLTE0Mj
+YxNzI4OCwxNzQ3MTQxODksLTEyMzUwODkwNTEsMjA1NDIzNTQ2
+NiwyNzk3ODMxOThdfQ==
 -->
