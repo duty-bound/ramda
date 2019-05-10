@@ -2997,6 +2997,16 @@ const f = new F();
 R.toPairsIn(f);
 ```
 
+#### toString
+Converts to string. Note that if an object has its won custom `toString` implementation, this function will use the object's own `toString` method.
+```
+R.toString(12) //"12"
+R.toString('abc') //"\"abc\""
+R.toString([1, 2, 3]) //"[1, 2, 3]"
+R.toString(['a', 'b', 'c']) //"[\"a\", \"b\", \"c\"]"
+R.toString({a: 1, b: 2}) //"{\"a\": 1, \"b\": 2}"
+```
+
 ## Not Covered
 - applySpec
 - bind
@@ -3010,11 +3020,11 @@ R.toPairsIn(f);
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNTk5OTQwNiw2MTk5MDM4NzcsLTE0Nj
-gzMzY1OTAsLTE1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4ODg5
-NjE0LC0xMDkxNjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3NTIzMT
-UsLTE1Nzg5ODY3OTYsLTIwODMyNDkxOTMsMTc0NzcxMzQ1Niwx
-MDgwMzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5MjI3NywtMzU4Nj
-Q3OTQ0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEw
-ODgsMTkwMTAzNDM0OF19
+eyJoaXN0b3J5IjpbLTgwMTA0NDkzMCwxMDI1OTk5NDA2LDYxOT
+kwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYyMTk5
+MTI4LDEwMDg4ODk2MTQsLTEwOTE2NDUxNzMsLTU2MDE2MTQ2NS
+wtMTI0Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4MzI0OTE5Mywx
+NzQ3NzEzNDU2LDEwODAzNDAwNTYsLTE4NzgzODY3NDEsODIyOT
+kyMjc3LC0zNTg2NDc5NDQsLTE2NTQwNjE2OTAsLTMzOTMzMDQw
+MiwtMTkwNDYxMTA4OF19
 -->
