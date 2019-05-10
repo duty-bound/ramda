@@ -2981,7 +2981,13 @@ Takes a string and converts any upper case characters to lowercase.
 ```
 R.toLower('ABC') //"abc"
 ```
-
+#### toPairs
+Converts an object into an array of key and value elements.
+```
+const obj = {a: 1, b: 2, c: 3}
+R.toPairs(obj)
+//[["a", 1], ["b", 2], ["c", 3]]
+```
 ## Not Covered
 - applySpec
 - bind
@@ -2995,11 +3001,11 @@ R.toLower('ABC') //"abc"
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTE4ODY2OTMsLTE0NjgzMzY1OTAsLT
-E1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkx
-NjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3NTIzMTUsLTE1Nzg5OD
-Y3OTYsLTIwODMyNDkxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2
-LC0xODc4Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0xNj
-U0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAz
-NDM0OCwtMTQyNjE3Mjg4XX0=
+eyJoaXN0b3J5IjpbLTc2MDQyMjczMywtMTQ2ODMzNjU5MCwtMT
+UxNTE5MjcyOSwxNjYyMTk5MTI4LDEwMDg4ODk2MTQsLTEwOTE2
+NDUxNzMsLTU2MDE2MTQ2NSwtMTI0Mjc1MjMxNSwtMTU3ODk4Nj
+c5NiwtMjA4MzI0OTE5MywxNzQ3NzEzNDU2LDEwODAzNDAwNTYs
+LTE4NzgzODY3NDEsODIyOTkyMjc3LC0zNTg2NDc5NDQsLTE2NT
+QwNjE2OTAsLTMzOTMzMDQwMiwtMTkwNDYxMTA4OCwxOTAxMDM0
+MzQ4LC0xNDI2MTcyODhdfQ==
 -->
