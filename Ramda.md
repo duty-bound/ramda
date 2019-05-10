@@ -2937,7 +2937,11 @@ R.tail(pathComponents('/usr/local/bin/node'))
 ```
 
 #### test
-Determines whether the provide
+Determines whether a regular expression matches the provided string.
+```
+R.test(/^x/, 'xyz') //true
+R.test(/^y/, 'xyz') //false
+```
 
 ## Not Covered
 - applySpec
@@ -2952,11 +2956,11 @@ Determines whether the provide
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk3ODA5NTc0LDE2NjIxOTkxMjgsMTAwOD
-g4OTYxNCwtMTA5MTY0NTE3MywtNTYwMTYxNDY1LC0xMjQyNzUy
-MzE1LC0xNTc4OTg2Nzk2LC0yMDgzMjQ5MTkzLDE3NDc3MTM0NT
-YsMTA4MDM0MDA1NiwtMTg3ODM4Njc0MSw4MjI5OTIyNzcsLTM1
-ODY0Nzk0NCwtMTY1NDA2MTY5MCwtMzM5MzMwNDAyLC0xOTA0Nj
-ExMDg4LDE5MDEwMzQzNDgsLTE0MjYxNzI4OCwxNzQ3MTQxODks
-LTEyMzUwODkwNTFdfQ==
+eyJoaXN0b3J5IjpbLTE1MTUxOTI3MjksMTY2MjE5OTEyOCwxMD
+A4ODg5NjE0LC0xMDkxNjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3
+NTIzMTUsLTE1Nzg5ODY3OTYsLTIwODMyNDkxOTMsMTc0NzcxMz
+Q1NiwxMDgwMzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5MjI3Nywt
+MzU4NjQ3OTQ0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MD
+Q2MTEwODgsMTkwMTAzNDM0OCwtMTQyNjE3Mjg4LDE3NDcxNDE4
+OSwtMTIzNTA4OTA1MV19
 -->
