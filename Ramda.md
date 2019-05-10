@@ -2869,7 +2869,7 @@ var getMemberName = R.pipe(
 )
 ```
 #### thunkify
-
+Creates a thunk out of a function. It delays execution until the result is required, this providing lazy evaluation of arguments.
 
 ## Mapping
 
@@ -2971,7 +2971,7 @@ R.test(/^y/, 'xyz') //false
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMTI4NDgyLC0xNTE1MTkyNzI5LDE2Nj
+eyJoaXN0b3J5IjpbNDQ5MDAxMTQ1LC0xNTE1MTkyNzI5LDE2Nj
 IxOTkxMjgsMTAwODg4OTYxNCwtMTA5MTY0NTE3MywtNTYwMTYx
 NDY1LC0xMjQyNzUyMzE1LC0xNTc4OTg2Nzk2LC0yMDgzMjQ5MT
 kzLDE3NDc3MTM0NTYsMTA4MDM0MDA1NiwtMTg3ODM4Njc0MSw4
