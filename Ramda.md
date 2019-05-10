@@ -2988,6 +2988,14 @@ const obj = {a: 1, b: 2, c: 3}
 R.toPairs(obj)
 //[["a", 1], ["b", 2], ["c", 3]]
 ```
+#### toPairsIn
+Example on Ramda website not working:
+```
+const F = function() { this.x = 'X'; };
+F.prototype.y = 'Y';
+const f = new F();
+R.toPairsIn(f);
+```
 
 ## Not Covered
 - applySpec
@@ -3002,11 +3010,11 @@ R.toPairs(obj)
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE5OTAzODc3LC0xNDY4MzM2NTkwLC0xNT
-E1MTkyNzI5LDE2NjIxOTkxMjgsMTAwODg4OTYxNCwtMTA5MTY0
-NTE3MywtNTYwMTYxNDY1LC0xMjQyNzUyMzE1LC0xNTc4OTg2Nz
-k2LC0yMDgzMjQ5MTkzLDE3NDc3MTM0NTYsMTA4MDM0MDA1Niwt
-MTg3ODM4Njc0MSw4MjI5OTIyNzcsLTM1ODY0Nzk0NCwtMTY1ND
-A2MTY5MCwtMzM5MzMwNDAyLC0xOTA0NjExMDg4LDE5MDEwMzQz
-NDgsLTE0MjYxNzI4OF19
+eyJoaXN0b3J5IjpbMTAyNTk5OTQwNiw2MTk5MDM4NzcsLTE0Nj
+gzMzY1OTAsLTE1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4ODg5
+NjE0LC0xMDkxNjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3NTIzMT
+UsLTE1Nzg5ODY3OTYsLTIwODMyNDkxOTMsMTc0NzcxMzQ1Niwx
+MDgwMzQwMDU2LC0xODc4Mzg2NzQxLDgyMjk5MjI3NywtMzU4Nj
+Q3OTQ0LC0xNjU0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEw
+ODgsMTkwMTAzNDM0OF19
 -->
