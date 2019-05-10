@@ -2976,6 +2976,12 @@ R.test(/^x/, 'xyz') //true
 R.test(/^y/, 'xyz') //false
 ```
 
+#### toLower
+Takes a string and converts any upper case characters to lowercase.
+```
+R.toLower('ABC') //"abc"
+```
+
 ## Not Covered
 - applySpec
 - bind
@@ -2989,11 +2995,11 @@ R.test(/^y/, 'xyz') //false
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk0NjAwMjMzLC0xNDY4MzM2NTkwLC0xNT
-E1MTkyNzI5LDE2NjIxOTkxMjgsMTAwODg4OTYxNCwtMTA5MTY0
-NTE3MywtNTYwMTYxNDY1LC0xMjQyNzUyMzE1LC0xNTc4OTg2Nz
-k2LC0yMDgzMjQ5MTkzLDE3NDc3MTM0NTYsMTA4MDM0MDA1Niwt
-MTg3ODM4Njc0MSw4MjI5OTIyNzcsLTM1ODY0Nzk0NCwtMTY1ND
-A2MTY5MCwtMzM5MzMwNDAyLC0xOTA0NjExMDg4LDE5MDEwMzQz
-NDgsLTE0MjYxNzI4OF19
+eyJoaXN0b3J5IjpbLTEwOTE4ODY2OTMsLTE0NjgzMzY1OTAsLT
+E1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkx
+NjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3NTIzMTUsLTE1Nzg5OD
+Y3OTYsLTIwODMyNDkxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2
+LC0xODc4Mzg2NzQxLDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0xNj
+U0MDYxNjkwLC0zMzkzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAz
+NDM0OCwtMTQyNjE3Mjg4XX0=
 -->
