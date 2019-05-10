@@ -3007,6 +3007,12 @@ R.toString(['a', 'b', 'c']) //"[\"a\", \"b\", \"c\"]"
 R.toString({a: 1, b: 2}) //"{\"a\": 1, \"b\": 2}"
 ```
 
+#### toUpper
+Takes a string and converts any lower case characters to uppercase.
+```
+R.toUpper('abc') //"ABC"
+```
+
 ## Not Covered
 - applySpec
 - bind
@@ -3020,7 +3026,7 @@ R.toString({a: 1, b: 2}) //"{\"a\": 1, \"b\": 2}"
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTA0NDkzMCwxMDI1OTk5NDA2LDYxOT
+eyJoaXN0b3J5IjpbMjEzNjY1NjAzNiwxMDI1OTk5NDA2LDYxOT
 kwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYyMTk5
 MTI4LDEwMDg4ODk2MTQsLTEwOTE2NDUxNzMsLTU2MDE2MTQ2NS
 wtMTI0Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4MzI0OTE5Mywx
