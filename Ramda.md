@@ -2855,7 +2855,9 @@ const doubleUp = n => n * 2
 R.tap(doubleUp, 3)
 //3
 ```
+
 #### then
+Returns the result of applying the onSuccess function to the value inside a successfully resolved promise. This is useful for working with promises inside function compositions.
 ```
 var makeQuery = (email) => ({ query: { email }})
 
@@ -2968,11 +2970,11 @@ R.test(/^y/, 'xyz') //false
 - pipeWith
 - sequence
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDgyNjA3NjQsLTE1MTUxOTI3MjksMT
-Y2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkxNjQ1MTczLC01NjAx
-NjE0NjUsLTEyNDI3NTIzMTUsLTE1Nzg5ODY3OTYsLTIwODMyND
-kxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xODc4Mzg2NzQx
-LDgyMjk5MjI3NywtMzU4NjQ3OTQ0LC0xNjU0MDYxNjkwLC0zMz
-kzMzA0MDIsLTE5MDQ2MTEwODgsMTkwMTAzNDM0OCwtMTQyNjE3
-Mjg4LDE3NDcxNDE4OV19
+eyJoaXN0b3J5IjpbLTQwMzcyOTk1NCwtMTUxNTE5MjcyOSwxNj
+YyMTk5MTI4LDEwMDg4ODk2MTQsLTEwOTE2NDUxNzMsLTU2MDE2
+MTQ2NSwtMTI0Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4MzI0OT
+E5MywxNzQ3NzEzNDU2LDEwODAzNDAwNTYsLTE4NzgzODY3NDEs
+ODIyOTkyMjc3LC0zNTg2NDc5NDQsLTE2NTQwNjE2OTAsLTMzOT
+MzMDQwMiwtMTkwNDYxMTA4OCwxOTAxMDM0MzQ4LC0xNDI2MTcy
+ODgsMTc0NzE0MTg5XX0=
 -->
