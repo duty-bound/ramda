@@ -2891,7 +2891,15 @@ R.times(doubleUp, 5)
 
 #### transpose
 Transposes the rows and columns of a 2D list. When passed a list of `n` lists of length `x`, returns a list of `x` lists of length `n`.
-\\
+```
+R.transpose([['a', 'b', 'c'], [4, 5, 6]])
+//[["a", 4], ["b", 5], ["c", 6]]
+```
+```
+R.transpose([["a", 4], ["b", 5], ["c", 6]])
+//[["a", "b", "c"], [4, 5, 6]]
+```
+
 ## Mapping
 
 #### addIndex
@@ -3029,12 +3037,13 @@ R.toUpper('abc') //"ABC"
 - pipeWith
 - sequence
 - transduce
+- traverse
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODcwMTkwNzAsMjEzNjY1NjAzNiwxMD
-I1OTk5NDA2LDYxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5
-MjcyOSwxNjYyMTk5MTI4LDEwMDg4ODk2MTQsLTEwOTE2NDUxNz
-MsLTU2MDE2MTQ2NSwtMTI0Mjc1MjMxNSwtMTU3ODk4Njc5Niwt
-MjA4MzI0OTE5MywxNzQ3NzEzNDU2LDEwODAzNDAwNTYsLTE4Nz
-gzODY3NDEsODIyOTkyMjc3LC0zNTg2NDc5NDQsLTE2NTQwNjE2
-OTAsLTMzOTMzMDQwMl19
+eyJoaXN0b3J5IjpbMTAwNzE3NDc2OSwyMTM2NjU2MDM2LDEwMj
+U5OTk0MDYsNjE5OTAzODc3LC0xNDY4MzM2NTkwLC0xNTE1MTky
+NzI5LDE2NjIxOTkxMjgsMTAwODg4OTYxNCwtMTA5MTY0NTE3My
+wtNTYwMTYxNDY1LC0xMjQyNzUyMzE1LC0xNTc4OTg2Nzk2LC0y
+MDgzMjQ5MTkzLDE3NDc3MTM0NTYsMTA4MDM0MDA1NiwtMTg3OD
+M4Njc0MSw4MjI5OTIyNzcsLTM1ODY0Nzk0NCwtMTY1NDA2MTY5
+MCwtMzM5MzMwNDAyXX0=
 -->
