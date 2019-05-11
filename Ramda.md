@@ -3098,6 +3098,8 @@ const point2 = [4, 5, 6]
 R.xprod(point1, point2)
 //[[1, 4], [1, 5], [1, 6], [2, 4], [2, 5], [2, 6], [3, 4], [3, 5], [3, 6]]
 ```
+
+#### zi
 ## Mapping
 
 #### addIndex
@@ -3249,11 +3251,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgzNjMyNjU3LC0xNzIxMDc0Nzc2LC0yMD
-kzNTIzMTAxLDExOTEwNjU4MDQsLTE4MzgyMjkxNTYsMTE5MzAx
-OTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2MjA5LC
-03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMzY1
-MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4NS
-wxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNiw2MTk5
-MDM4NzddfQ==
+eyJoaXN0b3J5IjpbLTEwMTQwMzc4NTAsMzgzNjMyNjU3LC0xNz
+IxMDc0Nzc2LC0yMDkzNTIzMTAxLDExOTEwNjU4MDQsLTE4Mzgy
+MjkxNTYsMTE5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OT
+MsODUyNDE2MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkx
+MjA4NTc3LDYwMzY1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3Mz
+QsMTIyNDQ4MzI4NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAy
+NTk5OTQwNl19
 -->
