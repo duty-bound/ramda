@@ -904,7 +904,7 @@ R.pipe(
   console.log
 )('The animal is a ')
 //THE ANIMAL IS A carnivore
-``
+```
 
 #### call
 This is a very powerful function. It takes a function as a first parameter, and an arbitrary number of other arguments which will be passed to the function provided.
@@ -3343,11 +3343,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDQwNTA2MTksLTYxMzU1NDUzMiwxND
-k2MTk4NDkxLDYxNDc5Mjk2NSwtNTYyNzg0OCwtMTE0MjQyNTI2
-NSwzODM2MzI2NTcsLTE3MjEwNzQ3NzYsLTIwOTM1MjMxMDEsMT
-E5MTA2NTgwNCwtMTgzODIyOTE1NiwxMTkzMDE5MywtMTQ0OTU4
-Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYyMDksLTc2NDUwNzUzNC
-wxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNjAzNjUyODMyLDEyMjA4
-MTM3OTBdfQ==
+eyJoaXN0b3J5IjpbMTQ5NjE5ODQ5MSwtNjEzNTU0NTMyLDE0OT
+YxOTg0OTEsNjE0NzkyOTY1LC01NjI3ODQ4LC0xMTQyNDI1MjY1
+LDM4MzYzMjY1NywtMTcyMTA3NDc3NiwtMjA5MzUyMzEwMSwxMT
+kxMDY1ODA0LC0xODM4MjI5MTU2LDExOTMwMTkzLC0xNDQ5NTgy
+ODkwLC0xNTY5NDM5NjkzLDg1MjQxNjIwOSwtNzY0NTA3NTM0LD
+E5NjYyMTIyNDEsMTc5MTIwODU3Nyw2MDM2NTI4MzIsMTIyMDgx
+Mzc5MF19
 -->
