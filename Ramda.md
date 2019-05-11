@@ -2913,6 +2913,7 @@ R.type(/[A-z]/) //"RegExp"
 R.type(() => {}) //"Function"
 R.type(undefined) //"Undefined"
 ```
+
 ## Mapping
 
 #### addIndex
@@ -3060,7 +3061,7 @@ R.trim("   Hello World!   ")
 - traverse
 - tryCatch
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNjY3MjkzNSwxMTg0NTU0MjgxLDIxMz
+eyJoaXN0b3J5IjpbMTIyNDQ4MzI4NSwxMTg0NTU0MjgxLDIxMz
 Y2NTYwMzYsMTAyNTk5OTQwNiw2MTk5MDM4NzcsLTE0NjgzMzY1
 OTAsLTE1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4ODg5NjE0LC
 0xMDkxNjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3NTIzMTUsLTE1
