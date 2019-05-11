@@ -897,6 +897,14 @@ R.pipe(
 //undefinedcarnivore
 ```
 By using `bind` the function is bound to the desired context.
+```
+R.pipe(
+  R.toUpper,
+  R.bind(lion.getDiet, lion),
+  console.log
+)('The animal is a ')
+//THE ANIMAL IS A carnivore
+```
 
 #### call
 This is a very powerful function. It takes a function as a first parameter, and an arbitrary number of other arguments which will be passed to the function provided.
@@ -3335,11 +3343,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY5NzQ5Mzc0LDYxNDc5Mjk2NSwtNTYyNz
-g0OCwtMTE0MjQyNTI2NSwzODM2MzI2NTcsLTE3MjEwNzQ3NzYs
-LTIwOTM1MjMxMDEsMTE5MTA2NTgwNCwtMTgzODIyOTE1NiwxMT
-kzMDE5MywtMTQ0OTU4Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYy
-MDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNj
-AzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgz
-Mjg1XX0=
+eyJoaXN0b3J5IjpbMTQ5NjE5ODQ5MSw2MTQ3OTI5NjUsLTU2Mj
+c4NDgsLTExNDI0MjUyNjUsMzgzNjMyNjU3LC0xNzIxMDc0Nzc2
+LC0yMDkzNTIzMTAxLDExOTEwNjU4MDQsLTE4MzgyMjkxNTYsMT
+E5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2
+MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LD
+YwMzY1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4
+MzI4NV19
 -->
