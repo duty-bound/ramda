@@ -2992,7 +2992,15 @@ R.unnest([[1, 2], [3, 4], [5, 6]]) //[1, 2, 3, 4, 5, 6]
 ```
 
 #### until
-The function supplied as the second parameter executes the initial value, and passes the result to the conidtion supplied in the first parameter. The iteration continur
+The function supplied as the second parameter executes the initial value (the 3rd parameter), and passes the result to the condition supplied in the first parameter. The iteration continues until the condition is satisfied.
+```
+R.until(R.gt(R.__, 100), n => n * n, 2)
+/256
+```
+```
+R.until(R.gt(R.__, 100), n => n * n)(2)
+//256
+```
 
 ## Mapping
 
@@ -3144,11 +3152,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MTU4MjkwMiwtMTU2OTQzOTY5Myw4NT
-I0MTYyMDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1
-NzcsNjAzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIxNTczNCwxMj
-I0NDgzMjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5
-NDA2LDYxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOS
-wxNjYyMTk5MTI4LDEwMDg4ODk2MTQsLTEwOTE2NDUxNzMsLTU2
-MDE2MTQ2NV19
+eyJoaXN0b3J5IjpbLTE3NTIwOTU1NzgsLTE1Njk0Mzk2OTMsOD
+UyNDE2MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4
+NTc3LDYwMzY1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMT
+IyNDQ4MzI4NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5
+OTQwNiw2MTk5MDM4NzcsLTE0NjgzMzY1OTAsLTE1MTUxOTI3Mj
+ksMTY2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkxNjQ1MTczLC01
+NjAxNjE0NjVdfQ==
 -->
