@@ -807,6 +807,13 @@ convertEur(10)
 //{"EUR": 10, "SEK": 100, "USD": 12}
 ```
 ```
+const getMetrics = R.applySpec({
+  sum: R.add,
+  nested: { mul: R.multiply }
+})
+getMetrics(2, 4)
+//{"nested": {"mul": 8}, "sum": 6}
+```
 
 #### assoc
 Inserts a key / value set in a clone of the provided object literal. Note that the new object literal is sorted in ascending order.
@@ -3304,11 +3311,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjQzMzcwMDMsLTU2Mjc4NDgsLTExND
-I0MjUyNjUsMzgzNjMyNjU3LC0xNzIxMDc0Nzc2LC0yMDkzNTIz
-MTAxLDExOTEwNjU4MDQsLTE4MzgyMjkxNTYsMTE5MzAxOTMsLT
-E0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2MjA5LC03NjQ1
-MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMzY1MjgzMi
-wxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4NSwxMTg0
-NTU0MjgxXX0=
+eyJoaXN0b3J5IjpbMTc5Mjk1NzAyMywtNTYyNzg0OCwtMTE0Mj
+QyNTI2NSwzODM2MzI2NTcsLTE3MjEwNzQ3NzYsLTIwOTM1MjMx
+MDEsMTE5MTA2NTgwNCwtMTgzODIyOTE1NiwxMTkzMDE5MywtMT
+Q0OTU4Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYyMDksLTc2NDUw
+NzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNjAzNjUyODMyLD
+EyMjA4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgzMjg1LDExODQ1
+NTQyODFdfQ==
 -->
