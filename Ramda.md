@@ -2931,7 +2931,15 @@ R.union([1, 2, 3], [2, 3, 4])
 //[1, 2, 3, 4]
 ```
 
-####
+#### unionWith
+Note: the example below is the same example on Ramda's website. In this example, using `union` instead of `unionWith` returns the same result.
+```
+const l1 = [{a: 1}, {a: 2}]
+const l2 = [{a: 1}, {a: 4}]
+
+R.unionWith(R.eqBy(R.prop('a')), l1, l2)
+//[{"a": 1}, {"a": 2}, {"a": 4}]
+``
 ## Mapping
 
 #### addIndex
@@ -3082,11 +3090,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAzNjUyODMyLDEyMjA4MTM3OTAsMTk1MT
-IxNTczNCwxMjI0NDgzMjg1LDExODQ1NTQyODEsMjEzNjY1NjAz
-NiwxMDI1OTk5NDA2LDYxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMT
-UxNTE5MjcyOSwxNjYyMTk5MTI4LDEwMDg4ODk2MTQsLTEwOTE2
-NDUxNzMsLTU2MDE2MTQ2NSwtMTI0Mjc1MjMxNSwtMTU3ODk4Nj
-c5NiwtMjA4MzI0OTE5MywxNzQ3NzEzNDU2LDEwODAzNDAwNTYs
-LTE4NzgzODY3NDFdfQ==
+eyJoaXN0b3J5IjpbLTIwNzQ3MTk5NzUsNjAzNjUyODMyLDEyMj
+A4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgzMjg1LDExODQ1NTQy
+ODEsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LDYxOTkwMzg3NywtMT
+Q2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYyMTk5MTI4LDEwMDg4
+ODk2MTQsLTEwOTE2NDUxNzMsLTU2MDE2MTQ2NSwtMTI0Mjc1Mj
+MxNSwtMTU3ODk4Njc5NiwtMjA4MzI0OTE5MywxNzQ3NzEzNDU2
+LDEwODAzNDAwNTZdfQ==
 -->
