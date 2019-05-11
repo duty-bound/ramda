@@ -1007,6 +1007,13 @@ joinToUpper('foo', 'bar')  //"FOOBAR"
 R.compose(R.toUpper, R.concat)('foo', 'bar') //"FOOBAR"
 ```
 
+#### composeWith
+```
+const processIfNotNil = R.composeWith((f, v) => R.isNil(v) ? v : f(v))
+
+processIfNotNil([R.negate, R.inc])(5)
+//-6
+```
 #### concat
 
 Concatenates the provided strings or arrays. Takes a maximum of two parameters.
@@ -3345,11 +3352,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjE3MjMxMTgsLTc1MTA5MTMyLDE0OT
-YxOTg0OTEsLTYxMzU1NDUzMiwxNDk2MTk4NDkxLDYxNDc5Mjk2
-NSwtNTYyNzg0OCwtMTE0MjQyNTI2NSwzODM2MzI2NTcsLTE3Mj
-EwNzQ3NzYsLTIwOTM1MjMxMDEsMTE5MTA2NTgwNCwtMTgzODIy
-OTE1NiwxMTkzMDE5MywtMTQ0OTU4Mjg5MCwtMTU2OTQzOTY5My
-w4NTI0MTYyMDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLDE3OTEy
-MDg1NzddfQ==
+eyJoaXN0b3J5IjpbMTU0NTQzMTY0NywtMTIyMTcyMzExOCwtNz
+UxMDkxMzIsMTQ5NjE5ODQ5MSwtNjEzNTU0NTMyLDE0OTYxOTg0
+OTEsNjE0NzkyOTY1LC01NjI3ODQ4LC0xMTQyNDI1MjY1LDM4Mz
+YzMjY1NywtMTcyMTA3NDc3NiwtMjA5MzUyMzEwMSwxMTkxMDY1
+ODA0LC0xODM4MjI5MTU2LDExOTMwMTkzLC0xNDQ5NTgyODkwLC
+0xNTY5NDM5NjkzLDg1MjQxNjIwOSwtNzY0NTA3NTM0LDE5NjYy
+MTIyNDFdfQ==
 -->
