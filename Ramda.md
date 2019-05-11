@@ -3108,7 +3108,7 @@ const yPoints = [3, 4]
 R.zip(xPoints, yPoints)
 //[[1, 3], [2, 4]]
 ```
-##### zipObject
+#### zipObject
 Creates a new object based on the two arrays provided.
 ```
 const myKeys = ['a', 'b']
@@ -3118,6 +3118,7 @@ R.zipObj(myKeys, myValues)
 //{"a": 1, "b": 2}
 ```
 
+#### 
 ## Mapping
 
 #### addIndex
@@ -3269,11 +3270,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDI0MjUyNjUsMzgzNjMyNjU3LC0xNz
-IxMDc0Nzc2LC0yMDkzNTIzMTAxLDExOTEwNjU4MDQsLTE4Mzgy
-MjkxNTYsMTE5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OT
-MsODUyNDE2MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkx
-MjA4NTc3LDYwMzY1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3Mz
-QsMTIyNDQ4MzI4NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAy
-NTk5OTQwNl19
+eyJoaXN0b3J5IjpbMzY0MTMyOTc2LC0xMTQyNDI1MjY1LDM4Mz
+YzMjY1NywtMTcyMTA3NDc3NiwtMjA5MzUyMzEwMSwxMTkxMDY1
+ODA0LC0xODM4MjI5MTU2LDExOTMwMTkzLC0xNDQ5NTgyODkwLC
+0xNTY5NDM5NjkzLDg1MjQxNjIwOSwtNzY0NTA3NTM0LDE5NjYy
+MTIyNDEsMTc5MTIwODU3Nyw2MDM2NTI4MzIsMTIyMDgxMzc5MC
+wxOTUxMjE1NzM0LDEyMjQ0ODMyODUsMTE4NDU1NDI4MSwyMTM2
+NjU2MDM2XX0=
 -->
