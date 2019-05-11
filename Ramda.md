@@ -375,7 +375,7 @@ R.startsWith(['a'], ['a', 'b', 'c']) //true
 ```
 
 #### where
-This is similar to the `WHERE`
+This is similar to SQL's `WHERE`. Returns a function that takes multiple conditions, and returns
 ### Iterative
 
 #### all
@@ -3203,11 +3203,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExOTY5ODQ4MiwtMTgzODIyOTE1NiwxMT
-kzMDE5MywtMTQ0OTU4Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYy
-MDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNj
-AzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgz
-Mjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LD
-YxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYy
-MTk5MTI4XX0=
+eyJoaXN0b3J5IjpbNTg2Nzg2NDgsLTE4MzgyMjkxNTYsMTE5Mz
+AxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2MjA5
+LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMz
+Y1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4
+NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNiw2MT
+k5MDM4NzcsLTE0NjgzMzY1OTAsLTE1MTUxOTI3MjksMTY2MjE5
+OTEyOF19
 -->
