@@ -2889,7 +2889,7 @@ R.symmetricDifference(l1, l2) //[{a: 1}, {a: 2}, {a: 5}, {a: 6}]
 R.symmetricDifferenceWith(eqA, l1, l2) //[{a: 1}, {a: 2}, {a: 5}, {a: 6}]
 ```
 
-#### true
+#### T
 A function that always returns `true`.
 ```
 R.T() //true  
@@ -3009,6 +3009,8 @@ R.transpose([['a', 'b', 'c'], [4, 5, 6]])
 R.transpose([["a", 4], ["b", 5], ["c", 6]])
 //[["a", "b", "c"], [4, 5, 6]]
 ```
+
+#### tryCatch
 
 #### type
 Returns the type of the parameter provided.
@@ -3360,7 +3362,7 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3NzM3NzM2LDc1MTU2MzM3NywzODY0Nz
+eyJoaXN0b3J5IjpbMTI5OTQ2ODU0LDc1MTU2MzM3NywzODY0Nz
 I4MzMsMTU0NTQzMTY0NywtMTIyMTcyMzExOCwtNzUxMDkxMzIs
 MTQ5NjE5ODQ5MSwtNjEzNTU0NTMyLDE0OTYxOTg0OTEsNjE0Nz
 kyOTY1LC01NjI3ODQ4LC0xMTQyNDI1MjY1LDM4MzYzMjY1Nywt
