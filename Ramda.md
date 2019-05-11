@@ -2914,7 +2914,7 @@ R.type(() => {}) //"Function"
 R.type(undefined) //"Undefined"
 ```
 #### unFold
-Builds a list from a seed value, which is the second parameter. The first parameter is an iterator function
+Builds a list from a seed value, which is the second parameter. The first parameter is an iterator function which must either return false, in which case the iteration stops, or else an array with two elements: the first is the seed value for the current iteration, and the second is the operation 
 ## Mapping
 
 #### addIndex
@@ -3065,7 +3065,7 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzcxNjQwOSwxOTUxMjE1NzM0LDEyMj
+eyJoaXN0b3J5IjpbLTgzMjg0ODU2NSwxOTUxMjE1NzM0LDEyMj
 Q0ODMyODUsMTE4NDU1NDI4MSwyMTM2NjU2MDM2LDEwMjU5OTk0
 MDYsNjE5OTAzODc3LC0xNDY4MzM2NTkwLC0xNTE1MTkyNzI5LD
 E2NjIxOTkxMjgsMTAwODg4OTYxNCwtMTA5MTY0NTE3MywtNTYw
