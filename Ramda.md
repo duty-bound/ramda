@@ -3109,7 +3109,15 @@ R.zip(xPoints, yPoints)
 //[[1, 3], [2, 4]]
 ```
 ##### zipObject
-Creates a new object based on the arr
+Creates a new object based on the two arrays provided.
+```
+const myKeys = ['a', 'b']
+const myValues = [1, 2]
+
+R.zipObj(myKeys, myValues)
+//{"a": 1, "b": 2}
+```
+
 ## Mapping
 
 #### addIndex
@@ -3261,7 +3269,7 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjYxNjQzMjgsMzgzNjMyNjU3LC0xNz
+eyJoaXN0b3J5IjpbLTExNDI0MjUyNjUsMzgzNjMyNjU3LC0xNz
 IxMDc0Nzc2LC0yMDkzNTIzMTAxLDExOTEwNjU4MDQsLTE4Mzgy
 MjkxNTYsMTE5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OT
 MsODUyNDE2MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkx
