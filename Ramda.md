@@ -2940,6 +2940,20 @@ const l2 = [{a: 1}, {a: 4}]
 R.unionWith(R.eqBy(R.prop('a')), l1, l2)
 //[{"a": 1}, {"a": 2}, {"a": 4}]
 ```
+#### uniq
+Returns the unique elements in a list. Caution how to use it with objects.
+```
+R.uniq([1, 2, 2, 3, 3, 3, 4, 4, 4, 4])
+//[1, 2, 3, 4]
+```
+```
+R.uniq({a: 1, a: 1, a: 2})
+//[]
+R.uniq([{a: 1, a: 1, a: 2}])
+//[{"a": 2}]
+R.uniq([{a: 1}, {a: 1}, {a: 2}])
+//[{"a": 1}, {"a": 2}]
+```
 
 ## Mapping
 
@@ -3091,11 +3105,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MTIwODU3Nyw2MDM2NTI4MzIsMTIyMD
-gxMzc5MCwxOTUxMjE1NzM0LDEyMjQ0ODMyODUsMTE4NDU1NDI4
-MSwyMTM2NjU2MDM2LDEwMjU5OTk0MDYsNjE5OTAzODc3LC0xND
-Y4MzM2NTkwLC0xNTE1MTkyNzI5LDE2NjIxOTkxMjgsMTAwODg4
-OTYxNCwtMTA5MTY0NTE3MywtNTYwMTYxNDY1LC0xMjQyNzUyMz
-E1LC0xNTc4OTg2Nzk2LC0yMDgzMjQ5MTkzLDE3NDc3MTM0NTYs
-MTA4MDM0MDA1Nl19
+eyJoaXN0b3J5IjpbMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMz
+Y1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4
+NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNiw2MT
+k5MDM4NzcsLTE0NjgzMzY1OTAsLTE1MTUxOTI3MjksMTY2MjE5
+OTEyOCwxMDA4ODg5NjE0LC0xMDkxNjQ1MTczLC01NjAxNjE0Nj
+UsLTEyNDI3NTIzMTUsLTE1Nzg5ODY3OTYsLTIwODMyNDkxOTMs
+MTc0NzcxMzQ1Nl19
 -->
