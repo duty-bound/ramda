@@ -1008,7 +1008,8 @@ R.compose(R.toUpper, R.concat)('foo', 'bar') //"FOOBAR"
 ```
 
 #### composeWith
-This function is designed to be used with a successful promise return. A typical instance would be one where a response is checked whether it is successful or not and the `compose` b
+This function is designed to be used with a successful promise return. A typical instance would be one where a response is checked whether it is successful or not and the `compose` bit triggered accordingly.
+Contrary to `compose`, the functions to be executed are enclosed in an array.
 ```
 const processIfNotNil = R.composeWith((f, res) => R.isNil(res) ? res : f(res))
 
@@ -3353,11 +3354,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDI3MjAyNDcsMTU0NTQzMTY0NywtMT
-IyMTcyMzExOCwtNzUxMDkxMzIsMTQ5NjE5ODQ5MSwtNjEzNTU0
-NTMyLDE0OTYxOTg0OTEsNjE0NzkyOTY1LC01NjI3ODQ4LC0xMT
-QyNDI1MjY1LDM4MzYzMjY1NywtMTcyMTA3NDc3NiwtMjA5MzUy
-MzEwMSwxMTkxMDY1ODA0LC0xODM4MjI5MTU2LDExOTMwMTkzLC
-0xNDQ5NTgyODkwLC0xNTY5NDM5NjkzLDg1MjQxNjIwOSwtNzY0
-NTA3NTM0XX0=
+eyJoaXN0b3J5IjpbLTY5MjQwNzM2NCwxNTQ1NDMxNjQ3LC0xMj
+IxNzIzMTE4LC03NTEwOTEzMiwxNDk2MTk4NDkxLC02MTM1NTQ1
+MzIsMTQ5NjE5ODQ5MSw2MTQ3OTI5NjUsLTU2Mjc4NDgsLTExND
+I0MjUyNjUsMzgzNjMyNjU3LC0xNzIxMDc0Nzc2LC0yMDkzNTIz
+MTAxLDExOTEwNjU4MDQsLTE4MzgyMjkxNTYsMTE5MzAxOTMsLT
+E0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2MjA5LC03NjQ1
+MDc1MzRdfQ==
 -->
