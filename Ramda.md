@@ -2974,7 +2974,15 @@ R.uniqWith(strEq)([{}, {}])       //[{}]
 R.uniqWith(strEq)([1, '1', 1])    //[1]
 R.uniqWith(strEq)(['1', 1, 1])    //["1"]
 ```
- 
+#### unless 
+The function supplied as the second parameter is only executed if the a
+```
+const gt3 = R.gt(R.__, 2)
+
+R.unless(gt3, R.inc)(1) //2
+R.unless(gt3, R.inc)(4) //4
+```
+
 ## Mapping
 
 #### addIndex
@@ -3125,11 +3133,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyNDE2MjA5LC03NjQ1MDc1MzQsMTk2Nj
-IxMjI0MSwxNzkxMjA4NTc3LDYwMzY1MjgzMiwxMjIwODEzNzkw
-LDE5NTEyMTU3MzQsMTIyNDQ4MzI4NSwxMTg0NTU0MjgxLDIxMz
-Y2NTYwMzYsMTAyNTk5OTQwNiw2MTk5MDM4NzcsLTE0NjgzMzY1
-OTAsLTE1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4ODg5NjE0LC
-0xMDkxNjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3NTIzMTUsLTE1
-Nzg5ODY3OTZdfQ==
+eyJoaXN0b3J5IjpbMTIxMTQwNjQ0Myw4NTI0MTYyMDksLTc2ND
+UwNzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNjAzNjUyODMy
+LDEyMjA4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgzMjg1LDExOD
+Q1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LDYxOTkwMzg3
+NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYyMTk5MTI4LD
+EwMDg4ODk2MTQsLTEwOTE2NDUxNzMsLTU2MDE2MTQ2NSwtMTI0
+Mjc1MjMxNV19
 -->
