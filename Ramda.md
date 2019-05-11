@@ -3036,7 +3036,20 @@ R.view(myLens, {a: 1, b: 2})
 ```
 
 #### when
-Takes two functions. The first one returns `true` or `false`, and is usually a condition, and the second function is executed only if the first function returns `true`. 
+Takes two functions. The first one returns `true` or `false`, and is usually a condition, and the second function is executed only if the first function returns `true`, in which case the result of the second function is retuurned. If `false`, the initial value is returned as is.
+```
+const arr = [1, 2, 3, 4]
+const gt3 = R.gt(R.__, 3)
+
+R.when(gt3, R.dec)(4) //3
+R.when(gt3, R.dec)(3) //3
+```
+```
+const gt3 = R.gt(R.__, 3)
+
+R.when(gt3, n => 3, 5) //3
+```
+
 ## Mapping
 
 #### addIndex
@@ -3188,11 +3201,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMTcwNzc3MywtMTgzODIyOTE1NiwxMT
-kzMDE5MywtMTQ0OTU4Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYy
-MDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNj
-AzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgz
-Mjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LD
-YxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYy
-MTk5MTI4XX0=
+eyJoaXN0b3J5IjpbLTE3ODc2OTM3MTcsLTE4MzgyMjkxNTYsMT
+E5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2
+MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LD
+YwMzY1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4
+MzI4NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNi
+w2MTk5MDM4NzcsLTE0NjgzMzY1OTAsLTE1MTUxOTI3MjksMTY2
+MjE5OTEyOF19
 -->
