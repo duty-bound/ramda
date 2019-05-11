@@ -3118,7 +3118,15 @@ R.zipObj(myKeys, myValues)
 //{"a": 1, "b": 2}
 ```
 
-#### 
+#### zipWith
+```
+const myKeys = ['a', 'b']
+const myValues = [1, 2]
+const f = (k, v) => [R.toUpper(k), v]
+
+R.zipWith(f, myKeys, myValues)
+//[["A", 1], ["B", 2]]
+```
 ## Mapping
 
 #### addIndex
@@ -3270,11 +3278,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY0MTMyOTc2LC0xMTQyNDI1MjY1LDM4Mz
-YzMjY1NywtMTcyMTA3NDc3NiwtMjA5MzUyMzEwMSwxMTkxMDY1
-ODA0LC0xODM4MjI5MTU2LDExOTMwMTkzLC0xNDQ5NTgyODkwLC
-0xNTY5NDM5NjkzLDg1MjQxNjIwOSwtNzY0NTA3NTM0LDE5NjYy
-MTIyNDEsMTc5MTIwODU3Nyw2MDM2NTI4MzIsMTIyMDgxMzc5MC
-wxOTUxMjE1NzM0LDEyMjQ0ODMyODUsMTE4NDU1NDI4MSwyMTM2
-NjU2MDM2XX0=
+eyJoaXN0b3J5IjpbLTE0MzE2MjI5MDMsLTExNDI0MjUyNjUsMz
+gzNjMyNjU3LC0xNzIxMDc0Nzc2LC0yMDkzNTIzMTAxLDExOTEw
+NjU4MDQsLTE4MzgyMjkxNTYsMTE5MzAxOTMsLTE0NDk1ODI4OT
+AsLTE1Njk0Mzk2OTMsODUyNDE2MjA5LC03NjQ1MDc1MzQsMTk2
+NjIxMjI0MSwxNzkxMjA4NTc3LDYwMzY1MjgzMiwxMjIwODEzNz
+kwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4NSwxMTg0NTU0MjgxLDIx
+MzY2NTYwMzZdfQ==
 -->
