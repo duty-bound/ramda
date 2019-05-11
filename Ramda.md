@@ -405,6 +405,11 @@ const pred = R.whereEq([1, 2, 3])
 
 pred([1, 2, 3]) //true
 pred([1, 2]) //false
+
+#### without
+Returns a new without the indicated values. Does not work on object literals.
+```
+R.without([1, 2], [1, 2, 1, 3, 4]) //[3, 4]
 ```
 
 
@@ -3235,11 +3240,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTM1MjMxMDEsMTE5MTA2NTgwNCwtMT
-gzODIyOTE1NiwxMTkzMDE5MywtMTQ0OTU4Mjg5MCwtMTU2OTQz
-OTY5Myw4NTI0MTYyMDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLD
-E3OTEyMDg1NzcsNjAzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIx
-NTczNCwxMjI0NDgzMjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNi
-wxMDI1OTk5NDA2LDYxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUx
-NTE5MjcyOV19
+eyJoaXN0b3J5IjpbLTE3MjEwNzQ3NzYsLTIwOTM1MjMxMDEsMT
+E5MTA2NTgwNCwtMTgzODIyOTE1NiwxMTkzMDE5MywtMTQ0OTU4
+Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYyMDksLTc2NDUwNzUzNC
+wxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNjAzNjUyODMyLDEyMjA4
+MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgzMjg1LDExODQ1NTQyOD
+EsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LDYxOTkwMzg3NywtMTQ2
+ODMzNjU5MF19
 -->
