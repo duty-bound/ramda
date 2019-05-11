@@ -3099,7 +3099,17 @@ R.xprod(point1, point2)
 //[[1, 4], [1, 5], [1, 6], [2, 4], [2, 5], [2, 6], [3, 4], [3, 5], [3, 6]]
 ```
 
-#### zi
+#### zip
+Pairs the elements of two arrays in the sequence they are provided.
+```
+const xPoints = [1, 2]
+const yPoints = [3, 4]
+
+R.zip(xPoints, yPoints)
+//[[1, 3], [2, 4]]
+```
+##### zipObject
+Creates a new object based on the arr
 ## Mapping
 
 #### addIndex
@@ -3251,7 +3261,7 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTQwMzc4NTAsMzgzNjMyNjU3LC0xNz
+eyJoaXN0b3J5IjpbLTE5MjYxNjQzMjgsMzgzNjMyNjU3LC0xNz
 IxMDc0Nzc2LC0yMDkzNTIzMTAxLDExOTEwNjU4MDQsLTE4Mzgy
 MjkxNTYsMTE5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OT
 MsODUyNDE2MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkx
