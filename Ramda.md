@@ -2508,7 +2508,8 @@ Contrary to `pipe`, the functions to be executed are enclosed in an array.
 const pipeWhileNotNil = R.pipeWith((f, res) => R.isNil(res) ? res : f(res))
 const f = pipeWhileNotNil([Math.pow, R.negate, R.inc])
 
-f(3, 4) //-80```
+f(3, 4) //-80
+```
 
 #### pluck
 Returns a new array/object by extracting the specified element/property from the supplied list.
@@ -2846,7 +2847,7 @@ R.splitEvery(3, 'foobarbaz')
 //["foo", "bar", "baz"]
 ```
 
-### splitWhen
+#### splitWhen
 Splits a string into substrings when an element satisfies the predicate function.
 ```
 R.splitWhen(R.equals(' '), 'Hello World')
@@ -3359,11 +3360,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUxNTYzMzc3LDM4NjQ3MjgzMywxNTQ1ND
-MxNjQ3LC0xMjIxNzIzMTE4LC03NTEwOTEzMiwxNDk2MTk4NDkx
-LC02MTM1NTQ1MzIsMTQ5NjE5ODQ5MSw2MTQ3OTI5NjUsLTU2Mj
-c4NDgsLTExNDI0MjUyNjUsMzgzNjMyNjU3LC0xNzIxMDc0Nzc2
-LC0yMDkzNTIzMTAxLDExOTEwNjU4MDQsLTE4MzgyMjkxNTYsMT
-E5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2
-MjA5XX0=
+eyJoaXN0b3J5IjpbNDE3NzM3NzM2LDc1MTU2MzM3NywzODY0Nz
+I4MzMsMTU0NTQzMTY0NywtMTIyMTcyMzExOCwtNzUxMDkxMzIs
+MTQ5NjE5ODQ5MSwtNjEzNTU0NTMyLDE0OTYxOTg0OTEsNjE0Nz
+kyOTY1LC01NjI3ODQ4LC0xMTQyNDI1MjY1LDM4MzYzMjY1Nywt
+MTcyMTA3NDc3NiwtMjA5MzUyMzEwMSwxMTkxMDY1ODA0LC0xOD
+M4MjI5MTU2LDExOTMwMTkzLC0xNDQ5NTgyODkwLC0xNTY5NDM5
+NjkzXX0=
 -->
