@@ -3092,8 +3092,14 @@ R.without([1, 2], [1, 2, 1, 3, 4]) //[3, 4]
 ```
 
 #### xprod
-Returns an array with all the possible combinations
+Returns an array with all the possible paid combinations of the elements of the two arrays provided.
+```
+const point1 = [1, 2, 3]
+const point2 = [4, 5, 6]
 
+R.xprod(point1, point2)
+//[[1, 4], [1, 5], [1, 6], [2, 4], [2, 5], [2, 6], [3, 4], [3, 5], [3, 6]]
+```
 ## Mapping
 
 #### addIndex
@@ -3245,11 +3251,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3NDQzNzk5LC0xNzIxMDc0Nzc2LC0yMD
-kzNTIzMTAxLDExOTEwNjU4MDQsLTE4MzgyMjkxNTYsMTE5MzAx
-OTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2MjA5LC
-03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMzY1
-MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4NS
-wxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNiw2MTk5
-MDM4NzddfQ==
+eyJoaXN0b3J5IjpbLTg4NzY0NzQxNywtMTcyMTA3NDc3NiwtMj
+A5MzUyMzEwMSwxMTkxMDY1ODA0LC0xODM4MjI5MTU2LDExOTMw
+MTkzLC0xNDQ5NTgyODkwLC0xNTY5NDM5NjkzLDg1MjQxNjIwOS
+wtNzY0NTA3NTM0LDE5NjYyMTIyNDEsMTc5MTIwODU3Nyw2MDM2
+NTI4MzIsMTIyMDgxMzc5MCwxOTUxMjE1NzM0LDEyMjQ0ODMyOD
+UsMTE4NDU1NDI4MSwyMTM2NjU2MDM2LDEwMjU5OTk0MDYsNjE5
+OTAzODc3XX0=
 -->
