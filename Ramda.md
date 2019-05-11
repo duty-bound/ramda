@@ -406,11 +406,7 @@ const pred = R.whereEq([1, 2, 3])
 pred([1, 2, 3]) //true
 pred([1, 2]) //false
 
-#### without
-Returns a new without the indicated values. Does not work on object literals.
-```
-R.without([1, 2], [1, 2, 1, 3, 4]) //[3, 4]
-```
+
 
 
 ### Iterative
@@ -3089,6 +3085,15 @@ const gt3 = R.gt(R.__, 3)
 R.when(gt3, n => 3, 5) //3
 ```
 
+#### without
+Returns a new without the indicated values. Does not work on object literals.
+```
+R.without([1, 2], [1, 2, 1, 3, 4]) //[3, 4]
+```
+
+#### xprod
+Returns an array with all the possible combinations
+
 ## Mapping
 
 #### addIndex
@@ -3240,11 +3245,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjEwNzQ3NzYsLTIwOTM1MjMxMDEsMT
-E5MTA2NTgwNCwtMTgzODIyOTE1NiwxMTkzMDE5MywtMTQ0OTU4
-Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYyMDksLTc2NDUwNzUzNC
-wxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNjAzNjUyODMyLDEyMjA4
-MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgzMjg1LDExODQ1NTQyOD
-EsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LDYxOTkwMzg3NywtMTQ2
-ODMzNjU5MF19
+eyJoaXN0b3J5IjpbOTA3NDQzNzk5LC0xNzIxMDc0Nzc2LC0yMD
+kzNTIzMTAxLDExOTEwNjU4MDQsLTE4MzgyMjkxNTYsMTE5MzAx
+OTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2MjA5LC
+03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMzY1
+MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4NS
+wxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNiw2MTk5
+MDM4NzddfQ==
 -->
