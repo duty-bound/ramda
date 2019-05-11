@@ -374,6 +374,8 @@ R.startsWith('a', ['a', 'b', 'c']) //false
 R.startsWith(['a'], ['a', 'b', 'c']) //true
 ```
 
+#### where
+This is similar to the `WHERE`
 ### Iterative
 
 #### all
@@ -3201,11 +3203,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODc2OTM3MTcsLTE4MzgyMjkxNTYsMT
-E5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2
-MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LD
-YwMzY1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4
-MzI4NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNi
-w2MTk5MDM4NzcsLTE0NjgzMzY1OTAsLTE1MTUxOTI3MjksMTY2
-MjE5OTEyOF19
+eyJoaXN0b3J5IjpbMTExOTY5ODQ4MiwtMTgzODIyOTE1NiwxMT
+kzMDE5MywtMTQ0OTU4Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYy
+MDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNj
+AzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgz
+Mjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LD
+YxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYy
+MTk5MTI4XX0=
 -->
