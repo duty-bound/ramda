@@ -878,31 +878,33 @@ func2('so', 'far')
 A function that enforces the binding of a function to the desired context.
 Consider the example below. `Prototype` is used to attach `getDiet` to the previously declared function, `Animal`. However `getDiet` does not seem to have been correctly bound, in fact it returns `undefined`.
 ```
-function Animal (name) {
-    this.name = name
+function Animal (diet) {
+    this.diet = diet
 }
   
-Animal.prototype.setDiet = function(diet) {
-  return 'The ' + this.name + ' is a ' + diet
+Animal.prototype.getDiet = function(text) {
+  return text + this.diet
 }
 
-const lion = new Animal('lion')
+const lion = new Animal('carnivore')
+console.log(lion.getDiet())
 
 R.pipe(
   R.toUpper,
-  lion.setDiet, lion,
+  lion.getDiet,
   console.log
-)('carnivore')
+)('The animal is a ')
+//undefinedcarnivore
 ```
 By using `bind` the function is bound to the desired context.
 ```
 R.pipe(
   R.toUpper,
-  R.bind(lion.setDiet, lion),
+  R.bind(lion.getDiet, lion),
   console.log
-)('carnivore')
-//The lion is a CARNIVORE
-```
+)('The animal is a ')
+//THE ANIMAL IS A carnivore
+``
 
 #### call
 This is a very powerful function. It takes a function as a first parameter, and an arbitrary number of other arguments which will be passed to the function provided.
@@ -3341,11 +3343,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMzU1NDUzMiwxNDk2MTk4NDkxLDYxND
-c5Mjk2NSwtNTYyNzg0OCwtMTE0MjQyNTI2NSwzODM2MzI2NTcs
-LTE3MjEwNzQ3NzYsLTIwOTM1MjMxMDEsMTE5MTA2NTgwNCwtMT
-gzODIyOTE1NiwxMTkzMDE5MywtMTQ0OTU4Mjg5MCwtMTU2OTQz
-OTY5Myw4NTI0MTYyMDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLD
-E3OTEyMDg1NzcsNjAzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIx
-NTczNF19
+eyJoaXN0b3J5IjpbLTE1NDQwNTA2MTksLTYxMzU1NDUzMiwxND
+k2MTk4NDkxLDYxNDc5Mjk2NSwtNTYyNzg0OCwtMTE0MjQyNTI2
+NSwzODM2MzI2NTcsLTE3MjEwNzQ3NzYsLTIwOTM1MjMxMDEsMT
+E5MTA2NTgwNCwtMTgzODIyOTE1NiwxMTkzMDE5MywtMTQ0OTU4
+Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYyMDksLTc2NDUwNzUzNC
+wxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNjAzNjUyODMyLDEyMjA4
+MTM3OTBdfQ==
 -->
