@@ -2901,7 +2901,18 @@ R.transpose([["a", 4], ["b", 5], ["c", 6]])
 ```
 
 #### type
-
+Returns the type of the parameter provided.
+```
+R.type({}) //"Object"
+R.type(1) //"Number"
+R.type(false) //"Boolean"
+R.type('s') //"String"
+R.type(null) //"Null"
+R.type([]) //"Array"
+R.type(/[A-z]/) //"RegExp"
+R.type(() => {}) //"Function"
+R.type(undefined) //"Undefined"
+```
 ## Mapping
 
 #### addIndex
@@ -3049,7 +3060,7 @@ R.trim("   Hello World!   ")
 - traverse
 - tryCatch
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNjUwMjE5NiwxMTg0NTU0MjgxLDIxMz
+eyJoaXN0b3J5IjpbMTIyNjY3MjkzNSwxMTg0NTU0MjgxLDIxMz
 Y2NTYwMzYsMTAyNTk5OTQwNiw2MTk5MDM4NzcsLTE0NjgzMzY1
 OTAsLTE1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4ODg5NjE0LC
 0xMDkxNjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3NTIzMTUsLTE1
