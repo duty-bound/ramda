@@ -874,6 +874,9 @@ func2('so', 'far')
 //"so far undefined undefined"
 ```
 
+#### bind
+A function that enforces the binding of a 
+
 #### call
 This is a very powerful function. It takes a function as a first parameter, and an arbitrary number of other arguments which will be passed to the function provided.
 
@@ -3311,11 +3314,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE0NzkyOTY1LC01NjI3ODQ4LC0xMTQyND
-I1MjY1LDM4MzYzMjY1NywtMTcyMTA3NDc3NiwtMjA5MzUyMzEw
-MSwxMTkxMDY1ODA0LC0xODM4MjI5MTU2LDExOTMwMTkzLC0xND
-Q5NTgyODkwLC0xNTY5NDM5NjkzLDg1MjQxNjIwOSwtNzY0NTA3
-NTM0LDE5NjYyMTIyNDEsMTc5MTIwODU3Nyw2MDM2NTI4MzIsMT
-IyMDgxMzc5MCwxOTUxMjE1NzM0LDEyMjQ0ODMyODUsMTE4NDU1
-NDI4MV19
+eyJoaXN0b3J5IjpbLTE3MTU4ODQ2NjcsNjE0NzkyOTY1LC01Nj
+I3ODQ4LC0xMTQyNDI1MjY1LDM4MzYzMjY1NywtMTcyMTA3NDc3
+NiwtMjA5MzUyMzEwMSwxMTkxMDY1ODA0LC0xODM4MjI5MTU2LD
+ExOTMwMTkzLC0xNDQ5NTgyODkwLC0xNTY5NDM5NjkzLDg1MjQx
+NjIwOSwtNzY0NTA3NTM0LDE5NjYyMTIyNDEsMTc5MTIwODU3Ny
+w2MDM2NTI4MzIsMTIyMDgxMzc5MCwxOTUxMjE1NzM0LDEyMjQ0
+ODMyODVdfQ==
 -->
