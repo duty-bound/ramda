@@ -3001,6 +3001,13 @@ R.until(R.gt(R.__, 100), n => n * n, 2)
 R.until(R.gt(R.__, 100), n => n * n)(2)
 //256
 ```
+#### update
+returns a copy of an array updated with the supplied value in the indicated position (1st parameter).
+```
+const arr = [1, 2, 3, 5]
+R.update(3, 4, arr)
+//[1, 2, 3, 4]
+```
 
 ## Mapping
 
@@ -3152,7 +3159,7 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTIwOTU1NzgsLTE1Njk0Mzk2OTMsOD
+eyJoaXN0b3J5IjpbLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsOD
 UyNDE2MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4
 NTc3LDYwMzY1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMT
 IyNDQ4MzI4NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5
