@@ -876,6 +876,7 @@ func2('so', 'far')
 
 #### bind
 A function that enforces the binding of a function to the desired context.
+Consider the example below. `Prototype` is used to attach `
 
 #### call
 This is a very powerful function. It takes a function as a first parameter, and an arbitrary number of other arguments which will be passed to the function provided.
@@ -3314,11 +3315,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk1Mzk4OTQsNjE0NzkyOTY1LC01NjI3OD
-Q4LC0xMTQyNDI1MjY1LDM4MzYzMjY1NywtMTcyMTA3NDc3Niwt
-MjA5MzUyMzEwMSwxMTkxMDY1ODA0LC0xODM4MjI5MTU2LDExOT
-MwMTkzLC0xNDQ5NTgyODkwLC0xNTY5NDM5NjkzLDg1MjQxNjIw
-OSwtNzY0NTA3NTM0LDE5NjYyMTIyNDEsMTc5MTIwODU3Nyw2MD
-M2NTI4MzIsMTIyMDgxMzc5MCwxOTUxMjE1NzM0LDEyMjQ0ODMy
-ODVdfQ==
+eyJoaXN0b3J5IjpbLTY5MjY0OTIyMCw2MTQ3OTI5NjUsLTU2Mj
+c4NDgsLTExNDI0MjUyNjUsMzgzNjMyNjU3LC0xNzIxMDc0Nzc2
+LC0yMDkzNTIzMTAxLDExOTEwNjU4MDQsLTE4MzgyMjkxNTYsMT
+E5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2
+MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LD
+YwMzY1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4
+MzI4NV19
 -->
