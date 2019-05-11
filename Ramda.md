@@ -3161,6 +3161,14 @@ R.values(list)
 //[1, 2, 3]
 ```
 
+#### valuesIn
+Returns a list of all the properties of an object.
+```
+const G = function() { this.x = 'X' }
+G.prototype.y = 'Y'
+const g = new G()
+R.valuesIn(g) //["X", "Y"]
+```
 #### view
 Returns a view of the given data structure, as determined by the given lens.
 ```
@@ -3382,11 +3390,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMD
-k0MzgyMDAsMTI5OTQ2ODU0LDc1MTU2MzM3NywzODY0NzI4MzMs
-MTU0NTQzMTY0NywtMTIyMTcyMzExOCwtNzUxMDkxMzIsMTQ5Nj
-E5ODQ5MSwtNjEzNTU0NTMyLDE0OTYxOTg0OTEsNjE0NzkyOTY1
-LC01NjI3ODQ4LC0xMTQyNDI1MjY1LDM4MzYzMjY1NywtMTcyMT
-A3NDc3NiwtMjA5MzUyMzEwMSwxMTkxMDY1ODA0LC0xODM4MjI5
-MTU2XX0=
+eyJoaXN0b3J5IjpbNDA5NzUxMDI4LC0yOTc5NjIwNjQsLTE5OT
+AxMjkxMDMsMjA5NDM4MjAwLDEyOTk0Njg1NCw3NTE1NjMzNzcs
+Mzg2NDcyODMzLDE1NDU0MzE2NDcsLTEyMjE3MjMxMTgsLTc1MT
+A5MTMyLDE0OTYxOTg0OTEsLTYxMzU1NDUzMiwxNDk2MTk4NDkx
+LDYxNDc5Mjk2NSwtNTYyNzg0OCwtMTE0MjQyNTI2NSwzODM2Mz
+I2NTcsLTE3MjEwNzQ3NzYsLTIwOTM1MjMxMDEsMTE5MTA2NTgw
+NF19
 -->
