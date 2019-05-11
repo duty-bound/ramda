@@ -2914,7 +2914,9 @@ R.type(() => {}) //"Function"
 R.type(undefined) //"Undefined"
 ```
 #### unFold
-Builds a list from a seed value, which is the second parameter. The first parameter is an iterator function which must either return false, in which case the iteration stops, or else an array with two elements: the first is the seed value for the current iteration, and the second is the operation to be executed on this seed value.
+Builds a list from a seed value, which is the second parameter. The first parameter is an iterator function which must either return false, in which case the iteration stops, or else an array with two elements: the first is the value to return for the current iteration, and the second is the value to pass to the next iteration.
+
+So, in the below example
 ```
 const f = n => n > 50 ? false : [-n, n + 10]
 
@@ -3071,11 +3073,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2OTY0MjA2LDE5NTEyMTU3MzQsMTIyND
-Q4MzI4NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQw
-Niw2MTk5MDM4NzcsLTE0NjgzMzY1OTAsLTE1MTUxOTI3MjksMT
-Y2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkxNjQ1MTczLC01NjAx
-NjE0NjUsLTEyNDI3NTIzMTUsLTE1Nzg5ODY3OTYsLTIwODMyND
-kxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xODc4Mzg2NzQx
-LDgyMjk5MjI3N119
+eyJoaXN0b3J5IjpbLTE0ODM3MTkwMzMsMTk1MTIxNTczNCwxMj
+I0NDgzMjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5
+NDA2LDYxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOS
+wxNjYyMTk5MTI4LDEwMDg4ODk2MTQsLTEwOTE2NDUxNzMsLTU2
+MDE2MTQ2NSwtMTI0Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4Mz
+I0OTE5MywxNzQ3NzEzNDU2LDEwODAzNDAwNTYsLTE4NzgzODY3
+NDEsODIyOTkyMjc3XX0=
 -->
