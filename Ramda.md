@@ -3119,6 +3119,7 @@ R.zipObj(myKeys, myValues)
 ```
 
 #### zipWith
+Exactly like `zip` however can take a function to manipulate how the resulting object should be.
 ```
 const myKeys = ['a', 'b']
 const myValues = [1, 2]
@@ -3127,7 +3128,7 @@ const f = (k, v) => { return { [R.toUpper(k)]: v } }
 R.zipWith(f, myKeys, myValues)
 //[["A", 1], ["B", 2]]
 ```
-Or return an ar
+Or return an array:
 ```
 const myKeys = ['a', 'b']
 const myValues = [1, 2]
@@ -3287,11 +3288,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MDUyOTc1MCwtMTE0MjQyNTI2NSwzOD
-M2MzI2NTcsLTE3MjEwNzQ3NzYsLTIwOTM1MjMxMDEsMTE5MTA2
-NTgwNCwtMTgzODIyOTE1NiwxMTkzMDE5MywtMTQ0OTU4Mjg5MC
-wtMTU2OTQzOTY5Myw4NTI0MTYyMDksLTc2NDUwNzUzNCwxOTY2
-MjEyMjQxLDE3OTEyMDg1NzcsNjAzNjUyODMyLDEyMjA4MTM3OT
-AsMTk1MTIxNTczNCwxMjI0NDgzMjg1LDExODQ1NTQyODEsMjEz
-NjY1NjAzNl19
+eyJoaXN0b3J5IjpbLTU2Mjc4NDgsLTExNDI0MjUyNjUsMzgzNj
+MyNjU3LC0xNzIxMDc0Nzc2LC0yMDkzNTIzMTAxLDExOTEwNjU4
+MDQsLTE4MzgyMjkxNTYsMTE5MzAxOTMsLTE0NDk1ODI4OTAsLT
+E1Njk0Mzk2OTMsODUyNDE2MjA5LC03NjQ1MDc1MzQsMTk2NjIx
+MjI0MSwxNzkxMjA4NTc3LDYwMzY1MjgzMiwxMjIwODEzNzkwLD
+E5NTEyMTU3MzQsMTIyNDQ4MzI4NSwxMTg0NTU0MjgxLDIxMzY2
+NTYwMzZdfQ==
 -->
