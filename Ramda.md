@@ -2975,13 +2975,17 @@ R.uniqWith(strEq)([1, '1', 1])    //[1]
 R.uniqWith(strEq)(['1', 1, 1])    //["1"]
 ```
 #### unless 
-The function supplied as the second parameter is only executed if the a
+The function supplied as the second parameter is only executed if the argument does not satisfy the condition of the first parameter.
+In the blow example, the number is only incremented if it is not greater than 3.
 ```
 const gt3 = R.gt(R.__, 2)
 
 R.unless(gt3, R.inc)(1) //2
 R.unless(gt3, R.inc)(4) //4
 ```
+
+#### unnest
+
 
 ## Mapping
 
@@ -3133,7 +3137,7 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMTQwNjQ0Myw4NTI0MTYyMDksLTc2ND
+eyJoaXN0b3J5IjpbMTk1NzY3MTI2NSw4NTI0MTYyMDksLTc2ND
 UwNzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNjAzNjUyODMy
 LDEyMjA4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgzMjg1LDExOD
 Q1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LDYxOTkwMzg3
