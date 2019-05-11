@@ -3001,12 +3001,22 @@ R.until(R.gt(R.__, 100), n => n * n, 2)
 R.until(R.gt(R.__, 100), n => n * n)(2)
 //256
 ```
+
 #### update
-returns a copy of an array updated with the supplied value in the indicated position (1st parameter).
+Returns a copy of an array updated with the supplied value in the indicated position (1st parameter).
 ```
 const arr = [1, 2, 3, 5]
 R.update(3, 4, arr)
 //[1, 2, 3, 4]
+```
+
+#### useWith
+Takes a function and a list of transformer functions, and returns a curried function.
+```
+R.useWith(Math.pow, [R.identity, R.identity])(3, 4) //81
+R.useWith(Math.pow, [R.identity, R.identity])(3)(4) //81
+R.useWith(Math.pow, [R.dec, R.inc])(3, 4) //32
+R.useWith(Math.pow, [R.dec, R.inc])(3)(4) //32
 ```
 
 ## Mapping
@@ -3159,11 +3169,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsOD
-UyNDE2MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4
-NTc3LDYwMzY1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMT
-IyNDQ4MzI4NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5
-OTQwNiw2MTk5MDM4NzcsLTE0NjgzMzY1OTAsLTE1MTUxOTI3Mj
-ksMTY2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkxNjQ1MTczLC01
-NjAxNjE0NjVdfQ==
+eyJoaXN0b3J5IjpbMTk4OTg3MzI5MCwtMTQ0OTU4Mjg5MCwtMT
+U2OTQzOTY5Myw4NTI0MTYyMDksLTc2NDUwNzUzNCwxOTY2MjEy
+MjQxLDE3OTEyMDg1NzcsNjAzNjUyODMyLDEyMjA4MTM3OTAsMT
+k1MTIxNTczNCwxMjI0NDgzMjg1LDExODQ1NTQyODEsMjEzNjY1
+NjAzNiwxMDI1OTk5NDA2LDYxOTkwMzg3NywtMTQ2ODMzNjU5MC
+wtMTUxNTE5MjcyOSwxNjYyMTk5MTI4LDEwMDg4ODk2MTQsLTEw
+OTE2NDUxNzNdfQ==
 -->
