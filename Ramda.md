@@ -3032,6 +3032,9 @@ R.type(() => {}) //"Function"
 R.type(undefined) //"Undefined"
 ```
 
+#### unapply
+
+
 #### unary
 Wraps a function of any arity (including nullary) in a function that accepts exactly 1 parameter. Any extraneous parameters will not be passed to the supplied function.
 ```
@@ -3416,11 +3419,11 @@ R.trim("   Hello World!   ")
 - unapply
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTU2MzAxMTAsLTE0NzQ4NDg5OTAsND
-A5NzUxMDI4LC0yOTc5NjIwNjQsLTE5OTAxMjkxMDMsMjA5NDM4
-MjAwLDEyOTk0Njg1NCw3NTE1NjMzNzcsMzg2NDcyODMzLDE1ND
-U0MzE2NDcsLTEyMjE3MjMxMTgsLTc1MTA5MTMyLDE0OTYxOTg0
-OTEsLTYxMzU1NDUzMiwxNDk2MTk4NDkxLDYxNDc5Mjk2NSwtNT
-YyNzg0OCwtMTE0MjQyNTI2NSwzODM2MzI2NTcsLTE3MjEwNzQ3
-NzZdfQ==
+eyJoaXN0b3J5IjpbMTU3MDI4NTI5MywtMTQ3NDg0ODk5MCw0MD
+k3NTEwMjgsLTI5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMDk0Mzgy
+MDAsMTI5OTQ2ODU0LDc1MTU2MzM3NywzODY0NzI4MzMsMTU0NT
+QzMTY0NywtMTIyMTcyMzExOCwtNzUxMDkxMzIsMTQ5NjE5ODQ5
+MSwtNjEzNTU0NTMyLDE0OTYxOTg0OTEsNjE0NzkyOTY1LC01Nj
+I3ODQ4LC0xMTQyNDI1MjY1LDM4MzYzMjY1NywtMTcyMTA3NDc3
+Nl19
 -->
