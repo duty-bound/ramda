@@ -3122,6 +3122,15 @@ R.zipObj(myKeys, myValues)
 ```
 const myKeys = ['a', 'b']
 const myValues = [1, 2]
+const f = (k, v) => { return { [R.toUpper(k)]: v } }
+
+R.zipWith(f, myKeys, myValues)
+//[["A", 1], ["B", 2]]
+```
+Or return an ar
+```
+const myKeys = ['a', 'b']
+const myValues = [1, 2]
 const f = (k, v) => [R.toUpper(k), v]
 
 R.zipWith(f, myKeys, myValues)
@@ -3278,11 +3287,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzE2MjI5MDMsLTExNDI0MjUyNjUsMz
-gzNjMyNjU3LC0xNzIxMDc0Nzc2LC0yMDkzNTIzMTAxLDExOTEw
-NjU4MDQsLTE4MzgyMjkxNTYsMTE5MzAxOTMsLTE0NDk1ODI4OT
-AsLTE1Njk0Mzk2OTMsODUyNDE2MjA5LC03NjQ1MDc1MzQsMTk2
-NjIxMjI0MSwxNzkxMjA4NTc3LDYwMzY1MjgzMiwxMjIwODEzNz
-kwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4NSwxMTg0NTU0MjgxLDIx
-MzY2NTYwMzZdfQ==
+eyJoaXN0b3J5IjpbMTk3MDUyOTc1MCwtMTE0MjQyNTI2NSwzOD
+M2MzI2NTcsLTE3MjEwNzQ3NzYsLTIwOTM1MjMxMDEsMTE5MTA2
+NTgwNCwtMTgzODIyOTE1NiwxMTkzMDE5MywtMTQ0OTU4Mjg5MC
+wtMTU2OTQzOTY5Myw4NTI0MTYyMDksLTc2NDUwNzUzNCwxOTY2
+MjEyMjQxLDE3OTEyMDg1NzcsNjAzNjUyODMyLDEyMjA4MTM3OT
+AsMTk1MTIxNTczNCwxMjI0NDgzMjg1LDExODQ1NTQyODEsMjEz
+NjY1NjAzNl19
 -->
