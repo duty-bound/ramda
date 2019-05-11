@@ -3028,7 +3028,13 @@ R.values(list)
 ```
 
 #### view
-Returns a view of the given data structure, as determine dby the given lens.
+Returns a view of the given data structure, as determined by the given lens.
+```
+const myLens = R.lensProp('a')
+R.view(myLens, {a: 1, b: 2})
+//1
+```
+
 ## Mapping
 
 #### addIndex
@@ -3180,11 +3186,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMDQyMDAyMiwxMTkzMDE5MywtMTQ0OT
-U4Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYyMDksLTc2NDUwNzUz
-NCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNjAzNjUyODMyLDEyMj
-A4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgzMjg1LDExODQ1NTQy
-ODEsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LDYxOTkwMzg3NywtMT
-Q2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYyMTk5MTI4LDEwMDg4
-ODk2MTRdfQ==
+eyJoaXN0b3J5IjpbLTE4MzgyMjkxNTYsMTE5MzAxOTMsLTE0ND
+k1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2MjA5LC03NjQ1MDc1
+MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMzY1MjgzMiwxMj
+IwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4NSwxMTg0NTU0
+MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNiw2MTk5MDM4NzcsLT
+E0NjgzMzY1OTAsLTE1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4
+ODg5NjE0XX0=
 -->
