@@ -392,7 +392,14 @@ pred({a: 'foo', b: 'xxx', x: 11, y: 20}) //false
 ```
 
 #### whereEq
-Returns a function which checks if its parameter matches the elements/properties of the specimen object.
+Returns a function which checks if its parameter matches the elements/properties of the specimen object. 
+```
+const pred = R.whereEq({a: 1, b: 2})
+
+pred({a: 1, b: 2, c: 3})
+//true
+```
+
 
 ### Iterative
 
@@ -3221,7 +3228,7 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NjE1MDQxNywxMTkxMDY1ODA0LC0xOD
+eyJoaXN0b3J5IjpbLTQ5MTE3MzU5MCwxMTkxMDY1ODA0LC0xOD
 M4MjI5MTU2LDExOTMwMTkzLC0xNDQ5NTgyODkwLC0xNTY5NDM5
 NjkzLDg1MjQxNjIwOSwtNzY0NTA3NTM0LDE5NjYyMTIyNDEsMT
 c5MTIwODU3Nyw2MDM2NTI4MzIsMTIyMDgxMzc5MCwxOTUxMjE1
