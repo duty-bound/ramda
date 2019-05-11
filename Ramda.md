@@ -2985,7 +2985,11 @@ R.unless(gt3, R.inc)(4) //4
 ```
 
 #### unnest
-
+Shorthand for R.chain(R.identity), which removes one level of nesting from any Chain.
+```
+R.unnest([1, [2], [[3]]]) //[1, 2, [3]]
+R.unnest([[1, 2], [3, 4], [5, 6]]) //[1, 2, 3, 4, 5, 6]
+```
 
 ## Mapping
 
@@ -3137,11 +3141,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NzY3MTI2NSw4NTI0MTYyMDksLTc2ND
-UwNzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNjAzNjUyODMy
-LDEyMjA4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgzMjg1LDExOD
-Q1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LDYxOTkwMzg3
-NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYyMTk5MTI4LD
-EwMDg4ODk2MTQsLTEwOTE2NDUxNzMsLTU2MDE2MTQ2NSwtMTI0
-Mjc1MjMxNV19
+eyJoaXN0b3J5IjpbLTE1Njk0Mzk2OTMsODUyNDE2MjA5LC03Nj
+Q1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMzY1Mjgz
+MiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4NSwxMT
+g0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNiw2MTk5MDM4
+NzcsLTE0NjgzMzY1OTAsLTE1MTUxOTI3MjksMTY2MjE5OTEyOC
+wxMDA4ODg5NjE0LC0xMDkxNjQ1MTczLC01NjAxNjE0NjUsLTEy
+NDI3NTIzMTVdfQ==
 -->
