@@ -2502,7 +2502,11 @@ f(3, 4)
 ```
 
 #### pipeWith
-Similar to `pipe
+This function is designed to be used with a successful promise return. A typical instance would be one where a response is checked whether it is successful or not and the `pipe` bit triggered accordingly.
+Contrary to `pipe`, the functions to be executed are enclosed in an array.
+```
+
+
 #### pluck
 Returns a new array/object by extracting the specified element/property from the supplied list.
 ```
@@ -3355,11 +3359,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA4MzgwOTExLDM4NjQ3MjgzMywxNTQ1ND
-MxNjQ3LC0xMjIxNzIzMTE4LC03NTEwOTEzMiwxNDk2MTk4NDkx
-LC02MTM1NTQ1MzIsMTQ5NjE5ODQ5MSw2MTQ3OTI5NjUsLTU2Mj
-c4NDgsLTExNDI0MjUyNjUsMzgzNjMyNjU3LC0xNzIxMDc0Nzc2
-LC0yMDkzNTIzMTAxLDExOTEwNjU4MDQsLTE4MzgyMjkxNTYsMT
-E5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2
-MjA5XX0=
+eyJoaXN0b3J5IjpbLTgyNjIyODc3OCwzODY0NzI4MzMsMTU0NT
+QzMTY0NywtMTIyMTcyMzExOCwtNzUxMDkxMzIsMTQ5NjE5ODQ5
+MSwtNjEzNTU0NTMyLDE0OTYxOTg0OTEsNjE0NzkyOTY1LC01Nj
+I3ODQ4LC0xMTQyNDI1MjY1LDM4MzYzMjY1NywtMTcyMTA3NDc3
+NiwtMjA5MzUyMzEwMSwxMTkxMDY1ODA0LC0xODM4MjI5MTU2LD
+ExOTMwMTkzLC0xNDQ5NTgyODkwLC0xNTY5NDM5NjkzLDg1MjQx
+NjIwOV19
 -->
