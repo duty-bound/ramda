@@ -3019,6 +3019,14 @@ R.useWith(Math.pow, [R.dec, R.inc])(3, 4) //32
 R.useWith(Math.pow, [R.dec, R.inc])(3)(4) //32
 ```
 
+#### values
+Takes an object list and returns the values of the properties.
+```
+const list = {a: 1, b: 2, c: 3}
+R.values(list)
+//[1, 2, 3]
+```
+
 ## Mapping
 
 #### addIndex
@@ -3169,11 +3177,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4OTg3MzI5MCwtMTQ0OTU4Mjg5MCwtMT
-U2OTQzOTY5Myw4NTI0MTYyMDksLTc2NDUwNzUzNCwxOTY2MjEy
-MjQxLDE3OTEyMDg1NzcsNjAzNjUyODMyLDEyMjA4MTM3OTAsMT
-k1MTIxNTczNCwxMjI0NDgzMjg1LDExODQ1NTQyODEsMjEzNjY1
-NjAzNiwxMDI1OTk5NDA2LDYxOTkwMzg3NywtMTQ2ODMzNjU5MC
-wtMTUxNTE5MjcyOSwxNjYyMTk5MTI4LDEwMDg4ODk2MTQsLTEw
-OTE2NDUxNzNdfQ==
+eyJoaXN0b3J5IjpbMTE5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Nj
+k0Mzk2OTMsODUyNDE2MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0
+MSwxNzkxMjA4NTc3LDYwMzY1MjgzMiwxMjIwODEzNzkwLDE5NT
+EyMTU3MzQsMTIyNDQ4MzI4NSwxMTg0NTU0MjgxLDIxMzY2NTYw
+MzYsMTAyNTk5OTQwNiw2MTk5MDM4NzcsLTE0NjgzMzY1OTAsLT
+E1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkx
+NjQ1MTczXX0=
 -->
