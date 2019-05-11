@@ -792,6 +792,22 @@ pi(circumference(2))
 //6.284
 ```
 
+#### applySpec
+Returns an object with the specified structure. It can also tackle nested properties.
+```
+const convertEur = R.applySpec(
+  {
+    EUR: R.multiply(1),
+    USD: R.multiply(1.2),
+    SEK: R.multiply(10)
+  }
+)
+
+convertEur(10)
+//{"EUR": 10, "SEK": 100, "USD": 12}
+```
+```
+
 #### assoc
 Inserts a key / value set in a clone of the provided object literal. Note that the new object literal is sorted in ascending order.
 
@@ -3288,11 +3304,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2Mjc4NDgsLTExNDI0MjUyNjUsMzgzNj
-MyNjU3LC0xNzIxMDc0Nzc2LC0yMDkzNTIzMTAxLDExOTEwNjU4
-MDQsLTE4MzgyMjkxNTYsMTE5MzAxOTMsLTE0NDk1ODI4OTAsLT
-E1Njk0Mzk2OTMsODUyNDE2MjA5LC03NjQ1MDc1MzQsMTk2NjIx
-MjI0MSwxNzkxMjA4NTc3LDYwMzY1MjgzMiwxMjIwODEzNzkwLD
-E5NTEyMTU3MzQsMTIyNDQ4MzI4NSwxMTg0NTU0MjgxLDIxMzY2
-NTYwMzZdfQ==
+eyJoaXN0b3J5IjpbLTIxMjQzMzcwMDMsLTU2Mjc4NDgsLTExND
+I0MjUyNjUsMzgzNjMyNjU3LC0xNzIxMDc0Nzc2LC0yMDkzNTIz
+MTAxLDExOTEwNjU4MDQsLTE4MzgyMjkxNTYsMTE5MzAxOTMsLT
+E0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2MjA5LC03NjQ1
+MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMzY1MjgzMi
+wxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4NSwxMTg0
+NTU0MjgxXX0=
 -->
