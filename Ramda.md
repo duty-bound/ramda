@@ -2991,6 +2991,9 @@ R.unnest([1, [2], [[3]]]) //[1, 2, [3]]
 R.unnest([[1, 2], [3, 4], [5, 6]]) //[1, 2, 3, 4, 5, 6]
 ```
 
+#### until
+The function supplied as the second parameter executes the initial value, and passes the result to the conidtion supplied in the first parameter. The iteration continur
+
 ## Mapping
 
 #### addIndex
@@ -3141,11 +3144,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njk0Mzk2OTMsODUyNDE2MjA5LC03Nj
-Q1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMzY1Mjgz
-MiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4NSwxMT
-g0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNiw2MTk5MDM4
-NzcsLTE0NjgzMzY1OTAsLTE1MTUxOTI3MjksMTY2MjE5OTEyOC
-wxMDA4ODg5NjE0LC0xMDkxNjQ1MTczLC01NjAxNjE0NjUsLTEy
-NDI3NTIzMTVdfQ==
+eyJoaXN0b3J5IjpbMTM2MTU4MjkwMiwtMTU2OTQzOTY5Myw4NT
+I0MTYyMDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1
+NzcsNjAzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIxNTczNCwxMj
+I0NDgzMjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5
+NDA2LDYxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOS
+wxNjYyMTk5MTI4LDEwMDg4ODk2MTQsLTEwOTE2NDUxNzMsLTU2
+MDE2MTQ2NV19
 -->
