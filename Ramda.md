@@ -3179,6 +3179,22 @@ const employee = new Employee('Heidi', 'Klum')
 R.valuesIn(employee)
 //["Heidi", "Klum"]
 ```
+```
+class Animal {
+   constructor(name, type) {
+    this.name = name
+    this.type = type
+    this.describe = this.describe.bind(this)
+   }
+  describe() {
+    return `${this.name} is of type ${this.type}`
+  }
+ }
+
+const lion = new Animal('Lion', 'feline')
+R.valuesIn(lion)
+//["Lion", "feline", function () { [native code] }]
+```
 
 #### view
 Returns a view of the given data structure, as determined by the given lens.
@@ -3401,11 +3417,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzQ4NDg5OTAsNDA5NzUxMDI4LC0yOT
-c5NjIwNjQsLTE5OTAxMjkxMDMsMjA5NDM4MjAwLDEyOTk0Njg1
-NCw3NTE1NjMzNzcsMzg2NDcyODMzLDE1NDU0MzE2NDcsLTEyMj
-E3MjMxMTgsLTc1MTA5MTMyLDE0OTYxOTg0OTEsLTYxMzU1NDUz
-MiwxNDk2MTk4NDkxLDYxNDc5Mjk2NSwtNTYyNzg0OCwtMTE0Mj
-QyNTI2NSwzODM2MzI2NTcsLTE3MjEwNzQ3NzYsLTIwOTM1MjMx
-MDFdfQ==
+eyJoaXN0b3J5IjpbNDE1ODIxLC0xNDc0ODQ4OTkwLDQwOTc1MT
+AyOCwtMjk3OTYyMDY0LC0xOTkwMTI5MTAzLDIwOTQzODIwMCwx
+Mjk5NDY4NTQsNzUxNTYzMzc3LDM4NjQ3MjgzMywxNTQ1NDMxNj
+Q3LC0xMjIxNzIzMTE4LC03NTEwOTEzMiwxNDk2MTk4NDkxLC02
+MTM1NTQ1MzIsMTQ5NjE5ODQ5MSw2MTQ3OTI5NjUsLTU2Mjc4ND
+gsLTExNDI0MjUyNjUsMzgzNjMyNjU3LC0xNzIxMDc0Nzc2XX0=
+
 -->
