@@ -3027,6 +3027,8 @@ R.values(list)
 //[1, 2, 3]
 ```
 
+#### view
+Returns a view of the given data structure, as determine dby the given lens.
 ## Mapping
 
 #### addIndex
@@ -3178,7 +3180,7 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MzA5OTcwOCwxMTkzMDE5MywtMTQ0OT
+eyJoaXN0b3J5IjpbMTUxMDQyMDAyMiwxMTkzMDE5MywtMTQ0OT
 U4Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYyMDksLTc2NDUwNzUz
 NCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNjAzNjUyODMyLDEyMj
 A4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgzMjg1LDExODQ1NTQy
