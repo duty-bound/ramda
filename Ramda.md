@@ -2916,7 +2916,7 @@ R.type(undefined) //"Undefined"
 #### unFold
 Builds a list from a seed value, which is the second parameter. The first parameter is an iterator function which must either return false, in which case the iteration stops, or else an array with two elements: the first is the value to return for the current iteration, and the second is the value to pass to the next iteration.
 
-So, in the below example
+So, in the below example, 10 is passed, it is not greater than 50 so it is processed according to the first element of the array, in this case it is negated. The original value, 10, is passed to the second element of the array, andhas 10 added to it, and this resulting value is passed to the snext iteraton.
 ```
 const f = n => n > 50 ? false : [-n, n + 10]
 
@@ -3073,11 +3073,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODM3MTkwMzMsMTk1MTIxNTczNCwxMj
-I0NDgzMjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5
-NDA2LDYxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOS
-wxNjYyMTk5MTI4LDEwMDg4ODk2MTQsLTEwOTE2NDUxNzMsLTU2
-MDE2MTQ2NSwtMTI0Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4Mz
-I0OTE5MywxNzQ3NzEzNDU2LDEwODAzNDAwNTYsLTE4NzgzODY3
-NDEsODIyOTkyMjc3XX0=
+eyJoaXN0b3J5IjpbMTEwMTE2MzU3NiwxOTUxMjE1NzM0LDEyMj
+Q0ODMyODUsMTE4NDU1NDI4MSwyMTM2NjU2MDM2LDEwMjU5OTk0
+MDYsNjE5OTAzODc3LC0xNDY4MzM2NTkwLC0xNTE1MTkyNzI5LD
+E2NjIxOTkxMjgsMTAwODg4OTYxNCwtMTA5MTY0NTE3MywtNTYw
+MTYxNDY1LC0xMjQyNzUyMzE1LC0xNTc4OTg2Nzk2LC0yMDgzMj
+Q5MTkzLDE3NDc3MTM0NTYsMTA4MDM0MDA1NiwtMTg3ODM4Njc0
+MSw4MjI5OTIyNzddfQ==
 -->
