@@ -3031,6 +3031,22 @@ R.type(/[A-z]/) //"RegExp"
 R.type(() => {}) //"Function"
 R.type(undefined) //"Undefined"
 ```
+
+#### unary
+Wraps a function of any arity (including nullary) in a function that accepts exactly 1 parameter. Any extraneous parameters will not be passed to the supplied function.
+```
+const takesTwoArgs = function(a, b) {
+  return [a, b]
+}
+takesTwoArgs.length //2
+takesTwoArgs(1, 2) //[1, 2]
+
+const takesOneArg = R.unary(takesTwoArgs)
+takesOneArg.length //1
+// Only 1 argument is passed to the wrapped function
+takesOneArg(1, 2) //[1, undefined]
+```
+
 #### unFold
 Builds a list from a seed value, which is the second parameter. The first parameter is an iterator function which must either return false, in which case the iteration stops, or else an array with two elements: the first is the value to return for the current iteration, and the second is the value to pass to the next iteration.
 
@@ -3363,15 +3379,14 @@ R.trim("   Hello World!   ")
 - transduce
 - traverse
 - unapply
-- unary
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTAxMjkxMDMsMjA5NDM4MjAwLDEyOT
-k0Njg1NCw3NTE1NjMzNzcsMzg2NDcyODMzLDE1NDU0MzE2NDcs
-LTEyMjE3MjMxMTgsLTc1MTA5MTMyLDE0OTYxOTg0OTEsLTYxMz
-U1NDUzMiwxNDk2MTk4NDkxLDYxNDc5Mjk2NSwtNTYyNzg0OCwt
-MTE0MjQyNTI2NSwzODM2MzI2NTcsLTE3MjEwNzQ3NzYsLTIwOT
-M1MjMxMDEsMTE5MTA2NTgwNCwtMTgzODIyOTE1NiwxMTkzMDE5
-M119
+eyJoaXN0b3J5IjpbLTI5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMD
+k0MzgyMDAsMTI5OTQ2ODU0LDc1MTU2MzM3NywzODY0NzI4MzMs
+MTU0NTQzMTY0NywtMTIyMTcyMzExOCwtNzUxMDkxMzIsMTQ5Nj
+E5ODQ5MSwtNjEzNTU0NTMyLDE0OTYxOTg0OTEsNjE0NzkyOTY1
+LC01NjI3ODQ4LC0xMTQyNDI1MjY1LDM4MzYzMjY1NywtMTcyMT
+A3NDc3NiwtMjA5MzUyMzEwMSwxMTkxMDY1ODA0LC0xODM4MjI5
+MTU2XX0=
 -->
