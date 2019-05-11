@@ -375,7 +375,22 @@ R.startsWith(['a'], ['a', 'b', 'c']) //true
 ```
 
 #### where
-This is similar to SQL's `WHERE`. Returns a function that takes multiple conditions, and returns
+This is similar to SQL's `WHERE`. Returns a function that takes multiple conditions, and returns `true` or `false` depending on whether all of these conditions are met.
+```
+const pred = R.where({
+  a: R.equals('foo'),
+  b: R.complement(R.equals('bar')),
+  x: R.gt(R.__, 10),
+  y: R.lt(R.__, 20)
+})
+
+pred({a: 'foo', b: 'xxx', x: 11, y: 19}) //true
+pred({a: 'xxx', b: 'xxx', x: 11, y: 19}) //false
+pred({a: 'foo', b: 'bar', x: 11, y: 19}) //false
+pred({a: 'foo', b: 'xxx', x: 10, y: 19}) //false
+pred({a: 'foo', b: 'xxx', x: 11, y: 20}) //false
+```
+
 ### Iterative
 
 #### all
@@ -3203,11 +3218,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg2Nzg2NDgsLTE4MzgyMjkxNTYsMTE5Mz
-AxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2MjA5
-LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMz
-Y1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4
-NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNiw2MT
-k5MDM4NzcsLTE0NjgzMzY1OTAsLTE1MTUxOTI3MjksMTY2MjE5
-OTEyOF19
+eyJoaXN0b3J5IjpbMTE5MTA2NTgwNCwtMTgzODIyOTE1NiwxMT
+kzMDE5MywtMTQ0OTU4Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYy
+MDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNj
+AzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgz
+Mjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LD
+YxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYy
+MTk5MTI4XX0=
 -->
