@@ -391,6 +391,8 @@ pred({a: 'foo', b: 'xxx', x: 10, y: 19}) //false
 pred({a: 'foo', b: 'xxx', x: 11, y: 20}) //false
 ```
 
+#### whereEq
+Takes a function 
 ### Iterative
 
 #### all
@@ -3218,11 +3220,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MTA2NTgwNCwtMTgzODIyOTE1NiwxMT
-kzMDE5MywtMTQ0OTU4Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYy
-MDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNj
-AzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgz
-Mjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LD
-YxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYy
-MTk5MTI4XX0=
+eyJoaXN0b3J5IjpbMTQyNzM4MjEzMCwxMTkxMDY1ODA0LC0xOD
+M4MjI5MTU2LDExOTMwMTkzLC0xNDQ5NTgyODkwLC0xNTY5NDM5
+NjkzLDg1MjQxNjIwOSwtNzY0NTA3NTM0LDE5NjYyMTIyNDEsMT
+c5MTIwODU3Nyw2MDM2NTI4MzIsMTIyMDgxMzc5MCwxOTUxMjE1
+NzM0LDEyMjQ0ODMyODUsMTE4NDU1NDI4MSwyMTM2NjU2MDM2LD
+EwMjU5OTk0MDYsNjE5OTAzODc3LC0xNDY4MzM2NTkwLC0xNTE1
+MTkyNzI5XX0=
 -->
