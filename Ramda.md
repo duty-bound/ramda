@@ -3169,6 +3169,16 @@ G.prototype.y = 'Y'
 const g = new G()
 R.valuesIn(g) //["X", "Y"]
 ```
+```
+function Employee (name, surname) {
+    this.name = 'Elle'
+    this.surname = 'Smith'
+ }
+
+const employee = new Employee()
+R.valuesIn(employee)
+/["Elle", "Smith"]
+```
 #### view
 Returns a view of the given data structure, as determined by the given lens.
 ```
@@ -3390,11 +3400,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA5NzUxMDI4LC0yOTc5NjIwNjQsLTE5OT
-AxMjkxMDMsMjA5NDM4MjAwLDEyOTk0Njg1NCw3NTE1NjMzNzcs
-Mzg2NDcyODMzLDE1NDU0MzE2NDcsLTEyMjE3MjMxMTgsLTc1MT
-A5MTMyLDE0OTYxOTg0OTEsLTYxMzU1NDUzMiwxNDk2MTk4NDkx
-LDYxNDc5Mjk2NSwtNTYyNzg0OCwtMTE0MjQyNTI2NSwzODM2Mz
-I2NTcsLTE3MjEwNzQ3NzYsLTIwOTM1MjMxMDEsMTE5MTA2NTgw
-NF19
+eyJoaXN0b3J5IjpbNzg5MzU5MzQ5LDQwOTc1MTAyOCwtMjk3OT
+YyMDY0LC0xOTkwMTI5MTAzLDIwOTQzODIwMCwxMjk5NDY4NTQs
+NzUxNTYzMzc3LDM4NjQ3MjgzMywxNTQ1NDMxNjQ3LC0xMjIxNz
+IzMTE4LC03NTEwOTEzMiwxNDk2MTk4NDkxLC02MTM1NTQ1MzIs
+MTQ5NjE5ODQ5MSw2MTQ3OTI5NjUsLTU2Mjc4NDgsLTExNDI0Mj
+UyNjUsMzgzNjMyNjU3LC0xNzIxMDc0Nzc2LC0yMDkzNTIzMTAx
+XX0=
 -->
