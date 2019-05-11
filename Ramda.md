@@ -396,14 +396,14 @@ Returns a function which checks if its parameter matches the elements/properties
 ```
 const pred = R.whereEq({a: 1, b: 2})
 
-pred({a: 1, b: 2, c: 3})
-//true
+pred({a: 1, b: 2, c: 3}) //true
+pred({a: 1}) //false
 ```
 ```
 const pred = R.whereEq([1, 2, 3])
 
 pred([1, 2, 3]) //true
-pred([1, 2,])
+pred([1, 2]) //false
 ```
 
 
@@ -3234,11 +3234,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQxMTk2NDgsMTE5MTA2NTgwNCwtMT
-gzODIyOTE1NiwxMTkzMDE5MywtMTQ0OTU4Mjg5MCwtMTU2OTQz
-OTY5Myw4NTI0MTYyMDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLD
-E3OTEyMDg1NzcsNjAzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIx
-NTczNCwxMjI0NDgzMjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNi
-wxMDI1OTk5NDA2LDYxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUx
-NTE5MjcyOV19
+eyJoaXN0b3J5IjpbMTE2ODEwNDExMCwxMTkxMDY1ODA0LC0xOD
+M4MjI5MTU2LDExOTMwMTkzLC0xNDQ5NTgyODkwLC0xNTY5NDM5
+NjkzLDg1MjQxNjIwOSwtNzY0NTA3NTM0LDE5NjYyMTIyNDEsMT
+c5MTIwODU3Nyw2MDM2NTI4MzIsMTIyMDgxMzc5MCwxOTUxMjE1
+NzM0LDEyMjQ0ODMyODUsMTE4NDU1NDI4MSwyMTM2NjU2MDM2LD
+EwMjU5OTk0MDYsNjE5OTAzODc3LC0xNDY4MzM2NTkwLC0xNTE1
+MTkyNzI5XX0=
 -->
