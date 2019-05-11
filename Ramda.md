@@ -2966,6 +2966,14 @@ R.uniqBy(R.toLower, ['a', 'A', 'B', 'b', 'c', 'D', 'd', 'C'])
 ```
 
 #### uniqWith
+Returns a list of unique elements in an array based on the predicate function.
+```
+const strEq = R.eqBy(String)
+R.uniqWith(strEq)([1, '1', 2, 1]) //[1, 2]
+R.uniqWith(strEq)([{}, {}])       //[{}]
+R.uniqWith(strEq)([1, '1', 1])    //[1]
+R.uniqWith(strEq)(['1', 1, 1])    //["1"]
+```
  
 ## Mapping
 
@@ -3117,11 +3125,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MDAzOTMxMywtNzY0NTA3NTM0LDE5Nj
-YyMTIyNDEsMTc5MTIwODU3Nyw2MDM2NTI4MzIsMTIyMDgxMzc5
-MCwxOTUxMjE1NzM0LDEyMjQ0ODMyODUsMTE4NDU1NDI4MSwyMT
-M2NjU2MDM2LDEwMjU5OTk0MDYsNjE5OTAzODc3LC0xNDY4MzM2
-NTkwLC0xNTE1MTkyNzI5LDE2NjIxOTkxMjgsMTAwODg4OTYxNC
-wtMTA5MTY0NTE3MywtNTYwMTYxNDY1LC0xMjQyNzUyMzE1LC0x
-NTc4OTg2Nzk2XX0=
+eyJoaXN0b3J5IjpbODUyNDE2MjA5LC03NjQ1MDc1MzQsMTk2Nj
+IxMjI0MSwxNzkxMjA4NTc3LDYwMzY1MjgzMiwxMjIwODEzNzkw
+LDE5NTEyMTU3MzQsMTIyNDQ4MzI4NSwxMTg0NTU0MjgxLDIxMz
+Y2NTYwMzYsMTAyNTk5OTQwNiw2MTk5MDM4NzcsLTE0NjgzMzY1
+OTAsLTE1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4ODg5NjE0LC
+0xMDkxNjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3NTIzMTUsLTE1
+Nzg5ODY3OTZdfQ==
 -->
