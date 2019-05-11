@@ -2925,7 +2925,13 @@ R.unfold(f, 10)
 ```
 
 #### union
-Returns an array of the unique elements
+Returns an array of the unique elements present in either or both of the two lists provided.
+```
+R.union([1, 2, 3], [2, 3, 4])
+//[1, 2, 3, 4]
+```
+
+####
 ## Mapping
 
 #### addIndex
@@ -3076,11 +3082,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMDk4MTY1NiwxMjIwODEzNzkwLDE5NT
-EyMTU3MzQsMTIyNDQ4MzI4NSwxMTg0NTU0MjgxLDIxMzY2NTYw
-MzYsMTAyNTk5OTQwNiw2MTk5MDM4NzcsLTE0NjgzMzY1OTAsLT
-E1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkx
-NjQ1MTczLC01NjAxNjE0NjUsLTEyNDI3NTIzMTUsLTE1Nzg5OD
-Y3OTYsLTIwODMyNDkxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2
-LC0xODc4Mzg2NzQxXX0=
+eyJoaXN0b3J5IjpbNjAzNjUyODMyLDEyMjA4MTM3OTAsMTk1MT
+IxNTczNCwxMjI0NDgzMjg1LDExODQ1NTQyODEsMjEzNjY1NjAz
+NiwxMDI1OTk5NDA2LDYxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMT
+UxNTE5MjcyOSwxNjYyMTk5MTI4LDEwMDg4ODk2MTQsLTEwOTE2
+NDUxNzMsLTU2MDE2MTQ2NSwtMTI0Mjc1MjMxNSwtMTU3ODk4Nj
+c5NiwtMjA4MzI0OTE5MywxNzQ3NzEzNDU2LDEwODAzNDAwNTYs
+LTE4NzgzODY3NDFdfQ==
 -->
