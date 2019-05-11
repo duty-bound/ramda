@@ -3035,6 +3035,8 @@ R.view(myLens, {a: 1, b: 2})
 //1
 ```
 
+#### when
+Takes two functions. The first one returns `true` or `false`, and is usually a condition, and the second function is executed only if the first function returns `true`. 
 ## Mapping
 
 #### addIndex
@@ -3186,11 +3188,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzgyMjkxNTYsMTE5MzAxOTMsLTE0ND
-k1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2MjA5LC03NjQ1MDc1
-MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMzY1MjgzMiwxMj
-IwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4NSwxMTg0NTU0
-MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNiw2MTk5MDM4NzcsLT
-E0NjgzMzY1OTAsLTE1MTUxOTI3MjksMTY2MjE5OTEyOCwxMDA4
-ODg5NjE0XX0=
+eyJoaXN0b3J5IjpbLTUwMTcwNzc3MywtMTgzODIyOTE1NiwxMT
+kzMDE5MywtMTQ0OTU4Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYy
+MDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLDE3OTEyMDg1NzcsNj
+AzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIxNTczNCwxMjI0NDgz
+Mjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LD
+YxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYy
+MTk5MTI4XX0=
 -->
