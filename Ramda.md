@@ -2913,7 +2913,8 @@ R.type(/[A-z]/) //"RegExp"
 R.type(() => {}) //"Function"
 R.type(undefined) //"Undefined"
 ```
-
+#### unFold
+Builds a list from a seed value, which is the second parameter. The first parameter is an iterator function
 ## Mapping
 
 #### addIndex
@@ -3064,11 +3065,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MTIxNTczNCwxMjI0NDgzMjg1LDExOD
-Q1NTQyODEsMjEzNjY1NjAzNiwxMDI1OTk5NDA2LDYxOTkwMzg3
-NywtMTQ2ODMzNjU5MCwtMTUxNTE5MjcyOSwxNjYyMTk5MTI4LD
-EwMDg4ODk2MTQsLTEwOTE2NDUxNzMsLTU2MDE2MTQ2NSwtMTI0
-Mjc1MjMxNSwtMTU3ODk4Njc5NiwtMjA4MzI0OTE5MywxNzQ3Nz
-EzNDU2LDEwODAzNDAwNTYsLTE4NzgzODY3NDEsODIyOTkyMjc3
-LC0zNTg2NDc5NDRdfQ==
+eyJoaXN0b3J5IjpbMTU2MzcxNjQwOSwxOTUxMjE1NzM0LDEyMj
+Q0ODMyODUsMTE4NDU1NDI4MSwyMTM2NjU2MDM2LDEwMjU5OTk0
+MDYsNjE5OTAzODc3LC0xNDY4MzM2NTkwLC0xNTE1MTkyNzI5LD
+E2NjIxOTkxMjgsMTAwODg4OTYxNCwtMTA5MTY0NTE3MywtNTYw
+MTYxNDY1LC0xMjQyNzUyMzE1LC0xNTc4OTg2Nzk2LC0yMDgzMj
+Q5MTkzLDE3NDc3MTM0NTYsMTA4MDM0MDA1NiwtMTg3ODM4Njc0
+MSw4MjI5OTIyNzddfQ==
 -->
