@@ -878,32 +878,30 @@ func2('so', 'far')
 A function that enforces the binding of a function to the desired context.
 Consider the example below. `Prototype` is used to attach `getDiet` to the previously declared function, `Animal`. However `getDiet` does not seem to have been correctly bound, in fact it returns `undefined`.
 ```
-function Animal (diet) {
-    this.diet = diet
+function Animal (name) {
+    this.name = name
 }
   
-Animal.prototype.getDiet = function(text) {
-  return text + this.diet
+Animal.prototype.setDiet = function(diet) {
+  return 'The ' + this.name + ' is a ' + diet
 }
 
-const lion = new Animal('carnivore')
-console.log(lion.getDiet())
+const lion = new Animal('lion')
 
 R.pipe(
   R.toUpper,
-  lion.getDiet,
+  lion.setDiet, lion,
   console.log
-)('The animal is a ')
-//undefinedcarnivore
+)('carnivore')
 ```
 By using `bind` the function is bound to the desired context.
 ```
 R.pipe(
   R.toUpper,
-  R.bind(lion.getDiet, lion),
+  R.bind(lion.setDiet, lion),
   console.log
-)('The animal is a ')
-//THE ANIMAL IS A carnivore
+)('carnivore')
+//The lion is a CARNIVORE
 ```
 
 #### call
@@ -3343,11 +3341,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NjE5ODQ5MSw2MTQ3OTI5NjUsLTU2Mj
-c4NDgsLTExNDI0MjUyNjUsMzgzNjMyNjU3LC0xNzIxMDc0Nzc2
-LC0yMDkzNTIzMTAxLDExOTEwNjU4MDQsLTE4MzgyMjkxNTYsMT
-E5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2
-MjA5LC03NjQ1MDc1MzQsMTk2NjIxMjI0MSwxNzkxMjA4NTc3LD
-YwMzY1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4
-MzI4NV19
+eyJoaXN0b3J5IjpbLTYxMzU1NDUzMiwxNDk2MTk4NDkxLDYxND
+c5Mjk2NSwtNTYyNzg0OCwtMTE0MjQyNTI2NSwzODM2MzI2NTcs
+LTE3MjEwNzQ3NzYsLTIwOTM1MjMxMDEsMTE5MTA2NTgwNCwtMT
+gzODIyOTE1NiwxMTkzMDE5MywtMTQ0OTU4Mjg5MCwtMTU2OTQz
+OTY5Myw4NTI0MTYyMDksLTc2NDUwNzUzNCwxOTY2MjEyMjQxLD
+E3OTEyMDg1NzcsNjAzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIx
+NTczNF19
 -->
