@@ -2501,6 +2501,8 @@ f(3, 4)
 // -80
 ```
 
+#### pipeWith
+Similar to `pipe
 #### pluck
 Returns a new array/object by extracting the specified element/property from the supplied list.
 ```
@@ -3353,11 +3355,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg2NDcyODMzLDE1NDU0MzE2NDcsLTEyMj
-E3MjMxMTgsLTc1MTA5MTMyLDE0OTYxOTg0OTEsLTYxMzU1NDUz
-MiwxNDk2MTk4NDkxLDYxNDc5Mjk2NSwtNTYyNzg0OCwtMTE0Mj
-QyNTI2NSwzODM2MzI2NTcsLTE3MjEwNzQ3NzYsLTIwOTM1MjMx
-MDEsMTE5MTA2NTgwNCwtMTgzODIyOTE1NiwxMTkzMDE5MywtMT
-Q0OTU4Mjg5MCwtMTU2OTQzOTY5Myw4NTI0MTYyMDksLTc2NDUw
-NzUzNF19
+eyJoaXN0b3J5IjpbOTA4MzgwOTExLDM4NjQ3MjgzMywxNTQ1ND
+MxNjQ3LC0xMjIxNzIzMTE4LC03NTEwOTEzMiwxNDk2MTk4NDkx
+LC02MTM1NTQ1MzIsMTQ5NjE5ODQ5MSw2MTQ3OTI5NjUsLTU2Mj
+c4NDgsLTExNDI0MjUyNjUsMzgzNjMyNjU3LC0xNzIxMDc0Nzc2
+LC0yMDkzNTIzMTAxLDExOTEwNjU4MDQsLTE4MzgyMjkxNTYsMT
+E5MzAxOTMsLTE0NDk1ODI4OTAsLTE1Njk0Mzk2OTMsODUyNDE2
+MjA5XX0=
 -->
