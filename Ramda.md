@@ -3012,6 +3012,11 @@ R.transpose([["a", 4], ["b", 5], ["c", 6]])
 
 #### tryCatch
 Takes trier and catcher functions. If trier works ok, the result of trier is returned, else, if an error is thrown, the result of catcher is returned.
+```
+R.tryCatch(R.test(/^a/, R.__), R.F)('a') //true 
+R.tryCatch(R.test(/^a/, R.__), R.always('caught'))('b') //false
+R.tryCatch(R.times(R.identity), R.always('caught'))('s') //caught
+```
 
 #### type
 Returns the type of the parameter provided.
@@ -3357,17 +3362,16 @@ R.trim("   Hello World!   ")
 - sequence
 - transduce
 - traverse
-- tryCatch
 - unapply
 - unary
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NDM4MjAwLDEyOTk0Njg1NCw3NTE1Nj
-MzNzcsMzg2NDcyODMzLDE1NDU0MzE2NDcsLTEyMjE3MjMxMTgs
-LTc1MTA5MTMyLDE0OTYxOTg0OTEsLTYxMzU1NDUzMiwxNDk2MT
-k4NDkxLDYxNDc5Mjk2NSwtNTYyNzg0OCwtMTE0MjQyNTI2NSwz
-ODM2MzI2NTcsLTE3MjEwNzQ3NzYsLTIwOTM1MjMxMDEsMTE5MT
-A2NTgwNCwtMTgzODIyOTE1NiwxMTkzMDE5MywtMTQ0OTU4Mjg5
-MF19
+eyJoaXN0b3J5IjpbLTE5OTAxMjkxMDMsMjA5NDM4MjAwLDEyOT
+k0Njg1NCw3NTE1NjMzNzcsMzg2NDcyODMzLDE1NDU0MzE2NDcs
+LTEyMjE3MjMxMTgsLTc1MTA5MTMyLDE0OTYxOTg0OTEsLTYxMz
+U1NDUzMiwxNDk2MTk4NDkxLDYxNDc5Mjk2NSwtNTYyNzg0OCwt
+MTE0MjQyNTI2NSwzODM2MzI2NTcsLTE3MjEwNzQ3NzYsLTIwOT
+M1MjMxMDEsMTE5MTA2NTgwNCwtMTgzODIyOTE1NiwxMTkzMDE5
+M119
 -->
