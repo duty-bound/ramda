@@ -2954,7 +2954,16 @@ R.uniq([{a: 1, a: 1, a: 2}])
 R.uniq([{a: 1}, {a: 1}, {a: 2}])
 //[{"a": 1}, {"a": 2}]
 ```
-
+#### uniqBy
+Returns a list of unique elements based on the result of the function provided. Note that the order in which elements are placed in the resulting array.
+```
+R.uniqBy(Math.abs, [1, -5, 5, 2, 10, -1, 2])
+//[1, -5, 2, 10]
+```
+```
+R.uniqBy(R.toLower, ['a', 'A', 'B', 'b', 'c', 'D', 'd', 'C'])
+//["a", "B", "c", "D"]
+``` 
 ## Mapping
 
 #### addIndex
@@ -3105,11 +3114,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NjIxMjI0MSwxNzkxMjA4NTc3LDYwMz
-Y1MjgzMiwxMjIwODEzNzkwLDE5NTEyMTU3MzQsMTIyNDQ4MzI4
-NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQwNiw2MT
-k5MDM4NzcsLTE0NjgzMzY1OTAsLTE1MTUxOTI3MjksMTY2MjE5
-OTEyOCwxMDA4ODg5NjE0LC0xMDkxNjQ1MTczLC01NjAxNjE0Nj
-UsLTEyNDI3NTIzMTUsLTE1Nzg5ODY3OTYsLTIwODMyNDkxOTMs
-MTc0NzcxMzQ1Nl19
+eyJoaXN0b3J5IjpbLTc2NDUwNzUzNCwxOTY2MjEyMjQxLDE3OT
+EyMDg1NzcsNjAzNjUyODMyLDEyMjA4MTM3OTAsMTk1MTIxNTcz
+NCwxMjI0NDgzMjg1LDExODQ1NTQyODEsMjEzNjY1NjAzNiwxMD
+I1OTk5NDA2LDYxOTkwMzg3NywtMTQ2ODMzNjU5MCwtMTUxNTE5
+MjcyOSwxNjYyMTk5MTI4LDEwMDg4ODk2MTQsLTEwOTE2NDUxNz
+MsLTU2MDE2MTQ2NSwtMTI0Mjc1MjMxNSwtMTU3ODk4Njc5Niwt
+MjA4MzI0OTE5M119
 -->
