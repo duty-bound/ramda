@@ -3011,6 +3011,7 @@ R.transpose([["a", 4], ["b", 5], ["c", 6]])
 ```
 
 #### tryCatch
+Takes trier and catcher functions. If trier works ok, the result of trier is returned, else, if an error is thrown, the result of catcher is returned.
 
 #### type
 Returns the type of the parameter provided.
@@ -3362,11 +3363,11 @@ R.trim("   Hello World!   ")
 - unCurryN
 - valuesLn (does not work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5OTQ2ODU0LDc1MTU2MzM3NywzODY0Nz
-I4MzMsMTU0NTQzMTY0NywtMTIyMTcyMzExOCwtNzUxMDkxMzIs
-MTQ5NjE5ODQ5MSwtNjEzNTU0NTMyLDE0OTYxOTg0OTEsNjE0Nz
-kyOTY1LC01NjI3ODQ4LC0xMTQyNDI1MjY1LDM4MzYzMjY1Nywt
-MTcyMTA3NDc3NiwtMjA5MzUyMzEwMSwxMTkxMDY1ODA0LC0xOD
-M4MjI5MTU2LDExOTMwMTkzLC0xNDQ5NTgyODkwLC0xNTY5NDM5
-NjkzXX0=
+eyJoaXN0b3J5IjpbMjA5NDM4MjAwLDEyOTk0Njg1NCw3NTE1Nj
+MzNzcsMzg2NDcyODMzLDE1NDU0MzE2NDcsLTEyMjE3MjMxMTgs
+LTc1MTA5MTMyLDE0OTYxOTg0OTEsLTYxMzU1NDUzMiwxNDk2MT
+k4NDkxLDYxNDc5Mjk2NSwtNTYyNzg0OCwtMTE0MjQyNTI2NSwz
+ODM2MzI2NTcsLTE3MjEwNzQ3NzYsLTIwOTM1MjMxMDEsMTE5MT
+A2NTgwNCwtMTgzODIyOTE1NiwxMTkzMDE5MywtMTQ0OTU4Mjg5
+MF19
 -->
