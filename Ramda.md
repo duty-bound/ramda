@@ -2914,7 +2914,13 @@ R.type(() => {}) //"Function"
 R.type(undefined) //"Undefined"
 ```
 #### unFold
-Builds a list from a seed value, which is the second parameter. The first parameter is an iterator function which must either return false, in which case the iteration stops, or else an array with two elements: the first is the seed value for the current iteration, and the second is the operation 
+Builds a list from a seed value, which is the second parameter. The first parameter is an iterator function which must either return false, in which case the iteration stops, or else an array with two elements: the first is the seed value for the current iteration, and the second is the operation to be executed on this seed value.
+```
+const f = n => n > 50 ? false : [-n, n + 10]
+
+R.unfold(f, 10)
+//[-10, -20, -30, -40, -50]
+```
 ## Mapping
 
 #### addIndex
@@ -3065,11 +3071,11 @@ R.trim("   Hello World!   ")
 - unary
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMjg0ODU2NSwxOTUxMjE1NzM0LDEyMj
-Q0ODMyODUsMTE4NDU1NDI4MSwyMTM2NjU2MDM2LDEwMjU5OTk0
-MDYsNjE5OTAzODc3LC0xNDY4MzM2NTkwLC0xNTE1MTkyNzI5LD
-E2NjIxOTkxMjgsMTAwODg4OTYxNCwtMTA5MTY0NTE3MywtNTYw
-MTYxNDY1LC0xMjQyNzUyMzE1LC0xNTc4OTg2Nzk2LC0yMDgzMj
-Q5MTkzLDE3NDc3MTM0NTYsMTA4MDM0MDA1NiwtMTg3ODM4Njc0
-MSw4MjI5OTIyNzddfQ==
+eyJoaXN0b3J5IjpbLTY2OTY0MjA2LDE5NTEyMTU3MzQsMTIyND
+Q4MzI4NSwxMTg0NTU0MjgxLDIxMzY2NTYwMzYsMTAyNTk5OTQw
+Niw2MTk5MDM4NzcsLTE0NjgzMzY1OTAsLTE1MTUxOTI3MjksMT
+Y2MjE5OTEyOCwxMDA4ODg5NjE0LC0xMDkxNjQ1MTczLC01NjAx
+NjE0NjUsLTEyNDI3NTIzMTUsLTE1Nzg5ODY3OTYsLTIwODMyND
+kxOTMsMTc0NzcxMzQ1NiwxMDgwMzQwMDU2LC0xODc4Mzg2NzQx
+LDgyMjk5MjI3N119
 -->
