@@ -3024,6 +3024,13 @@ Takes a string and converts any lower case characters to uppercase.
 R.toUpper('abc') //"ABC"
 ```
 
+#### trim
+Removes any white space from the beginning and end of a string.
+```
+R.trim("   Hello World!   ")
+//"Hello World!"
+```
+
 ## Not Covered
 - applySpec
 - bind
@@ -3039,7 +3046,7 @@ R.toUpper('abc') //"ABC"
 - transduce
 - traverse
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzE3NDc2OSwyMTM2NjU2MDM2LDEwMj
+eyJoaXN0b3J5IjpbMTE4NDU1NDI4MSwyMTM2NjU2MDM2LDEwMj
 U5OTk0MDYsNjE5OTAzODc3LC0xNDY4MzM2NTkwLC0xNTE1MTky
 NzI5LDE2NjIxOTkxMjgsMTAwODg4OTYxNCwtMTA5MTY0NTE3My
 wtNTYwMTYxNDY1LC0xMjQyNzUyMzE1LC0xNTc4OTg2Nzk2LC0y
