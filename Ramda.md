@@ -1153,7 +1153,7 @@ g(1, 2)(3) //6
 g(1)(2, 3) //6
 g()(1, 2, 3) //6
 ```
-Secondly, the special placeholder value `R._` may be used to specify "gaps", allowing partial application of any combination of arguments, regardless of their positions:
+Secondly, the special placeholder value `R.__` may be used to specify "gaps", allowing partial application of any combination of arguments, regardless of their positions:
 ```
 g(1, 2, 3)
 g(_, 2, 3)(1)
@@ -3469,11 +3469,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgyMDIyNzI2LC0xNDkwNzYxNzAxLC05Mj
-M5MzkzNTksLTIwMjQ0NDYxNzIsLTExNzA1MjQ3MzAsMTU0ODk4
-MjU3MSwyMDQ5ODU0MzA0LDUxNTgyMzg0MSwtMTQ3NDg0ODk5MC
-w0MDk3NTEwMjgsLTI5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMDk0
-MzgyMDAsMTI5OTQ2ODU0LDc1MTU2MzM3NywzODY0NzI4MzMsMT
-U0NTQzMTY0NywtMTIyMTcyMzExOCwtNzUxMDkxMzIsMTQ5NjE5
-ODQ5MV19
+eyJoaXN0b3J5IjpbLTUwNjc4NTc3MSwtMTQ5MDc2MTcwMSwtOT
+IzOTM5MzU5LC0yMDI0NDQ2MTcyLC0xMTcwNTI0NzMwLDE1NDg5
+ODI1NzEsMjA0OTg1NDMwNCw1MTU4MjM4NDEsLTE0NzQ4NDg5OT
+AsNDA5NzUxMDI4LC0yOTc5NjIwNjQsLTE5OTAxMjkxMDMsMjA5
+NDM4MjAwLDEyOTk0Njg1NCw3NTE1NjMzNzcsMzg2NDcyODMzLD
+E1NDU0MzE2NDcsLTEyMjE3MjMxMTgsLTc1MTA5MTMyLDE0OTYx
+OTg0OTFdfQ==
 -->
