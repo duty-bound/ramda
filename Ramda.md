@@ -1173,6 +1173,8 @@ g(4)
 //10
 ```
 
+#### curryN
+Exactly like `curry` with the added functionality that it can limit the number of arguments provided in the case of f
 #### dec
 
 Decrements a number.
@@ -3469,11 +3471,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNjc4NTc3MSwtMTQ5MDc2MTcwMSwtOT
-IzOTM5MzU5LC0yMDI0NDQ2MTcyLC0xMTcwNTI0NzMwLDE1NDg5
-ODI1NzEsMjA0OTg1NDMwNCw1MTU4MjM4NDEsLTE0NzQ4NDg5OT
-AsNDA5NzUxMDI4LC0yOTc5NjIwNjQsLTE5OTAxMjkxMDMsMjA5
-NDM4MjAwLDEyOTk0Njg1NCw3NTE1NjMzNzcsMzg2NDcyODMzLD
-E1NDU0MzE2NDcsLTEyMjE3MjMxMTgsLTc1MTA5MTMyLDE0OTYx
-OTg0OTFdfQ==
+eyJoaXN0b3J5IjpbMTgxNTIxNjQ5NiwtNTA2Nzg1NzcxLC0xND
+kwNzYxNzAxLC05MjM5MzkzNTksLTIwMjQ0NDYxNzIsLTExNzA1
+MjQ3MzAsMTU0ODk4MjU3MSwyMDQ5ODU0MzA0LDUxNTgyMzg0MS
+wtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2MjA2NCwtMTk5
+MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LDc1MTU2MzM3Ny
+wzODY0NzI4MzMsMTU0NTQzMTY0NywtMTIyMTcyMzExOCwtNzUx
+MDkxMzJdfQ==
 -->
