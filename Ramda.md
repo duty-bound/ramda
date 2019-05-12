@@ -1621,14 +1621,14 @@ g(2)
 ```
 
 #### invoker
-Invokes a function by calling it by passing its name as a second parameter. The first parameter is the number of arguments the returned function should take before the target object. Thus the returned function accepts `arity + 1` arguments.
+Invokes a function by calling it by passing its name as a second parameter. Note that not any function may be invoked, it has to be a method of the target object which is being  The first parameter is the number of arguments the returned function should take before the target object. Thus the returned function accepts `arity + 1` arguments.
 In the below example, `slice` is being used to extract a sub-string from a starting position till an ending position (excluded).
 ```
 const sliceFrom = R.invoker(2, 'slice')
 sliceFrom(2, 4, 'abcdef')
 //cd
 ```
-The bwlow is equivalent to `R.slice(2, undefined, 'abcdef')`
+The below is equivalent to `R.slice(2, undefined, 'abcdef')`
 ```
 const sliceFrom = R.invoker(1, 'slice')
 sliceFrom(2, 'abcdef')
@@ -3451,11 +3451,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzA1MjQ3MzAsMTU0ODk4MjU3MSwyMD
-Q5ODU0MzA0LDUxNTgyMzg0MSwtMTQ3NDg0ODk5MCw0MDk3NTEw
-MjgsLTI5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMDk0MzgyMDAsMT
-I5OTQ2ODU0LDc1MTU2MzM3NywzODY0NzI4MzMsMTU0NTQzMTY0
-NywtMTIyMTcyMzExOCwtNzUxMDkxMzIsMTQ5NjE5ODQ5MSwtNj
-EzNTU0NTMyLDE0OTYxOTg0OTEsNjE0NzkyOTY1LC01NjI3ODQ4
-XX0=
+eyJoaXN0b3J5IjpbMTQ2NjMyOTM1MywtMTE3MDUyNDczMCwxNT
+Q4OTgyNTcxLDIwNDk4NTQzMDQsNTE1ODIzODQxLC0xNDc0ODQ4
+OTkwLDQwOTc1MTAyOCwtMjk3OTYyMDY0LC0xOTkwMTI5MTAzLD
+IwOTQzODIwMCwxMjk5NDY4NTQsNzUxNTYzMzc3LDM4NjQ3Mjgz
+MywxNTQ1NDMxNjQ3LC0xMjIxNzIzMTE4LC03NTEwOTEzMiwxND
+k2MTk4NDkxLC02MTM1NTQ1MzIsMTQ5NjE5ODQ5MSw2MTQ3OTI5
+NjVdfQ==
 -->
