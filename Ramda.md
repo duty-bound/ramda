@@ -3140,8 +3140,8 @@ result
 The function can instead be uncurried:
 ```
 const addFour = a => b => c => d => a + b + c + d
-
 const uncurriedAddFour = R.uncurryN(4, addFour)
+
 uncurriedAddFour(1, 2, 3, 4)
 //10
 ```
@@ -3509,13 +3509,13 @@ R.trim("   Hello World!   ")
 - sequence
 - transduce
 - traverse
-- unCurryN
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk3MjQ3NTA3LC02MTI1MDU4OSwtMzY4MT
-Q2NDEyLC01MDY3ODU3NzEsLTE0OTA3NjE3MDEsLTkyMzkzOTM1
-OSwtMjAyNDQ0NjE3MiwtMTE3MDUyNDczMCwxNTQ4OTgyNTcxLD
-IwNDk4NTQzMDQsNTE1ODIzODQxLC0xNDc0ODQ4OTkwLDQwOTc1
-MTAyOCwtMjk3OTYyMDY0LC0xOTkwMTI5MTAzLDIwOTQzODIwMC
-wxMjk5NDY4NTQsNzUxNTYzMzc3LDM4NjQ3MjgzMywxNTQ1NDMx
-NjQ3XX0=
+eyJoaXN0b3J5IjpbLTE0NDYyMzc5OCwtNjEyNTA1ODksLTM2OD
+E0NjQxMiwtNTA2Nzg1NzcxLC0xNDkwNzYxNzAxLC05MjM5Mzkz
+NTksLTIwMjQ0NDYxNzIsLTExNzA1MjQ3MzAsMTU0ODk4MjU3MS
+wyMDQ5ODU0MzA0LDUxNTgyMzg0MSwtMTQ3NDg0ODk5MCw0MDk3
+NTEwMjgsLTI5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMDk0MzgyMD
+AsMTI5OTQ2ODU0LDc1MTU2MzM3NywzODY0NzI4MzMsMTU0NTQz
+MTY0N119
 -->
