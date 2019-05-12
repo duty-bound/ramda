@@ -1621,7 +1621,7 @@ g(2)
 ```
 
 #### invoker
-Invokes a function by calling it by passing its name as a second parameter. Note that not any function may be invoked, it has to be a method of the target object (the last parameter). In fact, in the examples below, the `slice` method being called is that of
+Invokes a function by calling it by passing its name as a second parameter. Note that not any function may be invoked, it has to be a method of the target object (the last parameter). In fact, in the examples below, the `slice` method being called is `Array.prototype.slice` of the array object, not Ramda's `slice` function.@param {String} method Name of the method to call.
 
 The first parameter is the number of arguments the returned function should take before the target object. Thus the returned function accepts `arity + 1` arguments.
 
@@ -3453,11 +3453,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MTEzMjk5OCwtOTIzOTM5MzU5LC0yMD
-I0NDQ2MTcyLC0xMTcwNTI0NzMwLDE1NDg5ODI1NzEsMjA0OTg1
-NDMwNCw1MTU4MjM4NDEsLTE0NzQ4NDg5OTAsNDA5NzUxMDI4LC
-0yOTc5NjIwNjQsLTE5OTAxMjkxMDMsMjA5NDM4MjAwLDEyOTk0
-Njg1NCw3NTE1NjMzNzcsMzg2NDcyODMzLDE1NDU0MzE2NDcsLT
-EyMjE3MjMxMTgsLTc1MTA5MTMyLDE0OTYxOTg0OTEsLTYxMzU1
-NDUzMl19
+eyJoaXN0b3J5IjpbMTM5OTIyNjc5LC05MjM5MzkzNTksLTIwMj
+Q0NDYxNzIsLTExNzA1MjQ3MzAsMTU0ODk4MjU3MSwyMDQ5ODU0
+MzA0LDUxNTgyMzg0MSwtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLT
+I5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2
+ODU0LDc1MTU2MzM3NywzODY0NzI4MzMsMTU0NTQzMTY0NywtMT
+IyMTcyMzExOCwtNzUxMDkxMzIsMTQ5NjE5ODQ5MSwtNjEzNTU0
+NTMyXX0=
 -->
