@@ -2390,6 +2390,7 @@ double(2) //4
 ```
 
 #### otherwise
+Returns the result of applying the `onFailure` function to the value inside a failed promise. This is useful for handling rejected promises inside function compositions.
 
 In the example below `Error!` will only be printed if the promise is rejected (i.e., if `date` is odd):
 ```
@@ -2405,6 +2406,7 @@ const evenDate = new Promise((res, rej) => {
 const printError = () => console.log("Error!")
 
 R.otherwise(printError, evenDate)
+//Error!
 ```
 
 #### over
@@ -3523,17 +3525,16 @@ R.trim("   Hello World!   ")
 
 ## Not Covered
 
-- otherwise
 - sequence
 - transduce
 - traverse
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE4MjAxNzEyLC0xNDQ2MjM3OTgsLTYxMj
-UwNTg5LC0zNjgxNDY0MTIsLTUwNjc4NTc3MSwtMTQ5MDc2MTcw
-MSwtOTIzOTM5MzU5LC0yMDI0NDQ2MTcyLC0xMTcwNTI0NzMwLD
-E1NDg5ODI1NzEsMjA0OTg1NDMwNCw1MTU4MjM4NDEsLTE0NzQ4
-NDg5OTAsNDA5NzUxMDI4LC0yOTc5NjIwNjQsLTE5OTAxMjkxMD
-MsMjA5NDM4MjAwLDEyOTk0Njg1NCw3NTE1NjMzNzcsMzg2NDcy
-ODMzXX0=
+eyJoaXN0b3J5IjpbMTQ0OTM0MDk5OSw2MTgyMDE3MTIsLTE0ND
+YyMzc5OCwtNjEyNTA1ODksLTM2ODE0NjQxMiwtNTA2Nzg1Nzcx
+LC0xNDkwNzYxNzAxLC05MjM5MzkzNTksLTIwMjQ0NDYxNzIsLT
+ExNzA1MjQ3MzAsMTU0ODk4MjU3MSwyMDQ5ODU0MzA0LDUxNTgy
+Mzg0MSwtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2MjA2NC
+wtMTk5MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LDc1MTU2
+MzM3N119
 -->
