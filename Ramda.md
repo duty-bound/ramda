@@ -1164,11 +1164,11 @@ g(_, 2)(1, 3)
 g(_, 2)(_, 3)(1)
 ```
 ```
-const addFourNumbers = (a, b, c, d) => a + b + c + d;
+const addFourNumbers = (a, b, c, d) => a + b + c + d
 
-const curriedAddFourNumbers = R.curry(addFourNumbers);
-const f = curriedAddFourNumbers(1, 2);
-const g = f(3);
+const curriedAddFourNumbers = R.curry(addFourNumbers)
+const f = curriedAddFourNumbers(1, 2)
+const g = f(3)
 g(4)
 //10
 ```
@@ -3469,7 +3469,7 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ2NDQ3NjIyLC0xNDkwNzYxNzAxLC05Mj
+eyJoaXN0b3J5IjpbOTgyMDIyNzI2LC0xNDkwNzYxNzAxLC05Mj
 M5MzkzNTksLTIwMjQ0NDYxNzIsLTExNzA1MjQ3MzAsMTU0ODk4
 MjU3MSwyMDQ5ODU0MzA0LDUxNTgyMzg0MSwtMTQ3NDg0ODk5MC
 w0MDk3NTEwMjgsLTI5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMDk0
