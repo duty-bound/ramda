@@ -3119,6 +3119,15 @@ takesOneArg(1, 2) //[1, undefined]
 
 #### unCurry
 Turns a curried function into an uncurried one.
+
+Take the blow function as an example:
+```
+const addFour = a => b => c => d => a + b + c + d
+```
+It can only be used this way:
+```
+addFour(1)(2)(3)(4)
+```
 #### unFold
 Builds a list from a seed value, which is the second parameter. The first parameter is an iterator function which must either return false, in which case the iteration stops, or else an array with two elements: the first is the value to return for the current iteration, and the second is the value to pass to the next iteration.
 
@@ -3484,11 +3493,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQxNzM5MDUsLTM2ODE0NjQxMiwtNTA2Nz
-g1NzcxLC0xNDkwNzYxNzAxLC05MjM5MzkzNTksLTIwMjQ0NDYx
-NzIsLTExNzA1MjQ3MzAsMTU0ODk4MjU3MSwyMDQ5ODU0MzA0LD
-UxNTgyMzg0MSwtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2
-MjA2NCwtMTk5MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LD
-c1MTU2MzM3NywzODY0NzI4MzMsMTU0NTQzMTY0NywtMTIyMTcy
-MzExOF19
+eyJoaXN0b3J5IjpbLTYxMjUwNTg5LC0zNjgxNDY0MTIsLTUwNj
+c4NTc3MSwtMTQ5MDc2MTcwMSwtOTIzOTM5MzU5LC0yMDI0NDQ2
+MTcyLC0xMTcwNTI0NzMwLDE1NDg5ODI1NzEsMjA0OTg1NDMwNC
+w1MTU4MjM4NDEsLTE0NzQ4NDg5OTAsNDA5NzUxMDI4LC0yOTc5
+NjIwNjQsLTE5OTAxMjkxMDMsMjA5NDM4MjAwLDEyOTk0Njg1NC
+w3NTE1NjMzNzcsMzg2NDcyODMzLDE1NDU0MzE2NDcsLTEyMjE3
+MjMxMThdfQ==
 -->
