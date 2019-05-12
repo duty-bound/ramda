@@ -1165,8 +1165,8 @@ g(_, 2)(_, 3)(1)
 ```
 ```
 const addFourNumbers = (a, b, c, d) => a + b + c + d
-
 const curriedAddFourNumbers = R.curry(addFourNumbers)
+
 const f = curriedAddFourNumbers(1, 2)
 const g = f(3)
 g(4)
@@ -1174,7 +1174,17 @@ g(4)
 ```
 
 #### curryN
-Exactly like `curry` with the added functionality that it can limit the number of arguments provided in the case of functions that accept
+Exactly like `curry` with the added functionality that it can limit the number of arguments provided.
+```
+const addFourNumbers = (...args) => R.sum(args)
+const curriedAddFourNumbers = R.curryN(5, 
+addFourNumbers)
+const f = curriedAddFourNumbers(1, 2)
+const g = f(3)
+g(4)(5)
+//10
+```
+
 #### dec
 
 Decrements a number.
@@ -3471,11 +3481,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODkzODUzNCwtNTA2Nzg1NzcxLC0xND
-kwNzYxNzAxLC05MjM5MzkzNTksLTIwMjQ0NDYxNzIsLTExNzA1
-MjQ3MzAsMTU0ODk4MjU3MSwyMDQ5ODU0MzA0LDUxNTgyMzg0MS
-wtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2MjA2NCwtMTk5
-MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LDc1MTU2MzM3Ny
-wzODY0NzI4MzMsMTU0NTQzMTY0NywtMTIyMTcyMzExOCwtNzUx
-MDkxMzJdfQ==
+eyJoaXN0b3J5IjpbLTEzMDY2NDAwNDAsLTUwNjc4NTc3MSwtMT
+Q5MDc2MTcwMSwtOTIzOTM5MzU5LC0yMDI0NDQ2MTcyLC0xMTcw
+NTI0NzMwLDE1NDg5ODI1NzEsMjA0OTg1NDMwNCw1MTU4MjM4ND
+EsLTE0NzQ4NDg5OTAsNDA5NzUxMDI4LC0yOTc5NjIwNjQsLTE5
+OTAxMjkxMDMsMjA5NDM4MjAwLDEyOTk0Njg1NCw3NTE1NjMzNz
+csMzg2NDcyODMzLDE1NDU0MzE2NDcsLTEyMjE3MjMxMTgsLTc1
+MTA5MTMyXX0=
 -->
