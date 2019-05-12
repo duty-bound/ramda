@@ -1033,9 +1033,7 @@ R.concat('foo', 'bar')
 ```
 
 #### construct
-
 This function returns a function equivalent to the `new` keyword that creates an object from a constructor function.
-
 ```
 class Car {
   constructor(car) {
@@ -3453,11 +3451,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5OTIyNjc5LC05MjM5MzkzNTksLTIwMj
-Q0NDYxNzIsLTExNzA1MjQ3MzAsMTU0ODk4MjU3MSwyMDQ5ODU0
-MzA0LDUxNTgyMzg0MSwtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLT
-I5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2
-ODU0LDc1MTU2MzM3NywzODY0NzI4MzMsMTU0NTQzMTY0NywtMT
-IyMTcyMzExOCwtNzUxMDkxMzIsMTQ5NjE5ODQ5MSwtNjEzNTU0
-NTMyXX0=
+eyJoaXN0b3J5IjpbLTE0OTA3NjE3MDEsLTkyMzkzOTM1OSwtMj
+AyNDQ0NjE3MiwtMTE3MDUyNDczMCwxNTQ4OTgyNTcxLDIwNDk4
+NTQzMDQsNTE1ODIzODQxLC0xNDc0ODQ4OTkwLDQwOTc1MTAyOC
+wtMjk3OTYyMDY0LC0xOTkwMTI5MTAzLDIwOTQzODIwMCwxMjk5
+NDY4NTQsNzUxNTYzMzc3LDM4NjQ3MjgzMywxNTQ1NDMxNjQ3LC
+0xMjIxNzIzMTE4LC03NTEwOTEzMiwxNDk2MTk4NDkxLC02MTM1
+NTQ1MzJdfQ==
 -->
