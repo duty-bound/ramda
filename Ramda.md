@@ -3124,10 +3124,28 @@ Take the blow function as an example:
 ```
 const addFour = a => b => c => d => a + b + c + d
 ```
-It can only be used this way:
+It can be used this way:
 ```
 addFour(1)(2)(3)(4)
 ```
+or:
+```
+const addOne = addFour(1)
+const addTwo = addOne(2)
+const addThree = addTwo(3)
+const result = addThree(4)
+result
+//10
+```
+The function can instead be uncurried:
+```
+const addFour = a => b => c => d => a + b + c + d
+
+const uncurriedAddFour = R.uncurryN(4, addFour)
+uncurriedAddFour(1, 2, 3, 4)
+//10
+```
+
 #### unFold
 Builds a list from a seed value, which is the second parameter. The first parameter is an iterator function which must either return false, in which case the iteration stops, or else an array with two elements: the first is the value to return for the current iteration, and the second is the value to pass to the next iteration.
 
@@ -3493,11 +3511,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjUwNTg5LC0zNjgxNDY0MTIsLTUwNj
-c4NTc3MSwtMTQ5MDc2MTcwMSwtOTIzOTM5MzU5LC0yMDI0NDQ2
-MTcyLC0xMTcwNTI0NzMwLDE1NDg5ODI1NzEsMjA0OTg1NDMwNC
-w1MTU4MjM4NDEsLTE0NzQ4NDg5OTAsNDA5NzUxMDI4LC0yOTc5
-NjIwNjQsLTE5OTAxMjkxMDMsMjA5NDM4MjAwLDEyOTk0Njg1NC
-w3NTE1NjMzNzcsMzg2NDcyODMzLDE1NDU0MzE2NDcsLTEyMjE3
-MjMxMThdfQ==
+eyJoaXN0b3J5IjpbNjk3MjQ3NTA3LC02MTI1MDU4OSwtMzY4MT
+Q2NDEyLC01MDY3ODU3NzEsLTE0OTA3NjE3MDEsLTkyMzkzOTM1
+OSwtMjAyNDQ0NjE3MiwtMTE3MDUyNDczMCwxNTQ4OTgyNTcxLD
+IwNDk4NTQzMDQsNTE1ODIzODQxLC0xNDc0ODQ4OTkwLDQwOTc1
+MTAyOCwtMjk3OTYyMDY0LC0xOTkwMTI5MTAzLDIwOTQzODIwMC
+wxMjk5NDY4NTQsNzUxNTYzMzc3LDM4NjQ3MjgzMywxNTQ1NDMx
+NjQ3XX0=
 -->
