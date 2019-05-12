@@ -2391,7 +2391,7 @@ double(2) //4
 
 #### otherwise
 
-In the example below `Error!` will only be printed if the promise is rejected:
+In the example below `Error!` will only be printed if the promise is rejected (i.e., if `date` is odd):
 ```
 const date = Date.now()
 
@@ -3529,11 +3529,11 @@ R.trim("   Hello World!   ")
 - traverse
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDEwODgzOTksLTE0NDYyMzc5OCwtNj
-EyNTA1ODksLTM2ODE0NjQxMiwtNTA2Nzg1NzcxLC0xNDkwNzYx
-NzAxLC05MjM5MzkzNTksLTIwMjQ0NDYxNzIsLTExNzA1MjQ3Mz
-AsMTU0ODk4MjU3MSwyMDQ5ODU0MzA0LDUxNTgyMzg0MSwtMTQ3
-NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2MjA2NCwtMTk5MDEyOT
-EwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LDc1MTU2MzM3NywzODY0
-NzI4MzNdfQ==
+eyJoaXN0b3J5IjpbNjE4MjAxNzEyLC0xNDQ2MjM3OTgsLTYxMj
+UwNTg5LC0zNjgxNDY0MTIsLTUwNjc4NTc3MSwtMTQ5MDc2MTcw
+MSwtOTIzOTM5MzU5LC0yMDI0NDQ2MTcyLC0xMTcwNTI0NzMwLD
+E1NDg5ODI1NzEsMjA0OTg1NDMwNCw1MTU4MjM4NDEsLTE0NzQ4
+NDg5OTAsNDA5NzUxMDI4LC0yOTc5NjIwNjQsLTE5OTAxMjkxMD
+MsMjA5NDM4MjAwLDEyOTk0Njg1NCw3NTE1NjMzNzcsMzg2NDcy
+ODMzXX0=
 -->
