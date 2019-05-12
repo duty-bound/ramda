@@ -1153,6 +1153,8 @@ g(1, 2)(3) //6
 g(1)(2, 3) //6
 g()(1, 2, 3) //6
 ```
+he curried function has two unusual capabilities. First, its arguments needn't be provided one at a time.
+
 Secondly, the special placeholder value `R.__` may be used to specify "gaps", allowing partial application of any combination of arguments, regardless of their positions:
 ```
 g(1, 2, 3)
@@ -3474,18 +3476,17 @@ R.trim("   Hello World!   ")
 
 ## Not Covered
 
-- curryN (how is it different from `curry`?
 - otherwise
 - sequence
 - transduce
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDY2NDAwNDAsLTUwNjc4NTc3MSwtMT
-Q5MDc2MTcwMSwtOTIzOTM5MzU5LC0yMDI0NDQ2MTcyLC0xMTcw
-NTI0NzMwLDE1NDg5ODI1NzEsMjA0OTg1NDMwNCw1MTU4MjM4ND
-EsLTE0NzQ4NDg5OTAsNDA5NzUxMDI4LC0yOTc5NjIwNjQsLTE5
-OTAxMjkxMDMsMjA5NDM4MjAwLDEyOTk0Njg1NCw3NTE1NjMzNz
-csMzg2NDcyODMzLDE1NDU0MzE2NDcsLTEyMjE3MjMxMTgsLTc1
-MTA5MTMyXX0=
+eyJoaXN0b3J5IjpbLTM2ODE0NjQxMiwtNTA2Nzg1NzcxLC0xND
+kwNzYxNzAxLC05MjM5MzkzNTksLTIwMjQ0NDYxNzIsLTExNzA1
+MjQ3MzAsMTU0ODk4MjU3MSwyMDQ5ODU0MzA0LDUxNTgyMzg0MS
+wtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2MjA2NCwtMTk5
+MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LDc1MTU2MzM3Ny
+wzODY0NzI4MzMsMTU0NTQzMTY0NywtMTIyMTcyMzExOCwtNzUx
+MDkxMzJdfQ==
 -->
