@@ -3117,6 +3117,8 @@ takesOneArg.length //1
 takesOneArg(1, 2) //[1, undefined]
 ```
 
+#### unCurry
+Turns a curried function into an uncurried one.
 #### unFold
 Builds a list from a seed value, which is the second parameter. The first parameter is an iterator function which must either return false, in which case the iteration stops, or else an array with two elements: the first is the value to return for the current iteration, and the second is the value to pass to the next iteration.
 
@@ -3482,11 +3484,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2ODE0NjQxMiwtNTA2Nzg1NzcxLC0xND
-kwNzYxNzAxLC05MjM5MzkzNTksLTIwMjQ0NDYxNzIsLTExNzA1
-MjQ3MzAsMTU0ODk4MjU3MSwyMDQ5ODU0MzA0LDUxNTgyMzg0MS
-wtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2MjA2NCwtMTk5
-MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LDc1MTU2MzM3Ny
-wzODY0NzI4MzMsMTU0NTQzMTY0NywtMTIyMTcyMzExOCwtNzUx
-MDkxMzJdfQ==
+eyJoaXN0b3J5IjpbNjQxNzM5MDUsLTM2ODE0NjQxMiwtNTA2Nz
+g1NzcxLC0xNDkwNzYxNzAxLC05MjM5MzkzNTksLTIwMjQ0NDYx
+NzIsLTExNzA1MjQ3MzAsMTU0ODk4MjU3MSwyMDQ5ODU0MzA0LD
+UxNTgyMzg0MSwtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2
+MjA2NCwtMTk5MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LD
+c1MTU2MzM3NywzODY0NzI4MzMsMTU0NTQzMTY0NywtMTIyMTcy
+MzExOF19
 -->
