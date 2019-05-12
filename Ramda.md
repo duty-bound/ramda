@@ -1620,6 +1620,8 @@ g(2)
 //4
 ```
 
+#### invoker
+Invokes a function by calling it by passing its name as a second parameter. The first parameter is the number of arguments the returned function
 
 #### inc
 
@@ -3431,11 +3433,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE1ODIzODQxLC0xNDc0ODQ4OTkwLDQwOT
-c1MTAyOCwtMjk3OTYyMDY0LC0xOTkwMTI5MTAzLDIwOTQzODIw
-MCwxMjk5NDY4NTQsNzUxNTYzMzc3LDM4NjQ3MjgzMywxNTQ1ND
-MxNjQ3LC0xMjIxNzIzMTE4LC03NTEwOTEzMiwxNDk2MTk4NDkx
-LC02MTM1NTQ1MzIsMTQ5NjE5ODQ5MSw2MTQ3OTI5NjUsLTU2Mj
-c4NDgsLTExNDI0MjUyNjUsMzgzNjMyNjU3LC0xNzIxMDc0Nzc2
-XX0=
+eyJoaXN0b3J5IjpbMTIyMjE1MDMyMSw1MTU4MjM4NDEsLTE0Nz
+Q4NDg5OTAsNDA5NzUxMDI4LC0yOTc5NjIwNjQsLTE5OTAxMjkx
+MDMsMjA5NDM4MjAwLDEyOTk0Njg1NCw3NTE1NjMzNzcsMzg2ND
+cyODMzLDE1NDU0MzE2NDcsLTEyMjE3MjMxMTgsLTc1MTA5MTMy
+LDE0OTYxOTg0OTEsLTYxMzU1NDUzMiwxNDk2MTk4NDkxLDYxND
+c5Mjk2NSwtNTYyNzg0OCwtMTE0MjQyNTI2NSwzODM2MzI2NTdd
+fQ==
 -->
