@@ -1628,8 +1628,14 @@ const sliceFrom = R.invoker(2, 'slice')
 sliceFrom(2, 4, 'abcdef')
 //cd
 ```
-What if ti is desired that `sliceFrom` always starts from element 2?
-````
+The bwlow is equivalent to `R.slice(2, undefined, 'abcdef')`
+```
+const sliceFrom = R.invoker(1, 'slice')
+sliceFrom(2, 'abcdef')
+//"cdef"
+```
+What if it is desired that `sliceFrom` always starts from element 2?
+```
 const sliceFrom2 = R.invoker(2, 'slice')(2)
 sliceFrom2(5, 'abcdef')
 //"cde"
@@ -3445,11 +3451,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0ODk4MjU3MSwyMDQ5ODU0MzA0LDUxNT
-gyMzg0MSwtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2MjA2
-NCwtMTk5MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LDc1MT
-U2MzM3NywzODY0NzI4MzMsMTU0NTQzMTY0NywtMTIyMTcyMzEx
-OCwtNzUxMDkxMzIsMTQ5NjE5ODQ5MSwtNjEzNTU0NTMyLDE0OT
-YxOTg0OTEsNjE0NzkyOTY1LC01NjI3ODQ4LC0xMTQyNDI1MjY1
+eyJoaXN0b3J5IjpbLTExNzA1MjQ3MzAsMTU0ODk4MjU3MSwyMD
+Q5ODU0MzA0LDUxNTgyMzg0MSwtMTQ3NDg0ODk5MCw0MDk3NTEw
+MjgsLTI5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMDk0MzgyMDAsMT
+I5OTQ2ODU0LDc1MTU2MzM3NywzODY0NzI4MzMsMTU0NTQzMTY0
+NywtMTIyMTcyMzExOCwtNzUxMDkxMzIsMTQ5NjE5ODQ5MSwtNj
+EzNTU0NTMyLDE0OTYxOTg0OTEsNjE0NzkyOTY1LC01NjI3ODQ4
 XX0=
 -->
