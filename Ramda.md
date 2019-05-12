@@ -3462,7 +3462,6 @@ R.trim("   Hello World!   ")
 
 ## Not Covered
 
-- constructN
 - curryN (how is it different from `curry`?
 - otherwise
 - sequence
@@ -3470,7 +3469,7 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA4Njk5MjY2LC0xNDkwNzYxNzAxLC05Mj
+eyJoaXN0b3J5IjpbNjQ2NDQ3NjIyLC0xNDkwNzYxNzAxLC05Mj
 M5MzkzNTksLTIwMjQ0NDYxNzIsLTExNzA1MjQ3MzAsMTU0ODk4
 MjU3MSwyMDQ5ODU0MzA0LDUxNTgyMzg0MSwtMTQ3NDg0ODk5MC
 w0MDk3NTEwMjgsLTI5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMDk0
