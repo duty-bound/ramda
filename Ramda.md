@@ -2389,6 +2389,24 @@ double(2) //4
 double(2) //4
 ```
 
+#### otherwise
+
+In the example below `Error!` will only be printed if the promise is rejected:
+```
+const date = Date.now()
+
+const evenDate = new Promise((res, rej) => {
+  if(date % 2 === 0)
+    res("Even")
+   else
+     rej("Odd")
+})
+
+const printError = () => console.log("Error!")
+
+R.otherwise(printError, evenDate)
+```
+
 #### over
 Used with a lens operation to set values.
 ```
@@ -3511,11 +3529,11 @@ R.trim("   Hello World!   ")
 - traverse
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDYyMzc5OCwtNjEyNTA1ODksLTM2OD
-E0NjQxMiwtNTA2Nzg1NzcxLC0xNDkwNzYxNzAxLC05MjM5Mzkz
-NTksLTIwMjQ0NDYxNzIsLTExNzA1MjQ3MzAsMTU0ODk4MjU3MS
-wyMDQ5ODU0MzA0LDUxNTgyMzg0MSwtMTQ3NDg0ODk5MCw0MDk3
-NTEwMjgsLTI5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMDk0MzgyMD
-AsMTI5OTQ2ODU0LDc1MTU2MzM3NywzODY0NzI4MzMsMTU0NTQz
-MTY0N119
+eyJoaXN0b3J5IjpbLTE5MDEwODgzOTksLTE0NDYyMzc5OCwtNj
+EyNTA1ODksLTM2ODE0NjQxMiwtNTA2Nzg1NzcxLC0xNDkwNzYx
+NzAxLC05MjM5MzkzNTksLTIwMjQ0NDYxNzIsLTExNzA1MjQ3Mz
+AsMTU0ODk4MjU3MSwyMDQ5ODU0MzA0LDUxNTgyMzg0MSwtMTQ3
+NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2MjA2NCwtMTk5MDEyOT
+EwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LDc1MTU2MzM3NywzODY0
+NzI4MzNdfQ==
 -->
