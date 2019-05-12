@@ -1056,6 +1056,25 @@ cars[2]
 //{"engine": 10, "name": "tesla"}
 ```
 
+#### constructorN
+Same functionality as `constructor` however the exact number of arguments specified by the first parameter need to be provided.
+```
+class Shed {
+  constructor() {
+    this.tools = arguments
+  }
+}
+
+const ShedConstructor = R.constructN(3, Shed)
+
+const shed1 = ShedConstructor('hammer', 'saw', 'rasp')
+shed1.tools
+//(function() { return arguments; }("hammer", "saw", "rasp"))
+
+const shed2 = ShedConstructor('router')('sander')('circular saw')
+shed2.tools
+//(function() { return arguments; }("router", "sander", "circular saw"))
+```
 
 #### converge
 
@@ -3451,11 +3470,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTA3NjE3MDEsLTkyMzkzOTM1OSwtMj
-AyNDQ0NjE3MiwtMTE3MDUyNDczMCwxNTQ4OTgyNTcxLDIwNDk4
-NTQzMDQsNTE1ODIzODQxLC0xNDc0ODQ4OTkwLDQwOTc1MTAyOC
-wtMjk3OTYyMDY0LC0xOTkwMTI5MTAzLDIwOTQzODIwMCwxMjk5
-NDY4NTQsNzUxNTYzMzc3LDM4NjQ3MjgzMywxNTQ1NDMxNjQ3LC
-0xMjIxNzIzMTE4LC03NTEwOTEzMiwxNDk2MTk4NDkxLC02MTM1
-NTQ1MzJdfQ==
+eyJoaXN0b3J5IjpbNzA4Njk5MjY2LC0xNDkwNzYxNzAxLC05Mj
+M5MzkzNTksLTIwMjQ0NDYxNzIsLTExNzA1MjQ3MzAsMTU0ODk4
+MjU3MSwyMDQ5ODU0MzA0LDUxNTgyMzg0MSwtMTQ3NDg0ODk5MC
+w0MDk3NTEwMjgsLTI5Nzk2MjA2NCwtMTk5MDEyOTEwMywyMDk0
+MzgyMDAsMTI5OTQ2ODU0LDc1MTU2MzM3NywzODY0NzI4MzMsMT
+U0NTQzMTY0NywtMTIyMTcyMzExOCwtNzUxMDkxMzIsMTQ5NjE5
+ODQ5MV19
 -->
