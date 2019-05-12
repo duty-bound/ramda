@@ -1628,6 +1628,12 @@ const sliceFrom = R.invoker(2, 'slice')
 sliceFrom(2, 4, 'abcdef')
 //cd
 ```
+What if ti is desired that `sliceFrom` always starts from element 2?
+````
+const sliceFrom = R.invoker(2, 'slice')(2)
+sliceFrom(5, 'abcdef')
+//"cde"
+```
 
 #### inc
 
@@ -3439,11 +3445,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0OTg1NDMwNCw1MTU4MjM4NDEsLTE0Nz
-Q4NDg5OTAsNDA5NzUxMDI4LC0yOTc5NjIwNjQsLTE5OTAxMjkx
-MDMsMjA5NDM4MjAwLDEyOTk0Njg1NCw3NTE1NjMzNzcsMzg2ND
-cyODMzLDE1NDU0MzE2NDcsLTEyMjE3MjMxMTgsLTc1MTA5MTMy
-LDE0OTYxOTg0OTEsLTYxMzU1NDUzMiwxNDk2MTk4NDkxLDYxND
-c5Mjk2NSwtNTYyNzg0OCwtMTE0MjQyNTI2NSwzODM2MzI2NTdd
-fQ==
+eyJoaXN0b3J5IjpbLTcwODczODQyNSwyMDQ5ODU0MzA0LDUxNT
+gyMzg0MSwtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2MjA2
+NCwtMTk5MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LDc1MT
+U2MzM3NywzODY0NzI4MzMsMTU0NTQzMTY0NywtMTIyMTcyMzEx
+OCwtNzUxMDkxMzIsMTQ5NjE5ODQ5MSwtNjEzNTU0NTMyLDE0OT
+YxOTg0OTEsNjE0NzkyOTY1LC01NjI3ODQ4LC0xMTQyNDI1MjY1
+XX0=
 -->
