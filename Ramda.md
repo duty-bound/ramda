@@ -1621,7 +1621,7 @@ g(2)
 ```
 
 #### invoker
-Invokes a function by calling it by passing its name as a second parameter. Note that not any function may be invoked, it has to be a method of the target object (the last parameter).
+Invokes a function by calling it by passing its name as a second parameter. Note that not any function may be invoked, it has to be a method of the target object (the last parameter). In fact, in the examples below, the `slice` method being called is that of
 
 The first parameter is the number of arguments the returned function should take before the target object. Thus the returned function accepts `arity + 1` arguments.
 
@@ -3453,11 +3453,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMzkzOTM1OSwtMjAyNDQ0NjE3MiwtMT
-E3MDUyNDczMCwxNTQ4OTgyNTcxLDIwNDk4NTQzMDQsNTE1ODIz
-ODQxLC0xNDc0ODQ4OTkwLDQwOTc1MTAyOCwtMjk3OTYyMDY0LC
-0xOTkwMTI5MTAzLDIwOTQzODIwMCwxMjk5NDY4NTQsNzUxNTYz
-Mzc3LDM4NjQ3MjgzMywxNTQ1NDMxNjQ3LC0xMjIxNzIzMTE4LC
-03NTEwOTEzMiwxNDk2MTk4NDkxLC02MTM1NTQ1MzIsMTQ5NjE5
-ODQ5MV19
+eyJoaXN0b3J5IjpbMTY3MTEzMjk5OCwtOTIzOTM5MzU5LC0yMD
+I0NDQ2MTcyLC0xMTcwNTI0NzMwLDE1NDg5ODI1NzEsMjA0OTg1
+NDMwNCw1MTU4MjM4NDEsLTE0NzQ4NDg5OTAsNDA5NzUxMDI4LC
+0yOTc5NjIwNjQsLTE5OTAxMjkxMDMsMjA5NDM4MjAwLDEyOTk0
+Njg1NCw3NTE1NjMzNzcsMzg2NDcyODMzLDE1NDU0MzE2NDcsLT
+EyMjE3MjMxMTgsLTc1MTA5MTMyLDE0OTYxOTg0OTEsLTYxMzU1
+NDUzMl19
 -->
