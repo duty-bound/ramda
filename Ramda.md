@@ -1621,7 +1621,13 @@ g(2)
 ```
 
 #### invoker
-Invokes a function by calling it by passing its name as a second parameter. The first parameter is the number of arguments the returned function
+Invokes a function by calling it by passing its name as a second parameter. The first parameter is the number of arguments the returned function should take before the target object.
+I thebelow example, `
+```
+const sliceFrom = R.invoker(2, 'slice')
+sliceFrom(2, 4, 'abcdef')
+//cd
+```
 
 #### inc
 
@@ -3433,11 +3439,11 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMjE1MDMyMSw1MTU4MjM4NDEsLTE0Nz
-Q4NDg5OTAsNDA5NzUxMDI4LC0yOTc5NjIwNjQsLTE5OTAxMjkx
-MDMsMjA5NDM4MjAwLDEyOTk0Njg1NCw3NTE1NjMzNzcsMzg2ND
-cyODMzLDE1NDU0MzE2NDcsLTEyMjE3MjMxMTgsLTc1MTA5MTMy
-LDE0OTYxOTg0OTEsLTYxMzU1NDUzMiwxNDk2MTk4NDkxLDYxND
-c5Mjk2NSwtNTYyNzg0OCwtMTE0MjQyNTI2NSwzODM2MzI2NTdd
-fQ==
+eyJoaXN0b3J5IjpbLTE4MDA3MTQ3ODQsNTE1ODIzODQxLC0xND
+c0ODQ4OTkwLDQwOTc1MTAyOCwtMjk3OTYyMDY0LC0xOTkwMTI5
+MTAzLDIwOTQzODIwMCwxMjk5NDY4NTQsNzUxNTYzMzc3LDM4Nj
+Q3MjgzMywxNTQ1NDMxNjQ3LC0xMjIxNzIzMTE4LC03NTEwOTEz
+MiwxNDk2MTk4NDkxLC02MTM1NTQ1MzIsMTQ5NjE5ODQ5MSw2MT
+Q3OTI5NjUsLTU2Mjc4NDgsLTExNDI0MjUyNjUsMzgzNjMyNjU3
+XX0=
 -->
