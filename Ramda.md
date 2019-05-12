@@ -1621,7 +1621,7 @@ g(2)
 ```
 
 #### invoker
-Invokes a function by calling it by passing its name as a second parameter. The first parameter is the number of arguments the returned function should take before the target object.
+Invokes a function by calling it by passing its name as a second parameter. The first parameter is the number of arguments the returned function should take before the target object. Thus the returned function accepts `arity + 1` arguments.
 In the below example, `slice` is being used to extract a sub-string from a starting position till an ending position (excluded).
 ```
 const sliceFrom = R.invoker(2, 'slice')
@@ -1630,8 +1630,8 @@ sliceFrom(2, 4, 'abcdef')
 ```
 What if ti is desired that `sliceFrom` always starts from element 2?
 ````
-const sliceFrom = R.invoker(2, 'slice')(2)
-sliceFrom(5, 'abcdef')
+const sliceFrom2 = R.invoker(2, 'slice')(2)
+sliceFrom2(5, 'abcdef')
 //"cde"
 ```
 
@@ -3445,7 +3445,7 @@ R.trim("   Hello World!   ")
 - traverse
 - unCurryN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwODczODQyNSwyMDQ5ODU0MzA0LDUxNT
+eyJoaXN0b3J5IjpbMTU0ODk4MjU3MSwyMDQ5ODU0MzA0LDUxNT
 gyMzg0MSwtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2MjA2
 NCwtMTk5MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LDc1MT
 U2MzM3NywzODY0NzI4MzMsMTU0NTQzMTY0NywtMTIyMTcyMzEx
