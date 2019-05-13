@@ -2838,6 +2838,13 @@ R.set(bLens, 2, {a: 1, b: 2})
 //{"a": 1, "b": 2}
 ```
 
+#### sequence
+Takes two parameters, an 'of' function that returns a singleton array, and a traversable parameter. It returns all the possible combinations of the data in the traversable.
+```
+R.sequence(R.of, [[1, 2], [3, 4], [5, 6]])
+//[[1, 3, 5], [1, 3, 6], [1, 4, 5], [1, 4, 6], [2, 3, 5], [2, 3, 6], [2, 4, 5], [2, 4, 6]]
+```
+
 #### sort
 Returns a copy of a provided list sorted by the provided function. The comparison function should compare two parameters at a time, and return a negative number if the first value is smaller, zero if they are equal, and a positive number if the second value is larger.
 ```
@@ -3530,11 +3537,11 @@ R.trim("   Hello World!   ")
 - traverse
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0OTM0MDk5OSw2MTgyMDE3MTIsLTE0ND
-YyMzc5OCwtNjEyNTA1ODksLTM2ODE0NjQxMiwtNTA2Nzg1Nzcx
-LC0xNDkwNzYxNzAxLC05MjM5MzkzNTksLTIwMjQ0NDYxNzIsLT
-ExNzA1MjQ3MzAsMTU0ODk4MjU3MSwyMDQ5ODU0MzA0LDUxNTgy
-Mzg0MSwtMTQ3NDg0ODk5MCw0MDk3NTEwMjgsLTI5Nzk2MjA2NC
-wtMTk5MDEyOTEwMywyMDk0MzgyMDAsMTI5OTQ2ODU0LDc1MTU2
-MzM3N119
+eyJoaXN0b3J5IjpbLTU0NjIwNjQyNywxNDQ5MzQwOTk5LDYxOD
+IwMTcxMiwtMTQ0NjIzNzk4LC02MTI1MDU4OSwtMzY4MTQ2NDEy
+LC01MDY3ODU3NzEsLTE0OTA3NjE3MDEsLTkyMzkzOTM1OSwtMj
+AyNDQ0NjE3MiwtMTE3MDUyNDczMCwxNTQ4OTgyNTcxLDIwNDk4
+NTQzMDQsNTE1ODIzODQxLC0xNDc0ODQ4OTkwLDQwOTc1MTAyOC
+wtMjk3OTYyMDY0LC0xOTkwMTI5MTAzLDIwOTQzODIwMCwxMjk5
+NDY4NTRdfQ==
 -->
